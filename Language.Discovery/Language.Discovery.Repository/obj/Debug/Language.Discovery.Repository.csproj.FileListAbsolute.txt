@@ -23,3 +23,15 @@ D:\Language.Discovery\Language.Discovery\Language.Discovery.Repository\obj\Debug
 D:\Language.Discovery\Language.Discovery\Language.Discovery.Repository\obj\Debug\Language.Discovery.Repository.csproj.CopyComplete
 D:\Language.Discovery\Language.Discovery\Language.Discovery.Repository\obj\Debug\Language.Discovery.Repository.dll
 D:\Language.Discovery\Language.Discovery\Language.Discovery.Repository\obj\Debug\Language.Discovery.Repository.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\bin\Debug\Language.Discovery.Repository.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\bin\Debug\Language.Discovery.Repository.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\bin\Debug\Language.Discovery.Entity.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\bin\Debug\Newtonsoft.Json.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\bin\Debug\RestSharp.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\bin\Debug\Language.Discovery.Entity.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\bin\Debug\Newtonsoft.Json.xml
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\bin\Debug\RestSharp.xml
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\obj\Debug\Language.Discovery.Repository.csprojAssemblyReference.cache
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\obj\Debug\Language.Discovery.Repository.csproj.CopyComplete
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\obj\Debug\Language.Discovery.Repository.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Repository\obj\Debug\Language.Discovery.Repository.pdb

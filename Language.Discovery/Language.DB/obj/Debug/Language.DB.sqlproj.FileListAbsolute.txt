@@ -17,3 +17,9 @@ D:\Language.Discovery\Language.Discovery\Language.DB\obj\Debug\postdeploy.sql
 D:\Language.Discovery\Language.Discovery\Language.DB\obj\Debug\predeploy.sql
 D:\Language.Discovery\Language.Discovery\Language.DB\obj\Debug\Language.DB.dll
 D:\Language.Discovery\Language.Discovery\Language.DB\obj\Debug\Language.DB.pdb
+D:\Soursetree\Language.Discovery\Language.DB\bin\Debug\Language.DB.dacpac
+D:\Soursetree\Language.Discovery\Language.DB\bin\Debug\Language.DB.dll
+D:\Soursetree\Language.Discovery\Language.DB\bin\Debug\Language.DB.pdb
+D:\Soursetree\Language.Discovery\Language.DB\obj\Debug\Language.DB.sqlprojAssemblyReference.cache
+D:\Soursetree\Language.Discovery\Language.DB\obj\Debug\Language.DB.dll
+D:\Soursetree\Language.Discovery\Language.DB\obj\Debug\Language.DB.pdb
