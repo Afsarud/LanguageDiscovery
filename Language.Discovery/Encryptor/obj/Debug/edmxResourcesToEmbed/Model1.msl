@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserNo" ColumnName="UserNo" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Password2" ColumnName="Password2" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+          <ScalarProperty Name="IsPalleteVisible" ColumnName="IsPalleteVisible" />
+          <ScalarProperty Name="AfterSchool" ColumnName="AfterSchool" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="StatusText" ColumnName="StatusText" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="NativeLanguage" ColumnName="NativeLanguage" />
+          <ScalarProperty Name="LearningLanguage" ColumnName="LearningLanguage" />
+          <ScalarProperty Name="SubNativeLanguage" ColumnName="SubNativeLanguage" />
+          <ScalarProperty Name="TeachersName" ColumnName="TeachersName" />
+          <ScalarProperty Name="ParentsName" ColumnName="ParentsName" />
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Introduction" ColumnName="Introduction" />
+          <ScalarProperty Name="HasAgreedTC" ColumnName="HasAgreedTC" />
+          <ScalarProperty Name="Theme" ColumnName="Theme" />
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="DontShowVideo" ColumnName="DontShowVideo" />
+          <ScalarProperty Name="DontShowNewTab" ColumnName="DontShowNewTab" />
+          <ScalarProperty Name="Skin" ColumnName="Skin" />
+          <ScalarProperty Name="SubNativeLanguage2" ColumnName="SubNativeLanguage2" />
+          <ScalarProperty Name="AutoActivatedAfterSchool" ColumnName="AutoActivatedAfterSchool" />
+          <ScalarProperty Name="ParentsLastName" ColumnName="ParentsLastName" />
+          <ScalarProperty Name="IsDemo" ColumnName="IsDemo" />
+          <ScalarProperty Name="TrialExpirationDate" ColumnName="TrialExpirationDate" />
+          <ScalarProperty Name="IsRobot" ColumnName="IsRobot" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="SchoolEntry" ColumnName="SchoolEntry" />
+          <ScalarProperty Name="AllowTalk" ColumnName="AllowTalk" />
+          <ScalarProperty Name="Furigana" ColumnName="Furigana" />
+          <ScalarProperty Name="Custom1" ColumnName="Custom1" />
+          <ScalarProperty Name="Custom2" ColumnName="Custom2" />
+          <ScalarProperty Name="Custom3" ColumnName="Custom3" />
+          <ScalarProperty Name="Custom4" ColumnName="Custom4" />
+          <ScalarProperty Name="Custom5" ColumnName="Custom5" />
+          <ScalarProperty Name="Note1" ColumnName="Note1" />
+          <ScalarProperty Name="Note2" ColumnName="Note2" />
+          <ScalarProperty Name="Note3" ColumnName="Note3" />
+          <ScalarProperty Name="Note4" ColumnName="Note4" />
+          <ScalarProperty Name="Note5" ColumnName="Note5" />
+          <ScalarProperty Name="SequenceOptionFlag" ColumnName="SequenceOptionFlag" />
+          <ScalarProperty Name="NativeOptionFlag" ColumnName="NativeOptionFlag" />
+          <ScalarProperty Name="SubLanguageOptionFlag" ColumnName="SubLanguageOptionFlag" />
+          <ScalarProperty Name="SubLanguage2OptionFlag" ColumnName="SubLanguage2OptionFlag" />
+          <ScalarProperty Name="IsOptionUpdated" ColumnName="IsOptionUpdated" />
+          <ScalarProperty Name="EnabledFreeMessage" ColumnName="EnabledFreeMessage" />
+          <ScalarProperty Name="SoundAndMail" ColumnName="SoundAndMail" />
+          <ScalarProperty Name="DefaultTalkSessionTime" ColumnName="DefaultTalkSessionTime" />
+          <ScalarProperty Name="IsCanTalk" ColumnName="IsCanTalk" />
+          <ScalarProperty Name="DontShowQuickGuide" ColumnName="DontShowQuickGuide" />
+          <ScalarProperty Name="StepOptionFlag" ColumnName="StepOptionFlag" />
+          <ScalarProperty Name="NumberOfMatching" ColumnName="NumberOfMatching" />
+          <ScalarProperty Name="MatchingFrequency" ColumnName="MatchingFrequency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

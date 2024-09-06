@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserNo" Type="Int64" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="3" />
+    <Property Name="Telephone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ClassID" Type="Int32" />
+    <Property Name="UserTypeID" Type="Int32" />
+    <Property Name="CountryID" Type="Int32" />
+    <Property Name="CityID" Type="Int32" />
+    <Property Name="SchoolID" Type="Int32" />
+    <Property Name="LevelID" Type="Int32" />
+    <Property Name="IsPalleteVisible" Type="Boolean" />
+    <Property Name="AfterSchool" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="StatusText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Avatar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NativeLanguage" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="LearningLanguage" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SubNativeLanguage" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TeachersName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParentsName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastLogin" Type="DateTime" Precision="3" />
+    <Property Name="IsOnline" Type="Boolean" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Introduction" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HasAgreedTC" Type="Boolean" />
+    <Property Name="Theme" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GradeID" Type="Int32" />
+    <Property Name="DontShowVideo" Type="Boolean" />
+    <Property Name="DontShowNewTab" Type="Boolean" />
+    <Property Name="Skin" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SubNativeLanguage2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="AutoActivatedAfterSchool" Type="Boolean" />
+    <Property Name="ParentsLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDemo" Type="Boolean" />
+    <Property Name="TrialExpirationDate" Type="DateTime" Precision="3" />
+    <Property Name="IsRobot" Type="Boolean" />
+    <Property Name="Reference" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SchoolEntry" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="AllowTalk" Type="Boolean" Nullable="false" />
+    <Property Name="Furigana" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Custom1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Custom2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Custom3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Custom4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Custom5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Note5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SequenceOptionFlag" Type="Boolean" />
+    <Property Name="NativeOptionFlag" Type="Boolean" />
+    <Property Name="SubLanguageOptionFlag" Type="Boolean" />
+    <Property Name="SubLanguage2OptionFlag" Type="Boolean" />
+    <Property Name="IsOptionUpdated" Type="Boolean" Nullable="false" />
+    <Property Name="EnabledFreeMessage" Type="Boolean" />
+    <Property Name="SoundAndMail" Type="Boolean" />
+    <Property Name="DefaultTalkSessionTime" Type="Int32" Nullable="false" />
+    <Property Name="IsCanTalk" Type="Boolean" />
+    <Property Name="DontShowQuickGuide" Type="Boolean" />
+    <Property Name="StepOptionFlag" Type="Boolean" />
+    <Property Name="NumberOfMatching" Type="Int32" />
+    <Property Name="MatchingFrequency" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>

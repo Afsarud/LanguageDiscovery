@@ -1,0 +1,4 @@
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Encryptor\obj\Debug\Encryptor.csproj.AssemblyReference.cache
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Encryptor\obj\Debug\Encryptor.Properties.Resources.resources
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Encryptor\obj\Debug\Encryptor.csproj.GenerateResource.cache
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Encryptor\obj\Debug\Encryptor.csproj.CoreCompileInputs.cache

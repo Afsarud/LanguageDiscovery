@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserNo" Type="bigint" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password2" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ClassID" Type="int" />
+    <Property Name="UserTypeID" Type="int" />
+    <Property Name="CountryID" Type="int" />
+    <Property Name="CityID" Type="int" />
+    <Property Name="SchoolID" Type="int" />
+    <Property Name="LevelID" Type="int" />
+    <Property Name="IsPalleteVisible" Type="bit" />
+    <Property Name="AfterSchool" Type="bit" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="StatusText" Type="nvarchar" MaxLength="50" />
+    <Property Name="Avatar" Type="nvarchar" MaxLength="50" />
+    <Property Name="NativeLanguage" Type="nvarchar" MaxLength="10" />
+    <Property Name="LearningLanguage" Type="nvarchar" MaxLength="10" />
+    <Property Name="SubNativeLanguage" Type="nvarchar" MaxLength="10" />
+    <Property Name="TeachersName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentsName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastLogin" Type="datetime" />
+    <Property Name="IsOnline" Type="bit" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="10" />
+    <Property Name="Introduction" Type="varchar(max)" />
+    <Property Name="HasAgreedTC" Type="bit" />
+    <Property Name="Theme" Type="nvarchar" MaxLength="50" />
+    <Property Name="GradeID" Type="int" />
+    <Property Name="DontShowVideo" Type="bit" />
+    <Property Name="DontShowNewTab" Type="bit" />
+    <Property Name="Skin" Type="nvarchar" MaxLength="100" />
+    <Property Name="SubNativeLanguage2" Type="nvarchar" MaxLength="10" />
+    <Property Name="AutoActivatedAfterSchool" Type="bit" />
+    <Property Name="ParentsLastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDemo" Type="bit" />
+    <Property Name="TrialExpirationDate" Type="datetime" />
+    <Property Name="IsRobot" Type="bit" />
+    <Property Name="Reference" Type="nvarchar" MaxLength="250" />
+    <Property Name="SchoolEntry" Type="nvarchar" MaxLength="150" />
+    <Property Name="AllowTalk" Type="bit" Nullable="false" />
+    <Property Name="Furigana" Type="nvarchar" MaxLength="50" />
+    <Property Name="Custom1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Custom2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Custom3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Custom4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Custom5" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note5" Type="nvarchar" MaxLength="50" />
+    <Property Name="SequenceOptionFlag" Type="bit" />
+    <Property Name="NativeOptionFlag" Type="bit" />
+    <Property Name="SubLanguageOptionFlag" Type="bit" />
+    <Property Name="SubLanguage2OptionFlag" Type="bit" />
+    <Property Name="IsOptionUpdated" Type="bit" Nullable="false" />
+    <Property Name="EnabledFreeMessage" Type="bit" />
+    <Property Name="SoundAndMail" Type="bit" />
+    <Property Name="DefaultTalkSessionTime" Type="int" Nullable="false" />
+    <Property Name="IsCanTalk" Type="bit" />
+    <Property Name="DontShowQuickGuide" Type="bit" />
+    <Property Name="StepOptionFlag" Type="bit" />
+    <Property Name="NumberOfMatching" Type="int" />
+    <Property Name="MatchingFrequency" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

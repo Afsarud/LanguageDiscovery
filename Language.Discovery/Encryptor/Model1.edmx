@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserNo" Type="bigint" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" MaxLength="250" />
+          <Property Name="DateOfBirth" Type="datetime" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="20" />
+          <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password2" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="ClassID" Type="int" />
+          <Property Name="UserTypeID" Type="int" />
+          <Property Name="CountryID" Type="int" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="SchoolID" Type="int" />
+          <Property Name="LevelID" Type="int" />
+          <Property Name="IsPalleteVisible" Type="bit" />
+          <Property Name="AfterSchool" Type="bit" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="StatusText" Type="nvarchar" MaxLength="50" />
+          <Property Name="Avatar" Type="nvarchar" MaxLength="50" />
+          <Property Name="NativeLanguage" Type="nvarchar" MaxLength="10" />
+          <Property Name="LearningLanguage" Type="nvarchar" MaxLength="10" />
+          <Property Name="SubNativeLanguage" Type="nvarchar" MaxLength="10" />
+          <Property Name="TeachersName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentsName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastLogin" Type="datetime" />
+          <Property Name="IsOnline" Type="bit" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="10" />
+          <Property Name="Introduction" Type="varchar(max)" />
+          <Property Name="HasAgreedTC" Type="bit" />
+          <Property Name="Theme" Type="nvarchar" MaxLength="50" />
+          <Property Name="GradeID" Type="int" />
+          <Property Name="DontShowVideo" Type="bit" />
+          <Property Name="DontShowNewTab" Type="bit" />
+          <Property Name="Skin" Type="nvarchar" MaxLength="100" />
+          <Property Name="SubNativeLanguage2" Type="nvarchar" MaxLength="10" />
+          <Property Name="AutoActivatedAfterSchool" Type="bit" />
+          <Property Name="ParentsLastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsDemo" Type="bit" />
+          <Property Name="TrialExpirationDate" Type="datetime" />
+          <Property Name="IsRobot" Type="bit" />
+          <Property Name="Reference" Type="nvarchar" MaxLength="250" />
+          <Property Name="SchoolEntry" Type="nvarchar" MaxLength="150" />
+          <Property Name="AllowTalk" Type="bit" Nullable="false" />
+          <Property Name="Furigana" Type="nvarchar" MaxLength="50" />
+          <Property Name="Custom1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Custom2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Custom3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Custom4" Type="nvarchar" MaxLength="50" />
+          <Property Name="Custom5" Type="nvarchar" MaxLength="50" />
+          <Property Name="Note1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Note2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Note3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Note4" Type="nvarchar" MaxLength="50" />
+          <Property Name="Note5" Type="nvarchar" MaxLength="50" />
+          <Property Name="SequenceOptionFlag" Type="bit" />
+          <Property Name="NativeOptionFlag" Type="bit" />
+          <Property Name="SubLanguageOptionFlag" Type="bit" />
+          <Property Name="SubLanguage2OptionFlag" Type="bit" />
+          <Property Name="IsOptionUpdated" Type="bit" Nullable="false" />
+          <Property Name="EnabledFreeMessage" Type="bit" />
+          <Property Name="SoundAndMail" Type="bit" />
+          <Property Name="DefaultTalkSessionTime" Type="int" Nullable="false" />
+          <Property Name="IsCanTalk" Type="bit" />
+          <Property Name="DontShowQuickGuide" Type="bit" />
+          <Property Name="StepOptionFlag" Type="bit" />
+          <Property Name="NumberOfMatching" Type="int" />
+          <Property Name="MatchingFrequency" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserNo" Type="Int64" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DateOfBirth" Type="DateTime" Precision="3" />
+          <Property Name="Telephone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="ClassID" Type="Int32" />
+          <Property Name="UserTypeID" Type="Int32" />
+          <Property Name="CountryID" Type="Int32" />
+          <Property Name="CityID" Type="Int32" />
+          <Property Name="SchoolID" Type="Int32" />
+          <Property Name="LevelID" Type="Int32" />
+          <Property Name="IsPalleteVisible" Type="Boolean" />
+          <Property Name="AfterSchool" Type="Boolean" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="StatusText" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Avatar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NativeLanguage" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="LearningLanguage" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SubNativeLanguage" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="TeachersName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ParentsName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastLogin" Type="DateTime" Precision="3" />
+          <Property Name="IsOnline" Type="Boolean" />
+          <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Introduction" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HasAgreedTC" Type="Boolean" />
+          <Property Name="Theme" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GradeID" Type="Int32" />
+          <Property Name="DontShowVideo" Type="Boolean" />
+          <Property Name="DontShowNewTab" Type="Boolean" />
+          <Property Name="Skin" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SubNativeLanguage2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="AutoActivatedAfterSchool" Type="Boolean" />
+          <Property Name="ParentsLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsDemo" Type="Boolean" />
+          <Property Name="TrialExpirationDate" Type="DateTime" Precision="3" />
+          <Property Name="IsRobot" Type="Boolean" />
+          <Property Name="Reference" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="SchoolEntry" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="AllowTalk" Type="Boolean" Nullable="false" />
+          <Property Name="Furigana" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Custom1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Custom2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Custom3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Custom4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Custom5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Note1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Note2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Note3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Note4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Note5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SequenceOptionFlag" Type="Boolean" />
+          <Property Name="NativeOptionFlag" Type="Boolean" />
+          <Property Name="SubLanguageOptionFlag" Type="Boolean" />
+          <Property Name="SubLanguage2OptionFlag" Type="Boolean" />
+          <Property Name="IsOptionUpdated" Type="Boolean" Nullable="false" />
+          <Property Name="EnabledFreeMessage" Type="Boolean" />
+          <Property Name="SoundAndMail" Type="Boolean" />
+          <Property Name="DefaultTalkSessionTime" Type="Int32" Nullable="false" />
+          <Property Name="IsCanTalk" Type="Boolean" />
+          <Property Name="DontShowQuickGuide" Type="Boolean" />
+          <Property Name="StepOptionFlag" Type="Boolean" />
+          <Property Name="NumberOfMatching" Type="Int32" />
+          <Property Name="MatchingFrequency" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Users" EntityType="Self.User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="Model.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserNo" ColumnName="UserNo" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Password2" ColumnName="Password2" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ClassID" ColumnName="ClassID" />
+                <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+                <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+                <ScalarProperty Name="IsPalleteVisible" ColumnName="IsPalleteVisible" />
+                <ScalarProperty Name="AfterSchool" ColumnName="AfterSchool" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="StatusText" ColumnName="StatusText" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="NativeLanguage" ColumnName="NativeLanguage" />
+                <ScalarProperty Name="LearningLanguage" ColumnName="LearningLanguage" />
+                <ScalarProperty Name="SubNativeLanguage" ColumnName="SubNativeLanguage" />
+                <ScalarProperty Name="TeachersName" ColumnName="TeachersName" />
+                <ScalarProperty Name="ParentsName" ColumnName="ParentsName" />
+                <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+                <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Introduction" ColumnName="Introduction" />
+                <ScalarProperty Name="HasAgreedTC" ColumnName="HasAgreedTC" />
+                <ScalarProperty Name="Theme" ColumnName="Theme" />
+                <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+                <ScalarProperty Name="DontShowVideo" ColumnName="DontShowVideo" />
+                <ScalarProperty Name="DontShowNewTab" ColumnName="DontShowNewTab" />
+                <ScalarProperty Name="Skin" ColumnName="Skin" />
+                <ScalarProperty Name="SubNativeLanguage2" ColumnName="SubNativeLanguage2" />
+                <ScalarProperty Name="AutoActivatedAfterSchool" ColumnName="AutoActivatedAfterSchool" />
+                <ScalarProperty Name="ParentsLastName" ColumnName="ParentsLastName" />
+                <ScalarProperty Name="IsDemo" ColumnName="IsDemo" />
+                <ScalarProperty Name="TrialExpirationDate" ColumnName="TrialExpirationDate" />
+                <ScalarProperty Name="IsRobot" ColumnName="IsRobot" />
+                <ScalarProperty Name="Reference" ColumnName="Reference" />
+                <ScalarProperty Name="SchoolEntry" ColumnName="SchoolEntry" />
+                <ScalarProperty Name="AllowTalk" ColumnName="AllowTalk" />
+                <ScalarProperty Name="Furigana" ColumnName="Furigana" />
+                <ScalarProperty Name="Custom1" ColumnName="Custom1" />
+                <ScalarProperty Name="Custom2" ColumnName="Custom2" />
+                <ScalarProperty Name="Custom3" ColumnName="Custom3" />
+                <ScalarProperty Name="Custom4" ColumnName="Custom4" />
+                <ScalarProperty Name="Custom5" ColumnName="Custom5" />
+                <ScalarProperty Name="Note1" ColumnName="Note1" />
+                <ScalarProperty Name="Note2" ColumnName="Note2" />
+                <ScalarProperty Name="Note3" ColumnName="Note3" />
+                <ScalarProperty Name="Note4" ColumnName="Note4" />
+                <ScalarProperty Name="Note5" ColumnName="Note5" />
+                <ScalarProperty Name="SequenceOptionFlag" ColumnName="SequenceOptionFlag" />
+                <ScalarProperty Name="NativeOptionFlag" ColumnName="NativeOptionFlag" />
+                <ScalarProperty Name="SubLanguageOptionFlag" ColumnName="SubLanguageOptionFlag" />
+                <ScalarProperty Name="SubLanguage2OptionFlag" ColumnName="SubLanguage2OptionFlag" />
+                <ScalarProperty Name="IsOptionUpdated" ColumnName="IsOptionUpdated" />
+                <ScalarProperty Name="EnabledFreeMessage" ColumnName="EnabledFreeMessage" />
+                <ScalarProperty Name="SoundAndMail" ColumnName="SoundAndMail" />
+                <ScalarProperty Name="DefaultTalkSessionTime" ColumnName="DefaultTalkSessionTime" />
+                <ScalarProperty Name="IsCanTalk" ColumnName="IsCanTalk" />
+                <ScalarProperty Name="DontShowQuickGuide" ColumnName="DontShowQuickGuide" />
+                <ScalarProperty Name="StepOptionFlag" ColumnName="StepOptionFlag" />
+                <ScalarProperty Name="NumberOfMatching" ColumnName="NumberOfMatching" />
+                <ScalarProperty Name="MatchingFrequency" ColumnName="MatchingFrequency" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
