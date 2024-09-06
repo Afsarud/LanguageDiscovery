@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Language.DB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{6c1dffa6-8818-4186-839b-a9525e9d558d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Language.DB</RootNamespace>
+    <AssemblyName>Language.DB</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="19.3" />
+    <Folder Include="19.7" />
+    <Folder Include="19.7.2" />
+    <Folder Include="19.10" />
+    <Folder Include="20.01" />
+    <Folder Include="20.02" />
+    <Folder Include="20.5" />
+    <Folder Include="20.09" />
+    <Folder Include="21.3" />
+    <Folder Include="21.4" />
+    <Folder Include="21.5" />
+    <Folder Include="jobs" />
+    <Folder Include="21.7" />
+    <Folder Include="21.9" />
+    <Folder Include="21.9.2" />
+    <Folder Include="21.10" />
+    <Folder Include="21.10\NewFolder1\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="21.10.2" />
+    <Folder Include="21.12" />
+    <Folder Include="22.01" />
+    <Folder Include="22.02" />
+    <Folder Include="22.02.2" />
+    <Folder Include="22.03" />
+    <Folder Include="22.03.2" />
+    <Folder Include="22.4" />
+    <Folder Include="22.4.2" />
+    <Folder Include="22.5" />
+    <Folder Include="22.6" />
+    <Folder Include="22.7" />
+    <Folder Include="22.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="04182017__usp_UpdateWords.sql" />
+    <None Include="04182017_usp_Authenticate.sql" />
+    <None Include="04182017_usp_GetMessageTrailBySenderID.sql" />
+    <None Include="04182017_usp_SaveMessage.sql" />
+    <None Include="04182017_usp_UpdateSchool.sql" />
+    <None Include="04182017_usp_GetPaletteDetails.sql" />
+    <None Include="04182017_usp_SearchPhrase_dynamic_2.sql" />
+    <None Include="04182017_usp_UpdatePalette_New.sql" />
+    <None Include="04182017_usp_SearchWord_dynamic_2.sql" />
+    <None Include="Data.sql" />
+    <None Include="04182017_usp_DiscoverNewFriends.sql" />
+    <None Include="04182017_usp_GetPhraseCategoryDetailsByHeaderID.sql" />
+    <None Include="04182017_usp_GetSchoolByID.sql" />
+    <None Include="04182017_usp_GetUserDetailsByUserName.sql" />
+    <None Include="04182017_usp_InsertBulkUser.sql" />
+    <None Include="04182017_usp_InsertSchool.sql" />
+    <None Include="04182017_usp_InsertUpdateBulkUser.sql" />
+    <None Include="04182017_usp_InsertUser.sql" />
+    <None Include="04182017_usp_UpdatePhraseCategory.sql" />
+    <None Include="04182017_usp_UpdateUser.sql" />
+    <None Include="04222017_usp_SendAutoMail.sql" />
+    <None Include="04232017_Data_Copy_Palette.sql" />
+    <None Include="Copy Chinese palette.sql" />
+    <None Include="Insert category.sql" />
+    <None Include="05032017_Insert Palette.sql" />
+    <None Include="05032017_Insert Sentence.sql" />
+    <None Include="05032017_Insert Phrase.sql" />
+    <None Include="05312017_insert_wordheader.sql" />
+    <None Include="05032017_insert word.sql" />
+    <None Include="05122017_usp_BulkInsertPalette.sql" />
+    <None Include="05152017_usp_SearchWordAdmin.sql" />
+    <None Include="05172017_usp_DiscoverNewFriends.sql" />
+    <None Include="05182017_Data.sql" />
+    <None Include="05182017_usp_InsertSchool.sql" />
+    <None Include="05182017_usp_UpdateSchool.sql" />
+    <None Include="05182017_usp_GetSchoolByID.sql" />
+    <None Include="05182017_usp_GetUserDetailsByUserName.sql" />
+    <None Include="05222017_usp_Authenticate.sql" />
+    <None Include="05222017_usp_GetMessageTrailBySenderID.sql" />
+    <None Include="05242017_usp_SendAutoMail.sql" />
+    <None Include="05282017_usp_BulkInsertPalette.sql" />
+    <None Include="05292017_usp_BulkInsertWords.sql" />
+    <None Include="05292017_usp_SearchWordAdmin.sql" />
+    <None Include="06022017_usp_Authenticate.sql" />
+    <None Include="06062017_usp_SendAutoMail.sql" />
+    <None Include="07032017_Data.sql" />
+    <None Include="07032017_usp_SearchPhrase_dynamic_2.sql" />
+    <None Include="07032017_usp_UpdatePalette_new.sql" />
+    <None Include="07132017_usp_SetMessageAsReviewed.sql" />
+    <None Include="07052017_usp_SearchWord_dynamic_2.sql" />
+    <None Include="07182017_usp_DeletePhraseCategory.sql" />
+    <None Include="07192017_data.sql" />
+    <None Include="08032017_usp_SearchPhrase_dynamic_3.sql" />
+    <None Include="08032017_usp_SearchWord_dynamic_3.sql" />
+    <None Include="08042017_usp_SearchPhrase_dynamic_4.sql" />
+    <None Include="08052017_usp_SearchUserWithMessage.sql" />
+    <None Include="08262017_usp_SaveMessage.sql" />
+    <None Include="08262017_usp_MarkMessageAsRead.sql" />
+    <None Include="09112017_usp_GetMailMessages.sql" />
+    <None Include="09172017_usp_GetMessageDetailByUserMailID.sql" />
+    <None Include="09232017_usp_GetMessageTrailBySenderID.sql" />
+    <None Include="11092017_schema_data.sql" />
+    <None Include="11142017_usp_DiscoverNewFriends.sql" />
+    <None Include="11182017_usp_GetPhraseCategory.sql" />
+    <None Include="11182017_usp_GetTopCategoryList.sql" />
+    <None Include="11182017_usp_SearchWord_dynamic_3.sql" />
+    <None Include="11192017_usp_GetLatestMessage.sql" />
+    <None Include="11212017_usp_SearchWord_dynamic_3.sql" />
+    <None Include="06122018_usp_Authenticate.sql" />
+    <None Include="06122018_usp_InsertSchool.sql" />
+    <None Include="06122018_usp_InsertUser.sql" />
+    <None Include="06122018_usp_UpdateSchool.sql" />
+    <None Include="06122018_usp_UpdateUser.sql" />
+    <None Include="06122018_UpdateTable.sql" />
+    <None Include="08292018_Update Table.sql" />
+    <None Include="08292018_usp_UserSaveOptions.sql" />
+    <None Include="08292018_usp_UpdateSchool.sql" />
+    <None Include="08292018_usp_UpdateUser.sql" />
+    <None Include="08292018_usp_InsertUser.sql" />
+    <None Include="08292018_usp_InsertSchool.sql" />
+    <None Include="08292018_usp_GetUserDetailsByUserName.sql" />
+    <None Include="08292018_usp_GetSchoolByID.sql" />
+    <None Include="08292018_usp_Authenticate.sql" />
+    <None Include="09082018_usp_SendAutoMail.sql" />
+    <None Include="09082018_usp_DiscoverNewFriends.sql" />
+    <None Include="09112018_UpdateTable.sql" />
+    <None Include="09112018_usp_InsertWords.sql" />
+    <None Include="09112018_usp_UpdateWords.sql" />
+    <None Include="09112018_usp_GetWordDetails.sql" />
+    <None Include="09112018_usp_BulkInsertWords.sql" />
+    <None Include="09122018_usp_UpdatePalette_New.sql" />
+    <None Include="09122018_usp_GetPaletteDetails.sql" />
+    <None Include="09142018_usp_SearchWord_dynamic_3.sql" />
+    <None Include="09142018_usp_SearchPhrase_dynamic_3.sql" />
+    <None Include="09152018_usp_SearchWordAdmin.sql" />
+    <None Include="09202018_usp_GetPhraseCategory.sql" />
+    <None Include="09282018_usp_GetRandomSuggestion.sql" />
+    <None Include="10042018_update tables.sql" />
+    <None Include="10042018_usp_SearchWord_dynamic_3.sql" />
+    <None Include="10242018_usp_SearchPhrase_dynamic_4.sql" />
+    <None Include="10272018_usp_SearchPhrase_dynamic_5.sql" />
+    <None Include="19.3\CreateTable.sql" />
+    <None Include="19.3\usp_SaveMessageForLaterUse.sql" />
+    <None Include="19.3\usp_GetSavedMessage.sql" />
+    <None Include="19.3\usp_ClearSavedMessage.sql" />
+    <None Include="19.3\usp_InsertWords.sql" />
+    <None Include="19.3\AlterTable.sql" />
+    <None Include="19.3\usp_SearchWord_dynamic_UserCreated.sql" />
+    <None Include="19.3\usp_SearchWord_dynamic_3.sql" />
+    <None Include="19.7\NewTable.sql" />
+    <None Include="19.7\usp_InsertTalkSubscription.sql" />
+    <None Include="19.7\usp_UpdateTalkSubscription.sql" />
+    <None Include="19.7\usp_InsertTalkHistory.sql" />
+    <None Include="19.7\usp_GetTalkSubscription.sql" />
+    <None Include="19.7.2\altertable.sql" />
+    <None Include="19.7.2\usp_UpdateTalkStatus.sql" />
+    <None Include="19.7.2\usp_Authenticate.sql" />
+    <None Include="19.7.2\usp_GetUserDetailsByUserName.sql" />
+    <None Include="19.7.2\usp_SearchUserWithMessage.sql" />
+    <None Include="19.7.2\usp_InsertConferenceRoom.sql" />
+    <None Include="19.7.2\usp_DeleteConferenceRoom.sql" />
+    <None Include="19.7.2\usp_GetConferenceRoomList.sql" />
+    <None Include="19.7.2\usp_UpdateTalkSubscription.sql" />
+    <None Include="20.01\usp_GetUserByID.sql" />
+    <None Include="20.01\usp_GetSchoolByID.sql" />
+    <None Include="20.01\usp_InsertUser.sql" />
+    <None Include="20.01\usp_UpdateUser.sql" />
+    <None Include="20.01\usp_UpdateSchool.sql" />
+    <None Include="20.01\usp_InsertUser_1.sql" />
+    <None Include="20.01\table.sql" />
+    <None Include="20.01\usp_UpdateSchoolTotalTime.sql" />
+    <None Include="20.01\usp_Authenticate.sql" />
+    <None Include="20.02\usp_SendAutoMail.sql" />
+    <None Include="20.02\usp_GetSchoolList.sql" />
+    <None Include="20.5\usp_SaveMessage.sql" />
+    <None Include="20.5\usp_GetMailExchangeLog.sql" />
+    <None Include="20.5\usp_SendAutoMail.sql" />
+    <None Include="20.5\tables.sql" />
+    <None Include="20.5\usp_GetConferenceRoomList.sql" />
+    <None Include="20.5\usp_InsertConferenceRoom.sql" />
+    <None Include="20.5\usp_InsertNewUserRegistration.sql" />
+    <None Include="20.5\usp_UpdateNewUserRegistration.sql" />
+    <None Include="20.5\usp_GetTeacherRegistration.sql" />
+    <None Include="20.5\usp_RegisterUser.sql" />
+    <None Include="20.5\usp_UpdateUserDontShowQuickGuide.sql" />
+    <None Include="20.5\usp_GetUserDetailsByUserName.sql" />
+    <None Include="20.5\usp_Authenticate.sql" />
+    <None Include="20.5\usp_GetSchoolByID.sql" />
+    <None Include="20.5\usp_RegisterUser_1.sql" />
+    <None Include="20.09\tables.sql" />
+    <None Include="20.09\usp_InsertUserPalette.sql" />
+    <None Include="20.09\usp_DeleteUserPalette.sql" />
+    <None Include="20.09\usp_GetUserPalette.sql" />
+    <None Include="21.4\usp_GetAllTimeSchedule.sql" />
+    <None Include="21.4\usp_GetScheduleByDate.sql" />
+    <None Include="21.4\usp_GetScheduleByDateAndId.sql" />
+    <None Include="21.4\usp_GetNonMatchedScheduleByDateAndId.sql" />
+    <None Include="21.4\usp_CreateMatch.sql" />
+    <None Include="21.4\TABLES.sql" />
+    <None Include="21.4\usp_GetScheduleById.sql" />
+    <None Include="21.4\usp_CancelSchedule.sql" />
+    <None Include="21.4\usp_GetScheduleByUserId.sql" />
+    <None Include="21.4\usp_Authenticate.sql" />
+    <None Include="21.4\usp_UpdateUser.sql" />
+    <None Include="21.4\usp_InsertUser.sql" />
+    <None Include="21.4\usp_GetPartnerToDisplayInTalk.sql" />
+    <None Include="21.4\usp_GetUserAvailablePerMonth.sql" />
+    <None Include="21.4\usp_GetScheduleByDateAndUserId.sql" />
+    <None Include="21.4\usp_GetMySchedule.sql" />
+    <None Include="21.5\usp_UpdateSchedule.sql" />
+    <None Include="21.5\usp_CreateNewSchedule.sql" />
+    <None Include="21.5\usp_DeleteSchedule.sql" />
+    <None Include="jobs\database backup.sql" />
+    <None Include="jobs\update user rank.sql" />
+    <None Include="jobs\user monitor agent.sql" />
+    <None Include="21.7\usp_GetUserDetails.sql" />
+    <None Include="21.7\usp_Authenticate.sql" />
+    <None Include="21.7\usp_GetUserDetailsByUserName.sql" />
+    <None Include="21.7\usp_UserSaveOptions.sql" />
+    <None Include="21.7\table.sql" />
+    <None Include="21.7\usp_InsertUser.sql" />
+    <None Include="21.7\usp_InsertSchool.sql" />
+    <None Include="21.7\usp_UpdateUser.sql" />
+    <None Include="21.7\usp_UpdateSchool.sql" />
+    <None Include="21.7\usp_GetSchoolByID.sql" />
+    <None Include="21.9\usp_Authenticate.sql" />
+    <None Include="21.9\usp_GetUserDetailsByUserName.sql" />
+    <None Include="21.9\table.sql" />
+    <None Include="21.9\usp_InsertBulkUser.sql" />
+    <None Include="21.9\usp_InsertUpdateBulkUser.sql" />
+    <None Include="21.9\usp_InsertBulkUser_1.sql" />
+    <None Include="21.9\usp_GetScheduleByUserId.sql" />
+    <None Include="21.9.2\usp_InsertUpdateCustomSchedule.sql" />
+    <None Include="21.9.2\usp_DeleteCustomSchedule.sql" />
+    <None Include="21.9.2\usp_GetCustomSchedule.sql" />
+    <None Include="21.9.2\usp_GetCustomScheduleByDate.sql" />
+    <None Include="21.9.2\usp_GetAllTimeSchedule.sql" />
+    <None Include="21.10\usp_GetScheduleForAdmin.sql" />
+    <None Include="21.10\usp_GetScheduleByUserId.sql" />
+    <None Include="21.10\usp_SearchUserAdmin.sql" />
+    <None Include="21.10\usp_InsertUser.sql" />
+    <None Include="21.10\usp_UpdateUser.sql" />
+    <None Include="21.10.2\table.sql" />
+    <None Include="21.10.2\usp_Authenticate.sql" />
+    <None Include="21.10.2\usp_GetUserLoginReports.sql" />
+    <None Include="21.10.2\usp_GetUserDetailsByUserName.sql" />
+    <None Include="21.10.2\usp_UpdateUser.sql" />
+    <None Include="21.10.2\usp_InsertUser.sql" />
+    <None Include="21.10.2\usp_ChangePassword.sql" />
+    <None Include="21.10.2\usp_UpdateUserOtherInfo.sql" />
+    <None Include="21.10.2\usp_InsertBulkUser.sql" />
+    <None Include="21.10.2\usp_InsertUpdateBulkUser.sql" />
+    <None Include="21.10.2\alltime.sql" />
+    <None Include="21.12\usp_GetMatchByScheduleId.sql" />
+    <None Include="21.12\table.sql" />
+    <None Include="21.12\usp_GetMySchedule.sql" />
+    <None Include="21.12\usp_CreateMatch.sql" />
+    <None Include="21.12\usp_CancelSchedule.sql" />
+    <None Include="21.12\usp_UpdateSchedule.sql" />
+    <None Include="21.12\usp_ConfirmSchedule.sql" />
+    <None Include="21.12\usp_CreateNewSchedule.sql" />
+    <None Include="21.12\usp_GetScheduleForAdmin.sql" />
+    <None Include="21.12\usp_SaveComment.sql" />
+    <None Include="21.12\usp_GetScheduleByUserId.sql" />
+    <None Include="21.12\usp_GetScheduleForReport.sql" />
+    <None Include="22.01\usp_GetPartnerToDisplayInTalk.sql" />
+    <None Include="22.01\usp_GetScheduleForAdmin.sql" />
+    <None Include="22.01\usp_CreateMatch.sql" />
+    <None Include="22.01\usp_ConfirmSchedule.sql" />
+    <None Include="22.02\usp_ConfirmSchedule.sql" />
+    <None Include="22.02\usp_InsertUpdateCustomSchedule.sql" />
+    <None Include="22.02\usp_GetUserLoginReports.sql" />
+    <None Include="22.02.2\usp_GetUserDetailsByUserName.sql" />
+    <None Include="22.02.2\usp_Authenticate.sql" />
+    <None Include="22.02.2\usp_UpdateUserParentsInfo.sql" />
+    <None Include="22.02.2\table.sql" />
+    <None Include="22.02.2\usp_InsertUser.sql" />
+    <None Include="22.02.2\usp_UpdateUser.sql" />
+    <None Include="22.03\table.sql" />
+    <None Include="22.03\usp_InsertUserAttendance.sql" />
+    <None Include="22.03\usp_GetMessageLikeRanking.sql" />
+    <None Include="22.03.2\table.sql" />
+    <None Include="22.03.2\usp_InsertUserOtherPoints.sql" />
+    <None Include="22.03.2\usp_InsertUpdateBulkUser.sql" />
+    <None Include="22.03.2\usp_InsertSchool.sql" />
+    <None Include="22.03.2\usp_UpdateSchool.sql" />
+    <None Include="22.03.2\usp_GetSchoolByID.sql" />
+    <None Include="22.03.2\usp_GetSchoolByID_1.sql" />
+    <None Include="22.4\table.sql" />
+    <None Include="22.4\usp_CreateMatch.sql" />
+    <None Include="22.4\usp_GetScheduleByUserId.sql" />
+    <None Include="22.4\usp_GetPhraseCategory.sql" />
+    <None Include="22.4\usp_InsertPhraseCategory.sql" />
+    <None Include="22.4\usp_UpdatePhraseCategory.sql" />
+    <None Include="22.4.2\usp_GetMatchByScheduleId.sql" />
+    <None Include="22.4.2\usp_CreateMatch.sql" />
+    <None Include="22.5\table.sql" />
+    <None Include="22.5\usp_UpdateSchool.sql" />
+    <None Include="22.5\usp_InsertSchool.sql" />
+    <None Include="22.5\usp_GetSchoolByID.sql" />
+    <None Include="22.5\usp_GetUserDetailsByUserName.sql" />
+    <None Include="22.6\usp_GetMessageLikeRanking.sql" />
+    <None Include="22.7\table.sql" />
+    <None Include="22.7\usp_InsertConferenceRoom.sql" />
+    <None Include="22.7\usp_InsertSchool.sql" />
+    <None Include="22.7\usp_UpdateSchool.sql" />
+    <None Include="22.7\usp_GetSchoolByID.sql" />
+    <None Include="22.8\usp_InsertUser.sql" />
+    <None Include="22.8\usp_UpdateUser.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="11122017_usp_SearchPhrase_dynamic_3.sql" />
+    <None Include="11182017_usp_DiscoverNewFriends.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="19.10\final.sql" />
+    <None Include="19.10\getmessagelikeranking.sql" />
+    <None Include="19.10\job.sql" />
+    <None Include="19.10\new script1.sql" />
+    <None Include="19.10\newtable.sql" />
+    <None Include="19.10\usp_DiscoverNewFriends.sql" />
+    <None Include="20.02\table.sql" />
+    <None Include="20.02\usp_SaveMessage.sql" />
+    <None Include="21.3\table.sql" />
+    <None Include="21.3\usp_BulkInsertWords.sql" />
+    <None Include="21.3\usp_InsertWords.sql" />
+    <None Include="21.3\usp_SearchWord_dynamic_3.sql" />
+    <None Include="21.3\usp_SearchWord_dynamic_UserCreated.sql" />
+    <None Include="21.3\usp_UpdateWords.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="21.12\usp_GetUserDetailsByUserName.sql" />
+    <None Include="21.12\usp_UpdateTalkSessionTimeByUserName.sql" />
+  </ItemGroup>
+</Project>

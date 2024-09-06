@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[UserAttendance](
+	[UserAttendanceId] [int] IDENTITY(1,1) NOT NULL,
+	[UserID] [int] NOT NULL,
+	[Schedule] [datetime] NOT NULL,
+	[Score] [int] NOT NULL,
+	[CreateDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_UserAttendance] PRIMARY KEY CLUSTERED 
+(
+	[UserAttendanceId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
