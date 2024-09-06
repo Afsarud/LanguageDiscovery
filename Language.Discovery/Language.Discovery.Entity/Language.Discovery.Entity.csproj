@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A261FB1-E293-4E1D-B470-D8A818616EC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Language.Discovery.Entity</RootNamespace>
+    <AssemblyName>Language.Discovery.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contract\AboutMeContract.cs" />
+    <Compile Include="Contract\UserAttendanceContract.cs" />
+    <Compile Include="Contract\CityContract.cs" />
+    <Compile Include="Contract\ClassContract.cs" />
+    <Compile Include="Contract\ConferenceRoomContract.cs" />
+    <Compile Include="Contract\CustomScheduleContract.cs" />
+    <Compile Include="Contract\FreeMessageContract.cs" />
+    <Compile Include="Contract\ICustomFields.cs" />
+    <Compile Include="Contract\MatchContract.cs" />
+    <Compile Include="Contract\ScheduleContractExt.cs" />
+    <Compile Include="Contract\UserOtherPointsContract.cs" />
+    <Compile Include="Contract\ZendeskCustomTicketFieldsOption.cs" />
+    <Compile Include="Contract\ZendeskCustomTicketFields.cs" />
+    <Compile Include="Contract\ZendeskTags.cs" />
+    <Compile Include="Contract\TimeScheduleAuxContract.cs" />
+    <Compile Include="Contract\ScheduleContract.cs" />
+    <Compile Include="Contract\UserFrequencyContract.cs" />
+    <Compile Include="Contract\WordReplace.cs" />
+    <Compile Include="Contract\SchoolTypeContract.cs" />
+    <Compile Include="Contract\GradeContract.cs" />
+    <Compile Include="Contract\FilterContract.cs" />
+    <Compile Include="Contract\InfoContract.cs" />
+    <Compile Include="Contract\LanguageContract.cs" />
+    <Compile Include="Contract\InterestContract.cs" />
+    <Compile Include="Contract\LevelContract.cs" />
+    <Compile Include="Contract\PhraseCategoryHeaderContract.cs" />
+    <Compile Include="Contract\SchoolContract.cs" />
+    <Compile Include="Contract\TeacherRegistrationContract.cs" />
+    <Compile Include="Contract\TopCategoryContract.cs" />
+    <Compile Include="Contract\UserAboutMeContract.cs" />
+    <Compile Include="Contract\UserInterestContract.cs" />
+    <Compile Include="Contract\UserMessageContract.cs" />
+    <Compile Include="Contract\UserMessageLikeRankingContract.cs" />
+    <Compile Include="Contract\UserSearchContract.cs" />
+    <Compile Include="Contract\CountryContract.cs" />
+    <Compile Include="Contract\UserFriendsContract.cs" />
+    <Compile Include="Contract\PaletteContract.cs" />
+    <Compile Include="Contract\PhotoContract.cs" />
+    <Compile Include="Contract\PhotoContractExtended.cs" />
+    <Compile Include="Contract\PhraseCategoryContract.cs" />
+    <Compile Include="Contract\PhraseContract.cs" />
+    <Compile Include="Contract\UserContract.cs" />
+    <Compile Include="Contract\PeopleSearchContract.cs" />
+    <Compile Include="Contract\UserTypeContract.cs" />
+    <Compile Include="Contract\VIPContract.cs" />
+    <Compile Include="Contract\WhoLikedMeContract.cs" />
+    <Compile Include="Contract\WordContract.cs" />
+    <Compile Include="Contract\WordHeaderContract.cs" />
+    <Compile Include="Contract\ZendeskTicket.cs" />
+    <Compile Include="Contract\ZendeskUsers.cs" />
+    <Compile Include="DTO\DiscoverNewFriendsDTO.cs" />
+    <Compile Include="DTO\MessageSearchDTO.cs" />
+    <Compile Include="DTO\PhotoDTO.cs" />
+    <Compile Include="DTO\SearchDTO.cs" />
+    <Compile Include="Contract\Phrase.cs" />
+    <Compile Include="DTO\SearchInfoDTO.cs" />
+    <Compile Include="DTO\SearchSchoolDTO.cs" />
+    <Compile Include="DTO\SearchUserDTO.cs" />
+    <Compile Include="DTO\testDTO.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DTO\UserTalkHistory.cs" />
+    <Compile Include="Contract\UserTalkSubscription.cs" />
+    <Compile Include="EnumerationList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Contract\Sentence.cs" />
+    <Compile Include="Contract\SuggestionContract.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="Contract\SentenceSound.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
