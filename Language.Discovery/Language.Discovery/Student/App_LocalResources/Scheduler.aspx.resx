@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="hdnCancelBookedButtonResource1.Value" xml:space="preserve">
+    <value>Booked</value>
+  </data>
+  <data name="hdnCancelButtonResource1.Value" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="hdnCancelMessageResource1.Value" xml:space="preserve">
+    <value>This time is booked for your Palaygo Talk session! &lt;br/&gt;Please make sure you check the booking confirmation email and go through the Checklist before the session date.&lt;br/&gt;
+If you are thinking of cancelling the booking, please reconsider as it will affect your partner’s schedule too. &lt;br/&gt;If you really need to cancel for a particular reason, please contact us through this form.&lt;br&gt; &lt;a style="color:blue;" target="_blank" href="https://www.palaygo.net.au/member-contact-page-1/"&gt;Member Contact Page&lt;/a&gt;</value>
+  </data>
+  <data name="hdnCancelRegisteredTooltipResource1.Value" xml:space="preserve">
+    <value>This time is registered as your available time for a Palaygo Talk session awaiting your partner to book. If you need to cancel the registration, please click this button.</value>
+  </data>
+  <data name="hdnCancelRegisterMessageResource1.Value" xml:space="preserve">
+    <value>Are you sure you want to cancel the registration?</value>
+  </data>
+  <data name="hdnCancelResource1.Value" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="hdnDontCancelResource1.Value" xml:space="preserve">
+    <value>Don't Cancel</value>
+  </data>
+  <data name="hdnMatchButtonResource1.Value" xml:space="preserve">
+    <value>Book</value>
+  </data>
+  <data name="hdnMatchCountLabelResource1.Value" xml:space="preserve">
+    <value>Bookings Made for {0} : {1}</value>
+  </data>
+  <data name="hdnMatchMessageResource1.Value" xml:space="preserve">
+    <value>Please press OK to complete your booking.</value>
+  </data>
+  <data name="hdnOkCancelResource1.Value" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="hdnOkResource1.Value" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="hdnRegisterButtonResource1.Value" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="hdnRegisterMessageResource1.Value" xml:space="preserve">
+    <value>Are you sure you want to Register at this Date and Time?</value>
+  </data>
+  <data name="hdnRemainingMatchLabelResource1.Value" xml:space="preserve">
+    <value>Remaining Bookings for {0} : {1}</value>
+  </data>
+  <data name="hdnSlotsAvailableResource1.Value" xml:space="preserve">
+    <value>Waiting for {0} users</value>
+  </data>
+  <data name="lblDateTimeResource1.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="lblMyScheduleResource1.Text" xml:space="preserve">
+    <value>My Schedule</value>
+  </data>
+  <data name="lblMyScheduleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectDateResource1.Text" xml:space="preserve">
+    <value>① Select Date</value>
+  </data>
+  <data name="lblSelectDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectTimeSlotResource1.Text" xml:space="preserve">
+    <value>② Select Time Slot</value>
+  </data>
+  <data name="lblSelectTimeSlotResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTimeResource1.Text" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="lblWithPartnerResource1.Text" xml:space="preserve">
+    <value>Partner Booked</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Talk Scheduler- Language Discovery</value>
+  </data>
+  <data name="lblInformationResource1.Text" xml:space="preserve">
+    <value>It's your first time registering/booking.. - welcome! Please enter your contactable name and phone number below to continue.</value>
+  </data>
+  <data name="lblOtherInformation1Resource1.Text" xml:space="preserve">
+    <value>We need this information so that the Palaygo Team can contact you if urgently needed.</value>
+  </data>
+  <data name="lblOtherInformation2Resource1.Text" xml:space="preserve">
+    <value>Our privacy policy applies, it can be seen here: &lt;a  style='text-decoration:underline; color:blue;'  href="https://www.palaygo.net.au/j/privacy/" target="_blank"&gt;https://www.palaygo.net.au/j/privacy/&lt;/a&gt;</value>
+  </data>
+  <data name="lblOtherInformation3Resource1.Text" xml:space="preserve">
+    <value>Thanks so much and enjoy your sessions!</value>
+  </data>
+  <data name="lblParentsNameResource1.Text" xml:space="preserve">
+    <value>Contactable Name:</value>
+  </data>
+  <data name="lblPhoneNumberResource1.Text" xml:space="preserve">
+    <value>Contactable Phone Number:</value>
+  </data>
+</root>

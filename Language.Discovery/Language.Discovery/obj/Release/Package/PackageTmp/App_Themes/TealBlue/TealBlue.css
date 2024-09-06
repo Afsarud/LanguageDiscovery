@@ -1,0 +1,66 @@
+﻿ .body_main_frame_ML {
+            background-color:#336699 !important;
+            color:white;
+        }
+            .profile_left_Container  span{
+                color:white;
+            }
+        .prof_top_container span {
+            color:white;
+        }
+        .prof_MyPhoto_Container span {
+            color:white;
+        }
+        #tabs label{
+            color:white !important;
+        }
+        .ui-widget-content {
+            background-color:transparent !important;
+            background:none;
+        }
+        .ui-widget-content span{
+            color:white;
+        }
+        .ui-widget-content a{
+            color:white;
+        }
+        .ui-widget-header {
+            background:none;
+        }
+            .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+                background:none;
+            }
+            .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default a {
+                color:white;
+            }
+            .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+                background:#3774b0 !important;
+            }
+            .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active a {
+                color:white;
+            }
+        .prof_top_con_txtupdatemystatus_box {
+            background:none;
+            color:white;
+        }
+
+        .ui-dialog > .ui-widget-header {background: #f9f8f8 url(images/ui-bg_flat_75_f9f8f8_40x100.png) 50% 50% repeat-x !important; background-color: #f9f8f8 !important;}
+          .ui-dialog > .ui-widget-content {background:#f9f8f8 url(images/ui-bg_flat_75_f9f8f8_40x100.png) 50% 50% repeat-x !important; background-color: #f9f8f8 !important;}
+        .ui-dialog-title {
+            color:black !important;
+        }
+          .ui-dialog > .ui-widget-content span {
+            color:black !important;
+        }
+
+.description_content {
+    background-color:skyblue !important;
+}
+.tcp_lbl_title span {
+    color:white !important;
+}
+
+.tcp_lbl_title_container  span{
+    color:white !important;
+}
+

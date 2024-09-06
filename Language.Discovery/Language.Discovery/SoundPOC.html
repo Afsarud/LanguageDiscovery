@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js" type="text/javascript" language="javascript"></script>
+    <script>
+        
+        function y() {
+
+
+            //var sounds = [$('#txt1').val(), $('#txt2').val(), $('#txt3').val(), $('#txt4').val(), $('#txt5').val(), $('#txt6').val(), $('#txt7').val(), $('#txt8').val()];
+            var sounds = [$('#txt1').val(), $('#txt2').val(), $('#txt3').val()];
+            debugger;
+            var soundscount = sounds.length;
+            if (soundscount > 0) {
+                var myaudio = [];
+                var next = 0;
+                for (var i = 0; i < soundscount; i++) {
+                    myaudio[i] = new Audio('content/sound/' + sounds[i]);
+                    myaudio[i].load();
+                }
+                debugger;
+                function playnext(element, index) {
+                    if (next == myaudio.length) {
+                        return;
+                    }
+                    $(element).on('ended', function () {
+                        debugger;
+                        next = next + 1;
+                        if (next == myaudio.length) {
+                            alert('added 2');
+                            return;
+                        }
+                        if (myaudio[next].readyState == 0) {
+                            next = next + 1;
+                            playnext($(element), index);
+                            return;
+                        }
+                        myaudio[next].play();
+                    }).on("error", function () {
+                        alert('error');
+                        next = next + 1;
+                        myaudio[next].play();
+                    });
+                };
+
+                myaudio.forEach(playnext);
+                myaudio[0].play();
+
+            } else {
+                alert('added 3');
+            }
+
+        }
+        function Play() {
+            //var sound = new buzz.sound("basketball.mp3");
+            debugger;
+            var sounds = [$('#txt1').val(), $('#txt2').val(), $('#txt3').val(), $('#txt4').val(), $('#txt5').val(), $('#txt6').val(), $('#txt7').val(), $('#txt8').val()];
+            PlayNext(sounds,0);
+            //sound.load();
+            //sound.play();
+            //var sounds = ['I.mp3', 'play.mp3', 'basketball.mp3'];
+
+            //$.each(sounds, function (index, item) {
+            //    var sound = new buzz.sound(item);
+            //    sound.load();
+            //    sound.bind("ended", function () {
+            //        if (index > 0) {
+            //            sound.play();
+            //        }
+            //    });
+            //    if (index == 0)
+            //        sound.play();
+            //});
+            //var mySound1 = new buzz.sound("I.mp3"),
+            //    mySound2 = new buzz.sound("play.mp3"),
+            //mySound3 = new buzz.sound("basketball.mp3");
+            //buzz.all().play();
+            //var myGroup = new buzz.group([
+            //mySound1,
+            //mySound2,
+            //mySound3
+            //]);
+            //myGroup.load();
+            //myGroup.play().fadeIn();
+
+        }
+
+        function PlayNext(sounds, index) {
+            if (index == sounds.length) {
+                debugger;
+                $('#divTest').children().each(function() {
+                    alert($(this)[0].id);
+                });
+                //send message
+                return;
+            }
+                
+            if (sounds[index] == "") {
+                index = index + 1;
+                PlayNext(sounds, index);
+
+            } else {
+
+
+                var sound = new buzz.sound('Content/Sound/' + sounds[index]);
+                sound.load();
+                sound.bind("ended", function() {
+                    index = index + 1;
+                    PlayNext(sounds, index);
+                });
+                sound.play();
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="txt1" width="100"/>
+<input type="text" id="txt2" width="100"/>
+<input type="text" id="txt3" width="100"/>
+<input type="text" id="txt4" width="100"/>
+<input type="text" id="txt5" width="100"/>
+<input type="text" id="txt6" width="100"/>
+<input type="text" id="txt7" width="100"/>
+<input type="text" id="txt8" width="100"/>
+    <br/>
+<input type="button" onclick="y();" value="Play"/>
+
+<div id="divtest">
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+</div>
+</body>
+</html>

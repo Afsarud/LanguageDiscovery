@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="hdnBookATalk" xml:space="preserve">
+    <value>BookATalk_en.html</value>
+  </data>
+  <data name="hdnCallAlert" xml:space="preserve">
+    <value>嘿，有人在 Talk 上给你打电话。请单击确定并接听电话，取消以通知您的合作伙伴您尚未准备好！</value>
+  </data>
+  <data name="hdnFaq" xml:space="preserve">
+    <value>https://docs.google.com/presentation/d/e/2PACX-1vS3wa-iahZxwbBFJ2NiqV5yeNp3HqFnDKMpXQqWuwEeWZAhGBtVbKNlnO_CQ0IbcA6NYRIf0AYl7qLW/embed</value>
+  </data>
+  <data name="hdnGotomailboxbutton" xml:space="preserve">
+    <value>收件箱</value>
+  </data>
+  <data name="hdnNewMessageNotification" xml:space="preserve">
+    <value>你有一条新的消息！</value>
+  </data>
+  <data name="hdnQuickStart" xml:space="preserve">
+    <value>https://docs.google.com/presentation/d/e/2PACX-1vQGO_Xm7LnAXlUdST_MI-d0tBq5ruKSWGQX8RyxlK1Rr8ieeYyOhs6uVf4H2ORoMBixZstxy8AXV4Lg/embed</value>
+  </data>
+  <data name="hdnSetupProfile" xml:space="preserve">
+    <value>请设立用户信息, 我喜欢的东西， 和关于我的标签。 谢谢！</value>
+  </data>
+  <data name="hdnTalkFaq" xml:space="preserve">
+    <value>https://docs.google.com/presentation/d/e/2PACX-1vR6dWisYKld9ghbA1hrmI8SEPzH0A8Qs43PfSF7mjrNgfq05UkqNfXQs4LQ6aWQsAPIWNZ397d33Pya/embed</value>
+  </data>
+  <data name="hdnTalkHelpPresentation" xml:space="preserve">
+    <value>https://docs.google.com/presentation/d/e/2PACX-1vTIVS4tUBZIST1t6wcp0jnftDaSF5vAvBBBXnW843tVxROVD1BzHUYvOuVtaRW0X94fzuWv5KJeGAtb/pub?start=false&amp;loop=false&amp;delayms=3000</value>
+  </data>
+  <data name="hdnTalkTutorial" xml:space="preserve">
+    <value>https://www.youtube.com/embed/FqAWV7856YI?list=PLSE_F3CzJCMc4OZBwOcgE_sEuiJSfsw3Z</value>
+  </data>
+  <data name="hdnTutorial" xml:space="preserve">
+    <value>https://docs.google.com/presentation/d/e/2PACX-1vRZfJ__yUgHVYFJSiSuCq1-0tJNtgc2O6owCnBG_thX6AA_fnunGAH7ofXBR7reJwv9ic72ZZ3fWQsJ/embed</value>
+  </data>
+  <data name="lblAdmin" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="lblConsentMessage" xml:space="preserve">
+    <value>I agree to Palaygo’s term and conditions and privacy policy and have my child participate in exchange with students in Japan.</value>
+  </data>
+  <data name="lblFaq" xml:space="preserve">
+    <value>パレーゴメールFAQ</value>
+  </data>
+  <data name="lblFinePrint" xml:space="preserve">
+    <value>By pressing Agree on this form, the parent agrees to have all family members observe Palaygo’s Standard Terms and Conditions and not undertake research on Palaygo’s program or publish its contents.</value>
+  </data>
+  <data name="lblFinePrint2" xml:space="preserve">
+    <value>Parent's contact number is rarely used but needed in case of emergency, such as the student has forgot/do not show up etc. at the scheduled time for a Talk session with Japan.</value>
+  </data>
+  <data name="lblInfo" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="lblLabelHelp" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="lblLabelHome" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="lblLabelLogout" xml:space="preserve">
+    <value>登出</value>
+  </data>
+  <data name="lblLabelMailbox" xml:space="preserve">
+    <value>邮箱</value>
+  </data>
+  <data name="lblLabelMyRoom" xml:space="preserve">
+    <value>我的房间</value>
+  </data>
+  <data name="lblLabelUserNameLoggedin" xml:space="preserve">
+    <value>登录为</value>
+  </data>
+  <data name="lblOtherInformation1" xml:space="preserve">
+    <value>We need this information so that the Palaygo Team can contact them if urgently needed, like if you don’t appear at the scheduled time for your Talk session.</value>
+  </data>
+  <data name="lblOtherInformation2" xml:space="preserve">
+    <value>Our privacy policy applies, it can be seen here: &lt;a  style='text-decoration:underline; color:blue;'  href="https://www.palaygo.net.au/j/privacy/" target="_blank"&gt;https://www.palaygo.net.au/j/privacy/&lt;/a&gt;</value>
+  </data>
+  <data name="lblOtherInformation3" xml:space="preserve">
+    <value>Thanks so much and enjoy your sessions!</value>
+  </data>
+  <data name="lblPrepareTalk" xml:space="preserve">
+    <value>Talk 準備/予約</value>
+  </data>
+  <data name="lblQuickStart" xml:space="preserve">
+    <value>ガイドツアー</value>
+  </data>
+  <data name="lblTalk" xml:space="preserve">
+    <value>谈论</value>
+  </data>
+  <data name="lblTalkFaq" xml:space="preserve">
+    <value>Talk FAQ</value>
+  </data>
+  <data name="lblTalkHelp" xml:space="preserve">
+    <value>谈论 帮助</value>
+  </data>
+  <data name="lblTalkTutorial" xml:space="preserve">
+    <value>Talk ビデオ/マニュアル</value>
+  </data>
+  <data name="lblTutorial" xml:space="preserve">
+    <value>ユーザーマニュアル</value>
+  </data>
+  <data name="lblUnreadMessageHeader" xml:space="preserve">
+    <value>未读</value>
+  </data>
+  <data name="lblWritenew" xml:space="preserve">
+    <value>新的消息</value>
+  </data>
+  <data name="linkHelp" xml:space="preserve">
+    <value>Helpen/index.html</value>
+  </data>
+  <data name="linkHelpPresentation" xml:space="preserve">
+    <value>https://docs.google.com/presentation/d/e/2PACX-1vQU3jKt7vT56ac6ubbuY771RtJwwBjdCPnLaD-h0jkkgdEwNxnzjV8OqzzFmnK6IPDJCgBpbZRxvZu9/pub?start=false&amp;loop=false&amp;delayms=3000#slide=id.g4c8f390b64_6_0</value>
+  </data>
+</root>

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddResource1.Text" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="btnAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnClearResource1.Text" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="btnClearResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchSentenceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="btnSearchWordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchWordResource1.ToolTip" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="btnSendResource1.Text" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="btnSendResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink1Resource1.Text" xml:space="preserve">
+    <value>絵文字</value>
+  </data>
+  <data name="HyperLink1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2Resource1.Text" xml:space="preserve">
+    <value>ステッカー</value>
+  </data>
+  <data name="HyperLink2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3Resource1.Text" xml:space="preserve">
+    <value>句読点</value>
+  </data>
+  <data name="HyperLink3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAddWordResource1.AlternateText" xml:space="preserve">
+    <value>ﾊﾟﾚｯﾄをつくる</value>
+  </data>
+  <data name="imgAddWordResource1.ToolTip" xml:space="preserve">
+    <value>ﾊﾟﾚｯﾄをつくる</value>
+  </data>
+  <data name="imgClearMessageResource1.AlternateText" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="imgClearMessageResource1.ToolTip" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="imgFreeFormMessageResource1.AlternateText" xml:space="preserve">
+    <value>ﾌﾘｰﾒｯｾｰｼ</value>
+  </data>
+  <data name="imgFreeFormMessageResource1.ToolTip" xml:space="preserve">
+    <value>ﾌﾘｰﾒｯｾｰｼ</value>
+  </data>
+  <data name="imgSearchSentenceResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgToResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLearningResource1.Text" xml:space="preserve">
+    <value>メッセージ：</value>
+  </data>
+  <data name="lblLearningResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSentenceResource1.Text" xml:space="preserve">
+    <value>編集ボックス :</value>
+  </data>
+  <data name="lblSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSentencesResource1.Text" xml:space="preserve">
+    <value>カテゴリー</value>
+  </data>
+  <data name="lblSentencesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblToNameResource1.Text" xml:space="preserve">
+    <value>Sayaka</value>
+  </data>
+  <data name="lblToNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTopicResource1.Text" xml:space="preserve">
+    <value>今日のトピック：</value>
+  </data>
+  <data name="lblTopicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblToResource1.Text" xml:space="preserve">
+    <value>送信先 :</value>
+  </data>
+  <data name="lblToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkShowTranslationResource1.Text" xml:space="preserve">
+    <value>翻訳を表示/隠す</value>
+  </data>
+  <data name="linkShowTranslationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>メッセージを作成する</value>
+  </data>
+  <data name="txtSearchSentenceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDialogLearningLanguageResource1.Text" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="lblDialogNativeLanguageResource1.Text" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="lblDialogSubLanguageResource1.Text" xml:space="preserve">
+    <value>ローマ字</value>
+  </data>
+  <data name="lblLanguageOrderResource1.Text" xml:space="preserve">
+    <value>言語切り替え</value>
+  </data>
+  <data name="lblNativeResource1.Text" xml:space="preserve">
+    <value>日本語の表示</value>
+  </data>
+  <data name="lblRomanjiResource1.Text" xml:space="preserve">
+    <value>ローマ字</value>
+  </data>
+  <data name="lblSequenceResource1.Text" xml:space="preserve">
+    <value>語順の数字</value>
+  </data>
+  <data name="lblSoundResource1.Text" xml:space="preserve">
+    <value>音声</value>
+  </data>
+  <data name="hdnReturnResource1.Text" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="btnCloseEmojiResource1.Text" xml:space="preserve">
+    <value>クローズ</value>
+  </data>
+  <data name="linkTabOptionsResource1.Text" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="linkTabWordsResource1.Text" xml:space="preserve">
+    <value>パレット</value>
+  </data>
+  <data name="lblsentenceLabelResource1.Text" xml:space="preserve">
+    <value>文</value>
+  </data>
+  <data name="lblInstructionResource1.Text" xml:space="preserve">
+    <value>自分のオリジナルメッセージを作って、お友だちに送ってみよう！まずは、下のパレットの例文から好きな単語を選んで、正しい順番に並べてみよう！</value>
+  </data>
+  <data name="hdnlblCancelResource1.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="hdnlblOkResource1.Text" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="lblFreeMessageResource1.Text" xml:space="preserve">
+    <value>フリーメッセージ</value>
+  </data>
+  <data name="lblLabelAddEditWordResource1.Text" xml:space="preserve">
+    <value>単語追加・置換</value>
+  </data>
+  <data name="lblLabelSentencePagingResource1.Text" xml:space="preserve">
+    <value>フレーズパレット</value>
+  </data>
+  <data name="lblLabelWordPagingResource1.Text" xml:space="preserve">
+    <value>ワードパレット</value>
+  </data>
+  <data name="hdnCreateNewWordResource1.Value" xml:space="preserve">
+    <value>新しい単語を作成</value>
+  </data>
+  <data name="hdnReplaceWordResource1.Value" xml:space="preserve">
+    <value>単語を変更</value>
+  </data>
+  <data name="hdnSelectFromPaleteResource1.Value" xml:space="preserve">
+    <value>ワードパレットより選択</value>
+  </data>
+  <data name="rdoPhraseResource1.Text" xml:space="preserve">
+    <value>フレーズ</value>
+  </data>
+  <data name="rdoPhraseWordResource1.Text" xml:space="preserve">
+    <value>フレーズ+ワード</value>
+  </data>
+  <data name="rdoWordResource1.Text" xml:space="preserve">
+    <value>ワード</value>
+  </data>
+  <data name="hdnPunctuationResource1.Value" xml:space="preserve">
+    <value>句読点</value>
+  </data>
+  <data name="hdnFreeTextMessage1PlaceHolderResource1.Value" xml:space="preserve">
+    <value>ここに英語のメッセージを入力</value>
+  </data>
+  <data name="hdnFreeTextMessage2PlaceHolderResource1.Value" xml:space="preserve">
+    <value>ここに日本語の訳を入力</value>
+  </data>
+  <data name="lblSubLanguage2Resource1.Text" xml:space="preserve">
+    <value>カンジ</value>
+  </data>
+  <data name="lblDialogMessageResource1.Text" xml:space="preserve">
+    <value>本当にこのメッセージを迷惑メールとして報告しますか？</value>
+  </data>
+</root>

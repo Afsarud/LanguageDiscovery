@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Language.Discovery.Master.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Content/AdminMenu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  
+    <script type="text/javascript">
+        function pageLoad() {
+            var manager = Sys.WebForms.PageRequestManager.getInstance();
+            manager.add_endRequest(endRequest);
+            manager.add_beginRequest(OnBeginRequest);
+        }
+        function OnBeginRequest(sender, args) {
+            $get('divImage').style.display = 'block';
+        }
+        function endRequest(sender, args) {
+            $get('divImage').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <script src="../Scripts/modernizr-2.6.2.js"></script>
+        <script src="../Scripts/jquery-1.9.1.js"></script>
+        <script src="../Scripts/jquery-ui-1.10.3.js"></script>      
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <asp:UpdateProgress ID="updProgress" runat="server">
+    <ProgressTemplate> 
+        <div id="divImage" style="display:none;position:absolute;visibility:visible;border:none;z-index:100;width:100%;height:100%;background:#EFF8F9;filter: alpha(opacity=90);-moz-opacity:.9; opacity:.9;">
+                <img alt="progress" src="../Images/loading.gif" style="top:48%; left:42%; position:relative;"/>                     
+        </div>         
+    </ProgressTemplate>
+    </asp:UpdateProgress>
+
+          <%-- <div style="width:100%;">
+                <img src="images/Converga_Logo.jpg" style="height:60px; width:200px;" />
+            </div>--%>
+            <div id='cssmenu'>
+                
+                <ul>
+                   <li><a href='~/Default.aspx' id="linkHome" runat="server"><span>Home</span></a></li>
+                   <li class='has-sub'><a href='' id="linkMaintenance" runat="server"><span>Maintenance</span></a>
+                      <ul>
+                         <li><a href='~/EmployeeMaintenance.aspx' id="linkEmployeeMaintenance" runat="server"><span>Employee Maintenance</span></a></li>
+                         <li><a href='~/SkillsMaintenance.aspx' id="linkSkillsMaintenance" runat="server"><span>Skills Maintenance</span></a></li>
+                         <li><a href='~/ShiftMaintenance.aspx' id="linkShiftMaintenance" runat="server"><span>Shift Maintenance</span></a></li>
+                      </ul>
+                   </li>
+                   <li class='has-sub'><a href='' id="linkTransaction" runat="server"><span>Transactions</span></a>
+                      <ul>
+                         <li><a href='~/UserEmployeeAssignment.aspx' id="linkUserEmployeeAssignment" runat="server"><span>User Employee Assignment</span></a></li>
+                         <li><a href='~/SkillsMatrix.aspx' id="linkSkillsMatrix" runat="server"><span>Skills Matrix</span></a></li>
+                         <li><a href='~/EmployeeLeave.aspx' id="linkEmployeeLeave" runat="server"><span>Employee Leave</span></a></li>
+                         <li><a href='~/EmployeeShiftAssignment.aspx' id="linkEmployeeShiftAssignment" runat="server"><span>Employee Shift Assignment</span></a></li>
+                      </ul>
+                   </li>
+                    <li class='has-sub'><a href='' id="link" runat="server"><span>Reports</span></a>
+                      <ul>
+                         <li><a href='~/EmployeeScoreMatrixReport.aspx' id="linkScoreMatrix" runat="server"><span>Employee Score Matrix</span></a></li>
+                         <li><a href='' id="A2" runat="server"><span>Weeeehhhh!!!! Di nga...</span></a></li>
+                      </ul>
+                   </li>                   
+                   <li><a href='#'><span>About</span></a></li>
+                   <li><a href='#'><span>Contact</span></a></li>
+                   
+                   <li style="float:right;"><a href='' id="linkLogout" runat="server" onserverclick="linkLogout_ServerClick" ><span>Logout</span></a></li>
+                   <li style="float:right;"><asp:Label ID="lblName" runat="server" CssClass="username"></asp:Label></li>
+                </ul>
+            </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   <div style="width:80%;margin-left:20px;margin-right:20px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        
+    </form>
+</body>
+</html>

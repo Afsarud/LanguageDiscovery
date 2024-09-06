@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnRegisterResource1.Text" xml:space="preserve">
+    <value>参加規則に同意し、上記内容で申し込みます。</value>
+  </data>
+  <data name="btnRegisterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompareValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>-必須</value>
+  </data>
+  <data name="CompareValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompareValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>パスワードが一致しません</value>
+  </data>
+  <data name="cvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvSchoolResource1.ErrorMessage" xml:space="preserve">
+    <value>-必須</value>
+  </data>
+  <data name="cvSchoolResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="cvSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblConfirmPasswordResource1.Text" xml:space="preserve">
+    <value>パスワード（確認）</value>
+  </data>
+  <data name="lblConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>お子様ファーストネーム（ローマ字）</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGenderResource1.Text" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="lblGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLevelResource1.Text" xml:space="preserve">
+    <value>レベル</value>
+  </data>
+  <data name="lblLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessageResource1.Text" xml:space="preserve">
+    <value>There is an error creating your account. Please contact the administrator.</value>
+  </data>
+  <data name="lblMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParentsEmailResource1.Text" xml:space="preserve">
+    <value>保護者様メールアドレス</value>
+  </data>
+  <data name="lblParentsEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParentsFullNameResource1.Text" xml:space="preserve">
+    <value>保護者様ご氏名（漢字）</value>
+  </data>
+  <data name="lblParentsFullNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPasswordResource1.Text" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="lblPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSchoolResource1.Text" xml:space="preserve">
+    <value>学校名</value>
+  </data>
+  <data name="lblSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTermsResource1.Text" xml:space="preserve">
+    <value>参加規則</value>
+  </data>
+  <data name="lblTermsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWhereDidyoufindResource1.Text" xml:space="preserve">
+    <value>どちらでパレーゴをお聞きになりましたか</value>
+  </data>
+  <data name="lblWhereDidyoufindResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItem1Resource1.Text" xml:space="preserve">
+    <value>あしたね(Edutown)</value>
+  </data>
+  <data name="ListItem1Resource1.Value" xml:space="preserve">
+    <value>あしたね(Edutown)</value>
+  </data>
+  <data name="ListItem3Resource1.Text" xml:space="preserve">
+    <value>ウェブ検索</value>
+  </data>
+  <data name="ListItem3Resource1.Value" xml:space="preserve">
+    <value>ウェブ検索</value>
+  </data>
+  <data name="ListItem4Resource1.Text" xml:space="preserve">
+    <value>JAPEC提携教室</value>
+  </data>
+  <data name="ListItem4Resource1.Value" xml:space="preserve">
+    <value>JAPEC提携教室</value>
+  </data>
+  <data name="ListItem5Resource1.Text" xml:space="preserve">
+    <value>その他英語教室</value>
+  </data>
+  <data name="ListItem5Resource1.Value" xml:space="preserve">
+    <value>その他英語教室</value>
+  </data>
+  <data name="ListItem6Resource1.Text" xml:space="preserve">
+    <value>パレーゴ会員紹介</value>
+  </data>
+  <data name="ListItem6Resource1.Value" xml:space="preserve">
+    <value>パレーゴ会員紹介</value>
+  </data>
+  <data name="ListItem7Resource1.Text" xml:space="preserve">
+    <value>パレーゴ導入学校の生徒</value>
+  </data>
+  <data name="ListItem7Resource1.Value" xml:space="preserve">
+    <value>パレーゴ導入学校の生徒</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>男性</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Registration - Language Discovery</value>
+  </data>
+  <data name="rdoWhereDidyoufindResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>ご入力必須項目</value>
+  </data>
+  <data name="RequiredFieldValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>ご入力必須項目</value>
+  </data>
+  <data name="RequiredFieldValidator2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ErrorMessage" xml:space="preserve">
+    <value>ご入力必須項目</value>
+  </data>
+  <data name="RequiredFieldValidator3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator4Resource1.ErrorMessage" xml:space="preserve">
+    <value>ご入力必須項目</value>
+  </data>
+  <data name="RequiredFieldValidator4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>ご入力必須項目</value>
+  </data>
+  <data name="rfvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>ご入力必須項目</value>
+  </data>
+  <data name="rfvPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsFullNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsFullNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTermsResource1.Text" xml:space="preserve">
+    <value>パレーゴ利用規則
+
+パレーゴは、ランゲージディスカバリーグループの豪州法人を運営主体とする学習コミュニケーションプログラムであり、日本においては当法人により運営されています。パレーゴの利用にあたっては、その一切の行為につき、本規則が適用されます。
+ 
+第１条（目的）
+ 
+本規則は、世界の子供たちがパレーゴに参加し、国境と人種を超えた自由闊達な国際コミュニケーションの環境において、楽しく学び異文化の相互理解を推進することを目的に規定します。
+ 
+第２条（定義）
+
+(1) 「教育機関等」とは、学校、英会話教室、会員制組織、スポーツクラブその他の教育目的ないし営利または非営利目的で組織された機関をいいます。
+(2) 「監督者」とは、利用者の保護者（親権者を含みます。）および利用者が属する教育機関等をいいます。
+(3) 「豪州法人」とは、当法人の親会社である豪州ランゲージディスカバリー社（Language Discovery Ltd）をいいます。
+(4) 「交流情報」とは、利用者がパレーゴを利用して行う会話またはメッセージのやり取りに関する情報（写真等を含みます。）をいいます。
+(5) 「個人情報」とは、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるもの（他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものを含みます。）をいいます。
+(6)「写真等」とは、利用者がパレーゴにおいて利用または投稿する写真、動画、イラストその他の画像および映像情報をいいます。
+(7) 「知的財産権」とは、著作権、特許権、商標権、実用新案権、意匠権その他の知的財産権（これらの権利を受ける権利および不正競争防止法により保護される権利を含みます。）をいいます。
+(8) 「当法人」とは、パレーゴ株式会社をいいます。
+(9) 「パレーゴ」とは、パレーゴメール、パレーゴホーム、パレーゴスクールその他の当法人または豪州法人が提供する学習コミュニケーションプログラムをいいます。
+(10) 「パレーゴコンテンツ」とは、パレーゴを構成し、またはパレーゴにおいて利用もしくは投稿される言葉および文章（パレット記載の言葉および文章を含みます。）、写真、動画、イラストその他のコンテンツをいいます。
+(11) 「本規則」とは、本パレーゴ利用規則（その改定・変更を含みます。）をいいます。
+(12) 「利用者」とは、パレーゴを利用する児童および生徒ならびに当法人が別途自らの裁量により利用を認めた者をいいます。
+
+第３条（本規則の適用範囲と変更）
+ 
+1. 本規則は、すべての利用者およびその監督者に適用されます。利用者および監督者は、パレーゴを利用することにより、本規則のすべての記載内容について同意したものとみなされます。
+2. 当法人は、利用者および監督者の承諾を得ることなく、当法人の判断で任意に、本規則およびパレーゴの内容を変更できるものとします。
+3. 変更後の本規則は、当法人が運営するウェブサイトに掲示された時点からその効力を生じるものとします。利用者および監督者は、本規則およびパレーゴの内容の変更後もパレーゴを利用し続けることにより、これらに同意をしたものとみなされます。
+ 
+第４条（利用者および監督者の禁止行為）
+ 
+利用者および監督者は、パレーゴの利用に際して、以下の行為を行ってはなりません。
+1. パレーゴに参加して取得したIDまたはパスワードを他人に第三者に使用させ、または売買、譲渡もしくは貸与等する行為
+2. 他の利用者もしくは監督者または第三者に迷惑・不利益を与える行為、またはそのおそれのある行為
+3. パレーゴの運営に支障を及ぼす行為、またはそのおそれのある行為
+4. 他人の知的財産権、名誉権、プライバシー権その他法令上または契約上の権利を侵害する行為、またはそのおそれのある行為
+5. 他人の個人情報（住所、電話番号、外部のEメールアドレスを含みます。）を公開する行為、および正当な目的以外に利用する行為
+6. 自分の個人情報（住所、電話番号、外部のEメールアドレスを含みます。）を公開する行為、および正当な目的以外に利用する行為
+7. 違法または公序良俗に反し、またはそのおそれのある内容または方法でパレーゴを利用する行為
+8. 暴力的な表現、性的表現、その他の反社会的な内容を含み、または他人に不快感を与える描写、記載または方法でパレーゴを利用する行為
+9．利用者、監督者もしくは第三者になりすます行為、または意図的に虚偽もしくは不正確な情報を流布させる行為
+10. パレーゴの活動において、その他当法人または豪州法人が定めるルールに違反する行為
+11. その他当法人が不適当と判断した行為
+
+第５条（利用者の資格）
+ 
+1. パレーゴの利用は、小学校（第3学年から第6学年まで）、中学校または高等学校に在学中の児童および生徒が対象となります。
+2. 第1項に定める者以外を対象としてパレーゴを利用することは原則として禁じます。ただし、当法人が別途自らの裁量により認めた場合は、この限りではありません。
+
+第６条（IDおよびパスワード）
+ 
+1. 利用者は、ユーザーパスワードを自ら変更することができます。
+2. 利用者は、当法人が別途承諾する場合を除き、IDおよびユーザーパスワードを、第三者に使用させ、または売買、譲渡もしくは貸与等してはならないものとします。
+3. IDおよびユーザーパスワードの管理および使用は、利用者および監督者の責任において行うものとし、使用上の過誤または第三者による不正使用等については、当法人の故意または重過失によるものを除き、当法人は一切その責を負わないものとします。
+ 
+第７条（アカウントの停止および取り消し）
+ 
+当法人は、利用者または監督者が次のいずれかに該当する場合には、何らの責任も負うことなく、当該利用者またはその監督者に通知の上、当該利用者によるパレーゴの利用を停止し、またはアカウントの取り消しをすることができるものとします。当法人は、かかる利用の停止またはアカウントの取消しにより利用者または監督者に生じた損害について、一切の責任を負いません。この場合、既に支払済みの利用料は一切返金しないこととします。
+1. パレーゴの利用または本規則に関して当法人に虚偽の事項を通知したことが判明した場　　合
+2. 第４条の規定に違反した場合
+3. その他本規則の規定のいずれかに違反した場合
+ 
+第８条（交流情報の削除）
+
+1．当法人は、次に掲げる場合には、交流情報について、その全部または一部の削除または公開の停止等の不利益な措置を行うことができるものとします。
+(1) 他の利用者、監督者または第三者から、交流情報がこれらの者の知的財産権、名誉権、プライバシー権その他法令上または契約上の権利等を侵害する旨の通知を受け、これが合理的なものと当法人が判断した場合
+(2) 権利者と称する者から、交流情報が自己の権利を侵害する旨の申告がなされ、これが合理的なものと当法人が判断した場合。ただし、権利者と称する者から権利者であることを合理的に判断できる資料を提示され、権利者であると当法人が判断した場合に限ります。
+(3) 公的機関または専門家（国、警察、インターネット・ホットラインセンター、弁護士等を含みます。）から、違法、公序良俗違反または他人の権利を侵害する等の指摘または意見表明を受けた場合
+(4) その他当法人が不適当と判断した場合
+2．当法人は、投稿された交流情報について、これらを常時監視または削除もしくは公開の停止等の不利益な措置を行う義務を負わないものとします。
+
+第９条（交流情報の管理および消去）
+ 
+1. 当法人は、交流情報を、明示的にも黙示的にも保存する義務を負いません。交流情報の保存またはバックアップについては、利用者および監督者の責任で行われるものとします。
+2. 当法人は、パレーゴ用設備のファイル容量に余裕がなくなるおそれがあるとき、またはパレーゴ用設備の保守または工事上やむを得ないときは、予告なしにそのファイルに蓄積されている交流情報を消去することができるものとします。
+ 
+第１０条（知的財産権）
+ 
+1. 別段の定めのない限り、パレーゴのプログラムおよびパレーゴコンテンツに関する知的財産権の一切（著作権法第27条および第28条に定める権利を含みます。）は、その発生時点で、無償にて豪州法人に移転するものとします。ただし、利用者が自ら利用しまたは投稿した写真等の知的財産権については、当該権利を有する利用者または第三者に帰属するものします。また、他人の知的財産権、名誉権、プライバシー権その他法令上または契約上の権利を侵害しまたは公序良俗に違反するコンテンツに関する権利は、いかなる場合にも豪州法人に移転せず、当法人および豪州法人は、当該コンテンツについていかなる責任も負わないものとします。2. 利用者および監督者は、パレーゴの利用中および利用期間終了後においても、パレーゴのプログラム、パレーゴコンテンツおよびパレーゴを利用することにより得られる一切の情報を、複製、解析、リバースエンジニアリング、出版、放送および公衆送信する等の行為を、その方法の如何を問わず、自らないし第三者を介して行ってはならないものとします。
+3. 利用者および監督者は、当法人の知的財産権を一切侵害しないものとし、パレーゴを通じてまたはパレーゴに関して入手したいかなる機密情報（経営と事業にかかわる情報およびパレーゴのソフトウェア・プログラム、ノウハウ、データ、仕組み、マニュアルの内容等を含みます。）を一切開示せず、かつパレーゴの正当な利用以外の目的に利用しないものとします。
+ 
+第１１条（個人情報の取り扱い）
+ 
+1. 当法人は、個人情報をパレーゴの運営維持管理の目的で使用することができます。
+2. 当法人は、パレーゴの運営維持管理の目的以外で、利用者および監督者の個人情報を、その同意なしに業務委託先および主管団体以外の第三者に開示または提供することはいたしません。
+3. 当法人は、監督者の事前の承諾を得たうえで、利用者がパレーゴを利用している写真、ビデオ等を広報に使用することがあります。
+4. 当法人は、利用者または監督者が、パレーゴにおいて自ら開示または提供した個人情報については、一切責任を負わないものとします。
+ 
+第１２条（免責条項）
+ 
+1. 当法人は、利用者または監督者がパレーゴを利用することにより利用者もしくは監督者（他の利用者もしくは監督者を含みます。）または第三者に発生した一切の損害について、当法人の故意または重大な過失によるものを除き、いかなる責任も負わないものとします。
+2．当法人は、利用者または監督者と、他の利用者もしくは監督者または第三者との間で生じる一切の紛争について責任を負わないものとし、全ての紛争はこれらの当事者間で解決されるものとします。また、当法人は、利用者が教育機関等を通じてパレーゴを利用する場合、利用者と教育機関等との間で生じる一切の紛争について責任を負わないものとし、全ての紛争は利用者と教育機関等との間で解決されるものとします。
+3. 当法人は、地震、落雷、火災、風水害、停電、戦争、内乱、デモ、ストライキ、ロックアウト、労働紛争その他不可抗力によるネットワーク運営の停止もしくは遅延、または不正アクセス行為による個人情報の開示、漏えいもしくは不正使用について、当法人の故意または重大な過失によるものを除き、いかなる責任も負わないものとします。
+4．当法人は、利用者または監督者が利用または投稿するパレーゴコンテンツの合法性、道徳性、安全性、正確性、信頼性を明示的にも黙示的にも保証しないものとします。
+5．利用者および監督者は、パレーゴを利用する端末の性能、アクセスの集中度、サーバーの稼働状況その他の要因により、表示速度の低下および障害等が生じることにあらかじめ同意します。当法人は、利用者および監督者によるパレーゴの利用環境について、何ら保証しないものとします。
+6. 当法人は、次のいずれかに該当する場合には、何らの責任も負うことなく、パレーゴの利用を中止することがあります。
+ (1) パレーゴの設備の保守上または工事上やむを得ない場合
+ (2) 日本または海外の電気通信事業者が電気通信サービスを停止した場合
+7. 当法人は、前項の規定によりパレーゴの利用を中止するときは、あらかじめその旨を利用者またはその監督者に通知します。ただし、緊急時またはやむを得ない場合には、この限りではありません。
+ 
+第１３条（本規則への同意確認）
+ 
+当法人は、本規則について利用者の監督者の同意を得た上で、ＩＤを発行することとします。
+
+第１４条（準拠法及び裁判管轄）
+
+本規則の準拠法は日本法とし、当法人と利用者または監督者との間で生じた紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。
+
+附 則
+ 
+２０１９年９月　改定
+ 
+Copyright c 2019-2020 Language Discovery Ltd.</value>
+  </data>
+  <data name="txtTermsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="validateEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>メールアドレスが無効です。</value>
+  </data>
+  <data name="validateEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="validateEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hdnUserAlreadyExistResource1.Value" xml:space="preserve">
+    <value>ユーザー名 {0} はすでに使われています。「パレーゴユーザー名」に数字を足して、未登録のユーザ名に更新ください。</value>
+  </data>
+  <data name="EmailContent" xml:space="preserve">
+    <value>どちらでパレーゴをお聞きになりましたか: {0}&lt;br/&gt;
+保護者様ご氏名（漢字）: {1}&lt;br/&gt;
+保護者様メールアドレス: {2}&lt;br/&gt;
+お子様ファーストネーム（ローマ字）: {3}&lt;br/&gt;
+パレーゴユーザー名: {4}&lt;br/&gt;
+学校名: {5}&lt;br/&gt;
+性別: {6}&lt;br/&gt;</value>
+  </data>
+  <data name="EmailSubject" xml:space="preserve">
+    <value>New JP Free Trial registered</value>
+  </data>
+  <data name="hdnDemoUserMailToResource1.Value" xml:space="preserve">
+    <value>student@languagediscovery.org</value>
+  </data>
+  <data name="lblInfoResource1.Text" xml:space="preserve">
+    <value>Congratulations!  &lt;br/&gt;
+パレーゴデモアカウントが作成されました。&lt;br/&gt;
+忘れないようにメモしてください。&lt;br/&gt;
+OKを押して、パレーゴログイン画面から &lt;br/&gt;ログインください。</value>
+  </data>
+  <data name="lblPalaygoUserNameResource1.Text" xml:space="preserve">
+    <value>パレーゴユーザー名</value>
+  </data>
+  <data name="lblRegisterResource1.Text" xml:space="preserve">
+    <value>パレーゴ無料体験お申込みフォーム</value>
+  </data>
+  <data name="ListItem8Resource1.Text" xml:space="preserve">
+    <value>パレーゴ会員の兄弟姉妹</value>
+  </data>
+  <data name="ListItem8Resource1.Value" xml:space="preserve">
+    <value>パレーゴ会員の兄弟姉妹</value>
+  </data>
+  <data name="ListItem9Resource1.Text" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="ListItem9Resource1.Value" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="linkPrintResource1.Text" xml:space="preserve">
+    <value>規則印刷用ページ</value>
+  </data>
+  <data name="revPasswordResource1.Text" xml:space="preserve">
+    <value>パスワードは英字(大文字と小&lt;br/&gt;文字を少なくとも一つずつ)と数字を含めて8文字以上で作成して下さい。</value>
+  </data>
+  <data name="hdnPrintTCResource1.Value" xml:space="preserve">
+    <value>http://www.palaygo.com/home/terms2.html</value>
+  </data>
+</root>

@@ -1,0 +1,66 @@
+﻿ .body_main_frame_ML {
+            background-color:#ACD1E9 !important;
+            color:green;
+        }
+            .profile_left_Container  span{
+                color:green;
+            }
+        .prof_top_container span {
+            color:green;
+        }
+        .prof_MyPhoto_Container span {
+            color:green;
+        }
+        #tabs label{
+            color:green !important;
+        }
+        .ui-widget-content {
+            background-color:transparent !important;
+            background:none;
+        }
+        .ui-widget-content span{
+            color:green;
+        }
+        .ui-widget-content a{
+            color:green;
+        }
+        .ui-widget-header {
+            background:none;
+        }
+            .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+                background:none;
+            }
+            .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default a {
+                color:green;
+            }
+            .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+                background:#ADD8E6 !important;
+            }
+            .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active a {
+                color:green !important;
+            }
+        .prof_top_con_txtupdatemystatus_box {
+            background:none;
+            color:black;
+        }
+
+        .ui-dialog > .ui-widget-header {background: #f9f8f8 url(images/ui-bg_flat_75_f9f8f8_40x100.png) 50% 50% repeat-x !important; background-color: #f9f8f8 !important;}
+          .ui-dialog > .ui-widget-content {background:#f9f8f8 url(images/ui-bg_flat_75_f9f8f8_40x100.png) 50% 50% repeat-x !important; background-color: #f9f8f8 !important;}
+        .ui-dialog-title {
+            color:black !important;
+        }
+          .ui-dialog > .ui-widget-content span {
+            color:black !important;
+        }
+
+.description_content {
+    background-color:#A6C4E3 !important;
+}
+.tcp_lbl_title span {
+    color:green !important;
+}
+
+.tcp_lbl_title_container  span{
+    color:black !important;
+}
+

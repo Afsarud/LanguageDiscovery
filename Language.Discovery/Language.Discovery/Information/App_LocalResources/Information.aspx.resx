@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="localizedContentResource1.Text" xml:space="preserve">
+    <value>&lt;div id="main"&gt;&amp;nbsp;
+				&lt;p&gt;Did you know Japan is called Nihon in Japanese? Let's learn more about Japan and make more friends!
+				&lt;/p&gt;
+				&lt;h2&gt;1. About Japan&lt;/h2&gt;
+				&lt;p&gt;
+					Japan is a small island country in East Asia located about 5,500 Km north of 
+					Australia. Japan in Japanese is "Nihon" which means "the origin of the Sun".&lt;/p&gt;
+				&lt;img id="imgMap" src="../images/map_jp.jpg" alt="" border="0" width="480" style="FLOAT:left"&gt;
+				&lt;p&gt;Japan consists of four main islands and over 3,000 small islands. The gross area 
+					is 377,835 Km2, which is one-twentieth of the area of Australia. However, it 
+					has the world's tenth population, about 128 million, which is more than 6 times 
+					of the Australian population. Japan is one of the most densely populated 
+					countries in the world.
+				&lt;/p&gt;
+				&lt;p&gt;The capital city of Japan is Tokyo. Tokyo is recognised as one of the world 
+					biggest cities with 13 million people.
+				&lt;/p&gt;
+				&lt;p&gt;Most of the land of Japan is very mountainous and volcanic which causes many 
+					earthquakes. More than 6,000 earthquakes occur in Japan in a year.
+				&lt;/p&gt;
+				&lt;p&gt;
+					There are 47 prefectures in Japan. Each of them has their own characteristics. 
+					You can learn it by enjoying the Game about Japan on the left.
+				&lt;/p&gt;
+				&lt;h2&gt;2. Four seasons&lt;/h2&gt;
+				&lt;p&gt;
+					In Japan, each of four seasons is very unique and has its own qualities to be 
+					enjoyed. Seasons gradually shift from one to another and people enjoy the 
+					change.
+				&lt;/p&gt;
+				&lt;img src="../images/sakura1.gif" style="FLOAT:right"&gt;
+				&lt;p&gt;&lt;b&gt;Spring&lt;/b&gt;: It is said that spring is the most beautiful season in Japan. The 
+					climate is very warm and mild and many flowers bloom such as cherry blossoms. 
+					It's a Japanese tradition to have parties with food at parks to enjoy these 
+					flowers. (it's called "O-hanami").
+				&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;Summer&lt;/b&gt;: Averagely, Japanese summer is very hot and humid. People go to 
+					the swimming pool or the beach to bear the heat. The outstanding event in 
+					summer is fireworks exhibitions. Big fireworks exhibitions are held almost 
+					every week during summer. Some of them have more than 12,000 fireworks and last 
+					over two hours and 700,000 people go there to enjoy it. It's also a joyful 
+					tradition to wear Yukata (casual Japanese traditional dress) at the 
+					exhibitions. Watching fireworks while wearing Yukata is fantastic!
+				&lt;/p&gt;
+				&lt;img src="../images/wintersummer.png" style="FLOAT:left"&gt;
+				&lt;p&gt;&lt;b&gt;Autumn&lt;/b&gt;: In autumn, Japanese has a traditional festival known as 
+					"おつきみ(O-Tsukimi)".In English, this is often referred to as "Moon Festival" or 
+					"Mid-Autumn Festival". During the festival, people see and enjoy the beautiful 
+					moon and celebrate the abundance of that year. Japanese people build a special 
+					altar outside and eat special food such as "おつきみだんご(O-tsukimi Dango, Dumplings 
+					especially made for O-tsukimi).
+				&lt;/p&gt;
+				&lt;p&gt;&lt;b&gt;Winter&lt;/b&gt;: Japan is famous for its snow mountains as well. Not only Japanese 
+					but also foreigners including many Australians visit the northern part of Japan 
+					to enjoy snow sports. It's also great to enjoy "Onsen(hot spa)" to heat 
+					yourselves up and relax after snow.
+				&lt;/p&gt;
+			&lt;/div&gt;</value>
+  </data>
+</root>

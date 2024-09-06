@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SchoolService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_ISchoolService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49708/Service/SchoolService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/SchoolService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/SchoolService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISchoolService_AddSchool_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSchool" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_AddSchool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_UpdateSchool_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSchool" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_UpdateSchool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_DeleteSchool_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSchool" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_DeleteSchool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByID" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_SearchSchool_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSchool" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_SearchSchool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetUnreadMessageForReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageForReview" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetUnreadMessageForReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageForReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetAllMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMessages" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetAllMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_SetMessageAsReviewed_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMessageAsReviewed" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_SetMessageAsReviewed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMessageAsReviewedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_SetMessageAsRejected_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMessageAsRejected" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_SetMessageAsRejected_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMessageAsRejectedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetSchoolTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolTypeList" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetSchoolTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetUnreadMessageForPolling_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageForPolling" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetUnreadMessageForPolling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageForPollingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetAllFreeMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFreeMessages" />
+  </wsdl:message>
+  <wsdl:message name="ISchoolService_GetAllFreeMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFreeMessagesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISchoolService">
+    <wsdl:operation name="AddSchool">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/AddSchool" message="tns:ISchoolService_AddSchool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/AddSchoolResponse" message="tns:ISchoolService_AddSchool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchool">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/UpdateSchool" message="tns:ISchoolService_UpdateSchool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/UpdateSchoolResponse" message="tns:ISchoolService_UpdateSchool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchool">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/DeleteSchool" message="tns:ISchoolService_DeleteSchool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/DeleteSchoolResponse" message="tns:ISchoolService_DeleteSchool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/GetByID" message="tns:ISchoolService_GetByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/GetByIDResponse" message="tns:ISchoolService_GetByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchSchool">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/SearchSchool" message="tns:ISchoolService_SearchSchool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/SearchSchoolResponse" message="tns:ISchoolService_SearchSchool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageForReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/GetUnreadMessageForReview" message="tns:ISchoolService_GetUnreadMessageForReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/GetUnreadMessageForReviewResponse" message="tns:ISchoolService_GetUnreadMessageForReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/GetAllMessages" message="tns:ISchoolService_GetAllMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/GetAllMessagesResponse" message="tns:ISchoolService_GetAllMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMessageAsReviewed">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/SetMessageAsReviewed" message="tns:ISchoolService_SetMessageAsReviewed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/SetMessageAsReviewedResponse" message="tns:ISchoolService_SetMessageAsReviewed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMessageAsRejected">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/SetMessageAsRejected" message="tns:ISchoolService_SetMessageAsRejected_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/SetMessageAsRejectedResponse" message="tns:ISchoolService_SetMessageAsRejected_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolTypeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/GetSchoolTypeList" message="tns:ISchoolService_GetSchoolTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/GetSchoolTypeListResponse" message="tns:ISchoolService_GetSchoolTypeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageForPolling">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/GetUnreadMessageForPolling" message="tns:ISchoolService_GetUnreadMessageForPolling_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/GetUnreadMessageForPollingResponse" message="tns:ISchoolService_GetUnreadMessageForPolling_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFreeMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchoolService/GetAllFreeMessages" message="tns:ISchoolService_GetAllFreeMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchoolService/GetAllFreeMessagesResponse" message="tns:ISchoolService_GetAllFreeMessages_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISchoolService" type="tns:ISchoolService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_ISchoolService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddSchool">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/AddSchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchool">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/UpdateSchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchool">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/DeleteSchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByID">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/GetByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSchool">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/SearchSchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageForReview">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/GetUnreadMessageForReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMessages">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/GetAllMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMessageAsReviewed">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/SetMessageAsReviewed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMessageAsRejected">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/SetMessageAsRejected" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolTypeList">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/GetSchoolTypeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageForPolling">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/GetUnreadMessageForPolling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFreeMessages">
+      <soap:operation soapAction="http://tempuri.org/ISchoolService/GetAllFreeMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SchoolService">
+    <wsdl:port name="BasicHttpBinding_ISchoolService" binding="tns:BasicHttpBinding_ISchoolService">
+      <soap:address location="http://localhost:49708/Service/SchoolService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

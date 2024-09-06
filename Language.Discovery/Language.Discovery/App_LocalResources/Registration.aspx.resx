@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnRegisterResource1.Text" xml:space="preserve">
+    <value>I agree to the Terms and Conditions and apply as above</value>
+  </data>
+  <data name="btnRegisterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompareValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>-Required</value>
+  </data>
+  <data name="CompareValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompareValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Password not matched</value>
+  </data>
+  <data name="cvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvSchoolResource1.ErrorMessage" xml:space="preserve">
+    <value>-Required</value>
+  </data>
+  <data name="cvSchoolResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="cvSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblConfirmPasswordResource1.Text" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="lblConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblConfirmPasswordResource2.Text" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="lblConfirmPasswordResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>Child's Given Name</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGenderResource1.Text" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="lblGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLevelResource1.Text" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="lblLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessageResource1.Text" xml:space="preserve">
+    <value>There is an error creating your account. Please contact the administrator.</value>
+  </data>
+  <data name="lblMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParentsEmailResource1.Text" xml:space="preserve">
+    <value>Teacher's Email Address</value>
+  </data>
+  <data name="lblParentsEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParentsFullNameResource1.Text" xml:space="preserve">
+    <value>Teacher's Full Name</value>
+  </data>
+  <data name="lblParentsFullNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPasswordResource1.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSchoolResource1.Text" xml:space="preserve">
+    <value>School Name</value>
+  </data>
+  <data name="lblSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTermsResource1.Text" xml:space="preserve">
+    <value>Terms and Conditions (T&amp;C)</value>
+  </data>
+  <data name="lblTermsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWhereDidyoufindResource1.Text" xml:space="preserve">
+    <value>Where did you find out about Palaygo?</value>
+  </data>
+  <data name="lblWhereDidyoufindResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Registration - Language Discovery</value>
+  </data>
+  <data name="rdoWhereDidyoufindResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>-Required</value>
+  </data>
+  <data name="RequiredFieldValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>-Required</value>
+  </data>
+  <data name="RequiredFieldValidator2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ErrorMessage" xml:space="preserve">
+    <value>-Required</value>
+  </data>
+  <data name="RequiredFieldValidator3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator4Resource1.ErrorMessage" xml:space="preserve">
+    <value>-Required</value>
+  </data>
+  <data name="RequiredFieldValidator4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>-Required</value>
+  </data>
+  <data name="rfvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>-Required</value>
+  </data>
+  <data name="rfvPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsFullNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsFullNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTermsResource1.Text" xml:space="preserve">
+    <value>Palaygo Terms and Conditions of Use
+
+ 
+
+Palaygo is a learning communication program provided by Language Discovery Ltd. and is operated by Language Discovery Australia Pty Ltd. These Terms and Conditions shall be applied to any and all actions by Users and Supervisors in using Palaygo.
+
+ 
+
+Article 1. Purpose 
+
+ 
+
+These Terms and Conditions are prescribed for the purpose that children in the world join Palaygo, learn with fun and promote their mutual understanding of different cultures in an environment which enables them to freely and openly communicate with people across national and racial boundaries.
+
+ 
+
+Article 2. Definition
+
+ 
+
+(1) "Educational Institutions" means schools, private English classes, membership organizations, sports clubs and other institutions established for educational, commercial or non-commercial purpose.
+
+(2) "Supervisors" means the parents and guardians (including persons in parental authority) of Users and the Educational institutions that the Users belong to.
+
+(3) "Australian Company" means Language Discovery Ltd., the holding company of the Company.
+
+(4) "Communication Records" means the records relating to conversations and exchanges of messages (including Pictures) by Users through the use of Palaygo.
+
+(5) "Personal Information" means information about a living individual which can identify a specific individual by name, date of birth or other description contained in such information (including such information as will allow easy reference to other information and will thereby enable the identification of the specific individual).
+
+(6) "Pictures" means the photograph, movie, illustration, and other image or visual information that is used or uploaded to Palaygo by the Users.
+
+(7) "Intellectual Property Rights" means a copyright, patent right, trademark right, utility model right, design right and other intellectual property rights (including the rights to obtain these rights and the rights protected by the Competition and Consumer Act 2010).
+
+(8) "Company" means Language Discovery Australia Pty Ltd.
+
+(9) "Palaygo" includes Palaygo Mail, Palaygo Home, Palaygo Talk and other programs of learning and communication provided by the Company and the Australian Company.
+
+(10) "Contents of Palaygo" means words and sentences (including the words and sentences written in Palaygo), photographs, movies, illustrations and other contents that compose a whole or a part of Palaygo or are used in or uploaded to Palaygo by Users and Supervisors.
+
+(11) "Terms and Conditions" means these terms and conditions of use (including its revisions and modifications).
+
+(12) "Users" means the children and pupils using Palaygo, and other persons separately permitted to use Palaygo by and at the sole discretion of the Company.
+
+ 
+
+Article 3. Scope of Application and Modification of Terms and Conditions
+
+ 
+
+1. The Terms and Conditions shall apply to all Users and their Supervisors. By using Palaygo, Users and Supervisors are deemed to have agreed to all prescriptions contained in these Terms and Conditions.
+
+2. The Company may modify these Terms and Conditions or the Contents of Palaygo at the Company's sole discretion without any consent of Users or Supervisors.
+
+3. The modification will become effective and in full force once the modified Terms and Conditions are posted on the website operated by the Company. Users and Supervisors are deemed to have agreed to the modified Terms and Conditions or the modified contents of Palaygo by continuing to use Palaygo after such modification.
+
+ 
+
+Article 4. Prohibited Actions
+
+ 
+
+Users and Supervisors shall not conduct any of the following activities when using Palaygo:
+
+1. Selling, transferring, lending, etc. or letting others or a third party use Users' Palaygo IDs or passwords;
+
+2. Activities that lead to or could lead to the discomfort or annoyance of other Users or Supervisors or a third party;
+
+3. Activities that interfere or could interfere with the operation of Palaygo;
+
+4. Activities that infringe or could infringe Intellectual Property Rights, defamation rights , privacy rights or any other legal or contractual rights of the Company or a third party;
+
+5. Posting or transmitting Personal Information (including, but not limited to, addresses, phone numbers and external e-mail addresses) of others or using it without a legitimate purpose;
+
+6. Posting or transmitting Personal Information (including, but not limited to, addresses, phone numbers and external e-mail addresses) of themselves or using it without a legitimate purpose;
+
+7. Using Palaygo through means or with contents that violate or could violate applicable laws or disrupt or could disrupt public order or morality;
+
+8. Using Palaygo through means or with depiction or description that include violent or sexual expressions or other anti-social contents or that lead to or could lead to the discomfort of others;
+
+9. Activities that lead to the identity theft of Users, Supervisors or a third party, or intentionally spreading false or inaccurate information;
+
+10. Violating the rules provided by the Company or the Australian Company in the activities of Palaygo; and
+
+11. Other activities that are deemed by the Company to be inappropriate.
+
+ 
+
+Article 5. Qualification of Users
+
+ 
+
+1. The use of Palaygo is intended only for the children and pupils from Year 3 to Year 12.
+
+2. Individuals other than those described in Paragraph 1 above are prohibited from using Palaygo in principle. However, the Company may separately permit at its sole discretion the use of Palaygo to other individuals other than those indicated above.
+
+ 
+
+Article 6. IDs and Passwords
+
+ 
+
+1. Users may change their passwords by themselves.
+
+2. Users may not sell, transfer or lend, etc. to third parties or let third parties use their IDs or passwords unless separately consented to, in writing by the Company.
+
+3. Users and Supervisors shall manage and use their IDs and passwords at their own responsibilities, and the Company shall not be responsible in any way for the misuse or other wrongful use, etc. of the IDs or passwords caused by the Users or Supervisors or a third party, except when such misuse or other wrongful use, etc. is caused by an intentional or grossly negligent act of the Company.
+
+ 
+
+Article 7. Accounts
+
+ 
+
+The Company reserves the right to suspend any use of or delete any accounts by giving notice to User or Supervisor in the event of any of the following. The Company shall not be responsible for any losses or damages that User or Supervisor may suffer arising from the suspension of the use of or deletion of their accounts. In such case, the Company shall not refund the usage fees that have been already paid.
+
+1. If it becomes known that a User or Supervisor provided false information in connection with the use of Palaygo or with these Terms and Conditions.
+
+2. If a User or Supervisor violates article 4 of these Terms and Conditions
+
+3. If a User or Supervisor violates any provision of these Terms and Conditions.
+
+ 
+
+Article 8. Deletion of Communication Records
+
+ 
+
+1. The Company reserves the right to take any corrective actions such as deleting or suspending the submission of the whole or part of the Communication Records in the following cases:
+
+(1) When the Company receives a notice indicating that the Communication Records infringe Intellectual Property Rights, defamation rights, privacy rights or any other legal or contractual rights of other Users, Supervisors or a third parties, and the Company deems the notice as reasonable;
+
+(2) When the Company receives a report by a person who claims that the Communication Records infringes his or her right, and the Company deems the claim to be reasonable; provided however, that it shall apply only when the person submits materials that reasonably enable the Company to judge whether he or she is entitled to such right, and it is so judged by the Company;
+
+(3) When the Company receives a notice or opinion from a public institution or expert (including but not limited to the Government, State or Federal Police, Internet Hotline Center, lawyers etc.) that indicate that the Communication Records violate or otherwise disrupt applicable laws, disrupt public order or morality or infringe the rights of a third party; or
+
+(4) Other cases that are deemed by the Company to be inappropriate.
+
+2．In relation to the Communication Records, the Company shall not owe any obligation in any way to conduct full time monitoring of the Communication Records or to take any corrective actions such as deleting or suspending the submission of the whole or part of the Communication Records.
+
+ 
+
+Article 9. Management and Deletion of the Communication Records
+
+ 
+
+1. The Company shall not be responsible in any way, expressly or impliedly, for storing the Communication Records. Users and Supervisors shall bear all responsibilities for saving and backing up the Communication Records.
+
+2. The Company reserves the right to delete any Communication Records stored at the file server without any notice when the Palaygo facility is nearing its storage capacity limit or when it is unavoidable due to maintenance or construction.
+
+ 
+
+Article 10. Intellectual Property Rights
+
+ 
+
+1. Unless otherwise agreed upon in writing, any and all Intellectual Property Rights related to Palaygo program and the Contents of Palaygo shall transfer to Language Discovery Ltd without any charge at the moment when such rights arise. However, the Intellectual Property Rights of the Pictures which are used or uploaded by Users shall belong to the Users or a third party. Additionally, those Intellectual Property Rights that are defamatory or infringe privacy rights or any other legal or contractual rights of a third party or disrupt public order or morality shall not transfer to the Australian Company in any case whatsoever, and neither the Company nor the Australian Company shall be responsible in any way for the damage caused by such contents.
+
+2. Users and Supervisors shall not use, copy, analyze, reverse engineer, publish, broadcast or transmit any Palaygo programs, contents of Palaygo or any information obtained through the use of Palaygo, either by themselves or through a third party, and regardless of the means, at any time during or after the use of Palaygo.
+
+3. Users and Supervisors shall not violate any Intellectual Property Rights of the Company and may not use any confidential information (including, but not limited to the information related to business and operation, the contents of software program, know-how, data, structure and manual of Palaygo) obtained through or in relation to the use of Palaygo for any purpose other than the legitimate use of Palaygo.
+
+ 
+
+Article 11. Personal Information
+
+ 
+
+1. The Company may use Personal Information of Users and Supervisors for the purpose of operation and maintenance of Palaygo.
+
+2. Except for the purpose of operation and maintenance of Palaygo, the Company shall not release or provide any Personal Information of Users or Supervisors to any third party, other than to the parties entrusted with operations and management of Palaygo, without the consent of the User or Supervisor..
+
+3. The Company may use, with prior consent of the User or Supervisor, the photographs, videos and other similar records of Users who are using Palaygo for the purpose of publicity.
+
+4. The Company shall not be responsible in any way for Personal Information released or provided by Users or Supervisors themselves.
+
+ 
+
+Article 12. Disclaimer
+
+ 
+
+1. The Company shall not be responsible in any way for any losses or damages suffered by Users or Supervisors (including other Users or Supervisors) or a third party in connection with the use of Palaygo by Users or Supervisors, except when such losses or damages arise from an intentional or grossly negligent act of the Company.
+
+2. The Company shall not be responsible in any way for any dispute arising between Users or Supervisors and other Users or Supervisors, and all disputes shall be resolved between such Users and/or Supervisors. In the situation where Users use Palaygo through Educational Institutions, the Company shall not be responsible in any way for any dispute arising between Users and the Educational Institutions, and all disputes shall be resolved between such Users and Educational Institutions.
+
+3. The Company shall not be responsible in any way for suspension or delay of the network due to an earthquake, lightning, fire, storm, flood or wind damage, power outage, war, insurrection, protest, strike, lockout, labor dispute or any other force majeure, and the Company shall not be responsible in any way for the release, leak or other unauthorised use of Personal Information through unauthorised computer access, except when such unauthorised use is caused by an intentional or grossly negligent act of the Company.
+
+4.The Company expressly or impliedly makes no guarantee of the legality, morality, safety, accuracy or reliability of the Contents of Palaygo uploaded by Users or Supervisors.
+
+5. Users and Supervisors hereby irrevocably agree that any delays of transmissions or other disruptions may happen depending on the terminals or devices used to access Palaygo, network traffic, working conditions of the servers or other reasons. The Company makes no guarantee in any way regarding the environment of the use of Palaygo by Users and Supervisors.
+
+6. The Company may cease providing Palaygo service without any liability in the following cases:
+
+(1) When there is a need for Palaygo facility maintenance or construction; or
+
+(2) When telecommunications service providers stop providing telecommunications services beyond the control of Palaygo.
+
+7. The Company will notify Users and Supervisors in advance when ceasing to provide Palaygo service according to the preceding clause. However the foregoing does not apply in the case of emergency or when such advance notice is not possible.
+
+ 
+
+Article 13. Consent to Terms and Conditions
+
+ 
+
+The consent of Supervisors of Users to the Terms and Conditions will be obtained by the Company before the issuance of the IDs.
+
+ 
+
+Article 14. Governing Law and Jurisdiction
+
+ 
+
+These Terms and Conditions will be governed by and construed in accordance with the laws of Australia. Conflicts that may arise in connection with Palaygo service between Users or Supervisors and the Company will be under the exclusive jurisdiction of the Courts in Australia.
+
+ 
+
+Additional Clause.
+
+ 
+
+The Terms and Conditions shall be in force from 1st September 2019.
+
+Copyright © 2019-2020 Language Discovery Ltd.</value>
+  </data>
+  <data name="txtTermsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="validateEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>-Invalid email</value>
+  </data>
+  <data name="validateEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="validateEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hdnUserAlreadyExistResource1.Value" xml:space="preserve">
+    <value>User {0} already exist in our system, please choose other Name.</value>
+  </data>
+  <data name="EmailContent" xml:space="preserve">
+    <value>Teacher's Full Name : {0}&lt;br/&gt;
+Teacher's Email Address: {1}&lt;br/&gt;
+Teacher's Phone Number: {2}&lt;br/&gt;
+School Name: {3}&lt;br/&gt;
+Palaygo User Name: {4}&lt;br/&gt;
+Gender: {5}&lt;br/&gt;</value>
+  </data>
+  <data name="EmailSubject" xml:space="preserve">
+    <value>New JP Free Trial registered</value>
+  </data>
+  <data name="hdnDemoUserMailToResource1.Value" xml:space="preserve">
+    <value>student@languagediscovery.org</value>
+  </data>
+  <data name="lblPalaygoUserNameResource1.Text" xml:space="preserve">
+    <value>Palaygo User Name</value>
+  </data>
+  <data name="lblInfoResource1.Text" xml:space="preserve">
+    <value>Congratulations!  &lt;br/&gt;
+パレーゴデモアカウントが作成されました。&lt;br/&gt;
+忘れないようにメモしてください。&lt;br/&gt;
+OKを押して、パレーゴログイン画面から &lt;br/&gt;ログインください。</value>
+  </data>
+  <data name="lblRegisterResource1.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="linkPrintResource1.Text" xml:space="preserve">
+    <value>T&amp;C Print Page</value>
+  </data>
+  <data name="ListItem1Resource1.Text" xml:space="preserve">
+    <value>あしたね(Edutown)</value>
+  </data>
+  <data name="ListItem1Resource1.Value" xml:space="preserve">
+    <value>あしたね(Edutown)</value>
+  </data>
+  <data name="ListItem3Resource1.Text" xml:space="preserve">
+    <value>ウェブ検索</value>
+  </data>
+  <data name="ListItem3Resource1.Value" xml:space="preserve">
+    <value>ウェブ検索</value>
+  </data>
+  <data name="ListItem4Resource1.Text" xml:space="preserve">
+    <value>JAPEC提携教室</value>
+  </data>
+  <data name="ListItem4Resource1.Value" xml:space="preserve">
+    <value>JAPEC提携教室</value>
+  </data>
+  <data name="ListItem5Resource1.Text" xml:space="preserve">
+    <value>その他英語教室</value>
+  </data>
+  <data name="ListItem5Resource1.Value" xml:space="preserve">
+    <value>その他英語教室</value>
+  </data>
+  <data name="ListItem6Resource1.Text" xml:space="preserve">
+    <value>パレーゴ会員紹介</value>
+  </data>
+  <data name="ListItem6Resource1.Value" xml:space="preserve">
+    <value>パレーゴ会員紹介</value>
+  </data>
+  <data name="ListItem7Resource1.Text" xml:space="preserve">
+    <value>パレーゴ導入学校の生徒</value>
+  </data>
+  <data name="ListItem7Resource1.Value" xml:space="preserve">
+    <value>パレーゴ導入学校の生徒</value>
+  </data>
+  <data name="ListItem8Resource1.Text" xml:space="preserve">
+    <value>パレーゴ会員の兄弟姉妹</value>
+  </data>
+  <data name="ListItem8Resource1.Value" xml:space="preserve">
+    <value>パレーゴ会員の兄弟姉妹</value>
+  </data>
+  <data name="ListItem9Resource1.Text" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="ListItem9Resource1.Value" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="revPasswordResource1.Text" xml:space="preserve">
+    <value>Password must be at least 8 characters,&lt;br/&gt; mix of letters(at least 1 upper case and lower case letters) and numbers.</value>
+  </data>
+  <data name="hdnPrintTCResource1.Value" xml:space="preserve">
+    <value>https://www.palaygo.net.au/terms-and-conditions/</value>
+  </data>
+  <data name="lblPhoneNumberResource1.Text" xml:space="preserve">
+    <value>Teacher's Phone Number</value>
+  </data>
+</root>

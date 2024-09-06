@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="Language.Discovery.Login" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - Language Discovery</title>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">     
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+    <%--<webopt:BundleReference ID="BundleReference1" runat="server" Path="~/Content/css" /> --%>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <!--<link href="App_Themes/Default/Default.css"  media="screen and (min-width : 1024px)" rel="stylesheet" type="text/css"/>-->
+    <!--<link rel="stylesheet" media="only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) and (orientation:landscape)" href="App_Themes/Default/MobileDefault.css" type="text/css" />-->
+    <link href="App_Themes/Default/bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Default/aJohnStyle.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body style="font-family: 'Open Sans', sans-serif; background-color: white" > 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <a class="navbar-brand" href="https://www.palaygo.com" target="_blank" id="logolink">
+            <div id="palaygo-logo"></div>
+        </a>
+
+        <script>
+            var dftLanguage = navigator.language;
+            var mtxt = "";
+            if ((dftLanguage === "ja") || (dftLanguage === "ja-JP")) {
+                mtxt = '<img src="Images/logo_new_1.png" alt="Logo" height="50" object-fit="cover"/>';
+            } else {
+                mtxt = '<img src="Images/logo_new_1.png" alt="Logo" height="50" object-fit="cover" />';
+            }
+            document.getElementById("palaygo-logo").innerHTML = mtxt;
+        </script>
+        
+       <%-- <div class="form-inline">
+            <div class="text-right collapse navbar-collapse">
+                <span>Copyright &copy; 2018-2022 Language Discovery</span> 
+            </div>
+        </div>--%>
+    </nav>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+    </form>
+
+
+
+   <%-- <div class="container page-footer " style="margin-top: 200px">
+        <div class="row mb-3 mt-4">
+            <div class="col-md-1 col-sm-auto"></div>
+            <div class="col-md-5 col-sm-12 text-center mb-3">
+                <img src="Images/P_Mail.png" alt="Talk"/>
+            </div>
+            <div class="col-md-5 col-sm-12 text-center mb-3">
+                <div id="ecc-logo"></div>
+                <script>
+                    var dftLanguage = navigator.language;
+                    var atxt = "";
+                    if ((dftLanguage === "ja") || (dftLanguage === "ja-JP")) {
+                        //atxt = '<a href="https://resv.ecc.co.jp/corp/seito_login/?c=Y2380"><img src="Images/P_Talk.png" alt="ECC" height="50"/><br/>ECCオンラインレッスンへはこちらからログインください。</a>';
+                        atxt = '<img src="Images/P_Talk.png" alt="ECC" />';
+                    } else {
+                        atxt = '<img src="Images/P_Talk.png" alt="ECC"/>';
+                    }
+                    document.getElementById("ecc-logo").innerHTML = atxt;
+                </script>
+            </div>
+            <div class="col-md-1 col-sm-auto"></div>
+        </div>
+        
+    </div>--%>
+</body>
+</html>

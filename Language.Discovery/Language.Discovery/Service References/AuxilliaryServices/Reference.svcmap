@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dd8a06b4-1832-4aad-837a-3ca8dc2f2512" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Language.Discovery.Entity" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49708/Service/AuxilliaryServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AuxilliaryServices.xsd" MetadataType="Schema" ID="f2bf92f7-0089-4774-979c-9709888a62da" SourceId="1" SourceUrl="http://localhost:49708/Service/AuxilliaryServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuxilliaryServices.disco" MetadataType="Disco" ID="e0febfa4-ba1b-4b30-8a07-7d8c4f887a1a" SourceId="1" SourceUrl="http://localhost:49708/Service/AuxilliaryServices.svc?disco" />
+    <MetadataFile FileName="AuxilliaryServices1.xsd" MetadataType="Schema" ID="18fbb188-2ca8-47a0-9cea-8cd29ea2a668" SourceId="1" SourceUrl="http://localhost:49708/Service/AuxilliaryServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="AuxilliaryServices.wsdl" MetadataType="Wsdl" ID="ea4ae0b0-6ddb-4a8f-89fa-39e35b9a0918" SourceId="1" SourceUrl="http://localhost:49708/Service/AuxilliaryServices.svc?wsdl" />
+    <MetadataFile FileName="AuxilliaryServices2.xsd" MetadataType="Schema" ID="bb9ed70c-3aea-4c3e-8854-c67323f7fd82" SourceId="1" SourceUrl="http://localhost:49708/Service/AuxilliaryServices.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

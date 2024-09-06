@@ -1,0 +1,1168 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Language.Discovery.SiteMaster" EnableTheming="true" %>
+
+<%--globe icon created by apathae http://apathae.deviantart.com/--%>
+<%--gear icon - thanks to Pixel mixer http://www.pixel-mixer.com/--%>
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="origin-trial" content="ApX266sAgbMtMDHdG/awWBzCROjsFD5SeCg6+cxBSXplZGxYG+nnq+piX+rCBD60eNH8BGH5VXgy8EOtk1pPWgcAAAB9eyJvcmlnaW4iOiJodHRwczovL2hvbWUucGFsYXlnby5jb206NDQzIiwiZmVhdHVyZSI6IlJUQ0V4dGVuZERlYWRsaW5lRm9yUGxhbkJSZW1vdmFsIiwiZXhwaXJ5IjoxNjUzNDM2Nzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+    <title><%: Page.Title %> - Language Discovery</title>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">     
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+    <%--@media (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)--%>
+    <%--<webopt:BundleReference ID="BundleReference1" runat="server" Path="~/Content/css" /> --%>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="App_Themes/Default/Default.css?311247936CF74A3d98A87A1406B797A2Bava" rel="stylesheet" type="text/css" media="screen and (min-width : 1024px)"/>
+    <link id="mobileDefault" rel="stylesheet" media="only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) " href="App_Themes/Default/MobileDefault.css?311247936CdfF74A39d8A87A1406B797A2Ba" type="text/css" />
+    <link id="mobileDefaultPortrait" rel="stylesheet" media="only screen and (max-width: 1023px), only screen and (max-device-width: 768px) and (orientation:portrait)" href="App_Themes/Default/MobileDefault900.css?311236CF74A398Ad87A1406B797xxssaxxbxxbss" type="text/css" />
+    <link href="App_Themes/Default/bubble.css" rel="stylesheet" />
+
+    <link href="App_Themes/Default/jqueryui_custom/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+    
+    
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+<!--[if IE]>
+<h1>You are using Internet Explorer</h1>
+<![endif]-->
+    <style>
+        .lb-notify-tabs
+        {
+            display:none;
+        }
+        .mail
+        {background-image: url(../Images/Material_Icons/mailbox_29px.png);
+         /* width:40px !important;
+		 height:40px !important;  */
+         /* position:relative;  */ 
+        }
+        figcaption {
+            /*margin: 10px 0 0 0;*/
+            font-variant: small-caps;
+            font-family: Arial;
+            color: #bb3333;
+        }
+        figure {
+            padding: 5px;
+        }
+         .actualLink
+    {
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:100%;
+    }
+   .footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+    color:black;
+}
+   .cont_talk
+   {
+       display: block;
+   }
+   #divSchedulerTitleContainer{
+        height: 100%;
+        text-align: center;
+        position: relative;
+        display:none;
+   }
+   #lblTalkSchedulerTitle{
+        position: relative;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        display: inline-block;
+        font-size: 47px;
+        font-weight: bold;
+        color: #808080;
+   }
+   .myroom, .partnersroom{
+       float:left;
+       width: 90px !important;
+        margin-top: 6px;
+        height: 41px;
+   }
+   .ulFinePrint{
+       list-style:disc;
+       padding-left: 19px;
+   }
+    </style>
+
+    
+</head>
+<body>
+     <header>
+       <div id="header">
+           <div class="header_frame_Stud" id="header_frame_Stud"  style="display:none;">
+               <div id="hfs_left">
+                   <div id="hfs_left_container" class="hfs_left_container">
+                       <%--<img class="logo" src="../Images/mailLogo2022.png" />--%>
+                       <%--<img class="myroom" src="../Images/new/myroom_button.png" onclick="Profile();" />--%>
+                       <img class="myroom" src="../Images/logo_new_1.png" onclick="Profile();" />
+                      <%-- <img class="partnersroom" src="../Images/new/partners_button.png" onclick="showFriendsRoom();" style="display:none;" />--%>
+                   </div>
+               </div>
+               <div id="hfs_right">
+                   <div id="hfs_right_container" class="hfs_right_container">
+
+                       <!-- Menu menu dropdown menu -->
+                       <div class="acct-menu-dropdown">
+                           
+                           <div onclick="myFunction()" class="acct-menu-dropbtn" > 
+                               <img class="acct-menu-dropbtn-image" runat="server" id="imgOwner" /> 
+                                <i class="material-icons acct-menu-dropbtn-image arrow_down">keyboard_arrow_down</i>
+                           </div>
+                           <div id="myDropdown" class="dropdown-content">
+                               <a href="javascript:Profile();">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblLabelMyRoom" runat="server" Text="My Room"></asp:Label></span>
+                                   <img src="../Images/new/my room.png" class="acct-menu-dropdown-image" />
+                                   <%--<i class="material-icons acct-menu-dropdown-image">face</i>--%>
+                               </a>
+                               <a href="javascript:Info();" id="linkInfo">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblInfo" runat="server" Text="Info"></asp:Label></span>
+                                   <img src="../Images/new/country info.png" class="acct-menu-dropdown-image" />
+                                   <%--<i class="material-icons acct-menu-dropdown-image">info</i>--%>
+                               </a>
+                               <a href="javascript:RegisterStudents();" id="linkRegisterStudents" style="display:none;">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblRegisterStudents" runat="server" Text="Register Students"></asp:Label></span>
+                                   <i class="material-icons acct-menu-dropdown-image">person_add</i>
+                               </a>
+                               <a href="javascript:Admin();" id="linkAdmin" style="display:none;">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblAdmin" runat="server" Text="Admin"></asp:Label></span>
+                                   <i class="material-icons acct-menu-dropdown-image">settings</i>
+                               </a>
+                               <a href="javascript:TalkMonitor();" id="talkMonitor" style="display:none;">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblLabelTalkMonitor" runat="server" Text="Talk Monitor"></asp:Label></span>
+                                   <i class="material-icons acct-menu-dropdown-image">airplay</i>
+                               </a>
+                               <a href="javascript:Logout();">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblLabelLogout" runat="server" Text="Logout"></asp:Label></span>
+                                   <img src="../Images/new/logout.png" class="acct-menu-dropdown-image" />
+                                   <%--<i class="material-icons acct-menu-dropdown-image">input</i>--%>
+                               </a>
+                           </div>
+
+                       </div>
+                       <div class="cantalkStatus" style="display:none;"></div>
+                       <div class="acct-menu-cont_login_name">
+                           <asp:Label CssClass="acct-menu-cont_login_name_text" ID="lblLabelUserName" runat="server" Text="Name"></asp:Label>
+                            <%--<i class="material-icons acct-menu-dropbtn-image arrow_down">keyboard_arrow_down</i>--%>
+                       </div>
+
+                       <%--<a class="link" href="~/Student/Profile.aspx" ID="linkUser" runat="server" ></a>--%>
+                       <%-- <img class="link_MyRoom" src="~/Images/MyRoomF.png" onclick="Profile();" runat="server" id="imgRoom" />--%>
+                   </div>  <!-- hfs_right_container -->
+
+                    <%-- Main menu bar.  
+                        It would be good to change this to a normal navbar soon. (dwayne) --%>
+                    <div id="hfs_right_container1" class="hfs_right_container1">
+                        <div id="divSchedulerTitleContainer">
+                            <asp:Label ID="lblTalkSchedulerTitle" ClientIDMode="Static" runat="server" Text="Talk Scheduler"></asp:Label>
+                        </div>
+                        <div class="cont_home" onclick="Home();" >
+                            <img id="imgHome" class="headerMenu_image" src="../Images/new/home2_new.png" />
+                        </div>
+                       <%-- <div class="cont_writenew" onclick="WriteNew();">
+                            <img class="headerMenu_image" id="imgNewMessage" src="../Images/new/new message.png" />
+                        </div>--%>
+                        
+                        <div class="cont_help acct-menu-dropdown" onclick="showHelpDropdown(event)" style="display: none">
+                            <img id="imgHelp" class="headerMenu_image" src="../Images/new/help.png" />
+                           <div id="helpDropdown" class="help-dropdown-content">
+                               <a href="javascript:OpenYouTube('hdnMailUsageVideo');" id="linkMailUsageVideo">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblMailUsageVideo" runat="server" Text="Mail Usage Video"></asp:Label></span>
+                                   <img src="../Images/new/video_icon.png" class="acct-menu-dropdown-image" />
+                                   <%--<i class="material-icons acct-menu-dropdown-image">av_timer</i>--%>
+                               </a>
+                               <a href="javascript:NewHelp('hdnQuickStart');" id="linkQuickStart">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblQuickStart" runat="server" Text="Quick Start"></asp:Label></span>
+                                   <img src="../Images/new/quick start.png" class="acct-menu-dropdown-image" />
+                                   <%--<i class="material-icons acct-menu-dropdown-image">av_timer</i>--%>
+                               </a>
+                               <a href="javascript:NewHelp('hdnTutorial');" id="linkTutorial">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblTutorial" runat="server" Text=" Video / Tutorial"></asp:Label></span>
+                                   <img src="../Images/new/tutorial.png" class="acct-menu-dropdown-image" />
+                                   <%--<i class="material-icons acct-menu-dropdown-image">how_to_reg</i>--%>
+                               </a>
+                               <a href="javascript:NewHelp('hdnFaq');" id="linkFaq">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblFaq" runat="server" Text="FAQ"></asp:Label></span>
+                                   <img src="../Images/new/FAQ.png" class="acct-menu-dropdown-image" />
+                                   <%--<i class="material-icons acct-menu-dropdown-image">assignment</i>--%>
+                               </a>
+                              <%-- <a href="javascript:talkChecklist();" id="linkTalkBookSchedule" style="display:none;">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblPrepareTalk" runat="server" Text="Schedule Talk"></asp:Label></span>
+                                   <img src="../Images/new/BookATalk.png"  class="acct-menu-dropdown-image"/>
+                                   
+                               </a>--%>
+                               <a href="javascript:OpenYouTube('hdnTalkTutorial');" id="linkTalkTutorial" style="display:none;">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblTalkTutorial" runat="server" Text="Talk Tutorial"></asp:Label></span>
+                                   <img src="../Images/new/video_icon.png" class="acct-menu-dropdown-image" />
+                                   <%--<i class="material-icons acct-menu-dropdown-image">how_to_reg</i>--%>
+                               </a>
+                               <a href="javascript:NewHelp('hdnTalkFaq');" id="linkTalkFaq" style="display:none;">
+                                   <span class="acct-menu-dropdown-text">
+                                       <asp:Label ID="lblTalkFaq" runat="server" Text="Talk FAQ"></asp:Label></span>
+                                   <img src="../Images/new/FAQ.png" class="acct-menu-dropdown-image" />
+                               </a>
+                           </div>
+                        </div>
+<%--                       <div class="cont_admin" onclick="Admin();" style="display:none;">
+                            <i class="material-icons link_admin">settings</i>
+                            <span class="cont_header_text"><asp:Label ID="lblAdmin" runat="server" Text="Admin"></asp:Label></span>
+                        </div>    --%>
+                         <%--<img class="partnersroom" src="../Images/new/partners_button.png" onclick="showFriendsRoom();" style="display:none;" />--%>
+
+                        
+                        <div class="cont_mail_outer" onclick="Mailbox();">
+                            <!-- <div class="cont_mail"> -->
+                                <img id="imgMailbox" class="headerMenu_image" src="../Images/new/chatbox.png" />
+                                <!-- There is a bug in here! Rather than slowing down Frank's documentation, let's comment this out for now. (dwayne)
+                                <div class="mail">
+                                    <div id="divUnreadMessageHeader" runat="server" class="divUnreadMessageHeader"></div>
+                                    <asp:Label CssClass="mail_name_lbl_header" ID="lblUnreadMessageHeader" runat="server" Text="" style="vertical-align:bottom;" ToolTip="Your messages are"></asp:Label>
+                                    <asp:Label CssClass="mail_name_lbl" ID="lblUnReadMessage" runat="server" Text="" Font-Bold="true" style="vertical-align:bottom; display: none;" ToolTip="Your messages are"></asp:Label>
+                                    <a class="actualLink"></a>
+                                </div>
+                                -->
+                            <!-- </div>  -->
+                        </div>
+
+<%--                         <div class="cont_writenew" onclick="WriteNew();">
+                            <img class="headerMenu_image" id="imgNewMessage" src="../Images/new/new_message.png" />
+                        </div>--%>
+
+                       <div class="cont_talk" onclick="Talk();">
+                            <img id="imgTalk" class="headerMenu_image" src="../Images/new/talk.png" />
+                        </div>
+
+                       <%-- <div class="timerContainer">
+                            <div class="divRemainingTimeLabel">
+                                <asp:Label ID="lblRemainingTimer" runat="server" Text="Remaining Talk Timer" ClientIDMode="Static"></asp:Label>
+                            </div>
+                            <div class="minContainer">
+                                <div class="sessionContainer">
+                                    <asp:Label ID="lblSessionLabel" runat="server" Text="Session:" ClientIDMode="Static"></asp:Label>
+                                    <asp:Label ID="sessionTime" runat="server" Text="" ClientIDMode="Static"></asp:Label>
+                                </div>
+                                <div class="totalContainer">
+                                    <asp:Label ID="lblTotalLabel" runat="server" Text="Total:" ClientIDMode="Static"></asp:Label>
+                                    <asp:Label ID="totalTime" runat="server" Text="" ClientIDMode="Static"></asp:Label>
+                                </div>
+                            </div>
+                        </div>--%>
+                   </div>
+               </div>
+               <div style="clear:both;"></div>
+           </div>
+       </div>
+    </header>
+    
+    <div class="body_container_ML" id="body_container_ML">
+        <div class="body_frame_ML" id="body_frame_ML">
+            <div class="body_main_frame_ML" id="body_main_frame_ML">
+            <form id="Form1" runat="server" autocomplete="off">
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    <Scripts>
+                        <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+                        <%--Framework Scripts--%>
+            
+                        <asp:ScriptReference Name="MsAjaxBundle" />
+                        <asp:ScriptReference Name="jquery" />
+                        <asp:ScriptReference Name="jquery.ui.combined" />
+                        <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                        <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                        <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                        <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                        <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                        <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                        <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                        <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                        <asp:ScriptReference Name="WebFormsBundle" />
+                        <%--Site Scripts--%>
+
+                    </Scripts>
+                </asp:ScriptManager>
+                       <asp:UpdateProgress ID="updProgress" runat="server">
+                <ProgressTemplate> 
+                    <div id="divImage" style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #000000; opacity: 0.7;">
+                        <img alt="progress" src="../Images/new/loading.gif" style="position:fixed;top:50%;left:50%;transform: translate(-50%, -50%);" />
+                    </div>
+<%--                    <div id="divImage" style="position:absolute;visibility:visible;border:none;z-index:100;width:100%;height:100%;top:-10px;left:0;background:#EFF8F9;filter: alpha(opacity=90);-moz-opacity:.9; opacity:.9;">
+                            <img alt="progress" src="../Images/loading.gif" style="top:48%; left:42%; position:relative;"/>                     
+                    </div>         --%>
+                </ProgressTemplate>
+                </asp:UpdateProgress>
+                    <script type="text/javascript">
+                        var chat = null;
+                        $(document).ready(function () {
+                            debugger
+                            $(".iframe").colorbox({ iframe: true, width: "80%", height: "80%" });
+
+                            imOnline();
+                            ShowParentsInfo();
+                            //Start Added Afsar 02092024
+                            // This flag controls whether the beforeunload prompt is shown
+                            var allowPrompt = true;
+
+                            // Function to handle the beforeunload event
+                            //window.onbeforeunload = function (e) {
+                            //    debugger;
+                            //    if (allowPrompt) {
+                            //        // Customize the confirmation message
+                            //        var confirmationMessage = "Wait! Are you sure you want to leave our site?";
+
+                            //        // Setting the returnValue property is required for some browsers
+                            //        e.returnValue = confirmationMessage;
+
+                            //        // Return the message for other browsers
+                            //        return confirmationMessage;
+                            //    }
+                            //};
+
+                            // Function to handle the unload event for logout
+                            $(window).on('unload', function () {
+                                debugger
+                                // Check if we are in a tab/browser close scenario
+                                if (allowPrompt) {
+                                    // Call the logout function
+                                    logoutUser()
+                                }
+                            });
+
+                            function logoutUser() {
+                                debugger;
+                                // Make an AJAX call to the server to log out the user
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '~/ChatHub/Signout', // Replace with your actual logout URL
+                                  /*  async: false,*/ // Make the request synchronous to ensure it completes
+                                    success: function () {
+                                        console.log('User logged out successfully.');
+                                    },
+                                    error: function (xhr, status, error) {
+                                        console.error('Logout failed:', error);
+                                    }
+                                });
+                            }
+                        //Start Added Afsar 02092024
+
+                        });
+
+                        window.onbeforeunload = function () {
+                            cantTalk();
+                        };
+
+                        function cantTalk() {
+                            if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                                $.connection.hub.start().done(function () {
+                                    chat.server.canTalk($('#hdnCurrentUserID').val(), "", false);
+                                });
+                            } else {
+                                chat.server.canTalk($('#hdnCurrentUserID').val(), "", false);
+                            }
+
+                            sessionStorage.setItem("onlineStatus", false);
+
+                        }
+                        function pageLoad() {
+                            var manager = Sys.WebForms.PageRequestManager.getInstance();
+                            manager.add_endRequest(endRequest);
+                            manager.add_beginRequest(OnBeginRequest);
+                        }
+                        function OnBeginRequest(sender, args) {
+                            $get('divImage').style.display = 'block';
+                        }
+                        function endRequest(sender, args) {
+                            $get('divImage').style.display = 'none';
+                        }
+
+
+                        function OpentoNewWindow(url) {
+                            let a = document.createElement('a');
+                            a.target = '_blank';
+                            a.href = url;
+                            a.click();
+                        }
+                        //Afsar 02092024
+                        function initChatHub() {
+                            debugger;
+                            chat = $.connection.chatHub;
+                            $.connection.hub.logging = true;
+                            $.connection.hub.start().done(function () {
+                                chat.server.getAllOnlineStatus();
+                            }).fail(function (error) {
+                                console.log('Invocation of start failed. Error:' + error);
+                                alert('Microsoft Chat API crashed: ' + error + " - Please restart the browser, there might be a memory problem on your computer");
+                            });
+
+                            chat.client.logoutSession = function (id) {
+                                if ($("#hdnCurrentUserID").val() == id) {
+                                    $(location).attr('href', '<%=Page.ResolveUrl("~/Logout")%>');
+                                } else {
+                                    //alert("hello")
+                                }
+                            };
+
+                            chat.client.userCallingFromOtherPage = function (receiver, from, room, group, roomKey) {
+                                if (!location.href.toLowerCase().includes("talk")) {
+                                    $("<div>" + $('#hdnCallAlert').val() + "</div>").dialog({
+                                        modal: true,
+                                        buttons: {
+                                            Ok: function () {
+                                                sessionStorage.setItem("from", from);
+                                                sessionStorage.setItem("room", room);
+                                                sessionStorage.setItem("group", group);
+                                                sessionStorage.setItem("roomKey", roomKey);
+                                                sessionStorage.setItem("receiver", receiver);
+                                                //let url = "/Student/Talk";
+                                                //$(location).attr('href', url);
+                                                Talk();
+                                                },
+                                            Cancel: function () {
+                                                if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                                                    $.connection.hub.start().done(function () {
+                                                        chat.server.rejected(group, receiver);
+                                                    });
+                                                } else {
+                                                    chat.server.rejected(group, receiver);
+                                                }
+                                                $(this).dialog("close");
+                                            }
+                                        }
+                                    });
+                                    $('.ui-dialog-titlebar').css('display', "none");
+
+                                }
+                            }
+                        }
+
+                        function imOnline() {
+                            try {
+                                var onlineStatus = sessionStorage.getItem("onlineStatus");
+                                if (onlineStatus == undefined || onlineStatus == null)
+                                    onlineStatus = false;
+
+                                if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                                    $.connection.hub.start().done(function () {
+                                        chat.server.iAmOnline($('#hdnCurrentUserID').val(), true);
+                                    });
+                                } else {
+                                    chat.server.iAmOnline($('#hdnCurrentUserID').val(), true);
+                                }
+                                
+                            }
+                            catch (err) {
+                            }
+
+                        }
+
+                        //Start afsar 01092024
+                       
+
+                        //end afsar 01092024
+                        function Logout() {
+                            debugger
+                            //if (chat != null) {
+                            //    //chat = $.connection.chatHub;
+                            //    if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                            //        $.connection.hub.start().done(function () {
+                            //            chat.server.signout($("#hdnUser").val());
+                            //        });
+                            //    } else {
+                            //        chat.server.signout($("#hdnUser").val());
+                            //    }
+                            //} else {
+                                //chat = $.connection.chatHub;
+                            //$.connection.hub.logging = true;
+                           
+
+                                if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                                    $.connection.hub.start().done(function () {
+                                        chat.server.signout($("#hdnUser").val());
+                                    });
+                                } else {
+                                    chat.server.signout($("#hdnUser").val());
+                                }
+
+                                if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                                    chat.server.logoutSession($("#hdnCurrentUserID").val());
+                                } else {
+                                    chat.server.logoutSession($("#hdnCurrentUserID").val());
+                                }
+
+                                //if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                                //    $.connection.hub.start().done(function () {
+                                //        chat.server.logoutSession();
+                                //    });
+                                //} else {
+                                //    chat.server.logoutSession();
+                                //}
+
+                            //}
+                            
+                            $(location).attr('href', '<%=Page.ResolveUrl("~/Logout")%>');
+                        }
+                        function ShowProfile() {
+                            $(".iframe").colorbox({ iframe: true, width: "80%", height: "80%" });
+
+
+                            $.colorbox({ iframe: true, href: '<%=Page.ResolveUrl("~/Student/MyRoom")%>' });
+                            m_shouldstoppropacation = true;
+                            return false;
+                        }
+                        function Profile() {
+                            if (location.href.toLowerCase().includes("talk")) {// && _isInCall) {
+                                //OpentoNewWindow('<%=Page.ResolveUrl("~/Student/Profile")%>');
+                                $(".iframe").attr("href", "MyRoom.aspx");
+                                $(".iframe").click();
+                            }
+                            else 
+                                $(location).attr('href', '<%=Page.ResolveUrl("~/Student/MyRoom")%>');
+                        }
+
+                        function scheduleATalk() {
+                            if (location.href.toLowerCase().includes("talk"))
+                            { // && _isInCall) {
+                                OpentoNewWindow('<%=Page.ResolveUrl("~/Student/Scheduler")%>');
+                            }
+                            else
+                                $(location).attr('href', '<%=Page.ResolveUrl("~/Student/Scheduler")%>');
+                        }
+
+                        function WriteNew() {
+                            if (sessionStorage.getItem("hasProfileSetup") != null && sessionStorage.getItem("hasProfileSetup") == "false") {
+                                alert($('#<%=hdnSetupProfile.ClientID%>').val());
+                                if (!location.href.toLowerCase().includes("myroom")) {
+                                    $(location).attr('href', '<%=Page.ResolveUrl("~/Student/MyRoom")%>');
+                                }
+                                return;
+                            }
+                            //if (location.href.toLowerCase().includes("talk") )//&& _isInCall)
+                            //    OpentoNewWindow('<%=Page.ResolveUrl("~/Student/SendMessage?du=1")%>');
+                            //else
+                            $(location).attr('href', '<%=Page.ResolveUrl("~/Student/SendMessage?du=1")%>');
+                        }
+                        function Info() {
+                            //if (location.href.toLowerCase().includes("talk") ) //&& _isInCall)
+                            //    OpentoNewWindow('<%=Page.ResolveUrl("~/Information/Information")%>');
+                            //else
+                                $(location).attr('href', '<%=Page.ResolveUrl("~/Information/Information")%>');
+                        }
+                        function Talk() {
+                            $(location).attr('href', '<%=Page.ResolveUrl("~/Student/Talk")%>');
+                            //OpentoNewWindow('<%=Page.ResolveUrl("~/Student/Talk")%>');
+                        }
+                        function Admin() {
+                            //window.open("http://" + window.location.host+ "/admin", '_blank');
+                            window.open("https://home.palaygo.com/admin", '_blank');
+                        }
+                        function RegisterStudents() {
+                            //window.open("http://" + window.location.host+ "/admin/login?rs=1", '_blank');
+                            window.open("https://home.palaygo.com/admin/login?sc=1", '_blank');
+                        }
+
+                        function Home() {
+                            //alert($('#hasProfileSetup').val());
+                            if (sessionStorage.getItem("hasProfileSetup") != null && sessionStorage.getItem("hasProfileSetup") == "false") {
+                                alert($('#<%=hdnSetupProfile.ClientID%>').val());
+                                if (!location.href.toLowerCase().includes("myroom")) {
+                                    $(location).attr('href', '<%=Page.ResolveUrl("~/Student/MyRoom")%>');
+                                }
+                                return;
+                            }
+                            //if (location.href.toLowerCase().includes("talk") ) //&& _isInCall)
+                            //    OpentoNewWindow('<%=Page.ResolveUrl("~/Student/Home")%>');
+                            //else
+                                $(location).attr('href', '<%=Page.ResolveUrl("~/Student/Home")%>');
+                        }
+                        function Mailbox() {
+                            if (sessionStorage.getItem("hasProfileSetup") != null && sessionStorage.getItem("hasProfileSetup") == "false") {
+                                alert($('#<%=hdnSetupProfile.ClientID%>').val());
+                                if (!location.href.toLowerCase().includes("myroom")) {
+                                    $(location).attr('href', '<%=Page.ResolveUrl("~/Student/MyRoom")%>');
+                                }
+                                return;
+                            }
+                            //if (location.href.toLowerCase().includes("talk")) // && _isInCall)
+                            //    OpentoNewWindow('<%=Page.ResolveUrl("~/Student/Mailbox")%>');
+                            //else
+                                $(location).attr('href', '<%=Page.ResolveUrl("~/Student/MailBox")%>');
+                        }
+                        function Help() {
+                            var url;
+                            var presentation = $("#hdnHelpPresentation").val();
+                            if (presentation != "none") {
+                                url = presentation;
+                            } else {
+                                url = "../documentation/" + $("#hdnHelp").val();
+                            }
+                            //$(location).attr('href', url );
+                            //window.open(url, '_blank');
+
+                            //var newwindow = window.open(url, 'name', "height=" + $(window).height() + "',width=" + $(window).width() + "',scrollbars=yes");
+                            var newwindow = window.open(url, "_blank", "height=751,width=1038,scrollbars=yes,resizable=yes");
+                            if (window.focus) { newwindow.focus() }
+                            return false;
+                        }
+
+                         function NewHelp(elem) {
+                            var url;
+                            var presentation = $("#" + elem).val();
+                            if (presentation != "none") {
+                                url = presentation;
+                            } else {
+                                url = "../documentation/" + $("#hdnHelp").val();
+                            }
+                            //$(location).attr('href', url );
+                            //window.open(url, '_blank');
+
+                            //var newwindow = window.open(url, 'name', "height=" + $(window).height() + "',width=" + $(window).width() + "',scrollbars=yes");
+                            var newwindow = window.open(url, "_blank", "height=751,width=1038,scrollbars=yes,resizable=yes");
+                            if (window.focus) { newwindow.focus() }
+                            return false;
+                        }
+
+                        function OpenYouTube(elem) {
+                            var url;
+                            var presentation = $("#" + elem).val();
+                            if (presentation != "none") {
+                                url = presentation;
+                            } else {
+                                url = "../documentation/" + $("#hdnHelp").val();
+                            }
+                            //url = url + "?autoplay=1";
+                            var x = window.open("", "_blank", "status=0,titlebar=0,toolbar=0,scrollbars=0,resizable=yes,top=0,left=500,width=960,height=665");
+                            x.document.body.innerHTML = '';
+                            x.document.write("<html><head></head><body style='background-color:black;'><iframe width='800' height='600' src='" + url+ "' title='YouTube video player' frameborder = '0' allow='accelerometer; autoplay; clipboard - write; encrypted - media; gyroscope; picture -in -picture' allowfullscreen ></iframe ></body></html>");
+                            if (window.focus) { x.focus() }
+                            return false;
+                        }
+
+                        function talkChecklist() {
+                            //var url = "../Content/Sound/BookATalk/" + $('#hdnBookATalk').val();
+                            //var newwindow = window.open(url, "_blank", "height=751,width=1050,scrollbars=yes,resizable=yes");
+                            //if (window.focus) { newwindow.focus() }
+                            var url;
+                            var presentation = $("#hdnTalkChecklistPresentation").val();
+                            if (presentation != "none") {
+                                url = presentation;
+                            } else {
+                                url = "../documentation/" + $("#hdnHelp").val();
+                               
+                            }
+                            //$(location).attr('href', url );
+                            //window.open(url, '_blank');
+
+                            //var newwindow = window.open(url, 'name', "height=" + $(window).height() + "',width=" + $(window).width() + "',scrollbars=yes");
+                            var newwindow = window.open(url, "_blank", "height=751,width=1038,scrollbars=yes,resizable=yes");
+                            if (window.focus) { newwindow.focus() }
+                            return false;
+                        }
+
+                        function talkProcess() {
+                            //var url = "../Content/Sound/BookATalk/" + $('#hdnBookATalk').val();
+                            //var newwindow = window.open(url, "_blank", "height=751,width=1050,scrollbars=yes,resizable=yes");
+                            //if (window.focus) { newwindow.focus() }
+                            var url;
+                            var presentation = $("#hdnTalkTutorial").val();
+                            if (presentation != "none") {
+                                url = presentation;
+                            } else {
+                                url = "../documentation/" + $("#hdnHelp").val();
+                            }
+                            //$(location).attr('href', url );
+                            //window.open(url, '_blank');
+                            //var newwindow = window.open(url, 'name', "height=" + $(window).height() + "',width=" + $(window).width() + "',scrollbars=yes");
+                            var newwindow = window.open(url, "_blank", "height=751,width=1038,scrollbars=yes,resizable=yes");
+                            if (window.focus) { newwindow.focus() }
+                            return false;
+                        }
+
+                        function TalkHelp() {
+                            var url;
+                            var presentation = $("#hdnTalkHelpPresentation").val();
+                            if (presentation != "none") {
+                                url = presentation;
+                            } else {
+                                url = "../documentation/" + $("#hdnHelp").val();
+                            }
+                            //$(location).attr('href', url );
+                            //window.open(url, '_blank');
+
+                            //var newwindow = window.open(url, 'name', "height=" + $(window).height() + "',width=" + $(window).width() + "',scrollbars=yes");
+                            var newwindow = window.open(url, "_blank", "height=751,width=1038,scrollbars=yes,resizable=yes");
+                            if (window.focus) { newwindow.focus() }
+                            return false;
+                        }
+
+                        function TalkMonitor()
+                        {
+                            //var newwindow = window.open('<%=Page.ResolveUrl("~/Student/TalkMonitor")%>', "_blank", "height=751,width=1038,scrollbars=yes,resizable=yes");
+                            window.open('Monitor.aspx', '_blank');
+                            
+                            return false;
+                        }
+
+                        function SetupMasterMenu(val) {
+                            if (val == false)
+                                sessionStorage.setItem("hasProfileSetup", val);
+                            else
+                                sessionStorage.removeItem("hasProfileSetup");
+                        }
+
+                        function ResolveUrl(url) {
+                            if (url.indexOf("~/") == 0) {
+                                var u = "~/documentation/" + $("#hdnHelp").val();
+                                url = url + u;
+                            }
+                            return url;
+                        }
+                        function HideHelpMenuItem(istalk, language) {
+                            
+                            if (!istalk) {
+                                $("#linkTalkTutorial").hide();
+                                $("#linkTalkFaq").hide();
+                                
+                                if (language == "en-US") {
+                                    $("#linkMailUsageVideo").hide();
+                                }
+                                if (language == "ja-JP") {
+                                    $("#linkTutorial").hide();
+                                }
+                                //$("#linkTalkBookSchedule").hide();
+                            }
+                            else {
+                                $("#linkMailUsageVideo").hide();
+                                $("#linkQuickStart").hide();
+                                $("#linkTutorial").hide();
+                                $("#linkFaq").hide();
+                                $("#linkTalkTutorial").show();
+                                //$("#linkTalkBookSchedule").show();
+
+                                //if (language == "ja-JP") {
+                                    $("#linkTalkFaq").show();
+                                //}
+                            }
+
+                        }
+                        function HideAdmin(hide) {
+                            if( hide )
+                                $('#linkAdmin').hide();
+                            else
+                                $('#linkAdmin').show();
+                        }
+                        function HideRegisterStudents(hide) {
+                            if( hide )
+                                $('#linkRegisterStudents').hide();
+                            else
+                                $('#linkRegisterStudents').show();
+                        }
+
+                        function HideTalk(hide) {
+                            if (hide)
+                                $('.cont_talk').hide();
+                            else
+                                $('.cont_talk').show();
+                        }
+                        function ShowNotification(img, username, address, learning) {
+                            //if (sessionStorage.getItem("isNotificationCloseClicked") == "1") {
+                            //    return;
+                            //}
+                            Lobibox.notify('warning',
+                                {
+                                    onClick: function(){
+                                        $(location).attr('href', '<%=Page.ResolveUrl("~/Student/MailBox")%>');
+                                    },
+                                    title:  $("#lblWritenew").text(),
+                                    soundPath: '/Content/Sound/System/',
+                                    sound: true,
+                                    soundExt: '.mp3',
+                                    img: img,
+                                    size:'large',
+                                    msg: "<br/>" + $('#hdnNewMessageNotification').val() + "<br/>" + username + "<br/>" + address + "<br/>" + learning,
+                                });
+                            //var btn = '<div class="lobibox-gotomailbox-button-container"><input type="button" value="' + $('#hdnGotomailboxbutton').val() + '" class="lobibox-gotomailbox-button" onclick="Mailbox();"></div>'
+                            var btn = '<div class="lobibox-gotomailbox-button-container"><img src="../Images/new/mailbox.png" value="' + $('#hdnGotomailboxbutton').val() + '" class="lobibox-gotomailbox-button" onclick="Mailbox();"/></div>'
+                            $('.lobibox-notify').append(btn);
+                            //$('.lobibox-notify .lobibox-close').click(function () {
+                            //    sessionStorage.setItem("isNotificationCloseClicked", "1");
+                            //});
+                                
+                        }
+                       
+                        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                            //document.getElementById("myDropdown").classList.toggle("show");
+                            $("#myDropdown").toggleClass("show");
+                            if ($("#helpDropdown").hasClass("show"))
+                                $("#helpDropdown").removeClass("show");
+                        }
+
+                        function showHelpDropdown(event) {
+                            $("#helpDropdown").toggleClass("show");
+                            if ($("#myDropdown").hasClass("show"))
+                                $("#myDropdown").removeClass("show");
+                            event.stopPropagation();
+                        }
+
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function (event) {
+                            if (event.target.matches && (!event.target.matches('.acct-menu-dropbtn') && !event.target.matches('.cont_help'))) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                                dropdowns = document.getElementsByClassName("help-dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+
+                            }
+                        }
+
+                        function AddZendesk()
+                        {
+                        //    var script = document.createElement('script');
+                        //    script.type = 'text/javascript';
+                        //    script.id = 'ze-snippet';
+                        //    script.src = 'https://static.zdassets.com/ekr/snippet.js?key=b98dcaa7-628d-4f75-894c-bc57a4cd0728'
+                        //    document.getElementsByTagName('head')[0].appendChild(script);
+                            
+
+                        }
+                        function enableWriteNew() {
+                            $(".link_writenew").removeAttr("style");
+                            $("#lblWritenew").removeAttr("style");
+                            $(".cont_writenew").removeAttr("style");
+                            $(".cont_writenew").removeAttr("style");
+                            $("#imgNewMessage").removeClass("disableHeaderMenu");
+                        }
+                        $(function () {
+                            
+                            if (location.href.toLowerCase().includes("scheduler")) {
+                                $(".cont_talk").hide();
+                                $(".cont_writenew").hide();
+                                $(".cont_home").hide();
+                                $(".cont_mail_outer").hide();
+                                $(".cont_help").hide();
+                                $(".acct-menu-dropdown").hide();
+                                $('#divSchedulerTitleContainer').show();
+                            }
+                            $(".header_frame_Stud").show();
+                            if($('#hdnUnreadMessage').val() != "0")
+                            {
+                                $(".link_writenew").css("color", "gray");
+                                $("#lblWritenew").css("color", "gray");
+                                $(".cont_writenew").css("cursor", "default");
+                                $(".cont_writenew").css("pointerEvents", "none");
+                                $("#imgNewMessage").toggleClass("disableHeaderMenu");
+                            }
+                            if($("#hdnIsTeacher").val() == "1")
+                            {
+                               // $("#talkMonitor").show();
+                            }
+
+                            //if (location.href.toLowerCase().indexOf("myroom") > -1 || location.href.toLowerCase().indexOf("home") > -1) {
+                            var loc = location.href.toLowerCase().split('/');
+                            if (loc != null && loc.length > 0 && loc[loc.length - 1].indexOf("home") > -1) {
+                                ShowQuickGuide();
+                                $('#chkDontShowQuickGuide').change(function () {
+                                     if(this.checked) {
+                                         $('.ui-dialog-buttonset > .ui-button').focus();
+                                     }
+                                });
+                            }
+                        });
+                        
+                        if(location.href.toLowerCase().indexOf("talk") < 0)
+                        {
+                            $(".timerContainer").hide();
+                        }
+
+                        function ShowQuickGuide() {
+                            
+                               if ($('#hdnQuickStart').val() != "") {
+                                    $('#frmQuickGuide').attr("src", $('#hdnQuickStart').val());
+                                   if ($('#hdnDontShowQuickGuide').val().toLowerCase() == "false") {
+                                       let dWidth = 834;
+                                       if (isMobile()) {
+                                           dWidth = 500;
+                                           $('#frmQuickGuide').width(480);
+                                       }
+                                        $("#divQuickGuide").dialog({
+                                            autoOpen: true,
+                                            //height: 545,
+                                            width: dWidth,
+                                            modal: true,
+                                             beforeClose: function( event, ui ) {
+                                                 $('#hdnDontShowQuickGuide').val($('#chkDontShowQuickGuide').prop("checked"));
+                                                        if($('#chkDontShowQuickGuide').prop("checked") == true)
+                                                            UpdateDontShowQuickGuide();
+                                            },
+                                            buttons:
+                                                {
+                                                    Ok: function () {
+                                                        $(this).dialog("close");
+
+                                                    }
+                                                },
+                                            close: function () {
+                                                $('#frmQuickGuide').attr("src", "");
+                                            }
+                                        });
+
+                                       //$(".ui-dialog-titlebar").prepend($("#divchkDontShowQuickGuide"));
+                                       if (mobilecheck()) {
+                                           $(".ui-dialog-titlebar").prepend($("#divchkDontShowQuickGuide"));
+                                       }
+                                       else {
+                                           $('#divQuickGuide').siblings(".ui-dialog-buttonpane").append($("#divchkDontShowQuickGuide"));
+                                       }
+
+                                    }
+                                }
+
+                        }
+                        function UpdateDontShowQuickGuide() {
+                            var json = { Type: 'dontshowquickguide', UserID: $("#hdnCurrentUserID").val(), dontshow: $('#chkDontShowQuickGuide').prop("checked") };
+                                    $.post("../Handler/GenericPostingHandler.ashx", json, function (data) {
+                                        var obj = $.parseJSON(data)
+                                        if (obj.Status != "True") {
+                                            alert('Error updating your status.');
+                                        }
+                            
+                                    });
+                        }
+
+                        function ShowParentsInfo() {
+                            if ($('#hdnParentsInfoFlag').val() == "False") {
+                                $("#txtParentsName").val("");
+                                $("#txtPhoneNumber").val("");
+                                $("#hdnParentsName").val("");
+                                $("#hdnPhoneNumber").val("");
+
+                                $("#divParentsInfo").dialog({
+                                    
+                                    width: 650,
+                                    modal: true,
+                                    closeOnEscape: false,
+                                    buttons: {
+                                        Agree: function () {
+                                            if (validateParentsInfo()) {
+                                                $("#hdnParentsName").val($("#txtParentsName").val());
+                                                $("#hdnPhoneNumber").val($("#txtPhoneNumber").val());
+                                                //$('#btnSaveParentsInfo').click();
+                                                saveContact().then(() => {
+                                                    $("#hdnParentsInfoFlag").val('True');
+                                                    $(this).dialog("close");
+                                                    location.reload();
+                                                }).catch(() => {
+                                                    $("#hdnParentsInfoFlag").val('False');
+                                                    $("#lblErrorSaving").show();
+                                                });
+                                            }
+                                        }
+                                    }
+                                });
+
+                                $("#divParentsInfo").keyup(function (event) {
+                                    var key = event.keyCode || event.which;
+                                    if (key == 13) {
+                                        $("#btnRegister").attr("disabled", 'disabled');
+                                        $(this).parent().find("button:eq(1)").click();
+                                    }
+                                });
+                                $("#divParentsInfo").dialog("open");
+                                $('.ui-dialog-titlebar').css('display', "none");
+                                $('#divParentsInfo').siblings(".ui-dialog-buttonpane").prepend($(".ulFinePrint"));
+                                //$('.ui-dialog').css('z-index', 103);
+                                //$('.ui-widget-overlay').css('z-index', 102);
+                                //$('#divParentsInfo').parent().appendTo($("form:first"));
+                            }
+                        }
+                        async function saveContact() {
+                            return await $.post("../api/MatchMaker/SaveContact/" + $('#txtParentsName').val() + "/" + $('#txtPhoneNumber').val(),
+                                function (data) {
+                                    if (data) {
+                                        return data;
+                                    }
+                                }).promise();
+
+                        }
+
+                        function validateParentsInfo() {
+                            var hasError = 0;
+                            var regex = /^\+?[0-9]{10,20}$/;
+                            if ($('#txtPhoneNumber').val() == "" || !regex.test($('#txtPhoneNumber').val())) {
+                                $("#lblPhoneNumberError").show()
+                                hasError++;
+                            }
+                            else {
+                                $("#lblPhoneNumberError").hide()
+                            }
+                            if ($('#txtParentsName').val() == "") {
+                                $("#lblParentsNameError").show()
+                                hasError++;
+                            }
+                            else {
+                                $("#lblParentsNameError").hide()
+                            }
+
+                            return hasError == 0;
+                        }
+
+                        
+                    </script>
+   
+                <div id="content">
+                    <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+                    <section class="content-wrapper main-content clear-fix">
+
+                        <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                    </section>
+                        <link href="../App_Themes/Default/lobibox.css" rel="stylesheet" />
+                        <script src="../Scripts/lobibox.min.js"></script>
+                        <link href="../App_Themes/Default/toastr.min.css?ssssabc" rel="stylesheet" />
+                        <script src="../Scripts/toastr.min.js"></script>
+                        <script src="../colorbox/jquery.colorbox.js"></script>
+                        <link href="../colorbox/colorbox.css" rel="stylesheet" />
+                        <script src="../Scripts/jquery.signalR-2.2.0.min.js"></script>
+                        <script src="../signalr/hubs"></script>
+
+                </div>
+                <div id="divQuickGuide" style="display: none;">
+                    <div id="divFrameQuickGuide">
+                        <iframe width="800" height="450" src="" frameborder="0" allowfullscreen rel="0&amp;showinfo=0" id="frmQuickGuide"></iframe>
+                    </div>
+                    <div id="divchkDontShowQuickGuide">
+                        <asp:CheckBox ID="chkDontShowQuickGuide" runat="server" ClientIDMode="Static" />&nbsp;<asp:Label ID="lblDontShowQuickGuide" runat="server" ClientIDMode="Static" meta:resourcekey="lblDontShowQuickGuideResource1">Don't display this video again.</asp:Label>
+                        <asp:Label ID="lblQuickGuideOtherInfo" runat="server" ClientIDMode="Static" meta:resourcekey="lblQuickGuideOtherInfoResource1">It can still be accessed from <i class="material-icons help_icon">help</i> Help on the menu bar.</asp:Label>
+                    </div>
+                </div>
+
+                <div id="divParentsInfo" style="display:none;">
+                    <div>
+                        <asp:Label ID="lblInformation" runat="server" Text="Parental Consent" Font-Bold="true" meta:resourcekey="lblInformationResource1"></asp:Label><br />
+                        <ul style="display:none;">
+                            <li>
+                                <asp:Label ID="lblOtherInformation1" runat="server" Text="" Font-Size="Smaller" meta:resourcekey="lblOtherInformation1Resource1"></asp:Label>
+                            </li>
+                            <li>
+                                <asp:Label ID="lblOtherInformation2" runat="server" Text="" Font-Size="Smaller" meta:resourcekey="lblOtherInformation2Resource1"></asp:Label>
+                            </li>
+                            <li>
+                                <asp:Label ID="lblOtherInformation3" runat="server" Text="" Font-Size="Smaller" meta:resourcekey="lblOtherInformation3Resource1"></asp:Label>
+                            </li>
+                        </ul>
+                        <br />
+                        <asp:Label ID="lblConsentMessage" runat="server" Text="" Font-Size="Smaller" meta:resourcekey="lblConsentMessage"></asp:Label>
+                        <a href="https://www.palaygo.net.au/terms-and-conditions" target="_blank" style="font-size:Smaller;">Palaygo’s Standard Terms and Conditions and Privacy Policy.</a>
+                        <br />
+                    </div>
+                    <table class="tableParentsInfo">
+                        <tr>
+                        <td class="tdParentsInfo"><asp:Label ID="lblUserNameLabel" runat="server" Text="Child's Name:" meta:resourcekey="lblUserNameLabelResource1"></asp:Label></td>
+                        <td  class="tdParentsInfo"><asp:Label ID="lblUserName" runat="server" Text=""></asp:Label></td>
+                        </tr>
+                        <tr>
+                        <td  class="tdParentsInfo"><asp:Label ID="lblParentsName" runat="server" Text="Parent’s Full Name:" meta:resourcekey="lblParentsNameResource1"></asp:Label></td>
+                        <td  class="tdParentsInfo"><asp:TextBox ID="txtParentsName" runat="server" ClientIDMode="Static" Width="350px"></asp:TextBox></td>
+                        </tr>
+                        <tr>
+                        <td  class="tdParentsInfo"><asp:Label ID="lblPhoneNumber" runat="server" Text="Parent‘s Contactable (Mobile) Number:" meta:resourcekey="lblPhoneNumberResource1"></asp:Label></td>
+                        <td  class="tdParentsInfo"><asp:TextBox ID="txtPhoneNumber" runat="server" ClientIDMode="Static" Width="350px" placeholder="(+)12345678910"></asp:TextBox></td>
+                        </tr>
+                        <tr>
+                        <td colspan="2" class="tdParentsInfo">
+                            <asp:Label ID="lblParentsNameError" runat="server" Text="Name is required." ClientIDMode="Static" ForeColor="Red" style="display:none;" meta:resourcekey="lblParentsNameErrorResource1"></asp:Label><br />
+                            <asp:Label ID="lblPhoneNumberError" runat="server" Text="Phone number - please exclude space, dash or brackets." ClientIDMode="Static" ForeColor="Red" style="display:none;" meta:resourcekey="lblPhoneNumberErrorResource1"></asp:Label>
+                        </td>
+                        <asp:Label ID="lblErrorSaving" runat="server" Text="Error on saving your information." ClientIDMode="Static" ForeColor="Red" style="display:none;" meta:resourcekey="lblErrorSavingResource1"></asp:Label>
+                        </tr>
+                    </table>
+                    <ul class="ulFinePrint">
+                        <li style="margin-bottom:8px;">
+                            <asp:Label ID="lblFinePrint2" runat="server" Text="" ClientIDMode="Static" Font-Size="Small" meta:resourcekey="lblFinePrint2Resource1"></asp:Label>
+                        </li>
+                        <li>
+                            <asp:Label ID="lblFinePrint" runat="server" Text="" ClientIDMode="Static" Font-Size="Small" meta:resourcekey="lblFinePrintResource1"></asp:Label>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <asp:HiddenField ID="hdnCurrentUserID" runat="server" ClientIDMode="Static" />
+                <asp:HiddenField ID="hdnDontShowQuickGuide" runat="server" ClientIDMode="Static" />
+                <asp:HiddenField ID="hdnQuickGuideUrl" runat="server" ClientIDMode="Static" meta:resourcekey="hdnQuickGuideUrlResource1" />
+                <asp:HiddenField ID="hdnHelp" Value="Help JP.htm" runat="server" />
+                <asp:HiddenField ID="hdnBookATalk" Value="BookATalk_en.html" runat="server" />
+                <asp:HiddenField ID="hdnHelpPresentation" Value="Presentation" runat="server" />
+                <asp:HiddenField ID="hdnSetupProfile" ClientIDMode="Static" runat="server" />
+                <asp:HiddenField ID="hdnRefreshUserProfile" ClientIDMode="Static" runat="server" />
+                <asp:HiddenField ID="hdnNewMessageNotification" ClientIDMode="Static" runat="server" />
+                <asp:HiddenField ID="hdnUnreadMessage" ClientIDMode="Static" runat="server" Value="0" />
+                <asp:HiddenField ID="hdnIsTeacher" ClientIDMode="Static" runat="server" Value="0" />
+                <asp:HiddenField ID="hdnUser" ClientIDMode="Static" runat="server" Value="" />
+                <asp:HiddenField ID="hdnGotomailboxbutton" ClientIDMode="Static" runat="server" Value="" />
+                <asp:HiddenField ID="hdnTalkHelpPresentation" Value="Presentation" runat="server" />
+                <asp:HiddenField ID="hdnTalkChecklistPresentation" Value="Presentation" runat="server" />
+
+                <asp:HiddenField ID="hdnTalkProcess" Value="Presentation" runat="server" />
+
+
+                <asp:HiddenField ID="hdnQuickStart" Value="" runat="server" />
+                <asp:HiddenField ID="hdnMailUsageVideo" Value="" runat="server" />
+                <asp:HiddenField ID="hdnTutorial" Value="" runat="server" />
+                <asp:HiddenField ID="hdnFaq" Value="" runat="server" />
+                <asp:HiddenField ID="hdnTalkTutorial" Value="" runat="server" />
+                <asp:HiddenField ID="hdnTalkFaq" Value="" runat="server" />
+                <asp:HiddenField ID="hdnCallAlert" Value="" runat="server" ClientIDMode="Static" />
+                <asp:HiddenField ID="hdnParentsInfoFlag" runat="server" ClientIDMode="Static" />
+                <asp:HiddenField ID="hdnPhoneNumber" runat="server" ClientIDMode="Static" />
+                <asp:HiddenField ID="hdnParentsName" runat="server" ClientIDMode="Static" />
+
+                <a style="display:none;" class='iframe' href="MyRoom.aspx">Outside Webpage (Iframe)</a>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <center>
+    <span>Patented/Patent Pending  Copyright 2024 Language Discovery Ltd. All Rights Reserved.</span>
+    </center>
+    </div>
+
+</body>
+</html>

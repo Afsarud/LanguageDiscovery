@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="localizedContentResource1.Text" xml:space="preserve">
+    <value>&lt;div id="main"&gt;
+					&lt;img src=""../images/earth.gif" style="FLOAT:right"&gt;&lt;p&gt;日本のみんなと、オーストラリアのお友達とをつなぐPALAYGO。&lt;br&gt;
+						オーストラリアのみんなともっと仲良くなるには、まずはオーストラリアのことを知るのが一番！！&lt;br&gt;
+						まずはオーストラリアの基本的なことを学んでみましょう。
+					&lt;/p&gt;
+					&lt;h2&gt;１、オーストラリアの成り立ち&lt;/h2&gt;
+					&lt;p&gt;オーストラリア(Australia)はイギリス連邦国家のひとつで、正式な名前を、オーストラリア連邦(Commonwealth of 
+						Australia)といいます。オーストラリアという名前の由来はテラ・アウストラリス・インコグニタ （Terra Australis 
+						Incognita）、「伝説の土地」という意味のラテン語です。
+					&lt;/p&gt;
+					
+					&lt;img id="imgMap" src="../images/map_au.jpg" alt="" border="0" width="480" style="FLOAT:left" /&gt;
+					&lt;p&gt;
+						首都はキャンベラ(Canberra)ですが、実はキャンベラはオーストラリアで一番大きい都市ではありません。みなさんの中でも首都はシドニーだと思っている人もいるのでは？オーストラリアで１番大きな都市はシドニー 
+						(Sydney)、そして２番目に大きな都市はメルボルン(Melbourne)です。１００年前、オーストラリアがイギリスから独立するときに、シドニーもメルボルンも首都になりたくて、激しく争ったそうです。結局、決着はつかず、２つの都市の間に新しい街キャンベラを作って首都にする、という結論になったとか。なんとも平和的な解決法ですね。そして今は政治の中心キャンベラ、商業、経済の中心地シドニー、 
+						教育の都であり歴史のある街メルボルン、というかたちでそれぞれが個性を持った都市になりました。
+					&lt;/p&gt;
+					&lt;p&gt;
+						今現在、オーストラリアは６つの州とその他の地域に分かれています。首都キャンベラ周辺のオーストラリア首都特別地域(ACT) 
+						、それからシドニーが州都のニューサウスウェールズ州(NSW)、メルボルンを州都とするビクトリア州(VIC)、それから西オーストラリア州(WA)、南オーストラリア州(SA)、クイーンズランド州(QLD)、タスマニア州(TAS)の６州と、ノーザンテリトリー(NT)他、主に小さな島々からなる他の地域です。（地図を見てみてね！）
+					&lt;/p&gt;
+					&lt;p&gt;
+						オーストラリアの人口は世界第５２位の約２千万人。日本で言うと、東京都と神奈川県の人口を合わせた位の人数です。それに対して面積は…？なんと世界第６位の７７０万Km2、日本の２０倍もあります。日本の２０個分もある地域に日本の人口の６分の１よりも少ない人たちが住んでいるのです。オーストラリアでの生活がどれだけ雄大か、わたしたちの想像を超えてしまいますね！
+					&lt;/p&gt;
+					&lt;h2&gt;２、オーストラリアの歴史&lt;/h2&gt;
+					&lt;p&gt;
+						もともとオーストラリアには、アボリジニと呼ばれる原住民の人たちが住んでいました。彼らは５万年前から１２万年前に南アジア、東南アジアのあたりからオーストラリア大陸（オセアニア大陸ともいいます）に移り住んだ人たちだといわれています。ただあまりにも歴史が古すぎて、本当はどれだけ昔にオーストラリアに来たのかはっきり分からないそうです。そしてその後、人々が大陸各地に広がっていくにつれ、部族や言葉がどんどん分かれていき、今では７００以上の部族、２５０以上の言葉があるといわれています。彼らは文字を持たず、大切なことは絵を描いて相手に伝えました。それらの絵は、アボリジナルアートと呼ばれ、とても人気があります。この、オーストラリアのアボリジニ文化は地球上で一番長く続いている文化だといわれていて、今でもアボリジニの人たちの中には昔からの生活を続けている人たちがたくさんいます。彼らは何万年も前からの生活を受けついでいるのですね。
+					&lt;/p&gt;
+					&lt;p&gt;
+						その後、１８世紀、大航海時代に入り、ヨーロッパの人たちが世界中を船で旅をして回るようになりました。そして、イギリス人のジェームズ・クックという人がオーストラリア大陸を発見し、オーストラリアはイギリスの一部になりました。それからたくさんの人がイギリスからオーストラリアに移住し、街ができ、いろいろな産業が発達しました。そして１９０２年、オーストラリアはイギリスから独立し、オーストラリア連邦というひとつの国になったのです。２００１年にはオーストラリア建国１００周年を記念して、各地でたくさんのお祭りが開かれました。
+					&lt;/p&gt;
+					&lt;h2&gt;３、国民&lt;/h2&gt;
+					&lt;img src="../images/boygirl.gif" style="FLOAT:right"&gt;&lt;p&gt;
+						オーストラリアについて表現するときに、「マルチ・カルチャリズム(Multiculturalism)」という言葉がよく使われます。これは、世界中のいろいろなところから集まった人たちが、自分たちの文化、生活を守りながらも、他の文化も受け入れ、上手に一緒に暮らして行こう、というオーストラリアで暮らす人たちの基本的な考え方です。オーストラリア人のフレンドリーさは、こういう考え方からきているのですね。
+					&lt;/p&gt;
+					&lt;p&gt;
+						オーストラリアは、もともとイギリスの一部として始まったものの、その後、ヨーロッパの国々、さらに、アジアや中南米などその他の地域からたくさんの移民を受け入れています。そしてもちろん原住民であるアボリジニの人たちもいます。たくさんの人種が入り混じって、ひとつの国を作り上げているのです。オーストラリア人といってもみんな、世界各国１５０以上もの国から移住してきた人たちなので、オーストラリアでは「外国人(Foreigner)」といってもみんなあまりピンとこないようです。移住してきた人の出身国で一番多いのはイギリス、続いてニュージーランド、イタリア、ベトナム、ギリシャ、中国、ドイツ、フィリピン、オランダ、インド 
+						となっています。
+					&lt;/p&gt;
+					&lt;p&gt;
+						公用語はみなさんご存知のとおり英語ですが、その英語も日本人の聞きなれているアメリカ英語とは違い、英語の発祥地であるイギリスの英語により近いものになっています。とはいえ、オーストラリアならではの言葉、言い回しなどもたくさんあり、それらはオージーイングリッシュとして親しまれています。そのほかにも、なんとオーストラリア国内では４００以上もの言語が使われているそうです。もちろん日本語もそのひとつですね。オーストラリアでは日本語がとても人気があり、たくさんの小・中学校で第２外国語の授業として日本語のレッスンを行っています。
+					&lt;/p&gt;
+					&lt;h2&gt;４、オーストラリアの気候&lt;/h2&gt;
+					&lt;img src="../images/wintersummer.png" style="FLOAT:left"&gt;&lt;p&gt;
+						オーストラリアは日本から飛行機で約９時間南に下がっていったところにあります。世界で６番目に面積の広い国で、ひとつの大陸をひとつの国で占めている、とても珍しい国でもあります。他の国々からは遠く離れた、日本からは地球の反対側になる南半球にあるため、私たちにはびっくりなことがたくさんあります。
+					&lt;/p&gt;
+					&lt;p&gt;
+						まずは季節。南半球にあるオーストラリアでは、季節が日本とはまったく逆になります。日本で暑いなー、と思っている８月、オーストラリアでは冬の真っ最中です。逆に寒いなー、と思っている１２月は真夏です。そう、オーストラリアでは、サンタクロースがサーフィンでプレゼントを届けにくるのです。ほかにも北向きの窓が日あたりがいいとか（日本では南向きがいいですよね）、たくさんの違いがあります。
+					&lt;/p&gt;
+					&lt;p&gt;
+						オーストラリアの気候は、基本的に温暖ですが、大きな国なので地域によってまったく気候が違います。シドニー、メルボルンなどの都市の集まる東海岸の気候は、日本と同じようにあたたかくおだやかです。しかし、平均気温は日本よりもずっと高いので、冬でもすごく寒くなるようなことはなく、とてもすごしやすい気候です。内陸部は砂漠が多く、とても乾燥しているため、ほとんど人は住んでいません。ただ場所によっては井戸から水がとれるので、羊の放牧をしているところもあります。北東部はジャングルなどのある熱帯雨林気候。冬でも暑い、常夏の地域です。さんご礁で有名なグレートバリアリーフなどもこの地域にあります。
+					&lt;/p&gt;
+					&lt;h2&gt;５、オーストラリアのいきもの&lt;/h2&gt;
+					&lt;img src="../images/kangaroo.jpg" style="FLOAT:right"&gt;&lt;p&gt;
+						世界の他の地域から離れているため、オーストラリアには独自の珍しい動物がたくさんいます。まずは、みなさんも知っているコアラ(Koala)、カンガルー(Kangaroo)などの有袋類と呼ばれる動物。有袋類とは、おなかに袋をもった動物のことで、生まれた赤ちゃんを、お母さんがおなかの袋（パウチ、Pouch）に入れて育てます。オーストラリアには他にもポッサム(Possum)、ウォンバット(Wombat)など、おなかに袋を持った動物がたくさんいます。それから、カモノハシ(Platypus)、ハリモグラ(Tachyglossus 
+						aculeatus)といった単孔類。これはわたしたち人間と同じほ乳類の動物ですが、なんとたまごでうまれる動物です。世界のほかの地域では見られないめずらしい動物ですが、オーストラリア、特にタスマニア州でしっかり保護されています。そのほかにも、エミュー(Emu)、ディンゴ(Dingo)、タスマニアンデビル(Tasmanian 
+						devil)など、世界のほかの地域では絶滅してしまっためずらしい動物や植物が、オーストラリアではまだまだ元気に暮らしています。
+					&lt;/p&gt;
+					&lt;p&gt;
+						そんなめずらしい動植物を守るため、オーストラリアに入るときにはとても厳しいチェックがあります。みなさんもオーストラリアに行くときには、しっかり気をつけましょうね。
+					&lt;/p&gt;
+				&lt;/div&gt;</value>
+  </data>
+</root>

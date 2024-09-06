@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AuxilliaryServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IAuxilliaryServices_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49708/Service/AuxilliaryServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/AuxilliaryServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/AuxilliaryServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAuxilliaryServices_SearchPhraseCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPhraseCategory" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_SearchPhraseCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPhraseCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_AddPhraseCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPhraseCategory" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_AddPhraseCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPhraseCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdatePhraseCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhraseCategory" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdatePhraseCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhraseCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_DeletePhraseCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePhraseCategory" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_DeletePhraseCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePhraseCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetPhraseCategoryListToOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhraseCategoryListToOrder" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetPhraseCategoryListToOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhraseCategoryListToOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdatePhraseCategoryOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhraseCategoryOrder" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdatePhraseCategoryOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhraseCategoryOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_AddInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddInfo" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_AddInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdateInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInfo" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdateInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_DeleteInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInfo" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_DeleteInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetInfoByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoByID" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetInfoByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_SearchInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchInfo" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_SearchInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetInfoByType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoByType" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetInfoByType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoByTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_AddFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFilter" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_AddFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdateFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFilter" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdateFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_DeleteFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFilter" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_DeleteFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_SearchFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchFilter" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_SearchFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetFilterByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilterByID" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetFilterByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilterByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetClassList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassList" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetClassList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetClassByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassByID" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetClassByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_DeleteClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClass" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_DeleteClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdateClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClass" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_UpdateClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_AddClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddClass" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_AddClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_SearchClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchClass" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_SearchClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetGradeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGradeList" />
+  </wsdl:message>
+  <wsdl:message name="IAuxilliaryServices_GetGradeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGradeListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAuxilliaryServices">
+    <wsdl:operation name="SearchPhraseCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/SearchPhraseCategory" message="tns:IAuxilliaryServices_SearchPhraseCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/SearchPhraseCategoryResponse" message="tns:IAuxilliaryServices_SearchPhraseCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPhraseCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/AddPhraseCategory" message="tns:IAuxilliaryServices_AddPhraseCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/AddPhraseCategoryResponse" message="tns:IAuxilliaryServices_AddPhraseCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhraseCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdatePhraseCategory" message="tns:IAuxilliaryServices_UpdatePhraseCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdatePhraseCategoryResponse" message="tns:IAuxilliaryServices_UpdatePhraseCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhraseCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/DeletePhraseCategory" message="tns:IAuxilliaryServices_DeletePhraseCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/DeletePhraseCategoryResponse" message="tns:IAuxilliaryServices_DeletePhraseCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhraseCategoryListToOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetPhraseCategoryListToOrder" message="tns:IAuxilliaryServices_GetPhraseCategoryListToOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetPhraseCategoryListToOrderResponse" message="tns:IAuxilliaryServices_GetPhraseCategoryListToOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhraseCategoryOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdatePhraseCategoryOrder" message="tns:IAuxilliaryServices_UpdatePhraseCategoryOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdatePhraseCategoryOrderResponse" message="tns:IAuxilliaryServices_UpdatePhraseCategoryOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/AddInfo" message="tns:IAuxilliaryServices_AddInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/AddInfoResponse" message="tns:IAuxilliaryServices_AddInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdateInfo" message="tns:IAuxilliaryServices_UpdateInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdateInfoResponse" message="tns:IAuxilliaryServices_UpdateInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/DeleteInfo" message="tns:IAuxilliaryServices_DeleteInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/DeleteInfoResponse" message="tns:IAuxilliaryServices_DeleteInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetInfoByID" message="tns:IAuxilliaryServices_GetInfoByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetInfoByIDResponse" message="tns:IAuxilliaryServices_GetInfoByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/SearchInfo" message="tns:IAuxilliaryServices_SearchInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/SearchInfoResponse" message="tns:IAuxilliaryServices_SearchInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetInfoByType" message="tns:IAuxilliaryServices_GetInfoByType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetInfoByTypeResponse" message="tns:IAuxilliaryServices_GetInfoByType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/AddFilter" message="tns:IAuxilliaryServices_AddFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/AddFilterResponse" message="tns:IAuxilliaryServices_AddFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdateFilter" message="tns:IAuxilliaryServices_UpdateFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdateFilterResponse" message="tns:IAuxilliaryServices_UpdateFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/DeleteFilter" message="tns:IAuxilliaryServices_DeleteFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/DeleteFilterResponse" message="tns:IAuxilliaryServices_DeleteFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/SearchFilter" message="tns:IAuxilliaryServices_SearchFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/SearchFilterResponse" message="tns:IAuxilliaryServices_SearchFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilterByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetFilterByID" message="tns:IAuxilliaryServices_GetFilterByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetFilterByIDResponse" message="tns:IAuxilliaryServices_GetFilterByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetClassList" message="tns:IAuxilliaryServices_GetClassList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetClassListResponse" message="tns:IAuxilliaryServices_GetClassList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetClassByID" message="tns:IAuxilliaryServices_GetClassByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetClassByIDResponse" message="tns:IAuxilliaryServices_GetClassByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/DeleteClass" message="tns:IAuxilliaryServices_DeleteClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/DeleteClassResponse" message="tns:IAuxilliaryServices_DeleteClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdateClass" message="tns:IAuxilliaryServices_UpdateClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/UpdateClassResponse" message="tns:IAuxilliaryServices_UpdateClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/AddClass" message="tns:IAuxilliaryServices_AddClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/AddClassResponse" message="tns:IAuxilliaryServices_AddClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/SearchClass" message="tns:IAuxilliaryServices_SearchClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/SearchClassResponse" message="tns:IAuxilliaryServices_SearchClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetGradeList" message="tns:IAuxilliaryServices_GetGradeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuxilliaryServices/GetGradeListResponse" message="tns:IAuxilliaryServices_GetGradeList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAuxilliaryServices" type="tns:IAuxilliaryServices">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IAuxilliaryServices_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SearchPhraseCategory">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/SearchPhraseCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPhraseCategory">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/AddPhraseCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhraseCategory">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/UpdatePhraseCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhraseCategory">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/DeletePhraseCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhraseCategoryListToOrder">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/GetPhraseCategoryListToOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhraseCategoryOrder">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/UpdatePhraseCategoryOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddInfo">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/AddInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInfo">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/UpdateInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInfo">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/DeleteInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByID">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/GetInfoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchInfo">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/SearchInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByType">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/GetInfoByType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFilter">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/AddFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFilter">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/UpdateFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFilter">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/DeleteFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchFilter">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/SearchFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilterByID">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/GetFilterByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassList">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/GetClassList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassByID">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/GetClassByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClass">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/DeleteClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClass">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/UpdateClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddClass">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/AddClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchClass">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/SearchClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeList">
+      <soap:operation soapAction="http://tempuri.org/IAuxilliaryServices/GetGradeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AuxilliaryServices">
+    <wsdl:port name="BasicHttpBinding_IAuxilliaryServices" binding="tns:BasicHttpBinding_IAuxilliaryServices">
+      <soap:address location="http://localhost:49708/Service/AuxilliaryServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

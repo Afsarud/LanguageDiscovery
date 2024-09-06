@@ -1,0 +1,28 @@
+H2 {
+text-align: left;
+font: bold large;
+font-size:36;
+color:blue;
+ }
+
+p {
+text-align: left;
+font-size:x-large;
+word-break: normal;
+ }
+
+p.example1 { word-break: normal; }
+
+li {
+font-size:x-large;
+line-height: 1.5;
+padding-left: 1em;
+word-break: normal;
+}
+
+p.example2 {font-family:Comic Sans MS;
+font-size:48;
+color:gold; }
+
+li.example3 {color:green;
+text-decoration:underline;}

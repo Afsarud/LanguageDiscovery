@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddResource1.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="btnAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnClearResource1.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="btnClearResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchSentenceResource1.Text" xml:space="preserve">
+    <value>按键</value>
+  </data>
+  <data name="btnSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchWordResource1.Text" xml:space="preserve">
+    <value>按键</value>
+  </data>
+  <data name="btnSearchWordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSendResource1.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="btnSendResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink1Resource1.Text" xml:space="preserve">
+    <value>表情符号</value>
+  </data>
+  <data name="HyperLink1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2Resource1.Text" xml:space="preserve">
+    <value>贴纸/动画</value>
+  </data>
+  <data name="HyperLink2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3Resource1.Text" xml:space="preserve">
+    <value>标点</value>
+  </data>
+  <data name="HyperLink3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAddWordResource1.AlternateText" xml:space="preserve">
+    <value>自由信息</value>
+  </data>
+  <data name="imgAddWordResource1.ToolTip" xml:space="preserve">
+    <value>添加/替换文字</value>
+  </data>
+  <data name="imgClearMessageResource1.AlternateText" xml:space="preserve">
+    <value>肃清信息</value>
+  </data>
+  <data name="imgClearMessageResource1.ToolTip" xml:space="preserve">
+    <value>肃清信息</value>
+  </data>
+  <data name="imgFreeFormMessageResource1.AlternateText" xml:space="preserve">
+    <value>自由信息</value>
+  </data>
+  <data name="imgFreeFormMessageResource1.ToolTip" xml:space="preserve">
+    <value>自由信息</value>
+  </data>
+  <data name="imgSearchSentenceResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgToResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLearningResource1.Text" xml:space="preserve">
+    <value>发件箱</value>
+  </data>
+  <data name="lblLearningResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSentenceResource1.Text" xml:space="preserve">
+    <value>更改</value>
+  </data>
+  <data name="lblSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSentencesResource1.Text" xml:space="preserve">
+    <value>字汇搜索</value>
+  </data>
+  <data name="lblSentencesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblToNameResource1.Text" xml:space="preserve">
+    <value>Sayaka</value>
+  </data>
+  <data name="lblToNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTopicResource1.Text" xml:space="preserve">
+    <value>今日话题</value>
+  </data>
+  <data name="lblTopicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblToResource1.Text" xml:space="preserve">
+    <value>致</value>
+  </data>
+  <data name="lblToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkShowTranslationResource1.Text" xml:space="preserve">
+    <value>显示/隐藏</value>
+  </data>
+  <data name="linkShowTranslationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>撰写信息</value>
+  </data>
+  <data name="txtSearchSentenceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDialogLearningLanguageResource1.Text" xml:space="preserve">
+    <value>中文／拼音</value>
+  </data>
+  <data name="lblDialogNativeLanguageResource1.Text" xml:space="preserve">
+    <value>英文</value>
+  </data>
+  <data name="lblDialogSubLanguageResource1.Text" xml:space="preserve">
+    <value>子语言</value>
+  </data>
+  <data name="lblLanguageOrderResource1.Text" xml:space="preserve">
+    <value>语言次序</value>
+  </data>
+  <data name="lblNativeResource1.Text" xml:space="preserve">
+    <value>母语</value>
+  </data>
+  <data name="lblRomanjiResource1.Text" xml:space="preserve">
+    <value>拼音</value>
+  </data>
+  <data name="lblSequenceResource1.Text" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="lblSoundResource1.Text" xml:space="preserve">
+    <value>发音</value>
+  </data>
+  <data name="hdnReturnResource1.Text" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="btnCloseEmojiResource1.Text" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="linkTabOptionsResource1.Text" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="linkTabWordsResource1.Text" xml:space="preserve">
+    <value>汇</value>
+  </data>
+  <data name="lblsentenceLabelResource1.Text" xml:space="preserve">
+    <value>句子</value>
+  </data>
+  <data name="lblInstructionResource1.Text" xml:space="preserve">
+    <value>请输入您的信息并发送给朋友！请从下面的词汇选择你的字／词，并把它按正确的顺序重组。</value>
+  </data>
+  <data name="hdnlblCancelResource1.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="hdnlblOkResource1.Text" xml:space="preserve">
+    <value>確认</value>
+  </data>
+  <data name="lblFreeMessageResource1.Text" xml:space="preserve">
+    <value>自由信息</value>
+  </data>
+  <data name="lblLabelAddEditWordResource1.Text" xml:space="preserve">
+    <value>添加/替换文字</value>
+  </data>
+  <data name="lblLabelSentencePagingResource1.Text" xml:space="preserve">
+    <value>词汇</value>
+  </data>
+  <data name="lblLabelWordPagingResource1.Text" xml:space="preserve">
+    <value>字汇</value>
+  </data>
+  <data name="hdnCreateNewWordResource1.Value" xml:space="preserve">
+    <value>创造新词</value>
+  </data>
+  <data name="hdnReplaceWordResource1.Value" xml:space="preserve">
+    <value>更换字</value>
+  </data>
+  <data name="hdnSelectFromPaleteResource1.Value" xml:space="preserve">
+    <value>请从字汇中选择</value>
+  </data>
+  <data name="rdoPhraseResource1.Text" xml:space="preserve">
+    <value>短语</value>
+  </data>
+  <data name="rdoPhraseWordResource1.Text" xml:space="preserve">
+    <value>短语+单字</value>
+  </data>
+  <data name="rdoWordResource1.Text" xml:space="preserve">
+    <value>单字</value>
+  </data>
+  <data name="hdnPunctuationResource1.Value" xml:space="preserve">
+    <value>标点</value>
+  </data>
+  <data name="hdnFreeTextMessage1PlaceHolderResource1.Value" xml:space="preserve">
+    <value>请写下中文信息</value>
+  </data>
+  <data name="hdnFreeTextMessage2PlaceHolderResource1.Value" xml:space="preserve">
+    <value>请写下英文翻译</value>
+  </data>
+  <data name="lblSubLanguage2Resource1.Text" xml:space="preserve">
+    <value>日语汉字</value>
+  </data>
+  <data name="hdnNoSentenceToAddResource1.Value" xml:space="preserve">
+    <value>没有添加的句子。</value>
+  </data>
+  <data name="lblMaxPaletteResource1.Text" xml:space="preserve">
+    <value>您只能发送最多5个调色板。</value>
+  </data>
+  <data name="lblFreeMessageLabelResource1.Text" xml:space="preserve">
+    <value>免费消息</value>
+  </data>
+  <data name="hdnFreeformWordTitleResource1.Value" xml:space="preserve">
+    <value>単語を作る</value>
+  </data>
+  <data name="hdnSearchPlaceHolderResource1.Value" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="hdnAddWordResource1.Value" xml:space="preserve">
+    <value>创造词</value>
+  </data>
+  <data name="lnkPhrasePaletteResource1.Text" xml:space="preserve">
+    <value>词汇</value>
+  </data>
+  <data name="lnkWordPaletteResource1.Text" xml:space="preserve">
+    <value>字汇</value>
+  </data>
+  <data name="lblNativeExResource1.Text" xml:space="preserve">
+    <value>开启 显示对应母语的译文 – 适合中级水平的学生</value>
+  </data>
+  <data name="lblRomanjiExResource1.Text" xml:space="preserve">
+    <value>开启 显示日语的罗马音 – 适合罗马音的学者</value>
+  </data>
+  <data name="lblSaveExResource1.Text" xml:space="preserve">
+    <value>打开“关闭”顺序和母语选项，可以将对话框变成谜题</value>
+    <comment>Turning &amp;quot;OFF&amp;quot; Sequence and Native Language can make the Palette into a Puzzle!</comment>
+  </data>
+  <data name="lblSequenceExResource1.Text" xml:space="preserve">
+    <value>关闭 显示对话框单词顺序 – 适合初级水平的学生</value>
+  </data>
+  <data name="lblStepExResource1.Text" xml:space="preserve">
+    <value>开启 显示对话框① - ⑤ 创建新信息的步骤</value>
+    <comment>This shows each step for creating new messages on the Palette &amp;#9312; - &amp;#9316;.</comment>
+  </data>
+  <data name="lblSubLanguage2ExResource1.Text" xml:space="preserve">
+    <value>关闭 显示日语汉字 – 适合高等水平的学生</value>
+  </data>
+  <data name="hdnSuggestedTopicResource1.Value" xml:space="preserve">
+    <value>おすすめのトピックスをクリックして、使ってみよう！</value>
+  </data>
+  <data name="imgSettingsResource1.ToolTip" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="lblSentenceTitleResource1.Text" xml:space="preserve">
+    <value>短语对话框</value>
+  </data>
+  <data name="lblSaveOutMessageLabelResource1.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="lblLabelWordPagingUserCreatedResource1.Text" xml:space="preserve">
+    <value>我的单词对话框</value>
+  </data>
+  <data name="linkTabUsersWordsResource1.Text" xml:space="preserve">
+    <value>我的单词</value>
+  </data>
+  <data name="lblReturntoMessageResource1.Text" xml:space="preserve">
+    <value>回到新消息</value>
+  </data>
+  <data name="lblSendResource1.Text" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="lblSendWarningResource1.Text" xml:space="preserve">
+    <value>检查是否有重复或脏话，如果是这样的话，消息无法发送。</value>
+  </data>
+  <data name="lblTopicsLabelResource1.Text" xml:space="preserve">
+    <value>主题：</value>
+  </data>
+  <data name="hdnStep1Resource1.Value" xml:space="preserve">
+    <value>话题类别&gt;学校 
+先选择分类或搜索关键词、查找短语</value>
+  </data>
+  <data name="hdnStep2Resource1.Value" xml:space="preserve">
+    <value>可以听语音和选择单词卡顺序、选择将句子放在编辑框</value>
+    <comment>Then listen to &lt;img src='../Images/ICO_Speaker.png' alt='' style='width:16px;height:16px;'&gt;</comment>
+  </data>
+  <data name="hdnStep3bResource1.Value" xml:space="preserve">
+    <value>点击更换单词</value>
+  </data>
+  <data name="hdnStep3Resource1.Value" xml:space="preserve">
+    <value>点击排列正确的顺序 替换单词对话框或者创建自己的单词或短语！
+3编辑框</value>
+    <comment>PUT IN CORRECT ORDER &amp; CLICK &lt;img src='../Images/swapoutline.png' alt='' style='width:16px;height:16px;'&gt;</comment>
+  </data>
+  <data name="hdnStep4Resource1.Value" xml:space="preserve">
+    <value>添加到你的信息</value>
+  </data>
+  <data name="hdnStep5Resource1.Value" xml:space="preserve">
+    <value>发送 发送给你的朋友</value>
+  </data>
+  <data name="lblStepResource1.Text" xml:space="preserve">
+    <value>步骤</value>
+  </data>
+  <data name="linkTabPhraseResource1.Text" xml:space="preserve">
+    <value>短语</value>
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="lblcharleftLabel1Resource1.Text" xml:space="preserve">
+    <value>还可以输入{0}个字</value>
+  </data>
+  <data name="lblccResource1.Text" xml:space="preserve">
+    <value>CC: 活跃用户</value>
+  </data>
+  <data name="hdnBadErrorMessageResource1.Value" xml:space="preserve">
+    <value>メッセージに繰返しか、悪い言葉が含まれているので、送信されません。</value>
+  </data>
+  <data name="hdnDeleteWordResource1.Value" xml:space="preserve">
+    <value>この単語を削除してもよろしいですか？</value>
+  </data>
+  <data name="hdnErrorHeaderResource1.Value" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="hdnSaveWordResource1.Value" xml:space="preserve">
+    <value>作成した単語・フレーズを保存しますか？</value>
+  </data>
+  <data name="lblOrderByLearningLanguageExpResource1.Text" xml:space="preserve">
+    <value>フレーズパレットを学習言語の順番で表示します。</value>
+  </data>
+  <data name="lblOrderByLearningLanguageResource1.Text" xml:space="preserve">
+    <value>学習言語順</value>
+  </data>
+  <data name="lblViewMessageResource1.Text" xml:space="preserve">
+    <value>相手メッセージを見る</value>
+  </data>
+  <data name="lblDialogTranslationInstructionResource1.Text" xml:space="preserve">
+    <value>日本語入力後、タブかリターンキーを押すと英語に自動翻訳されます。</value>
+  </data>
+</root>

@@ -1,0 +1,371 @@
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help En.htm
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP.htm
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP4x1.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP4xi2.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi1.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi2.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi3.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP6x1.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi2.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi3.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi4.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP7x1.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi2.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi3.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi4.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi5.jpg
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Images\removetovip.png
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Web.config
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Web.Debug.config
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Web.Release.config
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Language.Discovery.dll.config
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Language.Discovery.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Language.Discovery.pdb
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Antlr3.Runtime.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\AspNet.ScriptManager.jQuery.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.AspNet.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.Core.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.OAuth.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.OpenId.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\EntityFramework.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Language.Discovery.Entity.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.Owin.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.Owin.Security.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Newtonsoft.Json.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Owin.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\System.Web.Optimization.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\System.Web.Providers.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\WebGrease.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Language.Discovery.Entity.pdb
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.Owin.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.Owin.Security.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Newtonsoft.Json.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\EntityFramework.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.Core.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.OAuth.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.OpenId.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\DotNetOpenAuth.AspNet.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\obj\Release\Language.Discovery.Web.csprojResolveAssemblyReference.cache
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\obj\Release\Language.Discovery.dll
+C:\Project\Language.Discovery 17.1.1\Language.Discovery\obj\Release\Language.Discovery.pdb
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help En.htm
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP.htm
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP4x1.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP4xi2.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi1.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi2.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi3.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP6x1.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi2.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi3.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi4.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP7x1.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi2.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi3.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi4.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi5.jpg
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Images\removetovip.png
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Web.config
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Web.Debug.config
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Web.Release.config
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Language.Discovery.dll.config
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Language.Discovery.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Language.Discovery.pdb
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Antlr3.Runtime.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\AspNet.ScriptManager.jQuery.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.AspNet.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.Core.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.OAuth.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.OpenId.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\EntityFramework.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Language.Discovery.Entity.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.Owin.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.Owin.Security.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Newtonsoft.Json.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Owin.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\System.Web.Optimization.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\System.Web.Providers.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\WebGrease.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Language.Discovery.Entity.pdb
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.Owin.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.Owin.Security.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Newtonsoft.Json.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\EntityFramework.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.Core.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.OAuth.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.OpenId.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\DotNetOpenAuth.AspNet.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\obj\Release\Language.Discovery.Web.csprojResolveAssemblyReference.cache
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\obj\Release\Language.Discovery.dll
+C:\Project\Palaygo\Language.Discovery Trunk\Language.Discovery\obj\Release\Language.Discovery.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help En.htm
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP.htm
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP4x1.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP4xi2.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi1.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi2.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi3.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6x1.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi2.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi3.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi4.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7x1.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi2.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi3.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi4.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi5.jpg
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Images\removetovip.png
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Web.config
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Web.Debug.config
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Web.Release.config
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Language.Discovery.dll.config
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Language.Discovery.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Language.Discovery.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Antlr3.Runtime.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\AspNet.ScriptManager.jQuery.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.AspNet.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.Core.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\EntityFramework.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.PlatformServices.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.PlatformServices.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Language.Discovery.Entity.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Language.Discovery.Repository.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Security.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.Common.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.ScriptManager.WebForms.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Web.Infrastructure.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Newtonsoft.Json.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Owin.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\RestSharp.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Net.Http.Formatting.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Threading.Tasks.Extensions.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Web.Http.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Web.Http.WebHost.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Web.Optimization.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Web.Providers.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\WebGrease.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Language.Discovery.Entity.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Language.Discovery.Repository.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.pdb
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Security.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Newtonsoft.Json.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\RestSharp.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Net.Http.Formatting.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Threading.Tasks.Extensions.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Web.Http.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\System.Web.Http.WebHost.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\EntityFramework.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.Core.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.AspNet.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.Web.csproj.AssemblyReference.cache
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.Web.csproj.CoreCompileInputs.cache
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.Web.csproj.CopyComplete
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.dll
+D:\cliqPack Projects\Test Palaygo\New folder\pal1-home-77c9ae0ccdda\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help En.htm
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP.htm
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP4x1.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP4xi2.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi1.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi2.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi3.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6x1.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi2.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi3.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi4.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7x1.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi2.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi3.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi4.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi5.jpg
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Images\removetovip.png
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Web.config
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Web.Debug.config
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Web.Release.config
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Language.Discovery.dll.config
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Language.Discovery.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Language.Discovery.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Antlr3.Runtime.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\AspNet.ScriptManager.jQuery.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.AspNet.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.Core.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\EntityFramework.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.PlatformServices.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.PlatformServices.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Language.Discovery.Entity.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Language.Discovery.Repository.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Security.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.Common.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Web.Infrastructure.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Newtonsoft.Json.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Owin.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\RestSharp.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Net.Http.Formatting.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Threading.Tasks.Extensions.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Web.Http.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Web.Http.WebHost.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Web.Optimization.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Web.Providers.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\WebGrease.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Language.Discovery.Entity.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Language.Discovery.Repository.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Security.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Newtonsoft.Json.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\RestSharp.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Net.Http.Formatting.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Threading.Tasks.Extensions.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Web.Http.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\System.Web.Http.WebHost.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\EntityFramework.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.Core.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.AspNet.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.Web.csprojAssemblyReference.cache
+D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.Web.csproj.CopyComplete
+D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.pdb

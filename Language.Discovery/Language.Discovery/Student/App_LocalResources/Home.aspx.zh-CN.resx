@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="btnDisconverNewFriendsResource1.Text" xml:space="preserve">
+    <value>结交新朋友！</value>
+    <comment>Make New Friends!</comment>
+  </data>
+  <data name="btnDisconverNewFriendsResource1.ToolTip" xml:space="preserve">
+    <value>结交新朋友！</value>
+    <comment>Make New Friends</comment>
+  </data>
+  <data name="btnWriteNewMessageResource1.Text" xml:space="preserve">
+    <value>发送邮件到以下用户</value>
+    <comment>Send mail to all below users</comment>
+  </data>
+  <data name="chkInterestGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ContinueTabResource1.Text" xml:space="preserve">
+    <value>发送邮件到以下用户</value>
+    <comment>Send mail to all below users</comment>
+  </data>
+  <data name="ddlCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hdnCancelResource1.Text" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="hdnContinueResource1.Text" xml:space="preserve">
+    <value>发送邮件到以上用户</value>
+    <comment>Send mail to all above users</comment>
+  </data>
+  <data name="hdnVideoUrlResource1.Value" xml:space="preserve">
+    <value />
+    <comment>//www.youtube.com/embed/oG_GkXg2-y8?rel=0&amp;amp;showinfo=0</comment>
+  </data>
+  <data name="HyperLink1Resource1.Text" xml:space="preserve">
+    <value>在线朋友</value>
+    <comment>Online Friends</comment>
+  </data>
+  <data name="HyperLink1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2Resource1.Text" xml:space="preserve">
+    <value>朋友</value>
+    <comment>Friends</comment>
+  </data>
+  <data name="HyperLink2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3Resource1.Text" xml:space="preserve">
+    <value>Palaygo 新加入用户</value>
+    <comment>New Palaygo Joiner</comment>
+  </data>
+  <data name="HyperLink3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ImageButton1Resource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ImageButton1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAvatar.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAvatar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAvatarResource2.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAvatarResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCityResource1.Text" xml:space="preserve">
+    <value>城市</value>
+    <comment>City</comment>
+  </data>
+  <data name="lblCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountLabelResource1.Text" xml:space="preserve">
+    <value>点数</value>
+    <comment>Points</comment>
+  </data>
+  <data name="lblCountryLabelResource1.Text" xml:space="preserve">
+    <value>国家</value>
+    <comment>Country</comment>
+  </data>
+  <data name="lblCountryResource1.Text" xml:space="preserve">
+    <value>国家</value>
+    <comment>Country</comment>
+  </data>
+  <data name="lblCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDiscoverNewFriendsTitleResource1.Text" xml:space="preserve">
+    <value>现在让我们发电子邮件给拥有相似爱好的新朋友！点击以下格子，您就可以找到拥有同様兴趣爱好的新朋友。</value>
+    <comment>Let’s send e-mails to new friends who have similar hobbies! Click the box(es) below, then you can find new friends who have interest(s) in the item(s).</comment>
+  </data>
+  <data name="lblDontShowVideoResource1.Text" xml:space="preserve">
+    <value>不要再显示此视像</value>
+    <comment>Don't display this video again</comment>
+  </data>
+  <data name="lblJapanNewsLabelResource1.Text" xml:space="preserve">
+    <value>趋势新闻</value>
+    <comment>Trend News</comment>
+  </data>
+  <data name="lblJapanNewsLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLikeCountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLikeCountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLikeCountResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLikeCountResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLikeCountResource3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLikeCountResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNewsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNewsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNoticeLabelResource1.Text" xml:space="preserve">
+    <value>Palaygo 新闻！</value>
+    <comment>Palaygo News!</comment>
+  </data>
+  <data name="lblNoticeLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNoticeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNoticeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRankingLabelResource1.Text" xml:space="preserve">
+    <value>Palaygo 大使排名</value>
+    <comment>Palaygo Ambassador Ranking!</comment>
+  </data>
+  <data name="lblRankLabelResource1.Text" xml:space="preserve">
+    <value>排名</value>
+    <comment>Rank</comment>
+  </data>
+  <data name="lblSearchNameResource1.Text" xml:space="preserve">
+    <value>姓名</value>
+    <comment>Name</comment>
+  </data>
+  <data name="lblSearchNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblstatementResource1.Text" xml:space="preserve">
+    <value>让我们发送电子邮件给新朋友！从以下列表中选择一个朋友来谈谈或点击“新朋友”结交新朋友。</value>
+    <comment>                       &lt;p&gt; 
+                           Let’s send emails to new friends! 
+                        &lt;/p&gt; 
+                     "&lt;p&gt;
+                            Choose a friend from the list below to talk to &lt;/p&gt;&lt;p&gt;or click  New Friend to make a new friend
+                        &lt;/p&gt;"</comment>
+  </data>
+  <data name="lblStatusDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStatusDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStatusDateResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStatusDateResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStatusDateResource3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStatusDateResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUsernameLabelResource1.Text" xml:space="preserve">
+    <value>账户名</value>
+    <comment>Username</comment>
+  </data>
+  <data name="lblWelcomeResource1.Text" xml:space="preserve">
+    <value>欢迎</value>
+    <comment>Welcome,</comment>
+  </data>
+  <data name="lblWelcomeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>首页</value>
+    <comment>Home</comment>
+  </data>
+  <data name="txtSearchResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCommentResource1.Text" xml:space="preserve">
+    <value>消息同时发送多人</value>
+  </data>
+  <data name="lblHasMessagesResource1.Text" xml:space="preserve">
+    <value>收到的星星</value>
+  </data>
+  <data name="replyfirstResource1.Text" xml:space="preserve">
+    <value>回复消息！&lt;br&gt;结交新的朋友！</value>
+  </data>
+  <data name="lblDontShowQuickGuideResource1.Text" xml:space="preserve">
+    <value>Do not show next time</value>
+  </data>
+</root>

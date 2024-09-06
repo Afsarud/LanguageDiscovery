@@ -1,0 +1,8 @@
+﻿.avatar-builder-left-arrow, .avatar-builder-eight-arrow{
+  padding-top: 150px;
+}
+.avatar-builder-item-title{
+	border-radius: 20px;
+	border: lightblue 1px solid;
+	padding: 5px;
+}

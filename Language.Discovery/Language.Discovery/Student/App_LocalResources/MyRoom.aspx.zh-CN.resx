@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddPhotoResource1.Text" xml:space="preserve">
+    <value>上载图片</value>
+    <comment>Upload a Photo</comment>
+  </data>
+  <data name="btnAddPhotoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnChangeAvatarResource1.Text" xml:space="preserve">
+    <value>更改我的头像</value>
+    <comment>Change my Avatar</comment>
+  </data>
+  <data name="btnChangeMyRoomResource1.Text" xml:space="preserve">
+    <value>更改我的房间</value>
+    <comment>Change My Room</comment>
+  </data>
+  <data name="btnCloseAvatarResource1.Text" xml:space="preserve">
+    <value>关闭</value>
+    <comment>Close</comment>
+  </data>
+  <data name="btnSaveStatusResource1.Text" xml:space="preserve">
+    <value>保存状态</value>
+    <comment>Save Status</comment>
+  </data>
+  <data name="btnSaveStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnUpdateResource1.Text" xml:space="preserve">
+    <value>更新</value>
+    <comment>Update</comment>
+  </data>
+  <data name="btnUpdateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnViewFriendsResource1.Text" xml:space="preserve">
+    <value>查看朋友</value>
+    <comment>View Friends</comment>
+  </data>
+  <data name="btnViewFriendsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAboutMeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkInterestGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>你输入的密码不匹配</value>
+    <comment>Password not matched</comment>
+  </data>
+  <data name="cvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+    <comment>*</comment>
+  </data>
+  <data name="cvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlClassResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hdnBackgroundColorLabelResource1.Value" xml:space="preserve">
+    <value>选择我的房间颜色</value>
+    <comment>Select My Room Colour</comment>
+  </data>
+  <data name="HyperLink1Resource1.Text" xml:space="preserve">
+    <value>用户信息</value>
+    <comment>User Info</comment>
+  </data>
+  <data name="HyperLink1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2Resource1.Text" xml:space="preserve">
+    <value>我喜欢的东西</value>
+    <comment>Things I like</comment>
+  </data>
+  <data name="HyperLink2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3Resource1.Text" xml:space="preserve">
+    <value>关于我</value>
+    <comment>About Me</comment>
+  </data>
+  <data name="HyperLink3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAvatarResource1.AlternateText" xml:space="preserve">
+    <value>请双击来更改你的头像</value>
+    <comment>Double click to change your avatar</comment>
+  </data>
+  <data name="imgAvatarResource1.ToolTip" xml:space="preserve">
+    <value>请双击来更改你的头像</value>
+    <comment>Double click to change your avatar</comment>
+  </data>
+  <data name="imgAvatarResource2.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAvatarResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgSuccessResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgSuccessResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAboutLabelResource1.Text" xml:space="preserve">
+    <value>プロフィール・好きなもの・私についてを設定して保存してください。</value>
+    <comment>About Me</comment>
+  </data>
+  <data name="lblAboutLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAboutMeResource1.Text" xml:space="preserve">
+    <value>这将帮助新朋友找到你</value>
+    <comment>This will help new friends find you.</comment>
+  </data>
+  <data name="lblAboutMeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAgeLabelResource1.Text" xml:space="preserve">
+    <value>年龄</value>
+    <comment>Age:</comment>
+  </data>
+  <data name="lblAgeLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAgeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAgeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBirthDayLabelResource1.Text" xml:space="preserve">
+    <value>生日</value>
+    <comment>Birthday :</comment>
+  </data>
+  <data name="lblClassLabelResource1.Text" xml:space="preserve">
+    <value>班级</value>
+    <comment>Class:</comment>
+  </data>
+  <data name="lblClassLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblConfirmPasswordLabelResource1.Text" xml:space="preserve">
+    <value>确认密码</value>
+    <comment>Confim Password</comment>
+  </data>
+  <data name="lblConfirmPasswordLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountLikeLabelResource1.Text" xml:space="preserve">
+    <value>星星指数</value>
+    <comment>Stars Received</comment>
+  </data>
+  <data name="lblGenderLabelResource1.Text" xml:space="preserve">
+    <value>性别</value>
+    <comment>Gender:</comment>
+  </data>
+  <data name="lblGenderLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHometownLabelResource1.Text" xml:space="preserve">
+    <value>地址</value>
+    <comment>Place I Live :</comment>
+  </data>
+  <data name="lblHometownLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHometownResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHometownResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLevelLabelResource1.Text" xml:space="preserve">
+    <value>班级</value>
+    <comment>Year</comment>
+  </data>
+  <data name="lblLikeCountResource1.Text" xml:space="preserve">
+    <value />
+    <comment>0</comment>
+  </data>
+  <data name="lblLikeCountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocationResource1.Text" xml:space="preserve">
+    <value>澳大利亚墨尔本</value>
+    <comment>Melbourne, Australia</comment>
+  </data>
+  <data name="lblLocationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMyPhotoResource1.Text" xml:space="preserve">
+    <value>我的照片</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="lblMyPhotoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value />
+    <comment>Lucy</comment>
+  </data>
+  <data name="lblName.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value />
+    <comment>Lucy</comment>
+  </data>
+  <data name="lblNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPasswordLabelResource1.Text" xml:space="preserve">
+    <value>密码</value>
+    <comment>Password</comment>
+  </data>
+  <data name="lblPasswordLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSchoolLabelResource1.Text" xml:space="preserve">
+    <value>学校</value>
+    <comment>School</comment>
+  </data>
+  <data name="lblStatusResource1.Text" xml:space="preserve">
+    <value>更新我的状态</value>
+    <comment>Update My Status</comment>
+  </data>
+  <data name="lblStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUserNameLabelResource1.Text" xml:space="preserve">
+    <value>账户名</value>
+    <comment>User Name</comment>
+  </data>
+  <data name="lblUserNameLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWhoLikesMeResource1.Text" xml:space="preserve">
+    <value>我的朋友</value>
+    <comment>My Friends</comment>
+  </data>
+  <data name="lblWhoLikesMeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkCancelResource1.Text" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="linkCancelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkChangeAvatarResource1.Text" xml:space="preserve">
+    <value>更改头像</value>
+    <comment>Change Avatar</comment>
+  </data>
+  <data name="linkChangeAvatarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkChangePasswordResource1.Text" xml:space="preserve">
+    <value>更改密码</value>
+    <comment>Change Password</comment>
+  </data>
+  <data name="linkChangePasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>男性</value>
+    <comment>Male</comment>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>男性</value>
+    <comment>Male</comment>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>女性</value>
+    <comment>Female</comment>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>女性</value>
+    <comment>Female</comment>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>我的房间</value>
+    <comment>My Room</comment>
+  </data>
+  <data name="picAlbum.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="picAlbumResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="picAlbumResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>密码应以字母（至少一个一个大写和小写）和包括该数8个或更多字符来创建。</value>
+    <comment>Password must be at least 7 characters, mix of letters, numbers and special characters(-=+~!@#$%^&amp;*/().)</comment>
+  </data>
+  <data name="revPasswordResource1.Text" xml:space="preserve">
+    <value />
+    <comment>*
+                                                    </comment>
+  </data>
+  <data name="revPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>必须输入密码</value>
+    <comment>Password is required</comment>
+  </data>
+  <data name="rfvPasswordResource1.Text" xml:space="preserve">
+    <value />
+    <comment>*</comment>
+  </data>
+  <data name="rfvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStatus.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStatus.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStatusResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ValidationSummary1Resource1.HeaderText" xml:space="preserve">
+    <value>请检查您输入的信息</value>
+    <comment>Please check your inputs</comment>
+  </data>
+  <data name="ValidationSummary1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cfvGradeResource1.Text" xml:space="preserve">
+    <value>请设置你的年级</value>
+  </data>
+  <data name="lblReminderResource1.Text" xml:space="preserve">
+    <value>密码必须至少7个字符，字母，数字和特殊字符混合(-=+~!@#$%^&amp;*/().)</value>
+  </data>
+  <data name="lblAlertResource1.Text" xml:space="preserve">
+    <value>请设置你的年级</value>
+  </data>
+  <data name="hdnTooltipMessageResource1.Value" xml:space="preserve">
+    <value>所有人可见—让我们写点正能量满满的签名吧</value>
+  </data>
+  <data name="hdnSelectAvatarResource1.Value" xml:space="preserve">
+    <value>选择头像</value>
+  </data>
+  <data name="imgClickBookResource1.ImageUrl" xml:space="preserve">
+    <value>~/Images/new/J_clickbook.png</value>
+  </data>
+  <data name="hdnQuickStartResource1.Value" xml:space="preserve">
+    <value>https://docs.google.com/presentation/d/e/2PACX-1vTL0jybVzNVz8yRrl_Q5bcv-Vw5spHVZu8jJHQnvrT6phKE--D04fKBswRpu4waXB66-sDrXD14w78M/embed</value>
+  </data>
+</root>

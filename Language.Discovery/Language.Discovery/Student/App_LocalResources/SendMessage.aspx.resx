@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddResource1.Text" xml:space="preserve">
+    <value>Add to Messages</value>
+  </data>
+  <data name="btnAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnClearResource1.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="btnClearResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchSentenceResource1.Text" xml:space="preserve">
+    <value>Button</value>
+  </data>
+  <data name="btnSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchWordResource1.Text" xml:space="preserve">
+    <value>Button</value>
+  </data>
+  <data name="btnSearchWordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSendResource1.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="btnSendResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink1Resource1.Text" xml:space="preserve">
+    <value>Emoji</value>
+  </data>
+  <data name="HyperLink1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2Resource1.Text" xml:space="preserve">
+    <value>Sticker</value>
+  </data>
+  <data name="HyperLink2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink3Resource1.Text" xml:space="preserve">
+    <value>Punctuation</value>
+  </data>
+  <data name="HyperLink3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAddWordResource1.AlternateText" xml:space="preserve">
+    <value>Free Form</value>
+  </data>
+  <data name="imgAddWordResource1.ToolTip" xml:space="preserve">
+    <value>Add/Replace Word</value>
+  </data>
+  <data name="imgClearMessageResource1.AlternateText" xml:space="preserve">
+    <value>Clear Message</value>
+  </data>
+  <data name="imgClearMessageResource1.ToolTip" xml:space="preserve">
+    <value>Clear Message</value>
+  </data>
+  <data name="imgFreeFormMessageResource1.AlternateText" xml:space="preserve">
+    <value>Free Form</value>
+  </data>
+  <data name="imgFreeFormMessageResource1.ToolTip" xml:space="preserve">
+    <value>Free Form</value>
+  </data>
+  <data name="imgSearchSentenceResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgToResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLearningResource1.Text" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="lblLearningResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSentenceResource1.Text" xml:space="preserve">
+    <value>Edit Box</value>
+  </data>
+  <data name="lblSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSentencesResource1.Text" xml:space="preserve">
+    <value>Palette Search</value>
+  </data>
+  <data name="lblSentencesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblToNameResource1.Text" xml:space="preserve">
+    <value>Sayaka</value>
+  </data>
+  <data name="lblToNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTopicResource1.Text" xml:space="preserve">
+    <value>This Month's Topic (Let’s Click and Send!):</value>
+  </data>
+  <data name="lblTopicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblToResource1.Text" xml:space="preserve">
+    <value>Send Mail To:</value>
+  </data>
+  <data name="lblToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkShowTranslationResource1.Text" xml:space="preserve">
+    <value>Show/Hide Translation</value>
+  </data>
+  <data name="linkShowTranslationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Compose Message</value>
+  </data>
+  <data name="txtSearchSentenceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchSentenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDialogLearningLanguageResource1.Text" xml:space="preserve">
+    <value>Japanese/Romaji</value>
+  </data>
+  <data name="lblDialogNativeLanguageResource1.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lblDialogSubLanguageResource1.Text" xml:space="preserve">
+    <value>Sub Language</value>
+  </data>
+  <data name="lblLanguageOrderResource1.Text" xml:space="preserve">
+    <value>Language Order</value>
+  </data>
+  <data name="lblNativeResource1.Text" xml:space="preserve">
+    <value>Native Language</value>
+  </data>
+  <data name="lblRomanjiResource1.Text" xml:space="preserve">
+    <value>Romaji</value>
+  </data>
+  <data name="lblSequenceResource1.Text" xml:space="preserve">
+    <value>Sequence</value>
+  </data>
+  <data name="lblSoundResource1.Text" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="hdnReturnResource1.Text" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="btnCloseEmojiResource1.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="linkTabOptionsResource1.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="linkTabWordsResource1.Text" xml:space="preserve">
+    <value>Words</value>
+  </data>
+  <data name="lblsentenceLabelResource1.Text" xml:space="preserve">
+    <value>SENTENCE</value>
+  </data>
+  <data name="lblInstructionResource1.Text" xml:space="preserve">
+    <value>Create your original message and send it to your friends! Pick up your words from the palette below and put it in the right order.</value>
+  </data>
+  <data name="hdnlblCancelResource1.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="hdnlblOkResource1.Text" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="lblFreeMessageResource1.Text" xml:space="preserve">
+    <value>Free Message</value>
+  </data>
+  <data name="lblLabelAddEditWordResource1.Text" xml:space="preserve">
+    <value>Add/Replace Word</value>
+  </data>
+  <data name="lblLabelSentencePagingResource1.Text" xml:space="preserve">
+    <value>Phrase Palette</value>
+  </data>
+  <data name="lblLabelWordPagingResource1.Text" xml:space="preserve">
+    <value>Word Palette</value>
+  </data>
+  <data name="hdnCreateNewWordResource1.Value" xml:space="preserve">
+    <value>Create New Word</value>
+  </data>
+  <data name="hdnReplaceWordResource1.Value" xml:space="preserve">
+    <value>Replace Word</value>
+  </data>
+  <data name="hdnSelectFromPaleteResource1.Value" xml:space="preserve">
+    <value>Select from Word Palette</value>
+  </data>
+  <data name="rdoPhraseResource1.Text" xml:space="preserve">
+    <value>Phrase</value>
+  </data>
+  <data name="rdoPhraseWordResource1.Text" xml:space="preserve">
+    <value>Phrase+Word</value>
+  </data>
+  <data name="rdoWordResource1.Text" xml:space="preserve">
+    <value>Word</value>
+  </data>
+  <data name="hdnPunctuationResource1.Value" xml:space="preserve">
+    <value>Punctuation</value>
+  </data>
+  <data name="hdnFreeTextMessage1PlaceHolderResource1.Value" xml:space="preserve">
+    <value>Write Japanese messages here</value>
+  </data>
+  <data name="hdnFreeTextMessage2PlaceHolderResource1.Value" xml:space="preserve">
+    <value>Write English translation here</value>
+  </data>
+  <data name="lblSubLanguage2Resource1.Text" xml:space="preserve">
+    <value>Kanji</value>
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="lblSaveMessageResource1.Text" xml:space="preserve">
+    <value>Options Saved</value>
+  </data>
+  <data name="btnDeleteUserResource1.ToolTip" xml:space="preserve">
+    <value>Remove selected user.</value>
+  </data>
+  <data name="lblFreeMessageInfoResource1.Text" xml:space="preserve">
+    <value>Enter the messages both in Eng and Japanese.</value>
+  </data>
+  <data name="lblRejectMessageResource1.Text" xml:space="preserve">
+    <value>Your message is not sent. Please write up nice messages to your Japan friends!</value>
+  </data>
+  <data name="hdnNoSentenceToAddResource1.Value" xml:space="preserve">
+    <value>No Sentence to add.</value>
+  </data>
+  <data name="lblMaxPaletteResource1.Text" xml:space="preserve">
+    <value>You can only send maximum of 15 palette.</value>
+  </data>
+  <data name="lblFreeMessageLabelResource1.Text" xml:space="preserve">
+    <value>Free Message</value>
+  </data>
+  <data name="hdnAddWordResource1.Value" xml:space="preserve">
+    <value>Create &amp; Replace
+Words/Phrases</value>
+  </data>
+  <data name="hdnFreeformWordTitleResource1.Value" xml:space="preserve">
+    <value>Create &amp; Replace Words</value>
+  </data>
+  <data name="hdnSearchPlaceHolderResource1.Value" xml:space="preserve">
+    <value>Phrase Search</value>
+  </data>
+  <data name="lnkPhrasePaletteResource1.Text" xml:space="preserve">
+    <value>Phrase Palette</value>
+  </data>
+  <data name="lnkWordPaletteResource1.Text" xml:space="preserve">
+    <value>Word Palette</value>
+  </data>
+  <data name="hdnStep1Resource1.Value" xml:space="preserve">
+    <value>First Choose a Category or Search Keywords and Find Phrases</value>
+  </data>
+  <data name="hdnStep2Resource1.Value" xml:space="preserve">
+    <value>Listen &lt;img src='../Images/ICO_Speaker.png' alt='' style='width:16px;height:16px;'&gt;
+put words in order or replace words, then click &lt;img src='../Images/addpalette.png' alt='' style='width:16px;height:16px;'&gt; to put in Message</value>
+  </data>
+  <data name="hdnStep3bResource1.Value" xml:space="preserve">
+    <value>Click and Change Words!</value>
+  </data>
+  <data name="hdnStep3Resource1.Value" xml:space="preserve">
+    <value>PUT IN CORRECT ORDER &amp; CLICK &lt;img src='../Images/swapoutline.png' alt='' style='width:16px;height:16px;'&gt;
+REPLACE FROM WORD PALETTE OR CREATE YOUR OWN WORDS &amp; PHRASES!</value>
+  </data>
+  <data name="hdnStep4Resource1.Value" xml:space="preserve">
+    <value>Add to your Message!</value>
+  </data>
+  <data name="hdnStep5Resource1.Value" xml:space="preserve">
+    <value>Send to your Friends!</value>
+  </data>
+  <data name="lblStepResource1.Text" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="lblNativeExResource1.Text" xml:space="preserve">
+    <value>This displays Native Language Translations - Suitable for Middle level students.</value>
+  </data>
+  <data name="lblRomanjiExResource1.Text" xml:space="preserve">
+    <value>This displays Romanji Character for Japanese - Suitable for Romanji learners.</value>
+  </data>
+  <data name="lblSaveExResource1.Text" xml:space="preserve">
+    <value>Turning &amp;quot;OFF&amp;quot; Sequence and Native Language can make the Palette into a Puzzle!</value>
+  </data>
+  <data name="lblSequenceExResource1.Text" xml:space="preserve">
+    <value>This displays Word Orders on the Palette - Suitable for Beginner level students.</value>
+  </data>
+  <data name="lblStepExResource1.Text" xml:space="preserve">
+    <value>This shows each step for creating new messages on the Palette ① - ③</value>
+  </data>
+  <data name="lblSubLanguage2ExResource1.Text" xml:space="preserve">
+    <value>This displays Kanji Character for Japanese - Suitable for Advanced level students.</value>
+  </data>
+  <data name="hdnSuggestedTopicResource1.Value" xml:space="preserve">
+    <value>Click to use Today's Topic</value>
+  </data>
+  <data name="linkTabPhraseResource1.Text" xml:space="preserve">
+    <value>Phrases</value>
+  </data>
+  <data name="imgSettingsResource1.ToolTip" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="lblSentenceTitleResource1.Text" xml:space="preserve">
+    <value>Phrase Palette</value>
+  </data>
+  <data name="hdnSavedMessageInfoResource1.Value" xml:space="preserve">
+    <value>Your message is saved.</value>
+  </data>
+  <data name="lblNoResource1.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="lblSaveWordQuestionResource1.Text" xml:space="preserve">
+    <value>Do you want to save the word/phrase you created?</value>
+  </data>
+  <data name="lblYesResource1.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblSaveOutMessageLabelResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="lblLabelWordPagingUserCreatedResource1.Text" xml:space="preserve">
+    <value>My Word Palette</value>
+  </data>
+  <data name="linkTabUsersWordsResource1.Text" xml:space="preserve">
+    <value>My Words</value>
+  </data>
+  <data name="lblReturntoMessageResource1.Text" xml:space="preserve">
+    <value>Return to New Message</value>
+  </data>
+  <data name="lblSendResource1.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="lblSendWarningResource1.Text" xml:space="preserve">
+    <value>Please check if there are no repetitive or bad words.
+In that case the message will not be sent.</value>
+  </data>
+  <data name="lblTopicsLabelResource1.Text" xml:space="preserve">
+    <value>Topics:</value>
+  </data>
+  <data name="lblcharleftLabel1Resource1.Text" xml:space="preserve">
+    <value>{0} Characters remaining</value>
+  </data>
+  <data name="lblccResource1.Text" xml:space="preserve">
+    <value>CC: Active Users</value>
+  </data>
+  <data name="hdnBadErrorMessageResource1.Value" xml:space="preserve">
+    <value>Your message contains repetitive or bad words, and will not be sent.</value>
+  </data>
+  <data name="hdnDeleteWordResource1.Value" xml:space="preserve">
+    <value>Are you sure you want to delete this word?</value>
+  </data>
+  <data name="hdnErrorHeaderResource1.Value" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="hdnSaveWordResource1.Value" xml:space="preserve">
+    <value>Do you want to save the word/phrase you created?</value>
+  </data>
+  <data name="lblOrderByLearningLanguageExpResource1.Text" xml:space="preserve">
+    <value>Displays the phrase palette in the order of learning languages.</value>
+  </data>
+  <data name="lblOrderByLearningLanguageResource1.Text" xml:space="preserve">
+    <value>Order by 2nd Language</value>
+  </data>
+  <data name="hdnSearchWordPlaceHolderResource1.Value" xml:space="preserve">
+    <value>Word Search</value>
+  </data>
+  <data name="lblViewMessageResource1.Text" xml:space="preserve">
+    <value>View Received Message</value>
+  </data>
+  <data name="lblDialogTranslationInstructionResource1.Text" xml:space="preserve">
+    <value>After entering English, press Tab or Return key to auto- translate to Japanese</value>
+  </data>
+</root>

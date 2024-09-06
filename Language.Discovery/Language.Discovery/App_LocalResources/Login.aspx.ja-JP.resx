@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnLoginResource1.Text" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="btnLoginResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FailureTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessageResource1.Text" xml:space="preserve">
+    <value>無効なユーザー名またはパスワード</value>
+  </data>
+  <data name="lblMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.CreateUserText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.FailureText" xml:space="preserve">
+    <value>ログインに失敗しました。&lt;br/&gt; IDとパスワードを確認して、もう一度お試しください。&lt;br/&gt;パスワードを忘れた場合は、&lt;br/&gt;上の[パスワードを忘れた場合]をクリックしてください。</value>
+  </data>
+  <data name="Login1Resource1.HelpPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.InstructionText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.LoginButtonText" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="Login1Resource1.PasswordLabelText" xml:space="preserve">
+    <value>パスワード：</value>
+  </data>
+  <data name="Login1Resource1.PasswordRecoveryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.PasswordRequiredErrorMessage" xml:space="preserve">
+    <value>パスワードが必要です。</value>
+  </data>
+  <data name="Login1Resource1.RememberMeText" xml:space="preserve">
+    <value>私に次の時間を覚えている。</value>
+  </data>
+  <data name="Login1Resource1.TitleText" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="Login1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.UserNameLabelText" xml:space="preserve">
+    <value>ユーザー名：</value>
+  </data>
+  <data name="Login1Resource1.UserNameRequiredErrorMessage" xml:space="preserve">
+    <value>ユーザー名が必要です。</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="Panel1Resource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PasswordResource1.placeholder" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="PasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>ユーザ名フィールドは必須です。</value>
+  </data>
+  <data name="RequiredFieldValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>パスワードフィールドが必要です。</value>
+  </data>
+  <data name="RequiredFieldValidator2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rightPaneResource1.Text" xml:space="preserve">
+    <value>
+                    &lt;p&gt;
+                      あなたの中にPalaygoユーザ名とPalaygoの使用を開始するためのパスワードを入力します
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                     それとも、新しいユーザーを作成するには、[新規]をクリックし、 "登録"である場合。
+                    &lt;/p&gt;
+                </value>
+  </data>
+  <data name="btnRegisterResource1.Text" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="testResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserNameResource1.placeholder" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="UserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnForgotPasswordResource1.Text" xml:space="preserve">
+    <value>パスワードを忘れた</value>
+  </data>
+  <data name="btnForgotPasswordResource1.ToolTip" xml:space="preserve">
+    <value>パスワードを忘れた</value>
+  </data>
+  <data name="btnContinueResource1.Text" xml:space="preserve">
+    <value>続ける</value>
+  </data>
+  <data name="lblEnterYourUserNameResource1.Text" xml:space="preserve">
+    <value>あなたのユーザー名を入力してください</value>
+  </data>
+  <data name="linkContactSupportResource1.Text" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="localizeLoginWelcomeTitle.Text" xml:space="preserve">
+    <value>&lt;h1 style="font-size: 40px;"&gt;パレーゴへようこそ！&lt;/h1&gt;&lt;p style="font-size: 20px;"&gt;ユーザー名とパスワードを持っている方は、それぞれ入力してスタートしよう！
+&lt;/p&gt;&lt;p style="font-size: 20px;"&gt;新規の方は、「登録」をクリックして、ユーザ名とパスワードの申請をしよう！&lt;/p&gt;</value>
+  </data>
+  <data name="hdnContactPalaygoResource1.Value" xml:space="preserve">
+    <value>https://www.palaygo.com/contact/</value>
+  </data>
+  <data name="hdnRegisterResource1.Value" xml:space="preserve">
+    <value>https://www.palaygo.com</value>
+  </data>
+  <data name="hdnMailTo.Value" xml:space="preserve">
+    <value>info-jp@languagediscovery.org</value>
+  </data>
+  <data name="hdnTermsResource1.Value" xml:space="preserve">
+    <value>PalaygoTermsConditions_ja.htm</value>
+  </data>
+  <data name="localizenoticeResource1.Text" xml:space="preserve">
+    <value>&lt;p&gt;この度、パレーゴホームが新しくバージョンアップ致しましたので、ご利用前に以下の利用規約（改訂版）に同意して頂く必要がございます。&lt;/p&gt;
+            &lt;p&gt;内容をご確認の上、「同意する」をクリックし、パレーゴホームをお楽しみください。&lt;/p&gt;</value>
+  </data>
+  <data name="btnAgreeResource1.Text" xml:space="preserve">
+    <value>同意する</value>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>同意しない</value>
+  </data>
+  <data name="localizeSessionResource1.Text" xml:space="preserve">
+    <value>&lt;p&gt;自動的にログアウトされました。再度、ログインして下さい。&lt;/p&gt;</value>
+  </data>
+  <data name="localizePartnerResource1.Text" xml:space="preserve">
+    <value>&lt;h6 style="margin-top:0"&gt;&lt;nobr&gt;パレーゴは児童英検を主催している日本児童英語振興協会ＪＡＰＥＣの教材とリンクした単語や表現を含んでいます。&lt;/nobr&gt;&lt;/h6&gt;</value>
+  </data>
+  <data name="HomeAccessResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmailContent" xml:space="preserve">
+    <value>Parents/Guardian Given Name : {0}&lt;br/&gt;
+Email: {1}&lt;br/&gt;
+Username:{2}&lt;br/&gt;</value>
+    <comment>Parents/Guardian Last Name : {0}&lt;br/&gt;
+Parents/Guardian Given Name : {1}&lt;br/&gt;
+Email: {2}&lt;br/&gt;
+Username:{3}&lt;br/&gt;</comment>
+  </data>
+  <data name="EmailSubject" xml:space="preserve">
+    <value>Home Access Confirmation Email</value>
+  </data>
+  <data name="hdnContinueResource1.Value" xml:space="preserve">
+    <value>続ける</value>
+  </data>
+  <data name="hdnParentInfoDialogTitleResource1.Value" xml:space="preserve">
+    <value>自宅からのアクセスを承認</value>
+  </data>
+  <data name="lblConfirmEmailnotMatchResource1.Text" xml:space="preserve">
+    <value>Eメールが一致しません。</value>
+  </data>
+  <data name="lblConfirmEmailResource1.Text" xml:space="preserve">
+    <value>Eメールアドレス再入力</value>
+  </data>
+  <data name="lblEmailAddressInvalidResource1.Text" xml:space="preserve">
+    <value>Eメールが有効でありません。</value>
+  </data>
+  <data name="lblEmailInfoResource1.Text" xml:space="preserve">
+    <value>Eメールアドレスを入れてください。</value>
+  </data>
+  <data name="lblEmailResource1.Text" xml:space="preserve">
+    <value>Eメールアドレス入力</value>
+  </data>
+  <data name="lblParentsGivenNameResource1.Text" xml:space="preserve">
+    <value>保護者ご氏名.</value>
+    <comment>保護者（名）</comment>
+  </data>
+  <data name="lblParentsNameInfoResource1.Text" xml:space="preserve">
+    <value>保護者名を入れてください。</value>
+  </data>
+  <data name="lblParentsNameResource1.Text" xml:space="preserve">
+    <value>保護者（姓）</value>
+  </data>
+  <data name="localizedivParentsInfoResource1.Text" xml:space="preserve">
+    <value>&lt;p&gt;家庭からパレーゴホームにアクセスするには、保護者による承認が必要です。保護者の方に、下のフォームを入力してもらい「続ける」をクリックしてください。&lt;/p&gt;</value>
+  </data>
+  <data name="hdnDemoUserMailToResource1.Value" xml:space="preserve">
+    <value>student@languagediscovery.org</value>
+  </data>
+  <data name="PasswordRequestMessage" xml:space="preserve">
+    <value>メールアドレスをご登録済みのお客様には、パスワードを登録アドレスへ送信しました。\r\n「パレーゴパスワード通知メール」を数分待っても受信しない場合、迷惑フォルダを確認ください。\r\n誤って迷惑メールと判定されていた場合、迷惑メールのマークを解除してください。</value>
+  </data>
+  <data name="PasswordRequestWithEmailSubject" xml:space="preserve">
+    <value>パレーゴパスワードのご通知</value>
+  </data>
+  <data name="PasswordRequestWithoutEmailSubject" xml:space="preserve">
+    <value>Password Request From {0}</value>
+  </data>
+  <data name="localizeInActiveResource1.Text" xml:space="preserve">
+    <value>アカウントは停止されました。サポートまでご連絡ください。</value>
+  </data>
+  <data name="hdnIsRegisterVisibleResource1.Value" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="lblPalaygoIDLabelResource1.Text" xml:space="preserve">
+    <value>パレーゴユーザー名</value>
+  </data>
+  <data name="PasswordRequestContent" xml:space="preserve">
+    <value>Hi {3},
+あなたのパレーゴIDパスワードは、以下の通りです。 {0}
+{1}
+{2}</value>
+  </data>
+  <data name="PasswordRequestMessageTeacher" xml:space="preserve">
+    <value>学校で担当の先生に相談しましょう。パスワード設定メールは先生に送られます。</value>
+  </data>
+  <data name="formBtnForpwd.Text" xml:space="preserve">
+    <value>パスワードを忘れた</value>
+  </data>
+  <data name="formBtnLogin.Text" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="formButtonForpwd.Text" xml:space="preserve">
+    <value>パスワードを忘れた</value>
+  </data>
+  <data name="formButtonLogin.Text" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="LogoResourceLanguageSensitive.Text" xml:space="preserve">
+    <value>&lt;div&gt;&lt;img src="Images/Palaygo_JP_logo.png" alt="Logo" height="50" /&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="localizeUsernameFieldLogin.Text" xml:space="preserve">
+    <value>&lt;asp:TextBox runat="server" CssClass="form-control Username" placeholder="ユーザー名" ID="UserName" meta:resourcekey="UserNameResource1" ClientIDMode="Static" Width="60%"/&gt;</value>
+  </data>
+  <data name="hdnMailToTeacherResource1.Value" xml:space="preserve">
+    <value>forgotpassword@languagediscovery.org</value>
+  </data>
+</root>
