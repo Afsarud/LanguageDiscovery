@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14, 14.25" name="LanguageDiscovery">
+  <DataContextMoniker Name="/LanguageDiscoveryDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dcefa893-a732-4c1e-a9e6-15ad4031a779" absoluteBounds="6.75, 10.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/Class" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd0f6f24-772f-4887-9bdf-88375b0542ca" absoluteBounds="6.765, 11.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="633ccbc1-b285-485d-ab8a-2bcaa42eeaed" absoluteBounds="9.75, 10.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/WordCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96cd58e5-798f-4a28-b082-a45d0863909e" absoluteBounds="9.765, 11.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfa35e16-897c-4be5-b1d0-b77bad4523ec" absoluteBounds="0.75, 7.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f1097b5-6bb2-4c55-a391-602921b1bfd5" absoluteBounds="0.765, 7.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a9a79db-b2d6-462b-9844-26d92f3ec71a" absoluteBounds="8.75, 2.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/Language" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f5482ff-1cf9-40d3-93f0-33d3c1d7c1ef" absoluteBounds="8.765, 2.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46e4e9fa-1e99-4549-b543-8a676042121a" absoluteBounds="0.75, 12.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/Level" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c3f3daf-d368-4219-b2bf-0d7d84a57dd0" absoluteBounds="0.765, 13.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac38974f-9bc0-4e4e-b6b9-8e738d65fe94" absoluteBounds="9, 7.125, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/Phrase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9bb0f2a-1913-42c0-98b0-fa48e9bcc30f" absoluteBounds="9.015, 7.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5327d67a-3f09-499f-bc3a-cb43160ab66c" absoluteBounds="11.75, 6.375, 2, 3.3093082682291657">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/PhraseDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="886e235d-ff2d-4912-8d48-916221ff063c" absoluteBounds="11.765, 6.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b383f2c-3dd9-4f03-92d5-fe9321cb858a" absoluteBounds="3.5, 4.875, 2, 6.3861311848958344">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/SchoolInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="110c422c-0874-4bc0-841e-08e08e265371" absoluteBounds="3.515, 5.335, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29a6b733-378f-423e-a28a-a360c4cc38a0" absoluteBounds="0.75, 4.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/SchoolType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c9edf7b-c5b6-41ff-aaea-3a83a972a0e8" absoluteBounds="0.765, 4.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75f31eea-aaa5-4d84-b9b3-2229119e8d85" absoluteBounds="11.5, 1.875, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/SubLanguage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31931309-cff5-438d-a15b-f34fd3b9bcee" absoluteBounds="11.515, 2.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7fd04da8-f94b-4673-9205-3b2a1d568147" absoluteBounds="6.25, 0.75, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27136b61-edc2-4623-ae61-b736ed1adf97" absoluteBounds="6.265, 1.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3bea1f3-3271-404b-8822-66bfda6bd1e6" absoluteBounds="3.5, 2.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/UserType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff305312-f89d-4b1d-bc50-6da44850677f" absoluteBounds="3.515, 2.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb269f0d-540a-4cf5-8446-1d551d2ba7af" absoluteBounds="8.75, 3.625, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/Word" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b26c849-72cd-4b38-b6e2-ed1edad7be61" absoluteBounds="8.765, 4.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b9a20834-28ee-4960-8372-7616acb999f6" absoluteBounds="6.25, 6.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/LanguageDiscoveryDataContext/PhraseCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49c30e64-cad1-4862-ac4a-e69335f99e00" absoluteBounds="6.265, 7.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,16 @@
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll.config
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.pdb
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\RestSharp.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.pdb
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.pdb
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.xml
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\RestSharp.xml
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.csproj.AssemblyReference.cache
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.csproj.CoreCompileInputs.cache
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.csproj.CopyComplete
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.pdb

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\palaygo Publish\Services</_PublishTargetUrl>
+    <History>True|2024-06-02T11:39:59.4336851Z;True|2024-06-02T17:37:35.5133778+06:00;True|2024-01-14T20:24:42.9432564+06:00;True|2024-01-14T20:24:09.2227532+06:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Language.Discovery.Entity.dll">
+      <publishTime>06/02/2024 17:35:45</publishTime>
+    </File>
+    <File Include="bin/Language.Discovery.Entity.pdb">
+      <publishTime>06/02/2024 17:35:45</publishTime>
+    </File>
+    <File Include="bin/Language.Discovery.Repository.dll">
+      <publishTime>06/02/2024 17:35:46</publishTime>
+    </File>
+    <File Include="bin/Language.Discovery.Repository.pdb">
+      <publishTime>06/02/2024 17:35:46</publishTime>
+    </File>
+    <File Include="bin/Language.Discovery.Services.dll">
+      <publishTime>06/02/2024 17:39:59</publishTime>
+    </File>
+    <File Include="bin/Language.Discovery.Services.pdb">
+      <publishTime>06/02/2024 17:39:59</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="LanguageDiscovery.dbml">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/AuxilliaryServices.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/MiscService.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/PaletteService.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/PhraseCategoryService.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/PhraseService.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/ReportService.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/SchoolService.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/TestService.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+    <File Include="Service/UserService.svc">
+      <publishTime>05/29/2024 11:20:20</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
