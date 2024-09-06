@@ -1,0 +1,107 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Language.Discovery\\Language.Discovery\\AutoEmail\\AutoEmail.csproj": {}
+  },
+  "projects": {
+    "D:\\Language.Discovery\\Language.Discovery\\AutoEmail\\AutoEmail.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Language.Discovery\\Language.Discovery\\AutoEmail\\AutoEmail.csproj",
+        "projectName": "AutoEmail",
+        "projectPath": "D:\\Language.Discovery\\Language.Discovery\\AutoEmail\\AutoEmail.csproj",
+        "packagesPath": "C:\\Users\\Cliqpack\\.nuget\\packages\\",
+        "outputPath": "D:\\Language.Discovery\\Language.Discovery\\AutoEmail\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cliqpack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Entity\\Language.Discovery.Entity.csproj": {
+                "projectPath": "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Entity\\Language.Discovery.Entity.csproj"
+              },
+              "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Repository\\Language.Discovery.Repository.csproj": {
+                "projectPath": "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Repository\\Language.Discovery.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Entity\\Language.Discovery.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Entity\\Language.Discovery.Entity.csproj",
+        "projectName": "Language.Discovery.Entity",
+        "projectPath": "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Entity\\Language.Discovery.Entity.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Repository\\Language.Discovery.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Repository\\Language.Discovery.Repository.csproj",
+        "projectName": "Language.Discovery.Repository",
+        "projectPath": "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Repository\\Language.Discovery.Repository.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Entity\\Language.Discovery.Entity.csproj": {
+                "projectPath": "D:\\Language.Discovery\\Language.Discovery\\Language.Discovery.Entity\\Language.Discovery.Entity.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
