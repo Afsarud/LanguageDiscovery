@@ -457,3 +457,117 @@ D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Debug\Language.D
 D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Debug\Language.Discovery.dll
 D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Debug\Language.Discovery.pdb
 D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Debug\Language.Discovery.Web.csprojAssemblyReference.cache
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help En.htm
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP.htm
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP4x1.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP4xi2.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi1.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi2.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi3.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6x1.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi2.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi3.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi4.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7x1.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi2.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi3.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi4.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi5.jpg
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Images\removetovip.png
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Web.config
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Web.Debug.config
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Web.Release.config
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Language.Discovery.dll.config
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Language.Discovery.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Language.Discovery.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Antlr3.Runtime.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\AspNet.ScriptManager.jQuery.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.AspNet.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.Core.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\EntityFramework.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.PlatformServices.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.PlatformServices.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Language.Discovery.Entity.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Language.Discovery.Repository.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Security.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.Common.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Web.Infrastructure.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Newtonsoft.Json.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Owin.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\RestSharp.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Net.Http.Formatting.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Threading.Tasks.Extensions.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Web.Http.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Web.Http.WebHost.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Web.Optimization.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Web.Providers.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\WebGrease.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Language.Discovery.Entity.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Language.Discovery.Repository.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Security.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Newtonsoft.Json.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\RestSharp.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Net.Http.Formatting.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Threading.Tasks.Extensions.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Web.Http.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\System.Web.Http.WebHost.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\EntityFramework.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.Core.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.AspNet.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Soursetree\Language.Discovery\Language.Discovery\obj\Debug\Language.Discovery.Web.csprojAssemblyReference.cache
+D:\Soursetree\Language.Discovery\Language.Discovery\obj\Debug\Language.Discovery.Web.csproj.CopyComplete
+D:\Soursetree\Language.Discovery\Language.Discovery\obj\Debug\Language.Discovery.dll
+D:\Soursetree\Language.Discovery\Language.Discovery\obj\Debug\Language.Discovery.pdb
