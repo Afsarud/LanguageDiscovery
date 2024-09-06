@@ -1,0 +1,1104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnApproveResource1.Text" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="btnApproveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnClearResource1.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="btnClearResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteResource1.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchResource1.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btnSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderEng9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderJap9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlPhraseCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSearchCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSearchLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSearchSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEng9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileEnglishSentenceSoundResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileImage9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileJap9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileSentenceJapaneseSoundResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdResultResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdResultResource1.EmptyDataText" xml:space="preserve">
+    <value>No record to display.</value>
+  </data>
+  <data name="grdResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label11Resource1.Text" xml:space="preserve">
+    <value>Sen-3</value>
+  </data>
+  <data name="Label11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12Resource1.Text" xml:space="preserve">
+    <value>Romaji</value>
+  </data>
+  <data name="Label12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label14Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label18Resource1.Text" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Label18Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Sen-1</value>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>Sen-2</value>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>Kanji</value>
+  </data>
+  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCategoryResource1.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="lblCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDataEntryLegendResource1.Text" xml:space="preserve">
+    <value>Data Entry</value>
+  </data>
+  <data name="lblDataEntryLegendResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEnglishSoundResource1.Text" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="lblEnglishSoundResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFileResource1.Text" xml:space="preserve">
+    <value>Sound File</value>
+  </data>
+  <data name="lblFileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblImageFileResource1.Text" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="lblImageFileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblImagesResource1.Text" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="lblImagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblJapKeywordResource1.Text" xml:space="preserve">
+    <value>Keyword</value>
+  </data>
+  <data name="lblJapKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblJapOrderResource1.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="lblJapOrderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblJapSoundTextFileResource1.Text" xml:space="preserve">
+    <value>Sound File</value>
+  </data>
+  <data name="lblJapSoundTextFileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeywordResource1.Text" xml:space="preserve">
+    <value>Keyword</value>
+  </data>
+  <data name="lblKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLegendResource1.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="lblLegendResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMainLanguageResource1.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lblMainLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessageResource1.Text" xml:space="preserve">
+    <value>Action Error.</value>
+  </data>
+  <data name="lblMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOrderResource1.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="lblOrderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPhraseCategoryResource1.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="lblPhraseCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchKeywordResource1.Text" xml:space="preserve">
+    <value>Keyword</value>
+  </data>
+  <data name="lblSearchKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchLevelResource1.Text" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="lblSearchLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchSchoolResource1.Text" xml:space="preserve">
+    <value>School</value>
+  </data>
+  <data name="lblSearchSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSen1Resource1.Text" xml:space="preserve">
+    <value>Sen-1</value>
+  </data>
+  <data name="lblSen1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSoundFileResource1.Text" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="lblSoundFileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubLanguageResource1.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lblSubLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWordResource1.Text" xml:space="preserve">
+    <value>Word</value>
+  </data>
+  <data name="lblWordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator10Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extensionfor image 9</value>
+  </data>
+  <data name="RegularExpressionValidator10Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator11Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extensionfor image 10</value>
+  </data>
+  <data name="RegularExpressionValidator11Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extension for image 1</value>
+  </data>
+  <data name="RegularExpressionValidator2Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator3Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extension for image 2</value>
+  </data>
+  <data name="RegularExpressionValidator3Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator4Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extension for image 3</value>
+  </data>
+  <data name="RegularExpressionValidator4Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator5Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extension for image 4</value>
+  </data>
+  <data name="RegularExpressionValidator5Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator6Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extension for image 5</value>
+  </data>
+  <data name="RegularExpressionValidator6Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator7Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extension for image 6</value>
+  </data>
+  <data name="RegularExpressionValidator7Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator8Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extensionfor image 7</value>
+  </data>
+  <data name="RegularExpressionValidator8Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator9Resource1.ErrorMessage" xml:space="preserve">
+    <value>Invalid file extensionfor image 8</value>
+  </data>
+  <data name="RegularExpressionValidator9Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RegularExpressionValidator9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>English Text is required</value>
+  </data>
+  <data name="RequiredFieldValidator1Resource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value>Sentence</value>
+  </data>
+  <data name="txtEng10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng8Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng9Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEng9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnglishKeywordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnglishKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSentenceSoundFileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSentenceSoundFileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile8Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile9Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEngSoundFile9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile8Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile9Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageFile9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap8Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap9Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJap9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapaneseKeywordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapaneseKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSentenceSoundFileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSentenceSoundFileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile8Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile9Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtJapSoundFile9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji8Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji9Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKanji9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji8Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji9Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRomanji9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchKeywordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchWordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchWordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ValidationSummary1Resource1.HeaderText" xml:space="preserve">
+    <value>Please Check your inputs.</value>
+  </data>
+  <data name="ValidationSummary1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Palette Maintenance</value>
+  </data>
+  <data name="hdnAllResource1.Value" xml:space="preserve">
+    <value>All</value>
+  </data>
+</root>

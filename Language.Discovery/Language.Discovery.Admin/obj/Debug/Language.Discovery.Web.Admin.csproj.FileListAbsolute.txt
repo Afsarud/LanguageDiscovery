@@ -1,0 +1,75 @@
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Web1.config
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Web1.Debug.config
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Web1.Release.config
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Admin.dll.config
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Admin.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Admin.pdb
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Antlr3.Runtime.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\AspNet.ScriptManager.jQuery.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\DocumentFormat.OpenXml.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\itextsharp.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Entity.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Repository.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ReportViewer.Common.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ScriptManager.WebForms.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.Web.Infrastructure.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Newtonsoft.Json.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\SpreadsheetLight.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\System.Web.Optimization.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\WebGrease.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\RestSharp.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Entity.pdb
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Repository.pdb
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\Newtonsoft.Json.xml
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\System.Web.Optimization.xml
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\bin\RestSharp.xml
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csproj.AssemblyReference.cache
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csproj.ResolveComReference.cache
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csproj.CoreCompileInputs.cache
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csproj.CopyComplete
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Admin.dll
+D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Admin.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Web1.config
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Web1.Debug.config
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Web1.Release.config
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Admin.dll.config
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Admin.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Admin.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Antlr3.Runtime.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\AspNet.ScriptManager.jQuery.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\DocumentFormat.OpenXml.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\itextsharp.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Entity.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Repository.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ReportViewer.Common.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.Web.Infrastructure.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Newtonsoft.Json.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\SpreadsheetLight.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\System.Web.Optimization.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\WebGrease.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\RestSharp.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Entity.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Language.Discovery.Repository.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\Newtonsoft.Json.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\System.Web.Optimization.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\bin\RestSharp.xml
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csproj.ResolveComReference.cache
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csproj.CopyComplete
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Admin.dll
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Admin.pdb
+D:\Language.Discovery\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csprojAssemblyReference.cache

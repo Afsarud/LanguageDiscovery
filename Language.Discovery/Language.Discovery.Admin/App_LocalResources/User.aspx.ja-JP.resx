@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BoundFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
+    <value>名前　例）Taro</value>
+  </data>
+  <data name="BoundFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.HeaderText" xml:space="preserve">
+    <value>苗字　例）Kimura</value>
+  </data>
+  <data name="BoundFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.HeaderText" xml:space="preserve">
+    <value>クラス名</value>
+  </data>
+  <data name="BoundFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource4.HeaderText" xml:space="preserve">
+    <value>国名</value>
+  </data>
+  <data name="BoundFieldResource5.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource5.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource5.HeaderText" xml:space="preserve">
+    <value>都市名</value>
+  </data>
+  <data name="BoundFieldResource6.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource6.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource6.HeaderText" xml:space="preserve">
+    <value>学校名</value>
+  </data>
+  <data name="btnCancelChangePasswordResource1.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="btnCancelChangePasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnChangePasswordResource1.Text" xml:space="preserve">
+    <value>パスワード変更</value>
+  </data>
+  <data name="btnChangePasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnClearResource1.Text" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="btnClearResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteResource1.Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchResource1.Text" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="btnSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkActivateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkActivateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAfterSchoolResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAfterSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckbIsPalleteVisibleResource1.Text" xml:space="preserve">
+    <value>パレット表示</value>
+  </data>
+  <data name="ckbIsPalleteVisibleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompareValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>性別が必要です。</value>
+  </data>
+  <data name="CompareValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompareValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvCityResource1.ErrorMessage" xml:space="preserve">
+    <value>都市名が必要です。</value>
+  </data>
+  <data name="cvCityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvClassResource1.ErrorMessage" xml:space="preserve">
+    <value>クラス名が必要です。</value>
+  </data>
+  <data name="cvClassResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvClassResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>パスワードが一致しません。</value>
+  </data>
+  <data name="cvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvCountryResource1.ErrorMessage" xml:space="preserve">
+    <value>国名が必要です。</value>
+  </data>
+  <data name="cvCountryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvLevelResource1.ErrorMessage" xml:space="preserve">
+    <value>レベルが必要です。</value>
+  </data>
+  <data name="cvLevelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvSchoolResource1.ErrorMessage" xml:space="preserve">
+    <value>学校名が必要です。</value>
+  </data>
+  <data name="cvSchoolResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUserTypeResource1.ErrorMessage" xml:space="preserve">
+    <value>ユーザータイプが必要です。</value>
+  </data>
+  <data name="cvUserTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUserTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlClassResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSearchCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSearchClassResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSearchCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSearchSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlUserTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdResultResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdResultResource1.EmptyDataText" xml:space="preserve">
+    <value>該当するデータなし</value>
+  </data>
+  <data name="grdResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblActivateResource1.Text" xml:space="preserve">
+    <value>有効にする</value>
+  </data>
+  <data name="lblActivateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAddressResource1.Text" xml:space="preserve">
+    <value>住所</value>
+  </data>
+  <data name="lblAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAfterSchoolResource1.Text" xml:space="preserve">
+    <value>放課後使用可能</value>
+  </data>
+  <data name="lblAfterSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCityResource1.Text" xml:space="preserve">
+    <value>都市</value>
+  </data>
+  <data name="lblCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblClassResource1.Text" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="lblClassResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblConfirmPasswordResource1.Text" xml:space="preserve">
+    <value>パスワードの再入力</value>
+  </data>
+  <data name="lblConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountryResource1.Text" xml:space="preserve">
+    <value>国</value>
+  </data>
+  <data name="lblCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDateOfBirthResource1.Text" xml:space="preserve">
+    <value>生年月日</value>
+  </data>
+  <data name="lblDateOfBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailResource1.Text" xml:space="preserve">
+    <value>メールアドレス</value>
+  </data>
+  <data name="lblEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFaxResource1.Text" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="lblFaxResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>名前　例）Taro</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGenderResource1.Text" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="lblGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLastNameResource1.Text" xml:space="preserve">
+    <value>苗字　例）Kimura</value>
+  </data>
+  <data name="lblLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLevelResource1.Text" xml:space="preserve">
+    <value>レベル</value>
+  </data>
+  <data name="lblLevelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMessageResource1.Text" xml:space="preserve">
+    <value>動作エラー</value>
+  </data>
+  <data name="lblMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMiddleNameResource1.Text" xml:space="preserve">
+    <value>ミドルネーム</value>
+  </data>
+  <data name="lblMiddleNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParentsNameResource1.Text" xml:space="preserve">
+    <value>保護者名</value>
+  </data>
+  <data name="lblParentsNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPassword2Resource1.Text" xml:space="preserve">
+    <value>パスワード2</value>
+  </data>
+  <data name="lblPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPasswordResource1.Text" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="lblPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSchoolResource1.Text" xml:space="preserve">
+    <value>学校</value>
+  </data>
+  <data name="lblSchoolResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearcFirstNameResource1.Text" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="lblSearcFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchCityResource1.Text" xml:space="preserve">
+    <value>都市</value>
+  </data>
+  <data name="lblSearchCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchClassResource1.Text" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="lblSearchClassResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchCountryResource1.Text" xml:space="preserve">
+    <value>国</value>
+  </data>
+  <data name="lblSearchCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchLastNameResource1.Text" xml:space="preserve">
+    <value>苗字</value>
+  </data>
+  <data name="lblSearchLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchSchoolLabelResource1.Text" xml:space="preserve">
+    <value>学校</value>
+  </data>
+  <data name="lblSearchSchoolLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchUserNameLabelResource1.Text" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="lblSearchUserNameLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTeachersNameResource1.Text" xml:space="preserve">
+    <value>先生の名前</value>
+  </data>
+  <data name="lblTeachersNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTelephoneResource1.Text" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="lblTelephoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUserNameResource1.Text" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="lblUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUserTypeResource1.Text" xml:space="preserve">
+    <value>ユーザータイプ</value>
+  </data>
+  <data name="lblUserTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>[性別を選択して下さい]</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>男性</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator3Resource1.ErrorMessage" xml:space="preserve">
+    <value>無効な形式です。開始日を日/月/年（西暦）で入力してください。</value>
+  </data>
+  <data name="RegularExpressionValidator3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegularExpressionValidator3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>有効なパスワードは最低7文字以上、アルファベットの大文字と小文字、数字、記号(-=+~!@#$%^&amp;*/().) を含む。</value>
+  </data>
+  <data name="revPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvAddressResource1.ErrorMessage" xml:space="preserve">
+    <value>住所を入力して下さい。</value>
+  </data>
+  <data name="rfvAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>パスワードの再入力が必要です。</value>
+  </data>
+  <data name="rfvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateOfBirthResource1.ErrorMessage" xml:space="preserve">
+    <value>生年月日を入力して下さい。</value>
+  </data>
+  <data name="rfvDateOfBirthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateOfBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>メールアドレスを入力して下さい。</value>
+  </data>
+  <data name="rfvEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvFirstNameResource1.ErrorMessage" xml:space="preserve">
+    <value>名前の入力が必要です。</value>
+  </data>
+  <data name="rfvFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvLastNameResource1.ErrorMessage" xml:space="preserve">
+    <value>苗字の入力が必要です。</value>
+  </data>
+  <data name="rfvLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvParentsNameResource1.ErrorMessage" xml:space="preserve">
+    <value>保護者名の入力が必要です。</value>
+  </data>
+  <data name="rfvParentsNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvParentsNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>パスワードの入力が必要です。</value>
+  </data>
+  <data name="rfvPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvTeacherResource1.ErrorMessage" xml:space="preserve">
+    <value>先生の名前の入力が必要です。</value>
+  </data>
+  <data name="rfvTeacherResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvTeacherResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvTelephoneResource1.ErrorMessage" xml:space="preserve">
+    <value>電話番号の入力が必要です。</value>
+  </data>
+  <data name="rfvTelephoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvTelephoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvUserNameResource1.ErrorMessage" xml:space="preserve">
+    <value>ユーザー名の入力が必要です。</value>
+  </data>
+  <data name="rfvUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateOfBirthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateOfBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFaxResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFaxResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMiddleNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMiddleNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtParentsNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTeachersNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTeachersNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTelephoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTelephoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ValidationSummary1Resource1.HeaderText" xml:space="preserve">
+    <value>入力内容を確認して下さい。</value>
+  </data>
+  <data name="ValidationSummary1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDataEntryLegendResource1.Text" xml:space="preserve">
+    <value>データ入力</value>
+  </data>
+  <data name="lblSearchLegendResource1.Text" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>ユーザー管理画面</value>
+  </data>
+  <data name="hdnAllResource1.Value" xml:space="preserve">
+    <value>すべて</value>
+  </data>
+  <data name="hdnSelectSchoolResource1.Value" xml:space="preserve">
+    <value>学校を選択</value>
+  </data>
+  <data name="hdnSelectCityResource1.Value" xml:space="preserve">
+    <value>選択する 都市</value>
+  </data>
+  <data name="hdnSelectClassResource1.Value" xml:space="preserve">
+    <value>選択する クラス</value>
+  </data>
+  <data name="hdnSelectCountryResource1.Value" xml:space="preserve">
+    <value>選択する 国</value>
+  </data>
+  <data name="hdnSelectLevelResource1.Value" xml:space="preserve">
+    <value>選択する レベル</value>
+  </data>
+  <data name="hdnSelectUserTypeResource1.Value" xml:space="preserve">
+    <value>選択する ユーザータイプ</value>
+  </data>
+  <data name="btnGoToReportResource1.Text" xml:space="preserve">
+    <value>ユーザー一覧表を表示</value>
+  </data>
+  <data name="lblTCReadResource1.Text" xml:space="preserve">
+    <value>T&amp;C Read</value>
+  </data>
+  <data name="lblClass2Resource1.Text" xml:space="preserve">
+    <value>クラス（２０１８）</value>
+  </data>
+  <data name="lblClass3Resource1.Text" xml:space="preserve">
+    <value>クラス（２０１９）</value>
+  </data>
+  <data name="lblEnabledFreeMessageResource1.Text" xml:space="preserve">
+    <value>フリーメッセージ</value>
+  </data>
+  <data name="lblLearningLanguageResource1.Text" xml:space="preserve">
+    <value>学習言語</value>
+  </data>
+  <data name="lblNativeLanguageResource1.Text" xml:space="preserve">
+    <value>母国語</value>
+  </data>
+  <data name="lblNote1Resource1.Text" xml:space="preserve">
+    <value>備考 1</value>
+  </data>
+  <data name="lblNote2Resource1.Text" xml:space="preserve">
+    <value>備考 2</value>
+  </data>
+  <data name="lblNote3Resource1.Text" xml:space="preserve">
+    <value>備考 3</value>
+  </data>
+  <data name="lblNote4Resource1.Text" xml:space="preserve">
+    <value>備考 4</value>
+  </data>
+  <data name="lblRemarksLegendResource1.Text" xml:space="preserve">
+    <value>備考</value>
+  </data>
+  <data name="hdnSelectGradeResource1.Value" xml:space="preserve">
+    <value>グレードを選択</value>
+  </data>
+</root>

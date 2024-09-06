@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PaletteService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IPaletteService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49708/Service/PaletteService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/PaletteService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/PaletteService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPaletteService_Search_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_Search_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_SearchWord_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchWord" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_SearchWord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchWordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetPhraseCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhraseCategory" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetPhraseCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhraseCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_SearchWordAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchWordAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_SearchWordAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchWordAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_AddWords_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddWords" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_AddWords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddWordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_UpdateWord_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWord" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_UpdateWord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_DeleteWord_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWord" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_DeleteWord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetWordDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWordDetails" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetWordDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWordDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetPhraseCategoryDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhraseCategoryDetails" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetPhraseCategoryDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhraseCategoryDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetPaletteDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaletteDetails" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetPaletteDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaletteDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_AddPalette_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPalette" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_AddPalette_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPaletteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_UpdatePalette_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePalette" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_UpdatePalette_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePaletteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetPaletteSuggestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaletteSuggestion" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetPaletteSuggestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaletteSuggestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_DeletePalette_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePalette" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_DeletePalette_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePaletteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_ApprovePalette_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovePalette" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_ApprovePalette_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApprovePaletteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_BulkAddWords_InputMessage">
+    <wsdl:part name="parameters" element="tns:BulkAddWords" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_BulkAddWords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BulkAddWordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_SearchSuggestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSuggestion" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_SearchSuggestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSuggestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_AddSuggestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSuggestion" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_AddSuggestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSuggestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_UpdateSuggestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSuggestion" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_UpdateSuggestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSuggestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_DeleteSuggestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSuggestion" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_DeleteSuggestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSuggestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetSuggestionDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSuggestionDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_GetSuggestionDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSuggestionDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_HasFoulWords_InputMessage">
+    <wsdl:part name="parameters" element="tns:HasFoulWords" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_HasFoulWords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HasFoulWordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_AddBulkPalette_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBulkPalette" />
+  </wsdl:message>
+  <wsdl:message name="IPaletteService_AddBulkPalette_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBulkPaletteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPaletteService">
+    <wsdl:operation name="Search">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/Search" message="tns:IPaletteService_Search_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/SearchResponse" message="tns:IPaletteService_Search_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchWord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/SearchWord" message="tns:IPaletteService_SearchWord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/SearchWordResponse" message="tns:IPaletteService_SearchWord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhraseCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/GetPhraseCategory" message="tns:IPaletteService_GetPhraseCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/GetPhraseCategoryResponse" message="tns:IPaletteService_GetPhraseCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchWordAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/SearchWordAdmin" message="tns:IPaletteService_SearchWordAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/SearchWordAdminResponse" message="tns:IPaletteService_SearchWordAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/AddWords" message="tns:IPaletteService_AddWords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/AddWordsResponse" message="tns:IPaletteService_AddWords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/UpdateWord" message="tns:IPaletteService_UpdateWord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/UpdateWordResponse" message="tns:IPaletteService_UpdateWord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/DeleteWord" message="tns:IPaletteService_DeleteWord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/DeleteWordResponse" message="tns:IPaletteService_DeleteWord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWordDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/GetWordDetails" message="tns:IPaletteService_GetWordDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/GetWordDetailsResponse" message="tns:IPaletteService_GetWordDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhraseCategoryDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/GetPhraseCategoryDetails" message="tns:IPaletteService_GetPhraseCategoryDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/GetPhraseCategoryDetailsResponse" message="tns:IPaletteService_GetPhraseCategoryDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaletteDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/GetPaletteDetails" message="tns:IPaletteService_GetPaletteDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/GetPaletteDetailsResponse" message="tns:IPaletteService_GetPaletteDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPalette">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/AddPalette" message="tns:IPaletteService_AddPalette_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/AddPaletteResponse" message="tns:IPaletteService_AddPalette_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePalette">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/UpdatePalette" message="tns:IPaletteService_UpdatePalette_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/UpdatePaletteResponse" message="tns:IPaletteService_UpdatePalette_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaletteSuggestion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/GetPaletteSuggestion" message="tns:IPaletteService_GetPaletteSuggestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/GetPaletteSuggestionResponse" message="tns:IPaletteService_GetPaletteSuggestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePalette">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/DeletePalette" message="tns:IPaletteService_DeletePalette_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/DeletePaletteResponse" message="tns:IPaletteService_DeletePalette_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApprovePalette">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/ApprovePalette" message="tns:IPaletteService_ApprovePalette_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/ApprovePaletteResponse" message="tns:IPaletteService_ApprovePalette_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BulkAddWords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/BulkAddWords" message="tns:IPaletteService_BulkAddWords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/BulkAddWordsResponse" message="tns:IPaletteService_BulkAddWords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchSuggestion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/SearchSuggestion" message="tns:IPaletteService_SearchSuggestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/SearchSuggestionResponse" message="tns:IPaletteService_SearchSuggestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSuggestion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/AddSuggestion" message="tns:IPaletteService_AddSuggestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/AddSuggestionResponse" message="tns:IPaletteService_AddSuggestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSuggestion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/UpdateSuggestion" message="tns:IPaletteService_UpdateSuggestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/UpdateSuggestionResponse" message="tns:IPaletteService_UpdateSuggestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSuggestion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/DeleteSuggestion" message="tns:IPaletteService_DeleteSuggestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/DeleteSuggestionResponse" message="tns:IPaletteService_DeleteSuggestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSuggestionDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/GetSuggestionDetail" message="tns:IPaletteService_GetSuggestionDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/GetSuggestionDetailResponse" message="tns:IPaletteService_GetSuggestionDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HasFoulWords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/HasFoulWords" message="tns:IPaletteService_HasFoulWords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/HasFoulWordsResponse" message="tns:IPaletteService_HasFoulWords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBulkPalette">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPaletteService/AddBulkPalette" message="tns:IPaletteService_AddBulkPalette_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPaletteService/AddBulkPaletteResponse" message="tns:IPaletteService_AddBulkPalette_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPaletteService" type="tns:IPaletteService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IPaletteService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Search">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/Search" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchWord">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/SearchWord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhraseCategory">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/GetPhraseCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchWordAdmin">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/SearchWordAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWords">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/AddWords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWord">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/UpdateWord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWord">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/DeleteWord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWordDetails">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/GetWordDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhraseCategoryDetails">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/GetPhraseCategoryDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaletteDetails">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/GetPaletteDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPalette">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/AddPalette" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePalette">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/UpdatePalette" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaletteSuggestion">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/GetPaletteSuggestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePalette">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/DeletePalette" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApprovePalette">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/ApprovePalette" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BulkAddWords">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/BulkAddWords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSuggestion">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/SearchSuggestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSuggestion">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/AddSuggestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSuggestion">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/UpdateSuggestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSuggestion">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/DeleteSuggestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSuggestionDetail">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/GetSuggestionDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HasFoulWords">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/HasFoulWords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBulkPalette">
+      <soap:operation soapAction="http://tempuri.org/IPaletteService/AddBulkPalette" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PaletteService">
+    <wsdl:port name="BasicHttpBinding_IPaletteService" binding="tns:BasicHttpBinding_IPaletteService">
+      <soap:address location="http://localhost:49708/Service/PaletteService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

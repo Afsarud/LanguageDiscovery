@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49708/Service/SchoolService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" />
+  <xs:element name="AddSchool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="tObject" nillable="true" type="q1:SchoolContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddSchoolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddSchoolResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSchool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="tObject" nillable="true" type="q2:SchoolContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSchoolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateSchoolResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSchool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSchoolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSchoolResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="GetByIDResult" nillable="true" type="q3:SchoolContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchSchool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="tObject" nillable="true" type="q4:SearchSchoolDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchSchoolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchSchoolResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="virtualcount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnreadMessageForReview">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="schoolid" type="xs:long" />
+        <xs:element minOccurs="0" name="userid" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnreadMessageForReviewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="GetUnreadMessageForReviewResult" nillable="true" type="q5:ArrayOfUserMessageContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="dto" nillable="true" type="q6:MessageSearchDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllMessagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="GetAllMessagesResult" nillable="true" type="q7:ArrayOfUserMessageContract" />
+        <xs:element minOccurs="0" name="virtualcount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessageAsReviewed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usermailid" type="xs:long" />
+        <xs:element minOccurs="0" name="userid" type="xs:long" />
+        <xs:element minOccurs="0" name="feedbackmessage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isFeedBack" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessageAsReviewedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetMessageAsReviewedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessageStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" type="xs:long" />
+        <xs:element minOccurs="0" name="feedbackmessage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="statusid" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isFeedback" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessageStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetMessageStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessageAsRejected">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usermailid" type="xs:long" />
+        <xs:element minOccurs="0" name="userid" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessageAsRejectedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetMessageAsRejectedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolTypeList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="GetSchoolTypeListResult" nillable="true" type="q8:ArrayOfSchoolTypeContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnreadMessageForPolling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="schoolid" type="xs:long" />
+        <xs:element minOccurs="0" name="userid" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnreadMessageForPollingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="GetUnreadMessageForPollingResult" nillable="true" type="q9:ArrayOfUserMessageContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllFreeMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="dto" nillable="true" type="q10:MessageSearchDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllFreeMessagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" minOccurs="0" name="GetAllFreeMessagesResult" nillable="true" type="q11:ArrayOfFreeMessageContract" />
+        <xs:element minOccurs="0" name="virtualcount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

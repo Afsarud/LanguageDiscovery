@@ -1,0 +1,89 @@
+﻿var audio = [];
+// Array of files you'd like played
+audio.playlist = [
+    "/canvas/audio/Marissa_Car_Chase.mp3",
+    "/canvas/audio/Vortex_Battl_Thru_Danger.mp3",
+    "/canvas/audio/Gadgets_Activated.mp3",
+    "/canvas/audio/Kids_Run_Into_Agents.mp3",
+    "/canvas/audio/Jet_Luge_Chase.mp3"
+];
+ 
+function playAudio(playlistId){
+    // Default playlistId to 0 if not supplied 
+    playlistId = playlistId ? playlistId : 0;
+    // If SoundManager object exists, get rid of it...
+    if (audio.nowPlaying){
+        audio.nowPlaying.destruct();
+        // ...and reset array key if end reached
+        if(playlistId == audio.playlist.length){
+            playlistId = 0;
+        }
+    }
+    // Standard Sound Manager play sound function...
+    soundManager.onready(function() {
+        audio.nowPlaying = soundManager.createSound({
+            id: 'sk4Audio',
+            url: audio.playlist[playlistId],
+            autoLoad: true,
+            autoPlay: true,
+            volume: 50,
+            // ...with a recursive callback when play completes
+            onfinish: function(){
+                playlistId ++;
+                playAudio(playlistId);
+            }
+        })
+    });
+}
+ 
+// Start
+playAudio[0];
+
+
+
+var soundArray = ['sound1', 'sound2', ...];
+var chain = function (sound) {
+soundManager.play(sound, { 
+    multiShotEvents: true,
+    onfinish: function () {
+        var index = soundArray.indexOf(sound);
+        if (soundArray[index + 1] !== undefined) {
+            chain(soundArray[index + 1]);
+        }
+    }});
+};
+
+chain(soundArray[0])
+
+
+
+-------------------------------------sorting
+
+function sortUsingNestedText(parent, childSelector, keySelector) {
+    var items = parent.children(childSelector).sort(function(a, b) {
+        var vA = $(keySelector, a).text();
+        var vB = $(keySelector, b).text();
+        return (vA < vB) ? -1 : (vA > vB) ? 1 : 0;
+    });
+    parent.append(items);
+}
+
+/* setup sort attributes */
+$('#sPrice').data("sortKey", "span.price");
+$('#sStyle').data("sortKey", "span.style");
+
+
+/* sort on button click */
+$("button.btnSort").click(function() {
+   sortUsingNestedText($('#sortThis'), "div", $(this).data("sortKey"));
+});
+
+<div id="sortThis">
+    <div id="1">Price:<span class="price">20</span> <span class="style">blue</span></div>
+    <div id="2">Price:<span class="price">23</span> <span class="style">red</span></div>
+    <div id="3">Price:<span class="price">10</span> <span class="style">red</span></div>
+    <div id="4">Price:<span class="price">29</span> <span class="style">green</span></div>
+    <div id="5">Price:<span class="price">35</span> <span class="style">blue</span></div>
+</div>
+
+<button id="sPrice" class="btnSort">Sort By Price</button><br />

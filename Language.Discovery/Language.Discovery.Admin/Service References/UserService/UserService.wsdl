@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UserService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IUser_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49708/Service/UserService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/UserService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/UserService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/UserService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUser_Authenticate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Authenticate" />
+  </wsdl:message>
+  <wsdl:message name="IUser_Authenticate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_AuthenticateAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IUser_AuthenticateAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SaveImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImage" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SaveImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetWhoLikedMe_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWhoLikedMe" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetWhoLikedMe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWhoLikedMeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserStatus" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserAvatar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserAvatar" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserAvatar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserAvatarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserFriends_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserFriends" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserFriends_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserFriendsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserDetailsByUserName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsByUserName" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserDetailsByUserName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SearchUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SearchUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DiscoverNewFriends_InputMessage">
+    <wsdl:part name="parameters" element="tns:DiscoverNewFriends" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DiscoverNewFriends_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DiscoverNewFriendsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DiscoverNewFriends2_InputMessage">
+    <wsdl:part name="parameters" element="tns:DiscoverNewFriends2" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DiscoverNewFriends2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DiscoverNewFriends2Response" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DiscoverNewFriends3_InputMessage">
+    <wsdl:part name="parameters" element="tns:DiscoverNewFriends3" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DiscoverNewFriends3_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DiscoverNewFriends3Response" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SearchUserWithMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserWithMessage" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SearchUserWithMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserWithMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_AddFriend_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFriend" />
+  </wsdl:message>
+  <wsdl:message name="IUser_AddFriend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFriendResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UnFriend_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnFriend" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UnFriend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnFriendResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DeleteUserPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DeleteUserPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdatePhotoDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhotoDescription" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdatePhotoDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhotoDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SearchPeople_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPeople" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SearchPeople_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPeopleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_LikeUnLike_InputMessage">
+    <wsdl:part name="parameters" element="tns:LikeUnLike" />
+  </wsdl:message>
+  <wsdl:message name="IUser_LikeUnLike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LikeUnLikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_LikeUnLikePhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:LikeUnLikePhoto" />
+  </wsdl:message>
+  <wsdl:message name="IUser_LikeUnLikePhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LikeUnLikePhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetMessageTrailBySenderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageTrailBySenderID" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetMessageTrailBySenderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageTrailBySenderIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SaveMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMessage" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SaveMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUnreadMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessage" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUnreadMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_MarkMessageAsRead_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarkMessageAsRead" />
+  </wsdl:message>
+  <wsdl:message name="IUser_MarkMessageAsRead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarkMessageAsReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_IsILike_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsILike" />
+  </wsdl:message>
+  <wsdl:message name="IUser_IsILike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsILikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserInterest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInterest" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserInterest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInterestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserInterest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserInterest" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserInterest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserInterestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_AddUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_AddUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByID" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SearchUserAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SearchUserAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SignOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignOut" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SignOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserAboutMe_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserAboutMe" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserAboutMe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserAboutMeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserAboutMe_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAboutMe" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserAboutMe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAboutMeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateOtherUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOtherUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateOtherUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOtherUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertBulkUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBulkUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertBulkUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBulkUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserActivity" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetDuplicateUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicateUsers" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetDuplicateUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicateUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetMessageDetailByUserMailID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageDetailByUserMailID" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetMessageDetailByUserMailID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageDetailByUserMailIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_AddVIPUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddVIPUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_AddVIPUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddVIPUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_RemoveVIPUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveVIPUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_RemoveVIPUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveVIPUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_LikeUnLikeMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:LikeUnLikeMessage" />
+  </wsdl:message>
+  <wsdl:message name="IUser_LikeUnLikeMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LikeUnLikeMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserMessageLikeRanking_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserMessageLikeRanking" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserMessageLikeRanking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserMessageLikeRankingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserTheme_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserTheme" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserTheme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserThemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserDontShowVideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserDontShowVideo" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserDontShowVideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserDontShowVideoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserDontShowNewTab_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserDontShowNewTab" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserDontShowNewTab_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserDontShowNewTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserSkin_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserSkin" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserSkin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserSkinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_IsAfterSchoolTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsAfterSchoolTime" />
+  </wsdl:message>
+  <wsdl:message name="IUser_IsAfterSchoolTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsAfterSchoolTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserAfterSchoolStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserAfterSchoolStatus" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserAfterSchoolStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserAfterSchoolStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserListBySchool_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListBySchool" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserListBySchool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListBySchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetDSUserListBySchool_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSUserListBySchool" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetDSUserListBySchool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSUserListBySchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertUpdateBulkUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateBulkUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertUpdateBulkUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateBulkUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DeleteUserMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserMail" />
+  </wsdl:message>
+  <wsdl:message name="IUser_DeleteUserMail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_RegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_RegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserListBySchoolForTrackingOrProgress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListBySchoolForTrackingOrProgress" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserListBySchoolForTrackingOrProgress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserListBySchoolForTrackingOrProgressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserTrackProgress_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserTrackProgress" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserTrackProgress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserTrackProgressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserOptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserOptions" />
+  </wsdl:message>
+  <wsdl:message name="IUser_UpdateUserOptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserOptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertFreeMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFreeMessage" />
+  </wsdl:message>
+  <wsdl:message name="IUser_InsertFreeMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertFreeMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserByIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByIDs" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetUserByIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SendAutoMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendAutoMail" />
+  </wsdl:message>
+  <wsdl:message name="IUser_SendAutoMail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendAutoMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_MarkMessageAsUnRead_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarkMessageAsUnRead" />
+  </wsdl:message>
+  <wsdl:message name="IUser_MarkMessageAsUnRead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarkMessageAsUnReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetMessageCountThatNeedsReply_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageCountThatNeedsReply" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetMessageCountThatNeedsReply_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageCountThatNeedsReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetMailMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailMessages" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetMailMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetLatestMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestMessage" />
+  </wsdl:message>
+  <wsdl:message name="IUser_GetLatestMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestMessageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUser">
+    <wsdl:operation name="Authenticate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/Authenticate" message="tns:IUser_Authenticate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/AuthenticateResponse" message="tns:IUser_Authenticate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/AuthenticateAdmin" message="tns:IUser_AuthenticateAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/AuthenticateAdminResponse" message="tns:IUser_AuthenticateAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/SaveImage" message="tns:IUser_SaveImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/SaveImageResponse" message="tns:IUser_SaveImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserPhoto" message="tns:IUser_GetUserPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserPhotoResponse" message="tns:IUser_GetUserPhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWhoLikedMe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetWhoLikedMe" message="tns:IUser_GetWhoLikedMe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetWhoLikedMeResponse" message="tns:IUser_GetWhoLikedMe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserStatus" message="tns:IUser_UpdateUserStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserStatusResponse" message="tns:IUser_UpdateUserStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAvatar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserAvatar" message="tns:IUser_UpdateUserAvatar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserAvatarResponse" message="tns:IUser_UpdateUserAvatar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserDetails" message="tns:IUser_GetUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserDetailsResponse" message="tns:IUser_GetUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFriends">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserFriends" message="tns:IUser_GetUserFriends_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserFriendsResponse" message="tns:IUser_GetUserFriends_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsByUserName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserDetailsByUserName" message="tns:IUser_GetUserDetailsByUserName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserDetailsByUserNameResponse" message="tns:IUser_GetUserDetailsByUserName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/SearchUser" message="tns:IUser_SearchUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/SearchUserResponse" message="tns:IUser_SearchUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DiscoverNewFriends">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/DiscoverNewFriends" message="tns:IUser_DiscoverNewFriends_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/DiscoverNewFriendsResponse" message="tns:IUser_DiscoverNewFriends_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DiscoverNewFriends2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/DiscoverNewFriends2" message="tns:IUser_DiscoverNewFriends2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/DiscoverNewFriends2Response" message="tns:IUser_DiscoverNewFriends2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DiscoverNewFriends3">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/DiscoverNewFriends3" message="tns:IUser_DiscoverNewFriends3_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/DiscoverNewFriends3Response" message="tns:IUser_DiscoverNewFriends3_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserWithMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/SearchUserWithMessage" message="tns:IUser_SearchUserWithMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/SearchUserWithMessageResponse" message="tns:IUser_SearchUserWithMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFriend">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/AddFriend" message="tns:IUser_AddFriend_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/AddFriendResponse" message="tns:IUser_AddFriend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnFriend">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UnFriend" message="tns:IUser_UnFriend_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UnFriendResponse" message="tns:IUser_UnFriend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/DeleteUserPhoto" message="tns:IUser_DeleteUserPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/DeleteUserPhotoResponse" message="tns:IUser_DeleteUserPhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhotoDescription">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdatePhotoDescription" message="tns:IUser_UpdatePhotoDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdatePhotoDescriptionResponse" message="tns:IUser_UpdatePhotoDescription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPeople">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/SearchPeople" message="tns:IUser_SearchPeople_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/SearchPeopleResponse" message="tns:IUser_SearchPeople_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LikeUnLike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/LikeUnLike" message="tns:IUser_LikeUnLike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/LikeUnLikeResponse" message="tns:IUser_LikeUnLike_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LikeUnLikePhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/LikeUnLikePhoto" message="tns:IUser_LikeUnLikePhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/LikeUnLikePhotoResponse" message="tns:IUser_LikeUnLikePhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageTrailBySenderID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetMessageTrailBySenderID" message="tns:IUser_GetMessageTrailBySenderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetMessageTrailBySenderIDResponse" message="tns:IUser_GetMessageTrailBySenderID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/SaveMessage" message="tns:IUser_SaveMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/SaveMessageResponse" message="tns:IUser_SaveMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUnreadMessage" message="tns:IUser_GetUnreadMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUnreadMessageResponse" message="tns:IUser_GetUnreadMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarkMessageAsRead">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/MarkMessageAsRead" message="tns:IUser_MarkMessageAsRead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/MarkMessageAsReadResponse" message="tns:IUser_MarkMessageAsRead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsILike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/IsILike" message="tns:IUser_IsILike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/IsILikeResponse" message="tns:IUser_IsILike_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInterest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserInterest" message="tns:IUser_GetUserInterest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserInterestResponse" message="tns:IUser_GetUserInterest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInterest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserInterest" message="tns:IUser_UpdateUserInterest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserInterestResponse" message="tns:IUser_UpdateUserInterest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/AddUser" message="tns:IUser_AddUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/AddUserResponse" message="tns:IUser_AddUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUser" message="tns:IUser_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserResponse" message="tns:IUser_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/DeleteUser" message="tns:IUser_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/DeleteUserResponse" message="tns:IUser_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetByID" message="tns:IUser_GetByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetByIDResponse" message="tns:IUser_GetByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/SearchUserAdmin" message="tns:IUser_SearchUserAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/SearchUserAdminResponse" message="tns:IUser_SearchUserAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/SignOut" message="tns:IUser_SignOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/SignOutResponse" message="tns:IUser_SignOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAboutMe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserAboutMe" message="tns:IUser_UpdateUserAboutMe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserAboutMeResponse" message="tns:IUser_UpdateUserAboutMe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAboutMe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserAboutMe" message="tns:IUser_GetUserAboutMe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserAboutMeResponse" message="tns:IUser_GetUserAboutMe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOtherUserInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateOtherUserInfo" message="tns:IUser_UpdateOtherUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateOtherUserInfoResponse" message="tns:IUser_UpdateOtherUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertBulkUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/InsertBulkUser" message="tns:IUser_InsertBulkUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/InsertBulkUserResponse" message="tns:IUser_InsertBulkUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserActivity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserActivity" message="tns:IUser_UpdateUserActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserActivityResponse" message="tns:IUser_UpdateUserActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetDuplicateUsers" message="tns:IUser_GetDuplicateUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetDuplicateUsersResponse" message="tns:IUser_GetDuplicateUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageDetailByUserMailID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetMessageDetailByUserMailID" message="tns:IUser_GetMessageDetailByUserMailID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetMessageDetailByUserMailIDResponse" message="tns:IUser_GetMessageDetailByUserMailID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddVIPUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/AddVIPUser" message="tns:IUser_AddVIPUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/AddVIPUserResponse" message="tns:IUser_AddVIPUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveVIPUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/RemoveVIPUser" message="tns:IUser_RemoveVIPUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/RemoveVIPUserResponse" message="tns:IUser_RemoveVIPUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LikeUnLikeMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/LikeUnLikeMessage" message="tns:IUser_LikeUnLikeMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/LikeUnLikeMessageResponse" message="tns:IUser_LikeUnLikeMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMessageLikeRanking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserMessageLikeRanking" message="tns:IUser_GetUserMessageLikeRanking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserMessageLikeRankingResponse" message="tns:IUser_GetUserMessageLikeRanking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserTheme">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserTheme" message="tns:IUser_UpdateUserTheme_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserThemeResponse" message="tns:IUser_UpdateUserTheme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserDontShowVideo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserDontShowVideo" message="tns:IUser_UpdateUserDontShowVideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserDontShowVideoResponse" message="tns:IUser_UpdateUserDontShowVideo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserDontShowNewTab">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserDontShowNewTab" message="tns:IUser_UpdateUserDontShowNewTab_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserDontShowNewTabResponse" message="tns:IUser_UpdateUserDontShowNewTab_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserSkin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserSkin" message="tns:IUser_UpdateUserSkin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserSkinResponse" message="tns:IUser_UpdateUserSkin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsAfterSchoolTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/IsAfterSchoolTime" message="tns:IUser_IsAfterSchoolTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/IsAfterSchoolTimeResponse" message="tns:IUser_IsAfterSchoolTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAfterSchoolStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserAfterSchoolStatus" message="tns:IUser_UpdateUserAfterSchoolStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserAfterSchoolStatusResponse" message="tns:IUser_UpdateUserAfterSchoolStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListBySchool">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserListBySchool" message="tns:IUser_GetUserListBySchool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserListBySchoolResponse" message="tns:IUser_GetUserListBySchool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDSUserListBySchool">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetDSUserListBySchool" message="tns:IUser_GetDSUserListBySchool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetDSUserListBySchoolResponse" message="tns:IUser_GetDSUserListBySchool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateBulkUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/InsertUpdateBulkUser" message="tns:IUser_InsertUpdateBulkUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/InsertUpdateBulkUserResponse" message="tns:IUser_InsertUpdateBulkUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/DeleteUserMail" message="tns:IUser_DeleteUserMail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/DeleteUserMailResponse" message="tns:IUser_DeleteUserMail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/RegisterUser" message="tns:IUser_RegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/RegisterUserResponse" message="tns:IUser_RegisterUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListBySchoolForTrackingOrProgress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserListBySchoolForTrackingOrProgress" message="tns:IUser_GetUserListBySchoolForTrackingOrProgress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserListBySchoolForTrackingOrProgressResponse" message="tns:IUser_GetUserListBySchoolForTrackingOrProgress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserTrackProgress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserTrackProgress" message="tns:IUser_UpdateUserTrackProgress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserTrackProgressResponse" message="tns:IUser_UpdateUserTrackProgress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserOptions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/UpdateUserOptions" message="tns:IUser_UpdateUserOptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/UpdateUserOptionsResponse" message="tns:IUser_UpdateUserOptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFreeMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/InsertFreeMessage" message="tns:IUser_InsertFreeMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/InsertFreeMessageResponse" message="tns:IUser_InsertFreeMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetUserByIDs" message="tns:IUser_GetUserByIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetUserByIDsResponse" message="tns:IUser_GetUserByIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendAutoMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/SendAutoMail" message="tns:IUser_SendAutoMail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/SendAutoMailResponse" message="tns:IUser_SendAutoMail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarkMessageAsUnRead">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/MarkMessageAsUnRead" message="tns:IUser_MarkMessageAsUnRead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/MarkMessageAsUnReadResponse" message="tns:IUser_MarkMessageAsUnRead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageCountThatNeedsReply">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetMessageCountThatNeedsReply" message="tns:IUser_GetMessageCountThatNeedsReply_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetMessageCountThatNeedsReplyResponse" message="tns:IUser_GetMessageCountThatNeedsReply_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMailMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetMailMessages" message="tns:IUser_GetMailMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetMailMessagesResponse" message="tns:IUser_GetMailMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/GetLatestMessage" message="tns:IUser_GetLatestMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/GetLatestMessageResponse" message="tns:IUser_GetLatestMessage_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUser" type="tns:IUser">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IUser_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Authenticate">
+      <soap:operation soapAction="http://tempuri.org/IUser/Authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateAdmin">
+      <soap:operation soapAction="http://tempuri.org/IUser/AuthenticateAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <soap:operation soapAction="http://tempuri.org/IUser/SaveImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPhoto">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWhoLikedMe">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetWhoLikedMe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserStatus">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAvatar">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserAvatar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFriends">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserFriends" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsByUserName">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserDetailsByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/SearchUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DiscoverNewFriends">
+      <soap:operation soapAction="http://tempuri.org/IUser/DiscoverNewFriends" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DiscoverNewFriends2">
+      <soap:operation soapAction="http://tempuri.org/IUser/DiscoverNewFriends2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DiscoverNewFriends3">
+      <soap:operation soapAction="http://tempuri.org/IUser/DiscoverNewFriends3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserWithMessage">
+      <soap:operation soapAction="http://tempuri.org/IUser/SearchUserWithMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFriend">
+      <soap:operation soapAction="http://tempuri.org/IUser/AddFriend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnFriend">
+      <soap:operation soapAction="http://tempuri.org/IUser/UnFriend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserPhoto">
+      <soap:operation soapAction="http://tempuri.org/IUser/DeleteUserPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhotoDescription">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdatePhotoDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPeople">
+      <soap:operation soapAction="http://tempuri.org/IUser/SearchPeople" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LikeUnLike">
+      <soap:operation soapAction="http://tempuri.org/IUser/LikeUnLike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LikeUnLikePhoto">
+      <soap:operation soapAction="http://tempuri.org/IUser/LikeUnLikePhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageTrailBySenderID">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetMessageTrailBySenderID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMessage">
+      <soap:operation soapAction="http://tempuri.org/IUser/SaveMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessage">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUnreadMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MarkMessageAsRead">
+      <soap:operation soapAction="http://tempuri.org/IUser/MarkMessageAsRead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsILike">
+      <soap:operation soapAction="http://tempuri.org/IUser/IsILike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInterest">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserInterest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInterest">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserInterest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByID">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserAdmin">
+      <soap:operation soapAction="http://tempuri.org/IUser/SearchUserAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignOut">
+      <soap:operation soapAction="http://tempuri.org/IUser/SignOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAboutMe">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserAboutMe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAboutMe">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserAboutMe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOtherUserInfo">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateOtherUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertBulkUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/InsertBulkUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserActivity">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateUsers">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetDuplicateUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageDetailByUserMailID">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetMessageDetailByUserMailID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddVIPUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/AddVIPUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveVIPUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/RemoveVIPUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LikeUnLikeMessage">
+      <soap:operation soapAction="http://tempuri.org/IUser/LikeUnLikeMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMessageLikeRanking">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserMessageLikeRanking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserTheme">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserTheme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserDontShowVideo">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserDontShowVideo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserDontShowNewTab">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserDontShowNewTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserSkin">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserSkin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsAfterSchoolTime">
+      <soap:operation soapAction="http://tempuri.org/IUser/IsAfterSchoolTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAfterSchoolStatus">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserAfterSchoolStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListBySchool">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserListBySchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDSUserListBySchool">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetDSUserListBySchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateBulkUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/InsertUpdateBulkUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserMail">
+      <soap:operation soapAction="http://tempuri.org/IUser/DeleteUserMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/RegisterUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserListBySchoolForTrackingOrProgress">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserListBySchoolForTrackingOrProgress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserTrackProgress">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserTrackProgress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserOptions">
+      <soap:operation soapAction="http://tempuri.org/IUser/UpdateUserOptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFreeMessage">
+      <soap:operation soapAction="http://tempuri.org/IUser/InsertFreeMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByIDs">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetUserByIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAutoMail">
+      <soap:operation soapAction="http://tempuri.org/IUser/SendAutoMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MarkMessageAsUnRead">
+      <soap:operation soapAction="http://tempuri.org/IUser/MarkMessageAsUnRead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageCountThatNeedsReply">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetMessageCountThatNeedsReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMailMessages">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetMailMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestMessage">
+      <soap:operation soapAction="http://tempuri.org/IUser/GetLatestMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserService">
+    <wsdl:port name="BasicHttpBinding_IUser" binding="tns:BasicHttpBinding_IUser">
+      <soap:address location="http://localhost:49708/Service/UserService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

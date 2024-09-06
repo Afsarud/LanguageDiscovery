@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49708/Service/UserService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="PhotoContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlbumID" type="xs:long" />
+      <xs:element minOccurs="0" name="AlbumName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImageBytes" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="IsProfilePhoto" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LikeCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Photo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="UserPhotoID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PhotoContract" nillable="true" type="tns:PhotoContract" />
+  <xs:complexType name="DiscoverNewFriendsDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CityID" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GenderList" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="InterestIDs" nillable="true" type="q2:ArrayOfint" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SearcheeID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DiscoverNewFriendsDTO" nillable="true" type="tns:DiscoverNewFriendsDTO" />
+  <xs:simpleType name="MailBoxUserType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="All" />
+      <xs:enumeration value="School" />
+      <xs:enumeration value="VIP" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MailBoxUserType" nillable="true" type="tns:MailBoxUserType" />
+  <xs:complexType name="ArrayOfUserInterestContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserInterestContract" nillable="true" type="tns:UserInterestContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserInterestContract" nillable="true" type="tns:ArrayOfUserInterestContract" />
+  <xs:complexType name="UserInterestContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InterestID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserInterestContract" nillable="true" type="tns:UserInterestContract" />
+  <xs:complexType name="UserContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AfterSchool" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AllowTalk" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Avatar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ClassName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Custom1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Custom2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Custom3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Custom4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Custom5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DontShowNewTab" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DontShowVideo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnabledFreeMessage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Furigana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeID" type="xs:int" />
+      <xs:element minOccurs="0" name="GradeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HasAgreedTC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDemo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsOnline" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsOptionUpdated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPalleteVisible" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRobot" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTrialExpired" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastLogin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LearningLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LearningLanguageMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LearningLanguageMessageRecepient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LevelID" type="xs:int" />
+      <xs:element minOccurs="0" name="LevelName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LikeCount" type="xs:int" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeLanguageMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeLanguageMessageRecepient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeOptionFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Note1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OnlineStatusText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtherLanguage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OtherLanguages" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ParentsName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PermissionStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhotoList" nillable="true" type="tns:ArrayOfPhotoContract" />
+      <xs:element minOccurs="0" name="ProfilePhoto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolEntry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:int" />
+      <xs:element minOccurs="0" name="SendPasswordToTeacher" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SequenceOptionFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Skin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusImage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubLanguage2OptionFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SubLanguageOptionFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SubNativeLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubNativeLanguage2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeachersEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeachersName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Theme" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrialExpirationDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UnReadMessageCount" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserStatusID" type="xs:long" />
+      <xs:element minOccurs="0" name="UserTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserTypeName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserContract" nillable="true" type="tns:UserContract" />
+  <xs:complexType name="ArrayOfPhotoContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PhotoContract" nillable="true" type="tns:PhotoContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhotoContract" nillable="true" type="tns:ArrayOfPhotoContract" />
+  <xs:complexType name="SearchUserDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="ClassID" type="xs:int" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PageNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="RowsPerPage" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VirtualCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchUserDTO" nillable="true" type="tns:SearchUserDTO" />
+  <xs:complexType name="ArrayOfUserAboutMeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserAboutMeContract" nillable="true" type="tns:UserAboutMeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserAboutMeContract" nillable="true" type="tns:ArrayOfUserAboutMeContract" />
+  <xs:complexType name="UserAboutMeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AboutMeHeaderID" type="xs:int" />
+      <xs:element minOccurs="0" name="AboutMeID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserAboutMeContract" nillable="true" type="tns:UserAboutMeContract" />
+  <xs:complexType name="ArrayOfUserContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserContract" nillable="true" type="tns:UserContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserContract" nillable="true" type="tns:ArrayOfUserContract" />
+  <xs:complexType name="ArrayOfVIPContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VIPContract" nillable="true" type="tns:VIPContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVIPContract" nillable="true" type="tns:ArrayOfVIPContract" />
+  <xs:complexType name="VIPContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OwnerUserID" type="xs:long" />
+      <xs:element minOccurs="0" name="VIPUserID" type="xs:long" />
+      <xs:element minOccurs="0" name="VipID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VIPContract" nillable="true" type="tns:VIPContract" />
+  <xs:complexType name="ArrayOfUserMessageLikeRankingContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserMessageLikeRankingContract" nillable="true" type="tns:UserMessageLikeRankingContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserMessageLikeRankingContract" nillable="true" type="tns:ArrayOfUserMessageLikeRankingContract" />
+  <xs:complexType name="UserMessageLikeRankingContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Avatar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LevelName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LikeCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Ranking" type="xs:long" />
+      <xs:element minOccurs="0" name="SchoolName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StarCount" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserMessageLikeRankingContract" nillable="true" type="tns:UserMessageLikeRankingContract" />
+  <xs:complexType name="ArrayOfFreeMessageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FreeMessageContract" nillable="true" type="tns:FreeMessageContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFreeMessageContract" nillable="true" type="tns:ArrayOfFreeMessageContract" />
+  <xs:complexType name="FreeMessageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FreeMessageID" type="xs:long" />
+      <xs:element minOccurs="0" name="FreeMessageText1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FreeMessageText2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientID" type="xs:long" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:int" />
+      <xs:element minOccurs="0" name="Sender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FreeMessageContract" nillable="true" type="tns:FreeMessageContract" />
+</xs:schema>

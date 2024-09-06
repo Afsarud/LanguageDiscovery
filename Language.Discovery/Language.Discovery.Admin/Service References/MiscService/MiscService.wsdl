@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MiscService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IMiscService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49708/Service/MiscService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49708/Service/MiscService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMiscService_GetCountryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCountryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetClassList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetClassList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetUserTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTypeList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetUserTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityListByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityListByCountry" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityListByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityListByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityListByCountryAndLanguage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityListByCountryAndLanguage" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityListByCountryAndLanguage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityListByCountryAndLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetInterestList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInterestList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetInterestList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInterestListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetLanguageList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetLanguageList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLanguageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetSchoolList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetSchoolList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetLevelList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLevelList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetLevelList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLevelListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetAboutMeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAboutMeList" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetAboutMeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAboutMeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityOtherName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityOtherName" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityOtherName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityOtherNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityListByLanguage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityListByLanguage" />
+  </wsdl:message>
+  <wsdl:message name="IMiscService_GetCityListByLanguage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityListByLanguageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMiscService">
+    <wsdl:operation name="GetCountryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetCountryList" message="tns:IMiscService_GetCountryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetCountryListResponse" message="tns:IMiscService_GetCountryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetCityList" message="tns:IMiscService_GetCityList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetCityListResponse" message="tns:IMiscService_GetCityList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetClassList" message="tns:IMiscService_GetClassList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetClassListResponse" message="tns:IMiscService_GetClassList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetUserTypeList" message="tns:IMiscService_GetUserTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetUserTypeListResponse" message="tns:IMiscService_GetUserTypeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListByCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetCityListByCountry" message="tns:IMiscService_GetCityListByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetCityListByCountryResponse" message="tns:IMiscService_GetCityListByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListByCountryAndLanguage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetCityListByCountryAndLanguage" message="tns:IMiscService_GetCityListByCountryAndLanguage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetCityListByCountryAndLanguageResponse" message="tns:IMiscService_GetCityListByCountryAndLanguage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInterestList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetInterestList" message="tns:IMiscService_GetInterestList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetInterestListResponse" message="tns:IMiscService_GetInterestList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetLanguageList" message="tns:IMiscService_GetLanguageList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetLanguageListResponse" message="tns:IMiscService_GetLanguageList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetSchoolList" message="tns:IMiscService_GetSchoolList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetSchoolListResponse" message="tns:IMiscService_GetSchoolList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLevelList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetLevelList" message="tns:IMiscService_GetLevelList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetLevelListResponse" message="tns:IMiscService_GetLevelList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAboutMeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetAboutMeList" message="tns:IMiscService_GetAboutMeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetAboutMeListResponse" message="tns:IMiscService_GetAboutMeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityOtherName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetCityOtherName" message="tns:IMiscService_GetCityOtherName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetCityOtherNameResponse" message="tns:IMiscService_GetCityOtherName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListByLanguage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMiscService/GetCityListByLanguage" message="tns:IMiscService_GetCityListByLanguage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMiscService/GetCityListByLanguageResponse" message="tns:IMiscService_GetCityListByLanguage_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMiscService" type="tns:IMiscService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IMiscService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCountryList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetCountryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetCityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetClassList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetUserTypeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListByCountry">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetCityListByCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListByCountryAndLanguage">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetCityListByCountryAndLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInterestList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetInterestList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetLanguageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchoolList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetSchoolList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLevelList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetLevelList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAboutMeList">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetAboutMeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityOtherName">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetCityOtherName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListByLanguage">
+      <soap:operation soapAction="http://tempuri.org/IMiscService/GetCityListByLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MiscService">
+    <wsdl:port name="BasicHttpBinding_IMiscService" binding="tns:BasicHttpBinding_IMiscService">
+      <soap:address location="http://localhost:49708/Service/MiscService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

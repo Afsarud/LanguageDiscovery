@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Language.Discovery.Admin.Master.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" href="../css/jqueryui_custom/jquery.ui.smoothness.min.css" />
+    <link href="../css/AdminMenu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  
+    <script type="text/javascript">
+        function pageLoad() {
+            var manager = Sys.WebForms.PageRequestManager.getInstance();
+            manager.add_endRequest(endRequest);
+            manager.add_beginRequest(OnBeginRequest);
+        }
+        function OnBeginRequest(sender, args) {
+            $get('divImage').style.display = 'block';
+        }
+        function endRequest(sender, args) {
+            $get('divImage').style.display = 'none';
+        }
+        function Help() {
+            var url;
+            var presentation = $("#hdnHelpPresentation").val();
+            if (presentation != "none") {
+                url = presentation;
+            } else {
+                url = "../documentation" + $("#hdnHelp").val();
+            }
+            //$(location).attr('href', url);
+            // var newwindow = window.open(url, 'name', "height=751,width=1038,scrollbars=yes");
+            var newwindow = window.open(url, "_blank", "height=751,width=1038,scrollbars=yes,resizable=yes");
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+        function DisabledMenu() {
+            if ($('#hdnIsDefaultSchool').val() == "1") {
+                //$(".menuItem").addClass("disabledMenuItem");
+                $(".liTeachersRegistration").hide();
+            }
+        }
+    </script>
+    <!-- Start of palaygo Zendesk Widget script -->
+<%--<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=b98dcaa7-628d-4f75-894c-bc57a4cd0728"> </script>--%>
+
+<!-- End of palaygo Zendesk Widget script -->
+</head>
+<body>
+    <form id="form1" runat="server">
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+        <script src="scripts/jquery-2.0.3.js"></script>
+        <script src="scripts/jquery-ui-1.10.3.min.js"></script>      
+        <script src="scripts/zendesk.js" type="text/javascript"></script>
+
+        
+    <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="3600">
+    </asp:ScriptManager>
+    <asp:UpdateProgress ID="updProgress" runat="server">
+    <ProgressTemplate> 
+        <div id="divImage" style="display:none;position:absolute;visibility:visible;border:none;z-index:100;width:100%;height:100%;background:#EFF8F9;filter: alpha(opacity=90);-moz-opacity:.9; opacity:.9;">
+                <img alt="progress" src="Images/loading.gif" style="top:48%; left:42%; position:relative;"/>                     
+        </div>         
+    </ProgressTemplate>
+    </asp:UpdateProgress>
+
+          <%-- <div style="width:100%;">
+                <img src="images/Converga_Logo.jpg" style="height:60px; width:200px;" />
+            </div>--%>
+            <div id='cssmenu'>
+                
+                <ul>
+                   <li class="menuItem"><a href='~/Default' id="linkHome" runat="server"><asp:Label ID="lblHome" runat="server" Text="Home" meta:resourcekey="lblHomeResource1"></asp:Label></a></li>
+                   <li class='has-sub menuItem'><a href='' id="linkMaintenance" runat="server"><asp:Label ID="lblMaintenance" runat="server" Text="Maintenance" meta:resourcekey="lblMaintenanceResource1"></asp:Label></a>
+                      <ul>
+                         <li><a href='~/User' id="linkUser" runat="server"><asp:Label ID="lblUserMaintenance" runat="server" Text="User Maintenance" meta:resourcekey="lblUserMaintenanceResource1"></asp:Label></a></li>
+                         <li><a href='~/School' id="linkSchool" runat="server"><asp:Label ID="lblSchoolMaintenance" runat="server" Text="School Maintenance" meta:resourcekey="lblSchoolMaintenanceResource1"></asp:Label></a></li>
+                         <li><a href='~/CreateStudent' id="linkCreateStudent" runat="server"><asp:Label ID="lblCreateStudent" runat="server" Text="Create Student IDs" meta:resourcekey="lblCreateStudentResource1"></asp:Label></a></li>
+                         <li><a href='~/StudentProgress' id="linkStudentProgress" runat="server"><asp:Label ID="lblStudentProgress" runat="server" Text="Student Progress" meta:resourcekey="lblStudentProgressResource1"></asp:Label></a></li>
+                         <li  id="liClass" runat="server"><a href='~/ClassMaintenance' id="linkClass" runat="server"><asp:Label ID="lblClassMaintenance" runat="server" Text="Class Maintenance" meta:resourcekey="lblClassMaintenanceResource1"></asp:Label></a></li>
+                         <li id="licategory" runat="server"><a href='~/PhraseCategoryMaintenance' id="linkPhraseCategoryMaintenance" runat="server"><asp:Label ID="lblCategoryMaintenance" runat="server" Text="Category Maintenance" meta:resourcekey="lblCategoryMaintenanceResource1"></asp:Label></a></li>
+                         <li id="liPaletteMaintenance" runat="server"><a href='~/PaletteMaintenance' id="linkPaletteMaintenance" runat="server"><asp:Label ID="lblPaletteMaintenance" runat="server" Text="Palette Maintenance" meta:resourcekey="lblPaletteMaintenanceResource1"></asp:Label></a></li>
+                         <li id="liwordpalette" runat="server"><a href='~/WordPallete' id="linkWordPalette" runat="server"><asp:Label ID="lblWordMaintenance" runat="server" Text="Word Maintenance" meta:resourcekey="lblWordMaintenanceResource1"></asp:Label></a></li>
+                         <li id="lifilter" runat="server"><a href='~/FilterMaintenance' id="linkFilter" runat="server"><asp:Label ID="lblFilterMaintenance" runat="server" Text="Filter Maintenance" meta:resourcekey="lblFilterMaintenanceResource1"></asp:Label></a></li>
+                      </ul>
+                   </li>
+                   <li class='has-sub menuItem'><a href='' id="linkTool" runat="server"><asp:Label ID="lblTool" runat="server" Text="Tool" meta:resourcekey="lblToolResource1"></asp:Label></a>
+                       <ul>
+                            <li id="licategoryupload" runat="server"><a href='~/PhraseCategoryBulkUpload' id="linkCategoryUpload" runat="server"><asp:Label ID="lblCategoryBulkUpload" runat="server" Text="Category Bulk Upload" meta:resourcekey="lblCategoryBulkUploadResource1"></asp:Label></a></li>
+                            <li id="lipaletteexport" runat="server"><a href='~/PaletteMaintenanceExport' id="linkPaletteImportExport" runat="server"><asp:Label ID="lblPaletteImportExport" runat="server" Text="Palette Import/Export" meta:resourcekey="lblPaletteImportExportResource1"></asp:Label></a></li>
+                            <li id="liwordpaletteupload" runat="server"><a href='~/WordPaletteBulkUpload' id="linkWordUpload" runat="server"><asp:Label ID="lblWordPaletteBulkUpload" runat="server" Text="Word Palette Bulk Upload" meta:resourcekey="lblWordPaletteBulkUploadResource1"></asp:Label></a></li>
+                            <li id="liFileUploader" class="liFileUploader" runat="server" ><a href='~/FileUploader'  id="linkFileUploader" runat="server"><asp:Label ID="lblFileUploader" runat="server" Text="Sound Upload" meta:resourcekey="lblFileUploaderResource1"></asp:Label></a></li>
+                           <li id="liImageUploader" class="liImageUploader" runat="server"><a href='~/ImageUploader'  id="A4" runat="server"><asp:Label ID="lblImageUploader" runat="server" Text="Image Uploader" meta:resourcekey="liImageUploaderResource1"></asp:Label></a></li>
+                            <li id="liNotice" runat="server"><a href='~/Information' id="linkNotice" runat="server"><asp:Label ID="lblNoticeUpdateTool" runat="server" Text="Notice Update Tool" meta:resourcekey="lblNoticeUpdateToolResource1"></asp:Label></a></li>
+                            <li id="liSuggestion" runat="server" ><a href='~/Suggestion' id="linkTopic" runat="server"><asp:Label ID="lblTopicUpdateTool" runat="server" Text="Topic Update Tool" meta:resourcekey="lblTopicUpdateToolResource1"></asp:Label></a></li>
+
+                            <li id="liMailMonitoring" runat="server"><a href='~/MailMonitoring' id="linkMailMonitoring" runat="server"><asp:Label ID="lblMailMonitoring" runat="server" Text="Mail Monitoring" meta:resourcekey="lblMailMonitoringResource1"></asp:Label></a></li>
+                            <li id="liFreeMessage" runat="server"><a href='~/FreeMessage' id="linkFreeMessage" runat="server"><asp:Label ID="lblFreeMessageView" runat="server" Text="Free Message View" meta:resourcekey="lblFreeMessageViewResource1"></asp:Label></a></li>
+                            <li><a href='~/SentMail' id="linkSentMail" runat="server"><asp:Label ID="lblSentMail" runat="server" Text="Sent Mails" meta:resourcekey="lblSentMail"></asp:Label></a></li>
+                            <li id="liMessagePoll" runat="server"><a href='~/MessagePoll' id="linkMessagePoll" runat="server"><asp:Label ID="lblMessagePoll" runat="server" Text="Message Pool" meta:resourcekey="lblMessagePollResource1"></asp:Label></a></li>
+                           <li id="liScheduleSettings" class="liScheduleSettings" runat="server"><a href='~/ScheduleSettings'  id="A3" runat="server"><asp:Label ID="lblTalkSchedulerTimeSettings" runat="server" Text="Talk Scheduler Time Settings" meta:resourcekey="liSchedulerViewerResource1"></asp:Label></a></li>
+                           <li id="liSchedulerViewer" class="liSchedulerViewer" runat="server"><a href='~/SchedulerViewer'  id="A1" runat="server"><asp:Label ID="lblTalkMatchingSettings" runat="server" Text="Talk Matching Settings" meta:resourcekey="liSchedulerViewerResource1"></asp:Label></a></li>
+                            <li id="liTalkMonitor" runat="server"><a href='~/TalkMonitor' target="_blank" id="linkTalkMonitor" runat="server"><asp:Label ID="lblTalkMonitor" runat="server" Text="Talk Monitor" meta:resourcekey="lblTalkMonitorResource1"></asp:Label></a></li>
+
+                            <li id="liUserBulkUpload" runat="server" visible="false" ><a href="~/CreateStudent.aspx" id="linkUserBulkUPload" runat="server"><asp:Label ID="lblUserBulkUpload" runat="server" Text="User Bulk Upload" meta:resourcekey="lblUserBulkUploadResource1"></asp:Label></a></li>
+                           <li class="liTeachersRegistration" style="display:none;"><a href='~/TeachersRegistration'  id="linkTeachersRegistration" runat="server"><asp:Label ID="lblTeachersRegistration" runat="server" Text="Teachers Registration Tool" meta:resourcekey="lblTeachersRegistrationResource1"></asp:Label></a></li>
+                           
+                        </ul>
+                   </li>
+                   <li class='has-sub menuItem'><a href='' id="A2" runat="server"><asp:Label ID="lblReports" runat="server" Text="Reports" meta:resourcekey="lblReportsResource1"></asp:Label></a>
+                       <ul>
+                           <li><a href='~/MailExhangeLog' id="linkMailExhangeLogReport" runat="server"><asp:Label ID="lblMailExchangeReport" runat="server" Text="Mail Exchange Report" meta:resourcekey="lblMailExchangeReportResource1"></asp:Label></a></li>
+                           <li><a href='~/LoginReport' id="linkUserLoginReport" runat="server"><asp:Label ID="lblUserLoginReport" runat="server" Text="User Login Report" meta:resourcekey="lblUserLoginReportResource1"></asp:Label></a></li>
+                           <li><a href='~/UserListReport' id="linkUserList" runat="server"><asp:Label ID="lblUserListReport" runat="server" Text="User List Report" meta:resourcekey="lblUserListReportResource1"></asp:Label></a></li>
+                           <li id="liStatisticsReport" runat="server"><a href='~/MailExhangeStatistics' id="linkMailStatistics" runat="server"><asp:Label ID="lblMailStatisticsReport" runat="server" Text="Mail Statistics Report" meta:resourcekey="lblMailStatisticsReportResource1"></asp:Label></a></li>
+                           <li id="liTalkScheduleReport" runat="server"><a href="~/TalkScheduleReport" id="linkTalkScheduleReport" runat="server"><asp:Label ID="lblTalkScheduleReport" runat="server" Text="Talk Schedule Report" meta:resourcekey="lblTalkScheduleReportResource1"></asp:Label></a></li>
+                       </ul>
+                    </li>
+                   <li class="menuItem">
+                       <a href="" id="linkHelp" runat="server" onclick="Help();">
+                        <asp:Label ID="lblHelp" runat="server" Text="Help" meta:resourcekey="lblHelp"></asp:Label></a>
+                   </li>
+                   <li style="float:right;"><a href='' id="linkLogout" runat="server" onserverclick="linkLogout_ServerClick" ><asp:Label ID="lblLogout" runat="server" Text="Logout" meta:resourcekey="lblLogoutResource1"></asp:Label></a></li>
+                   <li style="float:right;margin-top:10px;"><asp:Label ID="lblName" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="#E7E5E5" meta:resourcekey="lblNameResource1"></asp:Label></li>
+                </ul>
+            </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   <div style="width:100%;margin-right:20px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:HiddenField ID="hdnHelp" Value="help Aus.html" runat="server" meta:resourcekey="hdnHelp" />
+            <asp:HiddenField ID="hdnHelpPresentation" Value="help Aus.html" runat="server" meta:resourcekey="hdnHelpPresentation" />
+            <asp:HiddenField ID="hdnIsDefaultSchool" Value="0" runat="server"/>
+
+    </form>
+</body>
+</html>

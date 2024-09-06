@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6e0bc23a-5779-4d6d-afd7-a2c05e12040c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49708/Service/PhraseCategoryService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PhraseCategoryService.wsdl" MetadataType="Wsdl" ID="8e0906cd-282d-4c59-b8da-d19bfb5c9ff4" SourceId="1" SourceUrl="http://localhost:49708/Service/PhraseCategoryService.svc?wsdl" />
+    <MetadataFile FileName="PhraseCategoryService.xsd" MetadataType="Schema" ID="6b5c1dc3-dc95-4232-90a9-880b5112bfb8" SourceId="1" SourceUrl="http://localhost:49708/Service/PhraseCategoryService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PhraseCategoryService1.xsd" MetadataType="Schema" ID="932db24c-c6d2-4aac-9b0f-7b4b5ef815d8" SourceId="1" SourceUrl="http://localhost:49708/Service/PhraseCategoryService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PhraseCategoryService.disco" MetadataType="Disco" ID="04bfb4fa-d107-48fd-a729-e40ec8607148" SourceId="1" SourceUrl="http://localhost:49708/Service/PhraseCategoryService.svc?disco" />
+    <MetadataFile FileName="PhraseCategoryService2.xsd" MetadataType="Schema" ID="2c0ef107-b651-4977-9b25-d1e99e23638d" SourceId="1" SourceUrl="http://localhost:49708/Service/PhraseCategoryService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

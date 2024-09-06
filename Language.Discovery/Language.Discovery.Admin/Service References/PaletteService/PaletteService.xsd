@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SearchDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryID" type="xs:long" />
+      <xs:element minOccurs="0" name="CategoryIDs" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsAdmin" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsExport" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTalk" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsUserPalette" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LevelID" type="xs:long" />
+      <xs:element minOccurs="0" name="PageNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="RowsPerPage" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:long" />
+      <xs:element minOccurs="0" name="TopCategoryHeaderID" type="xs:int" />
+      <xs:element minOccurs="0" name="TopCategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserCreatedWord" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="VirtualCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Word" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WordType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchDTO" nillable="true" type="tns:SearchDTO" />
+  <xs:complexType name="ArrayOfPaletteContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaletteContract" nillable="true" type="tns:PaletteContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaletteContract" nillable="true" type="tns:ArrayOfPaletteContract" />
+  <xs:complexType name="PaletteContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Approved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ApprovedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="ApprovedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="DefaultLanguageCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LevelID" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PaletteID" type="xs:long" />
+      <xs:element minOccurs="0" name="PhraseCategoryID" type="xs:long" />
+      <xs:element minOccurs="0" name="PhraseList" nillable="true" type="tns:ArrayOfPhrase" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:long" />
+      <xs:element minOccurs="0" name="SentenceList" nillable="true" type="tns:ArrayOfSentence" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaletteContract" nillable="true" type="tns:PaletteContract" />
+  <xs:complexType name="ArrayOfPhrase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Phrase" nillable="true" type="tns:Phrase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhrase" nillable="true" type="tns:ArrayOfPhrase" />
+  <xs:complexType name="Phrase">
+    <xs:sequence>
+      <xs:element name="_PhraseList" nillable="true" type="tns:ArrayOfPhrase" />
+      <xs:element name="_x003C_DataSwapped_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_ImageBytes_x003E_k__BackingField" nillable="true" type="xs:base64Binary" />
+      <xs:element name="_x003C_ImageFile_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Keyword_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_LanguageCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Ordinal_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_PalleteID_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_ParentID_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_PhraseID_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_PluralForm_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SentenceID_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_SoundBytes_x003E_k__BackingField" nillable="true" type="xs:base64Binary" />
+      <xs:element name="_x003C_SoundFile_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WordMapID_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_WordType_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Word_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Phrase" nillable="true" type="tns:Phrase" />
+  <xs:complexType name="ArrayOfSentence">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Sentence" nillable="true" type="tns:Sentence" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSentence" nillable="true" type="tns:ArrayOfSentence" />
+  <xs:complexType name="Sentence">
+    <xs:sequence>
+      <xs:element name="_PhraseList" nillable="true" type="tns:ArrayOfPhrase" />
+      <xs:element name="_x003C_CreateDate_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_CreatedBy_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_ImageFile_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Keyword_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_LanguageCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_PaletteID_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_SentenceID_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_SentenceSoundList_x003E_k__BackingField" nillable="true" type="tns:ArrayOfSentenceSound" />
+      <xs:element name="_x003C_SoundBytes_x003E_k__BackingField" nillable="true" type="xs:base64Binary" />
+      <xs:element name="_x003C_SoundFile_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sentence" nillable="true" type="tns:Sentence" />
+  <xs:complexType name="ArrayOfSentenceSound">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SentenceSound" nillable="true" type="tns:SentenceSound" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSentenceSound" nillable="true" type="tns:ArrayOfSentenceSound" />
+  <xs:complexType name="SentenceSound">
+    <xs:sequence>
+      <xs:element name="_x003C_LearningLanguageCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SentenceID_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_SentenceSoundID_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_SoundFile_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SentenceSound" nillable="true" type="tns:SentenceSound" />
+  <xs:complexType name="WordHeaderContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedByID" type="xs:long" />
+      <xs:element minOccurs="0" name="ImageBytes" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ImageFile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhraseCategoryID" type="xs:long" />
+      <xs:element minOccurs="0" name="UserCreatedWord" type="xs:boolean" />
+      <xs:element minOccurs="0" name="VirtualCount" type="xs:int" />
+      <xs:element minOccurs="0" name="WordHeaderID" type="xs:long" />
+      <xs:element minOccurs="0" name="WordType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Words" nillable="true" type="tns:ArrayOfWordContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WordHeaderContract" nillable="true" type="tns:WordHeaderContract" />
+  <xs:complexType name="ArrayOfWordContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WordContract" nillable="true" type="tns:WordContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWordContract" nillable="true" type="tns:ArrayOfWordContract" />
+  <xs:complexType name="WordContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ImageFile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ordinal" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PhraseCategoryID" type="xs:long" />
+      <xs:element minOccurs="0" name="PluralForm" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:int" />
+      <xs:element minOccurs="0" name="SoundBytes" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="SoundFile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Word" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WordID" type="xs:long" />
+      <xs:element minOccurs="0" name="WordList" nillable="true" type="tns:ArrayOfWordContract" />
+      <xs:element minOccurs="0" name="WordMapID" type="xs:long" />
+      <xs:element minOccurs="0" name="WordType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_CreatedBy" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WordContract" nillable="true" type="tns:WordContract" />
+  <xs:complexType name="ArrayOfWordHeaderContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WordHeaderContract" nillable="true" type="tns:WordHeaderContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWordHeaderContract" nillable="true" type="tns:ArrayOfWordHeaderContract" />
+  <xs:complexType name="SuggestionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PaletteID" type="xs:long" />
+      <xs:element minOccurs="0" name="PaletteSuggestionID" type="xs:long" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SuggestionContract" nillable="true" type="tns:SuggestionContract" />
+</xs:schema>

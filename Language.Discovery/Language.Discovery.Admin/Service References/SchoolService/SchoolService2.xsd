@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Language.Discovery.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SchoolContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AfterSchool" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AllowSameCountry" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="DefaultLanguageOrder" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnabledFreeMessage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EndTime" type="xs:int" />
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsLevelDemo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRobot" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LearningLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LevelID" type="xs:int" />
+      <xs:element minOccurs="0" name="License" type="xs:int" />
+      <xs:element minOccurs="0" name="MailCheck" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModifiedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreparedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolKey" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SchoolPallete" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SchoolTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="SendPasswordToTeacher" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowNativeLanguage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowPhraseOrder" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowRomanji" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowSubLanguage2" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SoundAndMail" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StartTime" type="xs:int" />
+      <xs:element minOccurs="0" name="StudentCount" type="xs:int" />
+      <xs:element minOccurs="0" name="TeachersEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SchoolContract" nillable="true" type="tns:SchoolContract" />
+  <xs:complexType name="SearchSchoolDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PageNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="RowsPerPage" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:int" />
+      <xs:element minOccurs="0" name="VirtualCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchSchoolDTO" nillable="true" type="tns:SearchSchoolDTO" />
+  <xs:complexType name="ArrayOfUserMessageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserMessageContract" nillable="true" type="tns:UserMessageContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserMessageContract" nillable="true" type="tns:ArrayOfUserMessageContract" />
+  <xs:complexType name="UserMessageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CssClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CssClass2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnglishLanguageMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FilteredWords" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HasFilteredWords" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HasResponse" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDirectReply" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsFromNewFriends" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsLastMessage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsLike" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRejected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsReply" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LearningLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LearningLanguageMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LearningLanguageMessageRecepient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeLanguageMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeLanguageMessageRecepient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NeedResponse" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ReadDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Recepient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecepientAvatar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecepientID" type="xs:long" />
+      <xs:element minOccurs="0" name="RecepientLearningLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecepientNativeLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecepientSchool" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reviewed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ReviewedByID" type="xs:long" />
+      <xs:element minOccurs="0" name="Sender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderAvatar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderID" type="xs:long" />
+      <xs:element minOccurs="0" name="SenderLearningLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderNativeLanguage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderSchool" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserMailID" type="xs:long" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserMessageContract" nillable="true" type="tns:UserMessageContract" />
+  <xs:complexType name="MessageSearchDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PageNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Recepient" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowsPerPage" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:long" />
+      <xs:element minOccurs="0" name="Sender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VirtualCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MessageSearchDTO" nillable="true" type="tns:MessageSearchDTO" />
+  <xs:complexType name="ArrayOfSchoolTypeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SchoolTypeContract" nillable="true" type="tns:SchoolTypeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSchoolTypeContract" nillable="true" type="tns:ArrayOfSchoolTypeContract" />
+  <xs:complexType name="SchoolTypeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsDemo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SchoolTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolTypeName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SchoolTypeContract" nillable="true" type="tns:SchoolTypeContract" />
+  <xs:complexType name="ArrayOfFreeMessageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FreeMessageContract" nillable="true" type="tns:FreeMessageContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFreeMessageContract" nillable="true" type="tns:ArrayOfFreeMessageContract" />
+  <xs:complexType name="FreeMessageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FreeMessageID" type="xs:long" />
+      <xs:element minOccurs="0" name="FreeMessageText1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FreeMessageText2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientID" type="xs:long" />
+      <xs:element minOccurs="0" name="SchoolID" type="xs:int" />
+      <xs:element minOccurs="0" name="Sender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FreeMessageContract" nillable="true" type="tns:FreeMessageContract" />
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ec8dfa3a-3fc4-408f-b15a-8e10075b691d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49708/Service/PaletteService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PaletteService.xsd" MetadataType="Schema" ID="18ede4da-7b39-4ffa-ac9b-9cca2bf11100" SourceId="1" SourceUrl="http://localhost:49708/Service/PaletteService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PaletteService.wsdl" MetadataType="Wsdl" ID="7313de46-77ca-4aed-a9ab-5b47060d5789" SourceId="1" SourceUrl="http://localhost:49708/Service/PaletteService.svc?wsdl" />
+    <MetadataFile FileName="PaletteService1.xsd" MetadataType="Schema" ID="c5ad8a6c-5d76-40ed-93f3-c8adb1802d98" SourceId="1" SourceUrl="http://localhost:49708/Service/PaletteService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PaletteService.disco" MetadataType="Disco" ID="681719f4-48fd-40c9-a1b2-8dad20fa0a80" SourceId="1" SourceUrl="http://localhost:49708/Service/PaletteService.svc?disco" />
+    <MetadataFile FileName="PaletteService2.xsd" MetadataType="Schema" ID="8e955fac-9c60-4fda-87bd-877554e977e7" SourceId="1" SourceUrl="http://localhost:49708/Service/PaletteService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

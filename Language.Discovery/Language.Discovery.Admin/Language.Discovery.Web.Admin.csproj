@@ -1,0 +1,1184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4311F6C1-10CB-49FE-A468-B79D3D7AD2AF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Language.Discovery.Admin</RootNamespace>
+    <AssemblyName>Language.Discovery.Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.0.3\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\ext\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\ext\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftReportViewerWebForms.11.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftReportViewerWebForms.11.0.0.0\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftReportViewerWebForms.11.0.0.0\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight">
+      <HintPath>..\ext\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.2\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\AdminMaster.Master.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminMaster.Master.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\MasterzhCN.designer.cs">
+      <DependentUpon>MasterzhCN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\MasterenUS.designer.cs">
+      <DependentUpon>MasterenUS.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\MasterjaJP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterjaJP.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageUploader.aspx.cs">
+      <DependentUpon>ImageUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageUploader.aspx.designer.cs">
+      <DependentUpon>ImageUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileUploader.aspx.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileUploader.aspx.designer.cs">
+      <DependentUpon>FileUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TalkScheduleReport.aspx.cs">
+      <DependentUpon>TalkScheduleReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TalkScheduleReport.aspx.designer.cs">
+      <DependentUpon>TalkScheduleReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MatchingOverride.aspx.cs">
+      <DependentUpon>MatchingOverride.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MatchingOverride.aspx.designer.cs">
+      <DependentUpon>MatchingOverride.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerViewer.aspx.cs">
+      <DependentUpon>SchedulerViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchedulerViewer.aspx.designer.cs">
+      <DependentUpon>SchedulerViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleSettings.aspx.cs">
+      <DependentUpon>ScheduleSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleSettings.aspx.designer.cs">
+      <DependentUpon>ScheduleSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersRegistration.aspx.cs">
+      <DependentUpon>TeachersRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeachersRegistration.aspx.designer.cs">
+      <DependentUpon>TeachersRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMaintenance.aspx.cs">
+      <DependentUpon>ClassMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassMaintenance.aspx.designer.cs">
+      <DependentUpon>ClassMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FreeMessage.aspx.cs">
+      <DependentUpon>FreeMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FreeMessage.aspx.designer.cs">
+      <DependentUpon>FreeMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\TokenGenerator.cs" />
+    <Compile Include="MailExhangeStatistics.aspx.cs">
+      <DependentUpon>MailExhangeStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MailExhangeStatistics.aspx.designer.cs">
+      <DependentUpon>MailExhangeStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessagePoll.aspx.cs">
+      <DependentUpon>MessagePoll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessagePoll.aspx.designer.cs">
+      <DependentUpon>MessagePoll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateStudent.aspx.cs">
+      <DependentUpon>CreateStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateStudent.aspx.designer.cs">
+      <DependentUpon>CreateStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\Extension.cs" />
+    <Compile Include="Ip.aspx.cs">
+      <DependentUpon>Ip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ip.aspx.designer.cs">
+      <DependentUpon>Ip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TalkMonitor.aspx.cs">
+      <DependentUpon>TalkMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TalkMonitor.aspx.designer.cs">
+      <DependentUpon>TalkMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteMaintenanceExport.aspx.cs">
+      <DependentUpon>PaletteMaintenanceExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaletteMaintenanceExport.aspx.designer.cs">
+      <DependentUpon>PaletteMaintenanceExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SentMail.aspx.cs">
+      <DependentUpon>SentMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SentMail.aspx.designer.cs">
+      <DependentUpon>SentMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UserService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProgress.aspx.cs">
+      <DependentUpon>StudentProgress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentProgress.aspx.designer.cs">
+      <DependentUpon>StudentProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserBulkUpload.aspx.cs">
+      <DependentUpon>UserBulkUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserBulkUpload.aspx.designer.cs">
+      <DependentUpon>UserBulkUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\GenericPostingHandler.ashx.cs">
+      <DependentUpon>GenericPostingHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Logger.cs" />
+    <Compile Include="Reports\MailExchangeLogData.cs">
+      <DependentUpon>MailExchangeLogData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserListReport.aspx.cs">
+      <DependentUpon>UserListReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserListReport.aspx.designer.cs">
+      <DependentUpon>UserListReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilterMaintenance.aspx.cs">
+      <DependentUpon>FilterMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilterMaintenance.aspx.designer.cs">
+      <DependentUpon>FilterMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\SessionManager.cs" />
+    <Compile Include="Information.aspx.cs">
+      <DependentUpon>Information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Information.aspx.designer.cs">
+      <DependentUpon>Information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginReport.aspx.cs">
+      <DependentUpon>LoginReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginReport.aspx.designer.cs">
+      <DependentUpon>LoginReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MailExhangeLog.aspx.cs">
+      <DependentUpon>MailExhangeLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MailExhangeLog.aspx.designer.cs">
+      <DependentUpon>MailExhangeLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MailMonitoring.aspx.cs">
+      <DependentUpon>MailMonitoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MailMonitoring.aspx.designer.cs">
+      <DependentUpon>MailMonitoring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteBulkUpload.aspx.cs">
+      <DependentUpon>PaletteBulkUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaletteBulkUpload.aspx.designer.cs">
+      <DependentUpon>PaletteBulkUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteMaintenance.aspx.cs">
+      <DependentUpon>PaletteMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaletteMaintenance.aspx.designer.cs">
+      <DependentUpon>PaletteMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhraseCategoryMaintenance.aspx.cs">
+      <DependentUpon>PhraseCategoryMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhraseCategoryMaintenance.aspx.designer.cs">
+      <DependentUpon>PhraseCategoryMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\MailExchangeLogData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailExchangeLogData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School.aspx.cs">
+      <DependentUpon>School.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="School.aspx.designer.cs">
+      <DependentUpon>School.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolMaintenance.aspx.cs">
+      <DependentUpon>SchoolMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchoolMaintenance.aspx.designer.cs">
+      <DependentUpon>SchoolMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AuxilliaryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MiscService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PaletteService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PhraseCategoryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ReportService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SchoolService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="PhraseCategoryBulkUpload.aspx.cs">
+      <DependentUpon>PhraseCategoryBulkUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhraseCategoryBulkUpload.aspx.designer.cs">
+      <DependentUpon>PhraseCategoryBulkUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Suggestion.aspx.cs">
+      <DependentUpon>Suggestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suggestion.aspx.designer.cs">
+      <DependentUpon>Suggestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Timeout.aspx.cs">
+      <DependentUpon>Timeout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Timeout.aspx.designer.cs">
+      <DependentUpon>Timeout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WordPaletteBulkUpload.aspx.cs">
+      <DependentUpon>WordPaletteBulkUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WordPaletteBulkUpload.aspx.designer.cs">
+      <DependentUpon>WordPaletteBulkUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WordPallete.aspx.cs">
+      <DependentUpon>WordPallete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WordPallete.aspx.designer.cs">
+      <DependentUpon>WordPallete.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="css\evol-colorpicker.min.css" />
+    <Content Include="css\VidyoClient.css" />
+    <Content Include="scripts\VideoPlatformApi.js" />
+    <Content Include="scripts\VidyoClient.min.js" />
+    <Content Include="TalkScheduleReport.aspx" />
+    <Content Include="scripts\evol-colorpicker.min.js" />
+    <Content Include="css\select2.min.css" />
+    <Content Include="Images\mailLogo2021.png" />
+    <Content Include="ImageUploader.aspx" />
+    <Content Include="FileUploader.aspx" />
+    <Content Include="MatchingOverride.aspx" />
+    <Content Include="SchedulerViewer.aspx" />
+    <Content Include="ScheduleSettings.aspx" />
+    <Content Include="scripts\moment.js" />
+    <Content Include="scripts\select2.min.js" />
+    <Content Include="TeachersRegistration.aspx" />
+    <Content Include="ClassMaintenance.aspx" />
+    <Content Include="css\TalkMonitor.css" />
+    <Content Include="FreeMessage.aspx" />
+    <Content Include="Images\callEnd.png" />
+    <Content Include="Images\callStart.png" />
+    <Content Include="Images\cameraOff.png" />
+    <Content Include="Images\cameraOn.png" />
+    <Content Include="Images\microphoneOff.png" />
+    <Content Include="Images\microphoneOn.png" />
+    <Content Include="MailExhangeStatistics.aspx" />
+    <Content Include="MessagePoll.aspx" />
+    <Content Include="CreateStudent.aspx" />
+    <Content Include="css\bootstrapbutton.css" />
+    <Content Include="documentation\Help page for Teachers.files\colorschememapping.xml" />
+    <Content Include="documentation\Help page for Teachers.files\filelist.xml" />
+    <Content Include="documentation\Help page for Teachers.files\header.htm" />
+    <Content Include="documentation\Help page for Teachers.files\image001.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image002.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image003.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image004.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image005.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image006.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image007.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image008.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image009.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image010.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image011.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image012.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\image013.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\item0020.xml" />
+    <Content Include="documentation\Help page for Teachers.files\props021.xml" />
+    <Content Include="documentation\Help page for Teachers.files\Term Schedule 2014-001.jpg" />
+    <Content Include="documentation\Help page for Teachers.files\Term Schedule 2014-002.jpg" />
+    <Content Include="documentation\Help page for Teachers_en.htm" />
+    <Content Include="documentation\Help page for Teachers_jp.htm" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\colorschememapping.xml" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\filelist.xml" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image001.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image002.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image003.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image004.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image005.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image006.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image007.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image008.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image009.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image010.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image011.jpg" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image012.png" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\image013.png" />
+    <Content Include="Ip.aspx" />
+    <Content Include="scripts\VidyoConnectorCustomLayout.js" />
+    <Content Include="TalkMonitor.aspx" />
+    <Content Include="PaletteMaintenanceExport.aspx" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.UserAboutMeContract.datasource" />
+    <Content Include="documentation\Help page for Teachers.files\themedata.thmx" />
+    <Content Include="documentation\Palaygo Manual for Teacher.files\themedata.thmx" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.GradeContract.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.UserMessageLikeRankingContract.datasource" />
+    <Content Include="scripts\zendesk.js" />
+    <Content Include="SentMail.aspx" />
+    <Content Include="Service References\UserService\Language.Discovery.Admin.UserService.SearchUserAdminResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.SchoolTypeContract.datasource" />
+    <Content Include="Service References\SchoolService\Language.Discovery.Admin.SchoolService.SearchSchoolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SchoolService\Language.Discovery.Admin.SchoolService.GetAllMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.TopCategoryContract.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.FreeMessageContract.datasource" />
+    <Content Include="Service References\SchoolService\Language.Discovery.Admin.SchoolService.GetAllFreeMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="css\jqueryui_custom\jquery.ui.smoothness.min.css" />
+    <Content Include="Service References\PaletteService\Language.Discovery.Admin.PaletteService.SearchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\PaletteService\Language.Discovery.Admin.PaletteService.SearchWordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\UserService\UserService.disco" />
+    <None Include="Service References\UserService\configuration91.svcinfo" />
+    <None Include="Service References\UserService\configuration.svcinfo" />
+    <None Include="Service References\UserService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="StudentProgress.aspx" />
+    <Content Include="UserBulkUpload.aspx" />
+    <Content Include="css\jqueryui_custom\images\animated-overlay.gif" />
+    <Content Include="css\jqueryui_custom\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\jqueryui_custom\images\ui-bg_flat_75_f9f8f8_40x100.png" />
+    <Content Include="css\jqueryui_custom\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\jqueryui_custom\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\jqueryui_custom\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\jqueryui_custom\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\jqueryui_custom\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\jqueryui_custom\images\ui-bg_highlight-soft_75_f6f6f6_1x100.png" />
+    <Content Include="css\jqueryui_custom\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\jqueryui_custom\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\jqueryui_custom\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\jqueryui_custom\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\jqueryui_custom\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jqueryui_custom\jquery-ui-1.10.4.custom.css" />
+    <Content Include="css\jqueryui_custom\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="documentation\PalaygoTermsConditions_en.htm" />
+    <Content Include="documentation\PalaygoTermsConditions_ja.htm" />
+    <Content Include="documentation\samples.txt" />
+    <Content Include="UserListReport.aspx" />
+    <Content Include="css\AdminMenu.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="FilterMaintenance.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\emoji\47_47.gif" />
+    <Content Include="Images\emoji\51_51.gif" />
+    <Content Include="Images\emoji\58_58.gif" />
+    <Content Include="Images\emoji\61_61.gif" />
+    <Content Include="Images\emoji\71_71.gif" />
+    <Content Include="Images\emoji\74_74.gif" />
+    <Content Include="Images\emoji\77_77.gif" />
+    <Content Include="Images\emoji\angel_smile.gif" />
+    <Content Include="Images\emoji\cake.gif" />
+    <Content Include="Images\emoji\camera.gif" />
+    <Content Include="Images\emoji\confused_smile.gif" />
+    <Content Include="Images\emoji\cry_smile.gif" />
+    <Content Include="Images\emoji\lightbulb.gif" />
+    <Content Include="Images\emoji\omg_smile.gif" />
+    <Content Include="Images\emoji\present.gif" />
+    <Content Include="Images\emoji\red_smile.gif" />
+    <Content Include="Images\emoji\regular_smile.gif" />
+    <Content Include="Images\emoji\sad_smile.gif" />
+    <Content Include="Images\emoji\shades_smile.gif" />
+    <Content Include="Images\emoji\teeth_smile.gif" />
+    <Content Include="Images\emoji\thumbs_up.gif" />
+    <Content Include="Images\emoji\tongue_smile.gif" />
+    <Content Include="Images\emoji\what_smile.gif" />
+    <Content Include="Images\emoji\wink_smile.gif" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\sticker\1.png" />
+    <Content Include="Images\sticker\10.png" />
+    <Content Include="Images\sticker\12.png" />
+    <Content Include="Images\sticker\13.png" />
+    <Content Include="Images\sticker\14.png" />
+    <Content Include="Images\sticker\15.png" />
+    <Content Include="Images\sticker\16.png" />
+    <Content Include="Images\sticker\18.png" />
+    <Content Include="Images\sticker\2.png" />
+    <Content Include="Images\sticker\4.png" />
+    <Content Include="Images\sticker\5.png" />
+    <Content Include="Images\sticker\6.png" />
+    <Content Include="Images\sticker\7.png" />
+    <Content Include="Images\sticker\8.png" />
+    <Content Include="Images\sticker\9.png" />
+    <Content Include="Images\sticker\New folder\black_heart.png" />
+    <Content Include="Images\sticker\New folder\blue_sticker_milo.png" />
+    <Content Include="Images\sticker\New folder\gowalla_sticker.png" />
+    <Content Include="Images\sticker\New folder\happy_jack_o_lantern.png" />
+    <Content Include="Images\sticker\New folder\happy_robot_sh.png" />
+    <Content Include="Images\sticker\New folder\mammoth_happy.png" />
+    <Content Include="Images\sticker\New folder\money.png" />
+    <Content Include="Images\sticker\New folder\twitter_square_happy.png" />
+    <Content Include="Information.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LoginReport.aspx" />
+    <Content Include="MailExhangeLog.aspx" />
+    <Content Include="MailMonitoring.aspx" />
+    <Content Include="Master\AdminMaster.Master" />
+    <Content Include="PaletteBulkUpload.aspx" />
+    <Content Include="PaletteMaintenance.aspx" />
+    <Content Include="PhraseCategoryMaintenance.aspx" />
+    <Content Include="School.aspx" />
+    <Content Include="SchoolMaintenance.aspx" />
+    <Content Include="scripts\jquery-ui-1.10.3.js" />
+    <Content Include="scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="scripts\WebForms\DetailsView.js" />
+    <Content Include="scripts\WebForms\Focus.js" />
+    <Content Include="scripts\WebForms\GridView.js" />
+    <Content Include="scripts\WebForms\Menu.js" />
+    <Content Include="scripts\WebForms\MenuStandards.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="scripts\WebForms\SmartNav.js" />
+    <Content Include="scripts\WebForms\TreeView.js" />
+    <Content Include="scripts\WebForms\WebForms.js" />
+    <Content Include="scripts\WebForms\WebParts.js" />
+    <Content Include="scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.PaletteContract.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.UserInterestContract.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.UserMessageContract.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.UserContract.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.InfoContract.datasource" />
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.SuggestionContract.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.FilterContract.datasource" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.ClassContract.datasource" />
+    <Content Include="Handler\GenericPostingHandler.ashx" />
+    <None Include="Properties\PublishProfiles\Admin.pubxml" />
+    <Content Include="Reports\MailExchangeLogData.xsc">
+      <DependentUpon>MailExchangeLogData.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\MailExchangeLogData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MailExchangeLogData.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\MailExchangeLogData.xss">
+      <DependentUpon>MailExchangeLogData.xsd</DependentUpon>
+    </Content>
+    <None Include="scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="scripts\jquery-2.0.3.js" />
+    <Content Include="scripts\jquery-2.0.3.min.js" />
+    <Content Include="packages.config" />
+    <None Include="Service References\AuxilliaryService\AuxilliaryServices.wsdl" />
+    <None Include="Service References\AuxilliaryService\AuxilliaryServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuxilliaryService\AuxilliaryServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuxilliaryService\AuxilliaryServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\AuxilliaryService\Language.Discovery.Admin.AuxilliaryService.SearchInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\MiscService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MiscService\configuration.svcinfo" />
+    <None Include="Service References\MiscService\configuration91.svcinfo" />
+    <None Include="Service References\MiscService\MiscService.disco" />
+    <None Include="Service References\AuxilliaryService\AuxilliaryServices.disco" />
+    <None Include="Service References\AuxilliaryService\configuration91.svcinfo" />
+    <None Include="Service References\AuxilliaryService\configuration.svcinfo" />
+    <None Include="Service References\AuxilliaryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PaletteService\PaletteService.disco" />
+    <None Include="Service References\PaletteService\configuration91.svcinfo" />
+    <None Include="Service References\PaletteService\configuration.svcinfo" />
+    <None Include="Service References\PaletteService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PhraseCategoryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PhraseCategoryService\configuration.svcinfo" />
+    <None Include="Service References\PhraseCategoryService\configuration91.svcinfo" />
+    <None Include="Service References\PhraseCategoryService\PhraseCategoryService.disco" />
+    <Content Include="Properties\DataSources\Language.Discovery.Entity.SchoolContract.datasource" />
+    <None Include="Service References\ReportService\ReportService.disco" />
+    <None Include="Service References\ReportService\configuration91.svcinfo" />
+    <None Include="Service References\ReportService\configuration.svcinfo" />
+    <None Include="Service References\ReportService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PaletteService\PaletteService.wsdl" />
+    <None Include="Service References\PaletteService\PaletteService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaletteService\PaletteService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaletteService\PaletteService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ReportService\ReportService.wsdl" />
+    <None Include="Service References\ReportService\ReportService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ReportService\ReportService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SchoolService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SchoolService\configuration.svcinfo" />
+    <None Include="Service References\SchoolService\configuration91.svcinfo" />
+    <None Include="Service References\SchoolService\SchoolService.disco" />
+    <Content Include="PhraseCategoryBulkUpload.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="Suggestion.aspx" />
+    <Content Include="Timeout.aspx" />
+    <Content Include="User.aspx" />
+    <None Include="Service References\UserService\UserService.wsdl" />
+    <None Include="Service References\UserService\UserService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\UserService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\UserService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\UserService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web1.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\MiscService\MiscService.wsdl" />
+    <Content Include="WordPaletteBulkUpload.aspx" />
+    <Content Include="WordPallete.aspx" />
+    <Content Include="scripts\jquery-2.0.3.min.map" />
+    <None Include="Service References\MiscService\MiscService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MiscService\MiscService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhraseCategoryService\PhraseCategoryService.wsdl" />
+    <None Include="Service References\PhraseCategoryService\PhraseCategoryService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhraseCategoryService\PhraseCategoryService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PhraseCategoryService\PhraseCategoryService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SchoolService\SchoolService.wsdl" />
+    <None Include="Service References\SchoolService\SchoolService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SchoolService\SchoolService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SchoolService\SchoolService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\UserService\UserService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\UserService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserService\UserService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web1.Debug.config">
+      <DependentUpon>Web1.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web1.Release.config">
+      <DependentUpon>Web1.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AuxilliaryService\" />
+    <WCFMetadataStorage Include="Service References\MiscService\" />
+    <WCFMetadataStorage Include="Service References\PaletteService\" />
+    <WCFMetadataStorage Include="Service References\PhraseCategoryService\" />
+    <WCFMetadataStorage Include="Service References\ReportService\" />
+    <WCFMetadataStorage Include="Service References\SchoolService\" />
+    <WCFMetadataStorage Include="Service References\UserService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Login.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Login.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Language.Discovery.Entity\Language.Discovery.Entity.csproj">
+      <Project>{2a261fb1-e293-4e1d-b470-d8a818616ec3}</Project>
+      <Name>Language.Discovery.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Language.Discovery.Repository\Language.Discovery.Repository.csproj">
+      <Project>{e4886291-634a-4fbb-82f0-654b744fcaf3}</Project>
+      <Name>Language.Discovery.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\MailExhangeLogReport.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\UserListReport.rdlc" />
+    <Content Include="Reports\UserLoginReport.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\ClassMaintenance.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\FilterMaintenance.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Information.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\PaletteMaintenance.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\PhraseCategoryBulkUpload.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\PhraseCategoryMaintenance.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\School.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Suggestion.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserBulkUpload.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WordPallete.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserListReport.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\LoginReport.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailExhangeLog.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\ClassMaintenance.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\FilterMaintenance.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Information.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailExhangeLog.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\PaletteMaintenance.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\PhraseCategoryBulkUpload.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\PhraseCategoryMaintenance.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\School.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Suggestion.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserBulkUpload.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserListReport.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WordPallete.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\LoginReport.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\AdminMaster.Master.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdminMaster.Master.en-US.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Master\App_LocalResources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\MasterjaJP.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>MasterjaJP.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\MasterenUS.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>MasterenUS.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\User.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\User.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WordPaletteBulkUpload.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WordPaletteBulkUpload.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserListReport.rdlc.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserListReport.rdlc.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailExhangeLogReport.rdlc.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailExhangeLogReport.rdlc.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserLoginReport.rdlc.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserLoginReport.rdlc.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailMonitoring.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailMonitoring.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\CreateStudent.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\CreateStudent.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\UserListReport2.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserListReport2.rdlc.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserListReport2.rdlc.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\SentMail.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\SentMail.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailExhangeStatisticsReport.rdlc.ja-JP.resx" />
+    <Content Include="App_LocalResources\MailExhangeStatisticsReport.rdlc.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\MailExhangeStatisticsReport.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\MasterzhCN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>MasterzhCN.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\FreeMessage.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\FreeMessage.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailExchangeStatistics.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MailExchangeStatistics.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\PaletteMaintenanceExport.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\PaletteMaintenanceExport.aspx.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\UserLoginReportDetails.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserLoginReportDetails.rdlc.ja-JP.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\UserLoginReportDetails.rdlc.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\ChangePassword.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\TalkScheduleReport.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\TalkScheduleReport.rdlc.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\TalkScheduleReport.rdlc.ja-JP.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>56756</DevelopmentServerPort>
+          <DevelopmentServerVPath>/Admin</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44302/Admin</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
