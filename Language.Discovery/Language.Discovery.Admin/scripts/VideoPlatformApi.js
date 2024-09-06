@@ -64,9 +64,9 @@ function loadVidyoClientLibrary(room) {
 
 function attachedVidyo() {
 
-    //We need to ensure we're loading the VidyoClient library and listening for the callback.
+    //We need to ensure we're loading the VidyoClient library and listening for the callback. Afsar
     var script = document.createElement('script');
-    script.type = 'text/javascript';
+    script.type = 'module';
     script.id = "vidyoscript";
     script.src = 'Scripts/VidyoClient.min.js'
     document.getElementsByTagName('head')[0].appendChild(script);

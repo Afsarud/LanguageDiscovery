@@ -104,9 +104,9 @@ D:\Soursetree\Language.Discovery\Language.Discovery.Admin\bin\Microsoft.AspNet.F
 D:\Soursetree\Language.Discovery\Language.Discovery.Admin\bin\Newtonsoft.Json.xml
 D:\Soursetree\Language.Discovery\Language.Discovery.Admin\bin\System.Web.Optimization.xml
 D:\Soursetree\Language.Discovery\Language.Discovery.Admin\bin\RestSharp.xml
-D:\Soursetree\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csprojAssemblyReference.cache
 D:\Soursetree\Language.Discovery\Language.Discovery.Admin\obj\Debug\Interop.Microsoft.Office.Core.dll
 D:\Soursetree\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csproj.ResolveComReference.cache
 D:\Soursetree\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csproj.CopyComplete
 D:\Soursetree\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Admin.dll
 D:\Soursetree\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Admin.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Admin\obj\Debug\Language.Discovery.Web.Admin.csprojAssemblyReference.cache

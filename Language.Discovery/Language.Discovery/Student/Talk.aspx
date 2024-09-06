@@ -32,7 +32,7 @@
     <script src="../Scripts/jquery.blockUI.js"></script>
     <%--<script src="../Scripts/VideoHelper.js"></script>--%>
     <script src="../Scripts/jQuery.countdownTimer.min.js"></script>
-    <script src="../Scripts/VideoPlatformApi.js?123d1fgf32sds2"></script>
+    <script src="../Scripts/VideoPlatformApi.js?5123d1fgf32sds2"></script>
     <link href="../App_Themes/Default/DefaultTalk.css?11" rel="stylesheet" />
     <link rel="stylesheet" media="only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) and (orientation:landscape)" href="../App_Themes/Default/MobileDefaultTalk.css?1" type="text/css" />
     <link rel="stylesheet" media="only screen and (max-width: 900px), only screen and (max-device-width: 900) and (orientation:portrait)" href="../App_Themes/Default/MobileDefaultTalk900.css?1" type="text/css" />

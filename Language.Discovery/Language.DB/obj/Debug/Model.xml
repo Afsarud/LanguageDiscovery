@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="Language.DB.dll" />
-			<Metadata Name="FileName" Value="D:\LANGUAGE.DISCOVERY\LANGUAGE.DISCOVERY\LANGUAGE.DB\OBJ\DEBUG\LANGUAGE.DB.DLL" />
+			<Metadata Name="FileName" Value="D:\SOURSETREE\LANGUAGE.DISCOVERY\LANGUAGE.DB\OBJ\DEBUG\LANGUAGE.DB.DLL" />
 			<Metadata Name="AssemblyName" Value="Language.DB" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="D:\Language.Discovery\Language.Discovery\Language.DB\obj\Debug\Language.DB.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="D:\Soursetree\Language.Discovery\Language.DB\obj\Debug\Language.DB.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>

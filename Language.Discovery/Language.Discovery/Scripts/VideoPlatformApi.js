@@ -92,7 +92,7 @@ function attachedVidyo() {
 
     //We need to ensure we're loading the VidyoClient library and listening for the callback.
     var script = document.createElement('script');
-    script.type = 'text/javascript';
+    script.type = 'module';
     script.id = "vidyoscript";
     script.src = '../Scripts/VidyoClient.min.js'
     document.getElementsByTagName('head')[0].appendChild(script);
@@ -109,6 +109,7 @@ function attachedVidyo() {
 }
 
 function onVidyoClientLoaded(status) {
+
     console.log("Status: " + status.state + "Description: " + status.description);
     switch (status.state) {
         case "READY":    // The library is operating normally
