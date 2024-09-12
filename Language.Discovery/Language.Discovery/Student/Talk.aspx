@@ -5445,19 +5445,51 @@
 
         }
 
+        //start Comment by afsar 10092024
+        //async function createRoom(roomName, caller, callee) {
+        //    debugger;
+        //    var json = {
+        //        "RoomName": roomName,
+        //        "Caller": caller,
+        //        "Callee": callee,
+        //    };
+        //    return await $.post("../api/Vidyo/CreateRoom", json, function (data) {
+        //        if (data) {
+        //            return data;
+        //        }
+        //    }).promise();
+
+        //}
+        //end Comment by afsar 10092024
+
+        //start added by afsar 10092024
         async function createRoom(roomName, caller, callee) {
+            debugger;
             var json = {
                 "RoomName": roomName,
                 "Caller": caller,
                 "Callee": callee,
             };
-            return await $.post("../api/Vidyo/CreateRoom", json, function (data) {
-                if (data) {
-                    return data;
+            try {
+                let response = await $.post("../api/Vidyo/CreateRoom", json).promise();
+                if (response) {
+                    return response;
                 }
-            }).promise();
-
+            } catch (error) {
+                // Check for the specific error message from the server response
+                if (error.status === 400 && error.responseText === "No Room Generated") {
+                    alert("No room was generated. Please try again.");  // Display a message and handle reconnection if necessary
+                    await handleReconnection(roomName, caller, callee); // Logic for reconnection or retry can go here
+                } else {
+                    alert("Room Create failed ! So regenerate please.");  // Handle other errors
+                    await handleReconnection(roomName, caller, callee); // Logic for reconnection or retry can go here
+                }
+                // You may add reconnection logic here if needed
+                 location.reload() //to reset the page state
+            }
         }
+        //end added by afsar 10092024
+
 
         //Start Added Afsar 26082024
         var isCallActive = false; // Global variable to track the call state
@@ -5517,6 +5549,7 @@
                 var room = currentuser.replace("@", "_") + username.replace("@", "_");
                 _roomparameter = room;
                 createRoom(room, currentuser, username).then((data) => {
+                    debugger;
                     if (data) {
                         if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
                             $.connection.hub.start().done(function () {
@@ -5530,11 +5563,19 @@
                         $("#btnCallIcon").attr("src", "../Images/new/callEnd.png");
                         isCallActive = true; // Update the call state
                     }
-                }).catch(() => {
+                    //added by afsar 10092024
+                }).catch(async () => {
                     alert("ERROR: Error in creating a room. Please contact your administrator");
+                    // Attempt reconnection or retry logic here
+                    await handleReconnection(room, currentuser, username);
                 });
+
+                //comment by afsar 10092024
+                //    .catch(() => {
+                //    alert("ERROR: Error in creating a room. Please contact your administrator");
+
+                //});
             } else if ($("#btnCallIcon").attr("src").indexOf("callEnd.png") > -1) {
-                debugger;
                 location.reload();
                 _isInCall = false;
                 _SomeoneIscalling = false;
@@ -5552,6 +5593,33 @@
                 isCallActive = false; // Update the call state
             }
         }
+
+        //Start Added by Afsar Reconnection logic 10092024  Reconnection Logic
+        async function handleReconnection(roomName, caller, callee) {
+            // Simple retry mechanism, you can expand with more sophisticated reconnection logic
+            try {
+                alert("Attempting to reconnect...");
+                // Retry creating the room
+                let data = await createRoom(roomName, caller, callee);
+                if (data) {
+                    // Room created successfully, continue with the call process
+                    if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                        $.connection.hub.start().done(function () {
+                            chat.server.call(callee, caller, $("#hdnGroupName").val(), roomName, data.RoomKey);
+                        });
+                    } else {
+                        chat.server.call(callee, caller, $("#hdnGroupName").val(), roomName, data.RoomKey);
+                    }
+                    _SomeoneIscalling = true;
+                    PlayRingBack(true);
+                    $("#btnCallIcon").attr("src", "../Images/new/callEnd.png");
+                    isCallActive = true; // Update the call state
+                }
+            } catch (error) {
+                alert("Reconnection failed. Please check your network and try again.");
+            }
+        }
+        //End Added Afsar Reconnection logic 10092024
 
         // Timer to stop calling after 3 rings
         function startRingingTimer() {

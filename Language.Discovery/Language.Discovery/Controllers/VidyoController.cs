@@ -37,7 +37,10 @@ namespace Language.Discovery.Controllers
                 Envelope body = FromXml<Envelope>(response.Content);
                 if(body == null)
                 {
-                    throw new Exception("No Room Generated");
+                    // Return a bad request status with a custom message instead of throwing an exception
+                    return Content(HttpStatusCode.BadRequest, "No Room Generated");  // added by afsar 10092024
+
+                    //throw new Exception("No Room Generated"); // comment by afasr 10092024
                 }
 
                 RegexOptions options = RegexOptions.Multiline;
@@ -59,9 +62,11 @@ namespace Language.Discovery.Controllers
 
                 return Ok(conferenceRoom);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                //throw ex; old comment by afsar 10092024
+                // Return a generic error message to avoid server crash
+                return Content(HttpStatusCode.InternalServerError, "An error occurred while creating the room."); //added by afsar 10092024
             }
 
             

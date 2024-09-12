@@ -88,6 +88,17 @@
     </style>
     <script type="text/javascript">
 
+        //start added afsar 12092024
+        //window.addEventListener("beforeunload", function (event) {
+        //    debugger;
+            
+        //    // Message to display when the user tries to close the tab or navigate away
+        //    const message = "Are you sure you want to close this tab?";
+        //    event.returnValue = message; // This will trigger the default confirmation dialog
+        //    return message; // For some older browsers that may use the return value
+        //});
+        //end added afsar 12092024
+
         function AddLocalstorage(userid) {
             localStorage.setItem("UserID", userid);
         }
