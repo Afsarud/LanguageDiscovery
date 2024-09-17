@@ -153,7 +153,8 @@
                 todate = moment(todate, "YYYY-MM-DD");
                 sessionStorage.removeItem("yuckdate");
             }
-            var date = todate == null ? moment().add(7, 'day') : moment(todate);
+            /*var date = todate == null ? moment().add(7, 'day') : moment(todate);*/  //Comment by Afsar 13-09-2024
+            var date = todate == null ? moment().add(3, 'day') : moment(todate);  //Added by Afsar 13-09-2024
             var dateToday = new Date(date);
             //alert(date.year() + "-" + (date.month() < 11 ? "0" + (date.month() + 1) : (date.month() + 1)) + "-" + date.date());
             var schedule = todate != null ? moment(todate).format("YYYY-MM-DD") : moment(dateToday).format("YYYY-MM-DD");
@@ -171,7 +172,8 @@
                 });
             }
             else {
-                var minDate = moment().add(7, 'day');
+                /*var minDate = moment().add(7, 'day');*/ // Comment by afsar 13-09-2024
+                var minDate = moment().add(3, 'day');  //Added by Afsar 13-09-2024
                 $("#monthView").datepicker({
                     defaultDate: dateToday,
                     minDate: new Date(minDate),

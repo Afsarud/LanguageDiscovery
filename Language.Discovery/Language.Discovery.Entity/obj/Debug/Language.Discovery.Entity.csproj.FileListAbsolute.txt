@@ -21,3 +21,4 @@ D:\Soursetree\Language.Discovery\Language.Discovery.Entity\bin\Debug\Newtonsoft.
 D:\Soursetree\Language.Discovery\Language.Discovery.Entity\obj\Debug\Language.Discovery.Entity.csproj.CopyComplete
 D:\Soursetree\Language.Discovery\Language.Discovery.Entity\obj\Debug\Language.Discovery.Entity.dll
 D:\Soursetree\Language.Discovery\Language.Discovery.Entity\obj\Debug\Language.Discovery.Entity.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\obj\Debug\Language.Discovery.Entity.csprojAssemblyReference.cache
