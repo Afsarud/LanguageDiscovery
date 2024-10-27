@@ -324,6 +324,52 @@
 
                             imOnline();
                             ShowParentsInfo();
+                            //Start Added Afsar 02092024
+                            // This flag controls whether the beforeunload prompt is shown
+                            var allowPrompt = true;
+
+                            // Function to handle the beforeunload event
+                            //window.onbeforeunload = function (e) {
+                            //    debugger;
+                            //    if (allowPrompt) {
+                            //        // Customize the confirmation message
+                            //        var confirmationMessage = "Wait! Are you sure you want to leave our site?";
+
+                            //        // Setting the returnValue property is required for some browsers
+                            //        e.returnValue = confirmationMessage;
+
+                            //        // Return the message for other browsers
+                            //        return confirmationMessage;
+                            //    }
+                            //};
+
+                            // Function to handle the unload event for logout
+                            $(window).on('unload', function () {
+                                debugger
+                                // Check if we are in a tab/browser close scenario
+                                if (allowPrompt) {
+                                    // Call the logout function
+                                    logoutUser()
+                                }
+                            });
+
+                            function logoutUser() {
+                                debugger;
+                                // Make an AJAX call to the server to log out the user
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '~/ChatHub/Signout', // Replace with your actual logout URL
+                                  /*  async: false,*/ // Make the request synchronous to ensure it completes
+                                    success: function () {
+                                        console.log('User logged out successfully.');
+                                    },
+                                    error: function (xhr, status, error) {
+                                        console.error('Logout failed:', error);
+                                    }
+                                });
+                            }
+                        //Start Added Afsar 02092024
+
                         });
 
                         window.onbeforeunload = function () {
