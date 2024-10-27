@@ -15,3 +15,11 @@ D:\Language.Discovery\Language.Discovery\Language.Discovery.Entity\obj\Release\L
 D:\Language.Discovery\Language.Discovery\Language.Discovery.Entity\obj\Release\Language.Discovery.Entity.csproj.CopyComplete
 D:\Language.Discovery\Language.Discovery\Language.Discovery.Entity\obj\Release\Language.Discovery.Entity.dll
 D:\Language.Discovery\Language.Discovery\Language.Discovery.Entity\obj\Release\Language.Discovery.Entity.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\bin\Release\Language.Discovery.Entity.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\bin\Release\Language.Discovery.Entity.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\bin\Release\Newtonsoft.Json.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\bin\Release\Newtonsoft.Json.xml
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\obj\Release\Language.Discovery.Entity.csprojAssemblyReference.cache
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\obj\Release\Language.Discovery.Entity.csproj.CopyComplete
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\obj\Release\Language.Discovery.Entity.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Entity\obj\Release\Language.Discovery.Entity.pdb

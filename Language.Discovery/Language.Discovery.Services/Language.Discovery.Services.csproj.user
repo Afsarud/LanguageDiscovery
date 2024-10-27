@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
-    <NameOfLastUsedPublishProfile>D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>FolderProfile</NameOfLastUsedPublishProfile>
     <ProjectView>ShowAllFiles</ProjectView>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
