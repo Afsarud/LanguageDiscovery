@@ -14,3 +14,18 @@ D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Disc
 D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.csproj.CopyComplete
 D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.dll
 D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll.config
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\RestSharp.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.pdb
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.xml
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\RestSharp.xml
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.csprojAssemblyReference.cache
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.csproj.CopyComplete
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.dll
+D:\Soursetree\Language.Discovery\Language.Discovery.Services\obj\Release\Language.Discovery.Services.pdb
