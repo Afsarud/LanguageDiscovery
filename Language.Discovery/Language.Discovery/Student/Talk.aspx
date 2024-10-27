@@ -636,7 +636,7 @@
 
                     }).error(function (response) {
                         reject(false);
-                        alert(respose.responseText)
+                        alert(response.responseText) // Corrected here respose to response Afsar 24102024
                     });
                 });
             }
@@ -705,7 +705,7 @@
 
 
         function AddFreeMessage() {
-
+            var message = $('#txtFreeMessage1').val() + '目'; // Add the character here afsar 231024
             var span1 = "<span>{0}</span>".stringformat($("#txtFreeMessage1").val());
             var span2 = "<span>{0}</span>".stringformat($("#txtFreeMessage2").val());
             var removemes1 = "<img class='imgRemoveMessage' src=\"../Images/x.png\" style=\"width:16px; height:16px; float:right;vertical-align:middle;cursor:pointer;float:right;\" onclick=\"RemoveSingleMessage(this);\" />";
@@ -3425,7 +3425,8 @@
             $('#lnkTranslate').click(() => {
                 var sl = $("#hdnNativeLanguageCode").val().substr(0, 2);
                 var tl = $("#hdnLearningLanguageCode").val().substr(0, 2);
-                Translate(sl, tl, $("#txtFreeMessage1").val(), $("#txtFreeMessage2"), 'freemessage');
+                var message = $('#txtFreeMessage1').val() + '目'; // Add the character here afsar 231024
+                Translate(sl, tl, $("#txtFreeMessage1").val(), $("#txtFreeMessage2"), 'message','freemessage');
                 $('#divFreeMessage').siblings().find('#dialogSave').focus();
             });
 
@@ -4279,7 +4280,7 @@
             $.fn.bootstrapBtn = bootstrapButton;            // give $().bootstrapBtn the Bootstrap functionality
             var jqeBsTooltip = $.fn.tooltip.noConflict();
             $.fn.tlp = jqeBsTooltip;
-            var maxLength = 100;
+            var maxLength = 1000; //updated by afsar 23102024
             charactersLeftText = $('#lblcharleftLabel1').text();
             $('#lblcharleftLabel1').text(charactersLeftText.stringformat(maxLength));
             $('#lblcharleftLabel2').text(charactersLeftText.stringformat(maxLength));
@@ -4353,7 +4354,7 @@
             $('#txtFreeMessage1').keypress(function (e) {
                 if (e.keyCode === 13) {
                     $('#lnkTranslate').click();
-                    setTimeout(function () { $('#divFreeMessage').parent().find("button:eq(1)").focus(); }, 100);
+                    setTimeout(function () { $('#divFreeMessage').parent().find("button:eq(1)").focus(); }, 1000);
                 }
             });
             $('#txtFreeMessage1').blur(function () {
@@ -5445,51 +5446,19 @@
 
         }
 
-        //start Comment by afsar 10092024
-        //async function createRoom(roomName, caller, callee) {
-        //    debugger;
-        //    var json = {
-        //        "RoomName": roomName,
-        //        "Caller": caller,
-        //        "Callee": callee,
-        //    };
-        //    return await $.post("../api/Vidyo/CreateRoom", json, function (data) {
-        //        if (data) {
-        //            return data;
-        //        }
-        //    }).promise();
-
-        //}
-        //end Comment by afsar 10092024
-
-        //start added by afsar 10092024
         async function createRoom(roomName, caller, callee) {
-            debugger;
             var json = {
                 "RoomName": roomName,
                 "Caller": caller,
                 "Callee": callee,
             };
-            try {
-                let response = await $.post("../api/Vidyo/CreateRoom", json).promise();
-                if (response) {
-                    return response;
+            return await $.post("../api/Vidyo/CreateRoom", json, function (data) {
+                if (data) {
+                    return data;
                 }
-            } catch (error) {
-                // Check for the specific error message from the server response
-                if (error.status === 400 && error.responseText === "No Room Generated") {
-                    alert("No room was generated. Please try again.");  // Display a message and handle reconnection if necessary
-                    await handleReconnection(roomName, caller, callee); // Logic for reconnection or retry can go here
-                } else {
-                    alert("Room Create failed ! So regenerate please.");  // Handle other errors
-                    await handleReconnection(roomName, caller, callee); // Logic for reconnection or retry can go here
-                }
-                // You may add reconnection logic here if needed
-                 location.reload() //to reset the page state
-            }
-        }
-        //end added by afsar 10092024
+            }).promise();
 
+        }
 
         //Start Added Afsar 26082024
         var isCallActive = false; // Global variable to track the call state
@@ -5548,34 +5517,70 @@
                 var currentuser = $("#hdnCurrentUserName").val();
                 var room = currentuser.replace("@", "_") + username.replace("@", "_");
                 _roomparameter = room;
-                createRoom(room, currentuser, username).then((data) => {
-                    debugger;
-                    if (data) {
-                        if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
-                            $.connection.hub.start().done(function () {
-                                chat.server.call(username, $('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room, data.RoomKey);
-                            });
-                        } else {
+                // Usage of retry logic in CreateAndJoinConference
+                retryCreateRoom(room, currentuser, username)
+                    .then((data) => {
+                        if (data) {
+                            // Proceed with the call if room creation is successful
                             chat.server.call(username, $('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room, data.RoomKey);
+                            PlayRingBack(true);
+                            $("#btnCallIcon").attr("src", "../Images/new/callEnd.png");
+                            isCallActive = true;
                         }
-                        _SomeoneIscalling = true;
-                        PlayRingBack(true);
-                        $("#btnCallIcon").attr("src", "../Images/new/callEnd.png");
-                        isCallActive = true; // Update the call state
-                    }
-                    //added by afsar 10092024
-                }).catch(async () => {
-                    alert("ERROR: Error in creating a room. Please contact your administrator");
-                    // Attempt reconnection or retry logic here
-                    await handleReconnection(room, currentuser, username);
-                });
+                    })
+                    .catch((error) => {
+                        if (error.status === 408) {
+                            alert("ERROR: Request timed out even after retries. Please try again later.");
+                        } else if (error.status === 500) {
+                            alert("ERROR: Server error. " + error.responseText);
+                        } else {
+                            alert("ERROR: Unknown error occurred. Please contact your administrator.");
+                        }
+                    });
 
-                //comment by afsar 10092024
-                //    .catch(() => {
-                //    alert("ERROR: Error in creating a room. Please contact your administrator");
 
+                // Assuming you're calling createRoom(room, currentuser, username) somewhere Addeb by Afsar 23092024
+                //createRoom(room, currentuser, username).then((data) => {
+                //    if (data) {
+                //        // Proceed with the call if room creation is successful
+                //        chat.server.call(username, $('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room, data.RoomKey);
+                //        PlayRingBack(true);
+                //        $("#btnCallIcon").attr("src", "../Images/new/callEnd.png");
+                //        isCallActive = true;
+                //    }
+                //}).catch((error) => {
+                //    // Display meaningful error message based on server response
+                //    if (error.status === 408) {
+                //        alert("ERROR: Request timed out. Please try again later.");
+                //    } else if (error.status === 500) {
+                //        alert("ERROR: Server error. " + error.responseText);
+                //    } else {
+                //        alert("ERROR: Unknown error occurred. Please contact your administrator.");
+                //    }
                 //});
+
+                //start comment by afsar 23092024
+                //createRoom(room, currentuser, username).then((data) => {
+                //    if (data) {
+                //        if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
+                //            $.connection.hub.start().done(function () {
+                //                chat.server.call(username, $('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room, data.RoomKey);
+                //            });
+                //        } else {
+                //            chat.server.call(username, $('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room, data.RoomKey);
+                //        }
+                //        _SomeoneIscalling = true;
+                //        PlayRingBack(true);
+                //        $("#btnCallIcon").attr("src", "../Images/new/callEnd.png");
+                //        isCallActive = true; // Update the call state
+                //    }
+                //}).catch(() => {
+                //    alert("ERROR: Error in creating a room. Please contact your administrator");
+                //});
+                // end comment by afsar 23092024
+
             } else if ($("#btnCallIcon").attr("src").indexOf("callEnd.png") > -1) {
+                debugger;
                 location.reload();
                 _isInCall = false;
                 _SomeoneIscalling = false;
@@ -5594,32 +5599,22 @@
             }
         }
 
-        //Start Added by Afsar Reconnection logic 10092024  Reconnection Logic
-        async function handleReconnection(roomName, caller, callee) {
-            // Simple retry mechanism, you can expand with more sophisticated reconnection logic
-            try {
-                alert("Attempting to reconnect...");
-                // Retry creating the room
-                let data = await createRoom(roomName, caller, callee);
-                if (data) {
-                    // Room created successfully, continue with the call process
-                    if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
-                        $.connection.hub.start().done(function () {
-                            chat.server.call(callee, caller, $("#hdnGroupName").val(), roomName, data.RoomKey);
-                        });
+        // Retry logic with exponential backoff
+        function retryCreateRoom(room, currentuser, username, retries = 3, delay = 1000) {
+            return new Promise((resolve, reject) => {
+                createRoom(room, currentuser, username).then(resolve).catch((error) => {
+                    if (error.status === 408 && retries > 0) {
+                        setTimeout(() => {
+                            console.log(`Retrying... (${4 - retries} attempt)`);
+                            retryCreateRoom(room, currentuser, username, retries - 1, delay * 2).then(resolve).catch(reject);
+                        }, delay);
                     } else {
-                        chat.server.call(callee, caller, $("#hdnGroupName").val(), roomName, data.RoomKey);
+                        reject(error);
                     }
-                    _SomeoneIscalling = true;
-                    PlayRingBack(true);
-                    $("#btnCallIcon").attr("src", "../Images/new/callEnd.png");
-                    isCallActive = true; // Update the call state
-                }
-            } catch (error) {
-                alert("Reconnection failed. Please check your network and try again.");
-            }
+                });
+            });
         }
-        //End Added Afsar Reconnection logic 10092024
+
 
         // Timer to stop calling after 3 rings
         function startRingingTimer() {
@@ -5645,132 +5640,6 @@
                 }
             }, 9000); // 3 rings
         }
-
-        //added afsar 03092024
-     
-        //end afsar timer03092024
-
-        //end Added Afsar 26082024
-
-        //start comment Afsar 26082024
-
-        //function CreateAndJoinConference(e) {
-        //    debugger
-        //    //clearDiv();
-        //    $("#renderer01").hide();
-        //    $("#renderer02").hide();
-        //    $("#renderer01_timesSection").hide();
-        //    var username = $("#lblLastName").text();
-        //    if (($("#btnCallIcon").hasClass("btnCallIconDisabled") && !_isDisconnected) || $("#btnCallIcon").hasClass("btnCallIconDisabled")) {
-        //        //debugger;
-        //        ArrangeUIFromDisconnection(username);
-
-        //        return false;
-        //    }
-        //    if ($("#btnCallIcon").attr("data-isfromhangup") == "true") {
-        //        $("#btnCallIcon").attr("src", "../Images/new/CallingStatic.png");
-        //        $("#renderer0").hide();
-        //        $("#renderer1").hide();
-        //        $("#renderer01").hide();
-        //        $("#renderer02").hide();
-        //        $("#renderer01_timesSection").hide();
-
-
-
-        //        //$("#renderer01").hide();
-        //        //$("#renderer01_timesSection").hide();
-        //        $("#renderer01_timesSection_cam_testing").hide();
-        //        $("#btnCallIcon").removeAttr("data-isfromhangup");
-        //        return;
-        //    }
-        //    e.stopPropagation();
-        //    e.preventDefault();
-
-        //    //$(".divMessage").toggleClass("divMessageWithVideo");
-
-        //    if ($("#btnCallIcon").attr("src").indexOf("Calling.gif") > -1) {
-        //        //$("#btnCallIcon").attr("src", "../Images/CallingStatic.png");
-        //        //$("#renderer0").hide();
-        //        ////Leave();
-        //        PlayRingBack(false);
-        //        debugger;
-
-        //        $("#btnCallIcon").attr("src", "../Images/new/CallingStatic.png");
-        //        $("#renderer0").hide();
-        //        $("#renderer1").hide();
-        //        $("#renderer01").hide();
-        //        $("#renderer02").hide();
-        //        $("#renderer01_timesSection").hide();
-        //        //location.reload();
-        //        var currentuser = $("#hdnCurrentUserName").val();
-        //        var room = currentuser.replace("@", "_") + username.replace("@", "_");
-        //        _SomeoneIscalling = false;
-        //        if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
-        //            $.connection.hub.start().done(function () {
-        //                chat.server.hangup($('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room);
-        //            });
-        //        } else {
-        //            chat.server.hangup($('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room);
-        //            //Leave();
-        //        }
-        //    }
-        //    else if ($("#btnCallIcon").attr("src").indexOf("CallingStatic.png") > -1) {
-        //        //GetVideoKey();
-
-
-
-        //        var currentuser = $("#hdnCurrentUserName").val();
-        //        var room = currentuser.replace("@", "_") + username.replace("@", "_");
-        //        //$('#btnCallIcon').addClass("callStart");
-        //        //loadVidyoClientLibrary(true, true, room, $("#hdnCurrentUserName").val(), true);
-        //        _roomparameter = room;
-        //        createRoom(room, currentuser, username).then((data) => {
-        //            if (data) {
-        //                if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
-        //                    $.connection.hub.start().done(function () {
-        //                        chat.server.call(username, $('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room, data.RoomKey);
-        //                    });
-        //                } else {
-        //                    chat.server.call(username, $('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room, data.RoomKey);
-        //                }
-        //                _SomeoneIscalling = true;
-        //                PlayRingBack(true);
-        //                $("#btnCallIcon").attr("src", "../Images/new/CallingStatic.png")
-        //            }
-        //        }).catch(() => {
-        //            alert("ERROR: Error in creating a room. Please contact your administrator");
-        //        });;
-
-        //        //$("#renderer0").show();
-        //    }
-        //    else if ($("#btnCallIcon").attr("src").indexOf("callEnd.png") > -1) {
-
-        //        location.reload();
-        //        _isInCall = false;
-        //        _SomeoneIscalling = false;
-        //        //$("#btnCallIcon").attr("src", "../Images/CallingStatic.png");
-        //        //$("#renderer0").hide();
-        //        //$("#renderer1").hide();
-        //        //var currentuser = $("#hdnCurrentUserName").val();
-        //        //var room = currentuser.replace("@", "_") + username.replace("@", "_");
-        //        ArrangeUIFromDisconnection(username);
-        //        DeleteConferenceRoom(_roomparameter);
-        //        //alert(_isDisconnected);
-        //        //if (_isDisconnected) {
-        //        if ($.connection.hub.state === $.signalR.connectionState.disconnected) {
-        //            $.connection.hub.start().done(function () {
-        //                chat.server.ended($('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room);
-        //            });
-        //        } else {
-        //            chat.server.ended($('#hdnCurrentUserName').val(), $("#hdnGroupName").val(), room);
-        //            //        //Leave();
-        //        }
-        //        //    _isDisconnected = false;
-        //        //}
-        //    }
-        //}
-
-
 
         function clearDiv() {
             alert("hello")
@@ -6618,12 +6487,13 @@
               <table style="width:100%;">
                   <tr>
                       <td>
-                          <textarea id="txtFreeMessage1" class="text ui-widget-content ui-corner-all" style="width:98%;height:100%;" cols="1" rows="5" maxlength="100" spellcheck="true" ></textarea>
-                          <span id="lblcharleft1" style="display:none;">100</span>&nbsp;<asp:Label ID="lblcharleftLabel1" runat="server" ClientIDMode="Static" meta:resourcekey="lblcharleftLabel1Resource1">Characters remaining</asp:Label>
+                          <%--Message text lenth chnage by afsar 2310204--%>
+                          <textarea id="txtFreeMessage1" class="text ui-widget-content ui-corner-all" style="width:98%;height:100%;" cols="1" rows="5" maxlength="1000" spellcheck="true" ></textarea>
+                          <span id="lblcharleft1" style="display:none;">1000</span>&nbsp;<asp:Label ID="lblcharleftLabel1" runat="server" ClientIDMode="Static" meta:resourcekey="lblcharleftLabel1Resource1">Characters remaining</asp:Label>
                       </td>
                       <td>
-                          <textarea id="txtFreeMessage2" class="text ui-widget-content ui-corner-all" style="width:98%;height:100%" cols="1" rows="5" maxlength="100" spellcheck="true" ></textarea>
-                          <span id="lblcharleft2"  style="display:none;">100</span>&nbsp;<asp:Label ID="lblcharleftLabel2" runat="server" ClientIDMode="Static" meta:resourcekey="lblcharleftLabel1Resource1">Characters remaining</asp:Label>
+                          <textarea id="txtFreeMessage2" class="text ui-widget-content ui-corner-all" style="width:98%;height:100%" cols="1" rows="5" maxlength="1000" spellcheck="true" ></textarea>
+                          <span id="lblcharleft2"  style="display:none;">1000</span>&nbsp;<asp:Label ID="lblcharleftLabel2" runat="server" ClientIDMode="Static" meta:resourcekey="lblcharleftLabel1Resource1">Characters remaining</asp:Label>
                       </td>
                   </tr>
                   <tr>
@@ -6715,8 +6585,8 @@
                  <div class="sendmsg_top_container" id="sendmsg_top_container" >
 
                         <div id="renderer0" class="selfView" style="display:none;"></div>
-                      <div id="renderer01"  style="display: none; margin-top: 230px; z-index: 10; width: 100%; position: absolute;" >
-                    <button style="width: 100%; background-color: white; color: #444444; text-align: center; border: 1px solid #D9EEFC; border-radius: 8px; box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.15);">
+                      <div id="renderer01"  style=" margin-top: 230px; z-index: 10; width: 100%; position: absolute;" >
+                    <button style="width: 100%; height: 21px; background-color: white; color: #444444; text-align: center; border: 1px solid #D9EEFC; border-radius: 8px; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, -0.85);">
                         Audio Setting</button>
    
                      </div>
@@ -6846,10 +6716,7 @@
                         </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>
-                     <%--comment Afsar 03092024--%>
-                        <%--<div id="renderer2" class="remoteView" style="display:none;">
-
-                        </div>--%>
+                     
                      <%--added afsar 03092024--%>
                      <div id="renderer2" class="remoteView" style="display:none; position: relative;">
                         <!-- Timer Display for Meeting Time -->

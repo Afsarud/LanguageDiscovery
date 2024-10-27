@@ -369,3 +369,117 @@ D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Release\Language
 D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.Web.csproj.CopyComplete
 D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.dll
 D:\Language.Discovery\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help En.htm
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP.htm
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP4x1.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP4xi2.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi1.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi2.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP5xi3.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6x1.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi2.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi3.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP6xi4.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7x1.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi2.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi3.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi4.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\documentation\Help JP_images\Help JP7xi5.jpg
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Images\removetovip.png
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Web.config
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Web.Debug.config
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Web.Release.config
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Language.Discovery.dll.config
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Language.Discovery.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Language.Discovery.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Antlr3.Runtime.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\AspNet.ScriptManager.jQuery.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.AspNet.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.Core.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\EntityFramework.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.PlatformServices.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.PlatformServices.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Language.Discovery.Entity.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Language.Discovery.Repository.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Security.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.Common.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.ReportViewer.WebForms.DLL
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.ScriptManager.WebForms.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Web.Infrastructure.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Newtonsoft.Json.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Owin.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\RestSharp.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Net.Http.Formatting.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Threading.Tasks.Extensions.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Web.Http.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Web.Http.WebHost.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Web.Optimization.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Web.Providers.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\WebGrease.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Language.Discovery.Entity.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Language.Discovery.Repository.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Api.Gax.Rest.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Auth.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Core.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Apis.Translate.v2.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.pdb
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Google.Cloud.Translation.V2.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.Owin.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.Owin.Security.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Newtonsoft.Json.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\RestSharp.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Net.Http.Formatting.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Threading.Tasks.Extensions.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Web.Http.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\System.Web.Http.WebHost.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\EntityFramework.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.Core.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\DotNetOpenAuth.AspNet.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.Web.csprojAssemblyReference.cache
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.Web.csproj.CopyComplete
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.dll
+E:\LatestSdkProject\Language.Discovery\Language.Discovery\obj\Release\Language.Discovery.pdb

@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Language.Discovery {
-    
-    
-    public partial class SendMessage {
-        
+namespace Language.Discovery
+{
+
+
+    public partial class SendMessage
+    {
+
         /// <summary>
         /// hdnNativeLangaugeForSave control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnNativeLangaugeForSave;
-        
+
         /// <summary>
         /// hdnLearningLanguageForSave control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnLearningLanguageForSave;
-        
+
         /// <summary>
         /// hdnOtherLangaugeForSave control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnOtherLangaugeForSave;
-        
+
         /// <summary>
         /// hdnSavedMessageId control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSavedMessageId;
-        
+
         /// <summary>
         /// hdnSavedMessageInfo control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSavedMessageInfo;
-        
+
         /// <summary>
         /// hdnIsDemo control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnIsDemo;
-        
+
         /// <summary>
         /// hdnIsDropDownChangeFromClient control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnIsDropDownChangeFromClient;
-        
+
         /// <summary>
         /// hdnPunctuation control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnPunctuation;
-        
+
         /// <summary>
         /// hdnSelectFromPalete control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSelectFromPalete;
-        
+
         /// <summary>
         /// hdnReplaceWord control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnReplaceWord;
-        
+
         /// <summary>
         /// hdnCreateNewWord control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnCreateNewWord;
-        
+
         /// <summary>
         /// hdnFreeMessage1 control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFreeMessage1;
-        
+
         /// <summary>
         /// hdnFreeMessage2 control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFreeMessage2;
-        
+
         /// <summary>
         /// hdnTopCategory control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnTopCategory;
-        
+
         /// <summary>
         /// hdnTopCategoryName control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnTopCategoryName;
-        
+
         /// <summary>
         /// hdnCategory control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnCategory;
-        
+
         /// <summary>
         /// hdnWordToReplaceId control.
         /// </summary>
@@ -164,7 +166,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnWordToReplaceId;
-        
+
         /// <summary>
         /// hdnWordType control.
         /// </summary>
@@ -173,7 +175,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnWordType;
-        
+
         /// <summary>
         /// hdnwordpage control.
         /// </summary>
@@ -182,7 +184,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnwordpage;
-        
+
         /// <summary>
         /// hdnwordpageusercreated control.
         /// </summary>
@@ -191,7 +193,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnwordpageusercreated;
-        
+
         /// <summary>
         /// hdnsentencepage control.
         /// </summary>
@@ -200,7 +202,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnsentencepage;
-        
+
         /// <summary>
         /// hdnLearning control.
         /// </summary>
@@ -209,7 +211,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnLearning;
-        
+
         /// <summary>
         /// hdnNative control.
         /// </summary>
@@ -218,7 +220,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnNative;
-        
+
         /// <summary>
         /// hdnKeywords control.
         /// </summary>
@@ -227,7 +229,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnKeywords;
-        
+
         /// <summary>
         /// hdnNativeLanguageCode control.
         /// </summary>
@@ -236,7 +238,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnNativeLanguageCode;
-        
+
         /// <summary>
         /// hdnOtherLanguageCode control.
         /// </summary>
@@ -245,7 +247,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnOtherLanguageCode;
-        
+
         /// <summary>
         /// hdnOtherLanguagesContent control.
         /// </summary>
@@ -254,7 +256,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnOtherLanguagesContent;
-        
+
         /// <summary>
         /// hdnLearningLanguageCode control.
         /// </summary>
@@ -263,7 +265,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnLearningLanguageCode;
-        
+
         /// <summary>
         /// hdnFreeTextMessage1PlaceHolder control.
         /// </summary>
@@ -272,7 +274,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFreeTextMessage1PlaceHolder;
-        
+
         /// <summary>
         /// hdnFreeTextMessage2PlaceHolder control.
         /// </summary>
@@ -281,7 +283,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFreeTextMessage2PlaceHolder;
-        
+
         /// <summary>
         /// hdnSearchPlaceHolder control.
         /// </summary>
@@ -290,7 +292,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSearchPlaceHolder;
-        
+
         /// <summary>
         /// hdnSearchWordPlaceHolder control.
         /// </summary>
@@ -299,7 +301,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSearchWordPlaceHolder;
-        
+
         /// <summary>
         /// hdnAddWord control.
         /// </summary>
@@ -308,7 +310,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnAddWord;
-        
+
         /// <summary>
         /// hdnFreeformWordTitle control.
         /// </summary>
@@ -317,7 +319,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFreeformWordTitle;
-        
+
         /// <summary>
         /// hdnNoSentenceToAdd control.
         /// </summary>
@@ -326,7 +328,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnNoSentenceToAdd;
-        
+
         /// <summary>
         /// hdnSearchSentenceHistoryIndex control.
         /// </summary>
@@ -335,7 +337,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSearchSentenceHistoryIndex;
-        
+
         /// <summary>
         /// hdnSearchWordHistoryIndex control.
         /// </summary>
@@ -344,7 +346,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSearchWordHistoryIndex;
-        
+
         /// <summary>
         /// hdnIsFirstLogin control.
         /// </summary>
@@ -353,7 +355,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnIsFirstLogin;
-        
+
         /// <summary>
         /// hdnStep1 control.
         /// </summary>
@@ -362,7 +364,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnStep1;
-        
+
         /// <summary>
         /// hdnStep2 control.
         /// </summary>
@@ -371,7 +373,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnStep2;
-        
+
         /// <summary>
         /// hdnStep3 control.
         /// </summary>
@@ -380,7 +382,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnStep3;
-        
+
         /// <summary>
         /// hdnStep3b control.
         /// </summary>
@@ -389,7 +391,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnStep3b;
-        
+
         /// <summary>
         /// hdnStep4 control.
         /// </summary>
@@ -398,7 +400,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnStep4;
-        
+
         /// <summary>
         /// hdnStep5 control.
         /// </summary>
@@ -407,7 +409,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnStep5;
-        
+
         /// <summary>
         /// hdnSuggestedTopic control.
         /// </summary>
@@ -416,7 +418,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSuggestedTopic;
-        
+
         /// <summary>
         /// hdnSelectedUsers control.
         /// </summary>
@@ -425,7 +427,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSelectedUsers;
-        
+
         /// <summary>
         /// hdnErrorHeader control.
         /// </summary>
@@ -434,7 +436,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnErrorHeader;
-        
+
         /// <summary>
         /// hdnBadErrorMessage control.
         /// </summary>
@@ -443,7 +445,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnBadErrorMessage;
-        
+
         /// <summary>
         /// hdnDeleteWord control.
         /// </summary>
@@ -452,7 +454,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnDeleteWord;
-        
+
         /// <summary>
         /// hdnSaveWord control.
         /// </summary>
@@ -461,7 +463,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSaveWord;
-        
+
         /// <summary>
         /// hdnCurrentUser control.
         /// </summary>
@@ -470,7 +472,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnCurrentUser;
-        
+
         /// <summary>
         /// lblReturn control.
         /// </summary>
@@ -479,7 +481,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblReturn;
-        
+
         /// <summary>
         /// lblOk control.
         /// </summary>
@@ -488,7 +490,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblOk;
-        
+
         /// <summary>
         /// lblCancel control.
         /// </summary>
@@ -497,7 +499,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCancel;
-        
+
         /// <summary>
         /// lblYes control.
         /// </summary>
@@ -506,7 +508,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblYes;
-        
+
         /// <summary>
         /// lblNo control.
         /// </summary>
@@ -515,7 +517,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNo;
-        
+
         /// <summary>
         /// lblReturntoMessage control.
         /// </summary>
@@ -524,7 +526,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblReturntoMessage;
-        
+
         /// <summary>
         /// lblSend control.
         /// </summary>
@@ -533,7 +535,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSend;
-        
+
         /// <summary>
         /// hdnPrepareWordReplaceElementID control.
         /// </summary>
@@ -542,7 +544,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnPrepareWordReplaceElementID;
-        
+
         /// <summary>
         /// lblSendWarning control.
         /// </summary>
@@ -551,7 +553,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSendWarning;
-        
+
         /// <summary>
         /// lblSaveWordQuestion control.
         /// </summary>
@@ -560,7 +562,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSaveWordQuestion;
-        
+
         /// <summary>
         /// lblMaxPalette control.
         /// </summary>
@@ -569,7 +571,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMaxPalette;
-        
+
         /// <summary>
         /// lblRejectMessage control.
         /// </summary>
@@ -578,7 +580,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRejectMessage;
-        
+
         /// <summary>
         /// lblDialogNativeLanguage control.
         /// </summary>
@@ -587,7 +589,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDialogNativeLanguage;
-        
+
         /// <summary>
         /// lblDialogLearningLanguage control.
         /// </summary>
@@ -596,7 +598,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDialogLearningLanguage;
-        
+
         /// <summary>
         /// lblDialogSubLanguage control.
         /// </summary>
@@ -605,7 +607,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDialogSubLanguage;
-        
+
         /// <summary>
         /// lblTranslating control.
         /// </summary>
@@ -614,7 +616,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTranslating;
-        
+
         /// <summary>
         /// lblDialogTranslationInstruction control.
         /// </summary>
@@ -623,7 +625,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDialogTranslationInstruction;
-        
+
         /// <summary>
         /// HyperLink1 control.
         /// </summary>
@@ -632,7 +634,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
-        
+
         /// <summary>
         /// HyperLink2 control.
         /// </summary>
@@ -641,7 +643,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
-        
+
         /// <summary>
         /// HyperLink3 control.
         /// </summary>
@@ -650,7 +652,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
-        
+
         /// <summary>
         /// btnCloseEmoji control.
         /// </summary>
@@ -659,7 +661,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCloseEmoji;
-        
+
         /// <summary>
         /// lblFreeMessage control.
         /// </summary>
@@ -668,7 +670,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblFreeMessage;
-        
+
         /// <summary>
         /// lblcharleftLabel1 control.
         /// </summary>
@@ -677,7 +679,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblcharleftLabel1;
-        
+
         /// <summary>
         /// lblcharleftLabel2 control.
         /// </summary>
@@ -686,7 +688,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblcharleftLabel2;
-        
+
         /// <summary>
         /// lblFreeMessageInfo control.
         /// </summary>
@@ -695,7 +697,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblFreeMessageInfo;
-        
+
         /// <summary>
         /// lblViewMessage control.
         /// </summary>
@@ -704,7 +706,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblViewMessage;
-        
+
         /// <summary>
         /// lblTo control.
         /// </summary>
@@ -713,7 +715,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTo;
-        
+
         /// <summary>
         /// lstRecipient control.
         /// </summary>
@@ -722,7 +724,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox lstRecipient;
-        
+
         /// <summary>
         /// hdnRemovedUsers control.
         /// </summary>
@@ -731,7 +733,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnRemovedUsers;
-        
+
         /// <summary>
         /// btnDeleteUser control.
         /// </summary>
@@ -740,7 +742,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton btnDeleteUser;
-        
+
         /// <summary>
         /// chkCC control.
         /// </summary>
@@ -749,7 +751,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkCC;
-        
+
         /// <summary>
         /// lblcc control.
         /// </summary>
@@ -758,7 +760,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblcc;
-        
+
         /// <summary>
         /// imgTo control.
         /// </summary>
@@ -767,7 +769,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image imgTo;
-        
+
         /// <summary>
         /// lblToName control.
         /// </summary>
@@ -776,7 +778,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblToName;
-        
+
         /// <summary>
         /// lblLearning control.
         /// </summary>
@@ -785,16 +787,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLearning;
-        
-        /// <summary>
-        /// lblsentenceLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblsentenceLabel;
-        
+
         /// <summary>
         /// btnSendDummy control.
         /// </summary>
@@ -803,7 +796,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSendDummy;
-        
+
         /// <summary>
         /// imgFreeFormMessage control.
         /// </summary>
@@ -812,7 +805,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgFreeFormMessage;
-        
+
         /// <summary>
         /// imgClearMessage control.
         /// </summary>
@@ -821,7 +814,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgClearMessage;
-        
+
         /// <summary>
         /// divShowTranslation control.
         /// </summary>
@@ -830,7 +823,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divShowTranslation;
-        
+
         /// <summary>
         /// linkShowTranslation control.
         /// </summary>
@@ -839,7 +832,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton linkShowTranslation;
-        
+
         /// <summary>
         /// lblFreeMessageLabel control.
         /// </summary>
@@ -848,7 +841,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblFreeMessageLabel;
-        
+
         /// <summary>
         /// divDisplaySuggestion control.
         /// </summary>
@@ -857,7 +850,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divDisplaySuggestion;
-        
+
         /// <summary>
         /// lblTopic control.
         /// </summary>
@@ -866,7 +859,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTopic;
-        
+
         /// <summary>
         /// divSuggestion control.
         /// </summary>
@@ -875,7 +868,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSuggestion;
-        
+
         /// <summary>
         /// linkTabPhrase control.
         /// </summary>
@@ -884,7 +877,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink linkTabPhrase;
-        
+
         /// <summary>
         /// linkTabWords control.
         /// </summary>
@@ -893,7 +886,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink linkTabWords;
-        
+
         /// <summary>
         /// linkTabOptions control.
         /// </summary>
@@ -902,7 +895,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink linkTabOptions;
-        
+
         /// <summary>
         /// linkTabUsersWords control.
         /// </summary>
@@ -911,7 +904,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink linkTabUsersWords;
-        
+
         /// <summary>
         /// lblTopicsLabel control.
         /// </summary>
@@ -920,7 +913,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTopicsLabel;
-        
+
         /// <summary>
         /// rptTopCategory control.
         /// </summary>
@@ -929,7 +922,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptTopCategory;
-        
+
         /// <summary>
         /// btnSearchByCategory control.
         /// </summary>
@@ -938,7 +931,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSearchByCategory;
-        
+
         /// <summary>
         /// txtSearchSentence control.
         /// </summary>
@@ -947,7 +940,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSearchSentence;
-        
+
         /// <summary>
         /// imgClearSearch control.
         /// </summary>
@@ -956,7 +949,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgClearSearch;
-        
+
         /// <summary>
         /// imgSearchSentence control.
         /// </summary>
@@ -965,7 +958,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgSearchSentence;
-        
+
         /// <summary>
         /// rdoCriteriaList control.
         /// </summary>
@@ -974,7 +967,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rdoCriteriaList;
-        
+
         /// <summary>
         /// lblLabelAddEditWord control.
         /// </summary>
@@ -983,7 +976,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLabelAddEditWord;
-        
+
         /// <summary>
         /// imgSettings control.
         /// </summary>
@@ -992,7 +985,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgSettings;
-        
+
         /// <summary>
         /// UpdatePanel2 control.
         /// </summary>
@@ -1001,7 +994,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel2;
-        
+
         /// <summary>
         /// lblLabelSentencePaging control.
         /// </summary>
@@ -1010,7 +1003,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLabelSentencePaging;
-        
+
         /// <summary>
         /// lblSentenceTitle control.
         /// </summary>
@@ -1019,7 +1012,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSentenceTitle;
-        
+
         /// <summary>
         /// sentenceContainer control.
         /// </summary>
@@ -1028,7 +1021,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl sentenceContainer;
-        
+
         /// <summary>
         /// imgBack control.
         /// </summary>
@@ -1037,7 +1030,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgBack;
-        
+
         /// <summary>
         /// imgForward control.
         /// </summary>
@@ -1046,7 +1039,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgForward;
-        
+
         /// <summary>
         /// btnSearchSentence control.
         /// </summary>
@@ -1055,7 +1048,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSearchSentence;
-        
+
         /// <summary>
         /// lblSequence control.
         /// </summary>
@@ -1064,7 +1057,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSequence;
-        
+
         /// <summary>
         /// chkSequence control.
         /// </summary>
@@ -1073,7 +1066,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkSequence;
-        
+
         /// <summary>
         /// lblSequenceEx control.
         /// </summary>
@@ -1082,7 +1075,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSequenceEx;
-        
+
         /// <summary>
         /// lblNative control.
         /// </summary>
@@ -1091,7 +1084,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNative;
-        
+
         /// <summary>
         /// chkNative control.
         /// </summary>
@@ -1100,7 +1093,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkNative;
-        
+
         /// <summary>
         /// lblNativeEx control.
         /// </summary>
@@ -1109,7 +1102,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNativeEx;
-        
+
         /// <summary>
         /// divRomanji control.
         /// </summary>
@@ -1118,7 +1111,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divRomanji;
-        
+
         /// <summary>
         /// lblRomanji control.
         /// </summary>
@@ -1127,7 +1120,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRomanji;
-        
+
         /// <summary>
         /// chkSecondary control.
         /// </summary>
@@ -1136,7 +1129,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkSecondary;
-        
+
         /// <summary>
         /// lblRomanjiEx control.
         /// </summary>
@@ -1145,7 +1138,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRomanjiEx;
-        
+
         /// <summary>
         /// lblSubLanguage2 control.
         /// </summary>
@@ -1154,7 +1147,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSubLanguage2;
-        
+
         /// <summary>
         /// div4 control.
         /// </summary>
@@ -1163,7 +1156,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div4;
-        
+
         /// <summary>
         /// chkSubLanguage2 control.
         /// </summary>
@@ -1172,7 +1165,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkSubLanguage2;
-        
+
         /// <summary>
         /// lblSubLanguage2Ex control.
         /// </summary>
@@ -1181,7 +1174,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSubLanguage2Ex;
-        
+
         /// <summary>
         /// lblSound control.
         /// </summary>
@@ -1190,7 +1183,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSound;
-        
+
         /// <summary>
         /// lblLanguageOrder control.
         /// </summary>
@@ -1199,7 +1192,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLanguageOrder;
-        
+
         /// <summary>
         /// divorder control.
         /// </summary>
@@ -1208,7 +1201,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divorder;
-        
+
         /// <summary>
         /// chkLanguageOrder control.
         /// </summary>
@@ -1217,7 +1210,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkLanguageOrder;
-        
+
         /// <summary>
         /// lblStep control.
         /// </summary>
@@ -1226,7 +1219,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblStep;
-        
+
         /// <summary>
         /// chkTooltip control.
         /// </summary>
@@ -1235,7 +1228,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkTooltip;
-        
+
         /// <summary>
         /// lblStepEx control.
         /// </summary>
@@ -1244,7 +1237,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblStepEx;
-        
+
         /// <summary>
         /// lblOrderByLearningLanguage control.
         /// </summary>
@@ -1253,7 +1246,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblOrderByLearningLanguage;
-        
+
         /// <summary>
         /// chkOrderByLearningLanguage control.
         /// </summary>
@@ -1262,7 +1255,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkOrderByLearningLanguage;
-        
+
         /// <summary>
         /// lblOrderByLearningLanguageExp control.
         /// </summary>
@@ -1271,7 +1264,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblOrderByLearningLanguageExp;
-        
+
         /// <summary>
         /// btnSave control.
         /// </summary>
@@ -1280,7 +1273,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSave;
-        
+
         /// <summary>
         /// lblSaveEx control.
         /// </summary>
@@ -1289,7 +1282,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSaveEx;
-        
+
         /// <summary>
         /// lblSaveMessage control.
         /// </summary>
@@ -1298,7 +1291,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSaveMessage;
-        
+
         /// <summary>
         /// linkTabWord control.
         /// </summary>
@@ -1307,7 +1300,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink linkTabWord;
-        
+
         /// <summary>
         /// linkTabUserWord control.
         /// </summary>
@@ -1316,7 +1309,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink linkTabUserWord;
-        
+
         /// <summary>
         /// txtSearchWord control.
         /// </summary>
@@ -1325,7 +1318,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSearchWord;
-        
+
         /// <summary>
         /// ImageButton1 control.
         /// </summary>
@@ -1334,7 +1327,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
-        
+
         /// <summary>
         /// imgSearchWord control.
         /// </summary>
@@ -1343,7 +1336,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton imgSearchWord;
-        
+
         /// <summary>
         /// lblLabelWordPaging control.
         /// </summary>
@@ -1352,7 +1345,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLabelWordPaging;
-        
+
         /// <summary>
         /// UpdatePanel1 control.
         /// </summary>
@@ -1361,7 +1354,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-        
+
         /// <summary>
         /// divWordContainer control.
         /// </summary>
@@ -1370,7 +1363,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divWordContainer;
-        
+
         /// <summary>
         /// btnSearchWord control.
         /// </summary>
@@ -1379,7 +1372,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSearchWord;
-        
+
         /// <summary>
         /// lblLabelWordPagingUserCreated control.
         /// </summary>
@@ -1388,7 +1381,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLabelWordPagingUserCreated;
-        
+
         /// <summary>
         /// UpdatePanel3 control.
         /// </summary>
@@ -1397,7 +1390,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel3;
-        
+
         /// <summary>
         /// divWordContainerUserCreated control.
         /// </summary>
@@ -1406,7 +1399,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divWordContainerUserCreated;
-        
+
         /// <summary>
         /// Button1 control.
         /// </summary>
@@ -1415,7 +1408,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-        
+
         /// <summary>
         /// divSentence control.
         /// </summary>
@@ -1424,7 +1417,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSentence;
-        
+
         /// <summary>
         /// lblSentence control.
         /// </summary>
@@ -1433,7 +1426,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSentence;
-        
+
         /// <summary>
         /// lblEditLabel control.
         /// </summary>
@@ -1442,7 +1435,7 @@ namespace Language.Discovery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEditLabel;
-        
+
         /// <summary>
         /// lblInstruction control.
         /// </summary>

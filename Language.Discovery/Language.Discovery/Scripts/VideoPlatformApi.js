@@ -109,7 +109,6 @@ function attachedVidyo() {
 }
 
 function onVidyoClientLoaded(status) {
-
     console.log("Status: " + status.state + "Description: " + status.description);
     switch (status.state) {
         case "READY":    // The library is operating normally

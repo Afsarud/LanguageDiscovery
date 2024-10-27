@@ -2810,7 +2810,7 @@ img{border:none;}
                     GetFinalMessage(true);
                 }
 		    }).error(function(response) {
-		        alert(respose.responseText)
+                alert(response.responseText) // Corrected here respose to response Afsar 24102024
 		    });
         }
 
@@ -2835,7 +2835,7 @@ img{border:none;}
 
                     }).error(function (response) {
                         reject(false);
-                        alert(respose.responseText)
+                        alert(response.responseText)  // Corrected here respose to response Afsar 24102024
                     });
                 });
             }
@@ -2874,7 +2874,7 @@ img{border:none;}
                     }
                 }
 		    }).error(function(response) {
-		        alert(respose.responseText)
+                alert(response.responseText)  // Corrected here respose to response Afsar 24102024
 		    });
 		}
 

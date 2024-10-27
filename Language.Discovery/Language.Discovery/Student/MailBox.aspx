@@ -1117,6 +1117,7 @@
                   debugger
                   if (from != $("#hdnCurrentUserName").val() && $("#btnCallIcon").attr("src").indexOf("callEnd.png") > -1) {
                       location.reload();
+                      _isInCall = false;
                       $("#btnCallIcon").click();
                       $("#btnCallIcon").attr("src", "../Images/new/CallingStatic.png");
                       $("#renderer0").hide();
