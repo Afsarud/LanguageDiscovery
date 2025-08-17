@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Sourcetree\\Language.Discovery\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0026042B-9D11-48C5-9A7A-3F8371C780F9}|Language.Discovery.Services\\Language.Discovery.Services.csproj|e:\\sourcetree\\language.discovery\\language.discovery.services\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0026042B-9D11-48C5-9A7A-3F8371C780F9}|Language.Discovery.Services\\Language.Discovery.Services.csproj|solutionrelative:language.discovery.services\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4311F6C1-10CB-49FE-A468-B79D3D7AD2AF}|Language.Discovery.Admin\\Language.Discovery.Web.Admin.csproj|e:\\sourcetree\\language.discovery\\language.discovery.admin\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4311F6C1-10CB-49FE-A468-B79D3D7AD2AF}|Language.Discovery.Admin\\Language.Discovery.Web.Admin.csproj|solutionrelative:language.discovery.admin\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.config||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Language.Discovery\\Web.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A957937-F267-4EAF-9609-9ACB29CAE282}|Language.Discovery\\Language.Discovery.Web.csproj|E:\\Sourcetree\\Language.Discovery\\language.discovery\\signalr\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A957937-F267-4EAF-9609-9ACB29CAE282}|Language.Discovery\\Language.Discovery.Web.csproj|solutionrelative:language.discovery\\signalr\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A957937-F267-4EAF-9609-9ACB29CAE282}|Language.Discovery\\Language.Discovery.Web.csproj|E:\\Sourcetree\\Language.Discovery\\language.discovery\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A957937-F267-4EAF-9609-9ACB29CAE282}|Language.Discovery\\Language.Discovery.Web.csproj|solutionrelative:language.discovery\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.Release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Language.Discovery\\Web.Release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.Debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Language.Discovery\\Web.Debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery.Services\\Web.Debug.config",
+              "RelativeDocumentMoniker": "Language.Discovery.Services\\Web.Debug.config",
+              "ToolTip": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery.Services\\Web.Debug.config",
+              "RelativeToolTip": "Language.Discovery.Services\\Web.Debug.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-24T18:42:54.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.Release.config",
+              "DocumentMoniker": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.Release.config",
+              "RelativeDocumentMoniker": "Language.Discovery\\Web.Release.config",
+              "ToolTip": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.Release.config",
+              "RelativeToolTip": "Language.Discovery\\Web.Release.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-24T18:38:45.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.Debug.config",
+              "RelativeDocumentMoniker": "Language.Discovery\\Web.Debug.config",
+              "ToolTip": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.Debug.config",
+              "RelativeToolTip": "Language.Discovery\\Web.Debug.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-24T18:38:43.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.config",
+              "RelativeDocumentMoniker": "Language.Discovery\\Web.config",
+              "ToolTip": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Web.config",
+              "RelativeToolTip": "Language.Discovery\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-24T18:38:35.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery.Admin\\Web.config",
+              "RelativeDocumentMoniker": "Language.Discovery.Admin\\Web.config",
+              "ToolTip": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery.Admin\\Web.config",
+              "RelativeToolTip": "Language.Discovery.Admin\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-24T18:36:42.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\SignalR\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Language.Discovery\\SignalR\\ChatHub.cs",
+              "ToolTip": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\SignalR\\ChatHub.cs",
+              "RelativeToolTip": "Language.Discovery\\SignalR\\ChatHub.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAowLQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:00:49.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logout.aspx.cs",
+              "DocumentMoniker": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Logout.aspx.cs",
+              "RelativeDocumentMoniker": "Language.Discovery\\Logout.aspx.cs",
+              "ToolTip": "E:\\Sourcetree\\Language.Discovery\\Language.Discovery\\Logout.aspx.cs",
+              "RelativeToolTip": "Language.Discovery\\Logout.aspx.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAowBQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T06:36:19.956Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
