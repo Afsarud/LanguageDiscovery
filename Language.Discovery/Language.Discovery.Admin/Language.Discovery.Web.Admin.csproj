@@ -808,7 +808,7 @@
     <None Include="Service References\UserService\UserService3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Web1.config">
+    <Content Include="Web.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -867,21 +867,12 @@
     <None Include="Service References\UserService\UserService42.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web1.Debug.config">
-      <DependentUpon>Web1.config</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Web1.Release.config">
-      <DependentUpon>Web1.config</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

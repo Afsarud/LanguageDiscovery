@@ -1,46 +1,15 @@
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll.config
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.pdb
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.dll
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.dll
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.dll
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\RestSharp.dll
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.pdb
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.pdb
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.xml
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\bin\RestSharp.xml
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csproj.AssemblyReference.cache
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csproj.CoreCompileInputs.cache
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csproj.CopyComplete
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.dll
-D:\cliqPack Projects\palaygo Uat-5\pal1-palaygo-adult-604b24c1edf1\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.pdb
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll.config
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.pdb
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.dll
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.dll
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.dll
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\RestSharp.dll
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.pdb
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.pdb
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.xml
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\bin\RestSharp.xml
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csprojAssemblyReference.cache
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csproj.CopyComplete
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.dll
-D:\Language.Discovery\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.pdb
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll.config
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.pdb
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.dll
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.dll
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.dll
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\RestSharp.dll
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.pdb
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.pdb
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.xml
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\bin\RestSharp.xml
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csprojAssemblyReference.cache
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csproj.CopyComplete
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.dll
-D:\Soursetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.pdb
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.dll
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Services.pdb
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.dll
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.dll
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.dll
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\RestSharp.dll
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Entity.pdb
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\Language.Discovery.Repository.pdb
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\Newtonsoft.Json.xml
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\bin\RestSharp.xml
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csproj.AssemblyReference.cache
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.csproj.CoreCompileInputs.cache
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.C110722E.Up2Date
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.dll
+E:\Sourcetree\Language.Discovery\Language.Discovery.Services\obj\Debug\Language.Discovery.Services.pdb
