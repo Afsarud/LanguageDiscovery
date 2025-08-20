@@ -1,0 +1,124 @@
+﻿@model BOCS.ModelsView.CourseInfoVM
+@{
+    ViewData["Title"] = "Course Info";
+    string initial = string.IsNullOrWhiteSpace(Model.LatestYoutubeId)
+        ? (Model.Outlines.SelectMany(g => g.Items).FirstOrDefault()?.YoutubeId ?? "")
+        : Model.LatestYoutubeId;
+}
+
+<section class="container py-4">
+    <div class="mb-2 text-muted">Course info:</div>
+
+    <!-- Top video -->
+    <div id="videoTop" class="ratio ratio-16x9 mb-3" style="background:#e9ecef;">
+        @if (!string.IsNullOrEmpty(initial))
+        {
+            <iframe id="ytPlayer" src="https://www.youtube.com/embed/@initial?rel=0"
+                    title="Class player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        }
+        else
+        {
+            <div class="d-flex align-items-center justify-content-center text-muted">
+                YouTube class will appear here
+            </div>
+        }
+    </div>
+
+    <div class="row g-3">
+        <div class="col-lg-8">
+            <h4 class="mb-2">@Model.Title</h4>
+            <div class="text-muted">Course duration: @Model.DurationDays days</div>
+            <div class="text-muted mb-3">Created by: @Model.CreatedBy</div>
+
+            <h5 class="mt-3"><u>Course Outlines:</u></h5>
+
+            <div class="accordion" id="outlineAcc">
+                @for (var i = 0; i < Model.Outlines.Count; i++)
+                {
+                    var g = Model.Outlines[i];
+                    var cid = $"collapse_{i}";
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading_@i">
+                            <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#@cid"
+                                    aria-expanded="false" aria-controls="@cid">
+                                @g.Title
+                            </button>
+                        </h2>
+                        <div id="@cid" class="accordion-collapse collapse" aria-labelledby="heading_@i"
+                             data-bs-parent="#outlineAcc">
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    @foreach (var item in g.Items)
+                                    {
+                                        <li class="list-group-item d-flex justify-content-between align-items-center class-item"
+                                            data-yt="@item.YoutubeId">
+                                            <span>@item.Label</span>
+                                            <button type="button" class="btn btn-sm btn-outline-primary play-btn"
+                                                    data-yt="@item.YoutubeId">
+                                                Play
+                                            </button>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="col-lg-4 ms-lg-auto text-end">
+            <div class="mb-2">
+                <span class="fw-semibold me-1">Duration:</span>
+                @Model.DurationDays days
+            </div>
+            <div>
+                <span class="fw-semibold me-1">Price:</span>
+                @Model.PriceBdt.ToString("N0") BDT
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        (function () {
+            const player = document.getElementById('ytPlayer');
+            function play(id) {
+                if (!player || !id) return;
+                // autoplay + rel=0
+                player.src = "https://www.youtube.com/embed/" + id + "?autoplay=1&rel=0";
+                document.getElementById('videoTop').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
+            // click on row text OR button
+            document.querySelectorAll('.class-item, .play-btn').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    const target = e.currentTarget;
+                    const yt = target.dataset.yt || target.getAttribute('data-yt');
+                    if (!yt) return;
+
+                    // highlight selected row
+                    document.querySelectorAll('.class-item.active').forEach(li => li.classList.remove('active'));
+                    (target.classList.contains('class-item') ? target : target.closest('.class-item'))?.classList.add('active');
+
+                    play(yt);
+                });
+            });
+        })();
+    </script>
+}
+
+<style>
+    /* highlight selected class row */
+    .class-item.active {
+        background: rgba(13,110,253,.08);
+    }
+
+        .class-item.active .btn {
+            border-color: #0d6efd;
+        }
+</style>

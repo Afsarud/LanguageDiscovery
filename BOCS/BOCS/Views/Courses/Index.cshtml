@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BOCS.ModelsView.CourseCatalogItemVM>
+@{
+    ViewData["Title"] = "All Courses";
+    var q = (string?)ViewBag.Query ?? "";
+}
+
+<section class="container py-4">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <div class="fw-semibold">All Courses:</div>
+
+        <form method="get" class="d-flex gap-2" style="max-width:520px; width:100%;">
+            <input name="q" value="@q" class="form-control" placeholder="Search course…" />
+            <button class="btn btn-primary">Search</button>
+        </form>
+
+        <div class="text-muted small">(Notification show)</div>
+    </div>
+
+ 
+    @* Course grid *@
+    <div class="row g-4">
+        @foreach (var c in Model)
+        {
+            var img = string.IsNullOrWhiteSpace(c.ThumbnailUrl)
+            ? Url.Content("~/images/doc3.jpg")
+            : Url.Content(c.ThumbnailUrl.StartsWith("~") || c.ThumbnailUrl.StartsWith("/")
+            ? c.ThumbnailUrl : "~/" + c.ThumbnailUrl.TrimStart('/'));
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <a asp-controller="Courses" asp-action="Info" asp-route-id="@c.Id"
+                       class="ratio ratio-16x9">
+                        <img src="@img" class="w-100 h-100 object-fit-cover rounded-top" alt="@c.Title" />
+                    </a>
+
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="mb-1">@c.Title</h6>
+                        <div class="d-flex justify-content-between text-muted small mb-3">
+                            <span>Duration: @c.DurationDays days</span>
+                            <span>@c.PriceBdt BDT</span>
+                        </div>
+                        <div class="mt-auto d-flex gap-2">
+                            <a class="btn btn-outline-secondary flex-fill"
+                               asp-controller="Courses" asp-action="Info" asp-route-id="@c.Id">Details</a>
+                            <button class="btn btn-primary flex-fill" disabled>Enroll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<style>
+    .object-fit-cover {
+        object-fit: cover;
+    }
+</style>
