@@ -19,32 +19,45 @@ namespace BOCS.Controllers
             this.userManager = userManager;
             this.roleManager = roleManager;
         }
+        [AllowAnonymous]
         [HttpGet]
-        public IActionResult Login() 
+        public IActionResult Login(string? returnUrl = null)
         {
-        return View();  
+            ViewData["ReturnUrl"] = returnUrl;
+            return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginViewModel model)
+        public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl = null)
         {
             if (!ModelState.IsValid) return View(model);
 
-            var email = model.Email?.Trim();
-            var user = await userManager.FindByEmailAsync(email);
-            if (user == null)
-            {
-                user = await userManager.FindByNameAsync(email);
-            }
+            var loginId = model.Email?.Trim();
+
+            // ইমেইল না পেলে ইউজারনেম দিয়ে চেষ্টা
+            var user = await userManager.FindByEmailAsync(loginId)
+                       ?? await userManager.FindByNameAsync(loginId);
 
             if (user != null)
             {
+                // ✅ session cookie (browser close = auto logout)
                 var result = await signInManager.PasswordSignInAsync(
-                    user, model.Password, model.RememberMe, lockoutOnFailure: false);
+                    user,
+                    model.Password,
+                    isPersistent: false,     // <-- RememberMe ইগনোর; ব্রাউজার ক্লোজ হলে লগআউট
+                    lockoutOnFailure: true   // নিরাপত্তার জন্য ভাল
+                );
 
                 if (result.Succeeded)
-                    return RedirectToAction("Index", "Home");
+                    return LocalRedirect(returnUrl ?? Url.Action("Index", "Home")!);
+
+                if (result.IsLockedOut)
+                {
+                    ModelState.AddModelError(string.Empty, "Account locked. Please try later.");
+                    return View(model);
+                }
             }
 
             ModelState.AddModelError(string.Empty, "Invalid login!");
@@ -59,7 +72,7 @@ namespace BOCS.Controllers
             await HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
             await HttpContext.SignOutAsync(IdentityConstants.TwoFactorUserIdScheme);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
         [HttpGet]
         [AllowAnonymous]
@@ -119,39 +132,6 @@ namespace BOCS.Controllers
 
             return RedirectToAction("Login", "Account");
         }
-
-
-        //[HttpGet]
-        //public IActionResult Register()
-        //{
-        //    return View();
-        //}
-
-        //[HttpPost]
-        //[AllowAnonymous]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Register(RegisterViewModel model)
-        //{
-        //    if (!ModelState.IsValid) return View(model);
-
-        //    var email = model.Email.Trim();
-        //    if (await userManager.FindByEmailAsync(email) is not null)
-        //    {
-        //        ModelState.AddModelError(nameof(model.Email), "Email already in use.");
-        //        return View(model);
-        //    }
-
-        //    var user = new Users { FullName = model.Name, Email = email, UserName = email, EmailConfirmed = false };
-        //    var result = await userManager.CreateAsync(user, model.Password);
-
-        //    if (!result.Succeeded)
-        //    {
-        //        foreach (var e in result.Errors) ModelState.AddModelError("", e.Description);
-        //        return View(model);
-        //    }
-        //    await signInManager.SignInAsync(user, isPersistent: false);
-        //    return RedirectToAction("Login", "Account");
-        //}
 
         [HttpGet]
         public IActionResult VerifyEmail() => View(new VerifyEmailViewModel());
