@@ -34,8 +34,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Sourcetree/BOCS/BOCS/Views/CourseLesson/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/CourseLesson/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/CourseLesson/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/CourseLesson/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXE1hbmFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Sourcetree/BOCS/BOCS/Views/CoursesAdmin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/CoursesAdmin/CreateLesson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXENyZWF0ZUxlc3Nvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Sourcetree/BOCS/BOCS/Views/CoursesAdmin/Delete.cshtml]
@@ -50,8 +70,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Sourcetree/BOCS/BOCS/Views/CoursesAdmin/Lessons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXExlc3NvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Sourcetree/BOCS/BOCS/Views/CoursesAdmin/_CourseForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXF9Db3Vyc2VGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/CourseSubjects/Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcQ291cnNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/CourseSubjects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/CourseSubjects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/CourseSubjects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Sourcetree/BOCS/BOCS/Views/Courses/CourseIndex.cshtml]
@@ -60,6 +100,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Sourcetree/BOCS/BOCS/Views/Courses/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Sourcetree/BOCS/BOCS/Views/Courses/Enroll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFbnJvbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Sourcetree/BOCS/BOCS/Views/Courses/Index.cshtml]

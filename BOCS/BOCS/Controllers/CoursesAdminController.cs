@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BOCS.Data;
 using BOCS.Models;
+using BOCS.ModelsView;
+using BOCS.Services;
 
 namespace BOCS.Controllers
 {
@@ -15,7 +17,7 @@ namespace BOCS.Controllers
 
         private static readonly string[] _allowedExt = { ".jpg", ".jpeg", ".png", ".webp" };
         private const long _maxFileSize = 2 * 1024 * 1024; // 2MB
-        private const string _folderRel = "/uploads/courses"; // under wwwroot
+        private const string _folderRel = "/uploads/courses";
 
         public CoursesAdminController(AppDbContext db, IWebHostEnvironment env)
         {
@@ -23,7 +25,6 @@ namespace BOCS.Controllers
             _env = env;
         }
 
-        // GET: /admin/courses
         [HttpGet("")]
         public async Task<IActionResult> Index(string? q)
         {
@@ -38,14 +39,12 @@ namespace BOCS.Controllers
                 .ToListAsync());
         }
 
-        // GET: /admin/courses/create
         [HttpGet("create")]
         public IActionResult Create() => View(new Course { IsActive = true });
-
-        // POST: /admin/courses/create
+        
         [HttpPost("create")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,IsActive")] Course model, IFormFile? thumbnail)
+        public async Task<IActionResult> Create([Bind("Title,IsActive,DurationDays,PriceBdt")] Course model, IFormFile? thumbnail)
         {
             if (!ModelState.IsValid) return View(model);
 
@@ -62,7 +61,6 @@ namespace BOCS.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: /admin/courses/edit/5
         [HttpGet("edit/{id:int}")]
         public async Task<IActionResult> Edit(int id)
         {
@@ -71,10 +69,9 @@ namespace BOCS.Controllers
             return View(course);
         }
 
-        // POST: /admin/courses/edit/5
         [HttpPost("edit/{id:int}")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,IsActive,ThumbnailUrl")] Course model, IFormFile? thumbnail)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,IsActive,ThumbnailUrl,DurationDays,PriceBdt")] Course model, IFormFile? thumbnail)
         {
             if (id != model.Id) return BadRequest();
             if (!ModelState.IsValid) return View(model);
@@ -84,6 +81,8 @@ namespace BOCS.Controllers
 
             entity.Title = model.Title;
             entity.IsActive = model.IsActive;
+            entity.DurationDays = model.DurationDays;
+            entity.PriceBdt = model.PriceBdt;
 
             if (thumbnail != null && thumbnail.Length > 0)
             {
@@ -101,7 +100,6 @@ namespace BOCS.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: /admin/courses/delete/5
         [HttpGet("delete/{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -110,7 +108,6 @@ namespace BOCS.Controllers
             return View(c);
         }
 
-        // POST: /admin/courses/delete/5
         [HttpPost("delete/{id:int}")]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -128,8 +125,7 @@ namespace BOCS.Controllers
             TempData["StatusMessage"] = "🗑️ Course deleted.";
             return RedirectToAction(nameof(Index));
         }
-
-        // ---------- helpers ----------
+        
         private async Task<string?> SaveImageAsync(IFormFile file)
         {
             var ext = Path.GetExtension(file.FileName).ToLowerInvariant();
@@ -169,6 +165,70 @@ namespace BOCS.Controllers
                     System.IO.File.Delete(abs);
             }
             catch { /* ignore */ }
+        }
+
+        [HttpGet("lessons")]
+        public async Task<IActionResult> Lessons()
+        {
+            var list = await _db.Courses
+                .AsNoTracking()
+                .OrderBy(c => c.Title)
+                .Select(c => new CourseMiniVM
+                {
+                    Id = c.Id,
+                    Title = c.Title,
+                    IsActive = c.IsActive,
+                    LessonCount = c.Lessons.Count(l => l.IsPublished)
+                })
+                .ToListAsync();
+
+            return View(list);
+        }
+
+        [HttpGet("{courseId:int}/lessons/create")]
+        public async Task<IActionResult> CreateLesson(int courseId)
+        {
+            var course = await _db.Courses.AsNoTracking().FirstOrDefaultAsync(c => c.Id == courseId);
+            if (course == null) return NotFound();
+
+            var vm = new LessonCreateVM { CourseId = courseId };
+            ViewBag.CourseTitle = course.Title;
+            return View(vm);       // Views/CoursesAdmin/CreateLesson.cshtml
+        }
+
+        [HttpPost("{courseId:int}/lessons/create"), ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateLesson(int courseId, LessonCreateVM vm)
+        {
+            if (courseId != vm.CourseId) return BadRequest();
+
+            var course = await _db.Courses.AsNoTracking().FirstOrDefaultAsync(c => c.Id == courseId);
+            if (course == null) return NotFound();
+
+            var ytId = YoutubeHelper.ExtractId(vm.YoutubeUrlOrId);
+            if (ytId == null)
+                ModelState.AddModelError(nameof(vm.YoutubeUrlOrId), "Invalid YouTube URL or ID.");
+
+            if (!ModelState.IsValid)
+            {
+                ViewBag.CourseTitle = course.Title;
+                return View(vm);
+            }
+
+            var lesson = new CourseLesson
+            {
+                CourseId = courseId,
+                Title = vm.Title,
+                YoutubeId = ytId,
+                YoutubeUrlRaw = vm.YoutubeUrlOrId,
+                SortOrder = vm.SortOrder,
+                IsPublished = vm.IsPublished
+            };
+
+            _db.Lessons.Add(lesson);
+            await _db.SaveChangesAsync();
+
+            TempData["StatusMessage"] = "✅ Lesson added.";
+            return RedirectToAction(nameof(Edit), new { id = courseId });
         }
     }
 }

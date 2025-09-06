@@ -1,6 +1,6 @@
 ﻿@using BOCS.Services
 @inject IEnrollmentService EnrollmentSvc
-@inject BOCS.Services.IEnrollmentService EnrollmentSvc
+@* @inject BOCS.Services.IEnrollmentService EnrollmentSvc *@
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,8 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/logo.png" alt="BOCS Logo" style="height:40px;" />
+                    <img src="~/images/logo.png" alt="BOCS Logo" class="logo-40" />
+                    @* <img src="~/images/logo.png" alt="BOCS Logo" style="height:40px;" /> *@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +47,7 @@
                                 <a class="nav-link" asp-controller="MyCourses" asp-action="Index">My Course</a>
                             </li>
 
-                            //test
+                            
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle d-flex align-items-center"
                                    href="#" id="myCourseDropdown"
@@ -73,7 +74,6 @@
                                 </ul>
                             </li>
 
-                            //test
 
                             @* Admin permission / enrollment থাকলেই My Course দেখাবে *@
                             @if (EnrollmentSvc?.HasAnyCourses(User) ?? false)
@@ -90,8 +90,8 @@
                                             <a class="dropdown-item d-flex justify-content-between align-items-center"
                                                asp-controller="MyCourses" asp-action="InProgress">
                                                 In Progress
-                                                @* চাইলে কাউন্ট দেখাতে পারেন:
-                                        <span class="badge rounded-pill bg-secondary">@ViewBag.InProgressCount</span> *@
+                                                @* চাইলে কাউন্ট দেখাতে পারেন:*@
+                                        <span class="badge rounded-pill bg-secondary">@ViewBag.InProgressCount</span>
                                             </a>
                                         </li>
                                         <li>
@@ -117,8 +117,51 @@
 
                             @if (User.IsInRole("Admin"))
                             {
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Home" asp-action="Admin">Admin</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center"
+                                       href="#" id="allSettingsDropdown"
+                                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Settings
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="allSettingsDropdown">
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="Admin" asp-action="Courses">
+                                                Course Setup
+                                                <span class="badge rounded-pill bg-secondary">@ViewBag.InProgressCount</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            @* <a class="dropdown-item" asp-controller="CourseSubjects" asp-action="Courses">Subjects</a> *@
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="CourseSubjects" asp-action="Courses">
+                                                Subjects
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="CourseLesson" asp-action="Index">
+                                                Lessons
+                                            </a>
+                                        </li>
+
+                                        
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="CoursesAdmin" asp-action="Lessons">
+                                                Course Lessons
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="Account" asp-action="Register">
+                                                Register
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             }
                             @if (User.IsInRole("Teacher"))

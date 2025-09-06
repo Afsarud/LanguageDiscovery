@@ -42,7 +42,8 @@
                         <div class="mt-auto d-flex gap-2">
                             <a class="btn btn-outline-secondary flex-fill"
                                asp-controller="Courses" asp-action="Info" asp-route-id="@c.Id">Details</a>
-                            <button class="btn btn-primary flex-fill" disabled>Enroll</button>
+                            <a class="btn btn-primary flex-fill"
+                               asp-controller="Courses" asp-action="Enroll" asp-route-id="@c.Id">Enroll</a>
                         </div>
                     </div>
                 </div>

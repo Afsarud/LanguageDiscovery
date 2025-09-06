@@ -36,18 +36,16 @@ namespace BOCS.Controllers
 
             var loginId = model.Email?.Trim();
 
-            // ইমেইল না পেলে ইউজারনেম দিয়ে চেষ্টা
             var user = await userManager.FindByEmailAsync(loginId)
                        ?? await userManager.FindByNameAsync(loginId);
 
             if (user != null)
             {
-                // ✅ session cookie (browser close = auto logout)
                 var result = await signInManager.PasswordSignInAsync(
                     user,
                     model.Password,
-                    isPersistent: false,     // <-- RememberMe ইগনোর; ব্রাউজার ক্লোজ হলে লগআউট
-                    lockoutOnFailure: true   // নিরাপত্তার জন্য ভাল
+                    isPersistent: false,    
+                    lockoutOnFailure: true  
                 );
 
                 if (result.Succeeded)
@@ -91,21 +89,19 @@ namespace BOCS.Controllers
 
             var email = model.Email.Trim();
 
-            // Email already exist check
             if (await userManager.FindByEmailAsync(email) is not null)
             {
                 ModelState.AddModelError(nameof(model.Email), "Email already in use.");
                 return View(model);
             }
 
-            // নতুন User তৈরি
             var user = new Users
             {
                 FullName = model.Name,
                 Email = email,
                 UserName = email,
                 EmailConfirmed = false,
-                Role = model.Role,                  // ✅ Role assign হবে
+                Role = model.Role, 
                 CreatedDate = DateTime.Now
             };
 
@@ -119,7 +115,6 @@ namespace BOCS.Controllers
                 return View(model);
             }
 
-            // যদি ASP.NET Identity Role System ব্যবহার করেন
             if (!string.IsNullOrEmpty(model.Role))
             {
                 if (await roleManager.RoleExistsAsync(model.Role))

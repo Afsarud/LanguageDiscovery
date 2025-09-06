@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BOCS.Models
 {
@@ -20,5 +21,15 @@ namespace BOCS.Models
         public bool IsArchived { get; set; } = false;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        // new
+        public CourseAccessType AccessType { get; set; }
+        public PaymentMethodType PaymentMethod { get; set; }
+
+        [MaxLength(64)] public string? TransactionId { get; set; }
+        [MaxLength(20)] public string? SenderNumber { get; set; }
+        [MaxLength(20)] public string? MobileNumber { get; set; }
+
+        // snapshot of price at the time of enrollment
+        public int PriceAtEnrollment { get; set; }
     }
 }

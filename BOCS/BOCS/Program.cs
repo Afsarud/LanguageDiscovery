@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// MVC
 builder.Services.AddControllersWithViews();
 
 // ---------- Added by Afsar ----------
@@ -41,11 +40,10 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.SameSite = SameSiteMode.Strict;
 });
 
-// Dev only: restart করলে পুরনো কুকি invalid
+
 if (builder.Environment.IsDevelopment())
 {
-    builder.Services.AddDataProtection()
-                    .UseEphemeralDataProtectionProvider();
+    builder.Services.AddDataProtection().UseEphemeralDataProtectionProvider();
 }
 // ---------- end by Afsar ----------
 
@@ -63,18 +61,33 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// Security headers + ✅ CSP for YouTube embeds & external images
-app.Use(async (context, next) =>
+// ---------- Security headers + CSP (ONE place, BEFORE static files) ----------
+app.Use(async (ctx, next) =>
 {
-    context.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate";
-    context.Response.Headers["Pragma"] = "no-cache";
-    context.Response.Headers["X-Content-Type-Options"] = "nosniff";
+    ctx.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate";
+    ctx.Response.Headers["Pragma"] = "no-cache";
+    ctx.Response.Headers["X-Content-Type-Options"] = "nosniff";
 
-    // IMPORTANT: allow YouTube in iframes; allow https/data images (thumbnails)
-    context.Response.Headers["Content-Security-Policy"] =
-        "default-src 'self'; " +
-        "img-src 'self' https: data:; " +
-        "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com;";
+    if (app.Environment.IsDevelopment())
+    {
+        ctx.Response.Headers["Content-Security-Policy"] =
+            "default-src 'self'; " +
+            "img-src 'self' data: https://i.ytimg.com https:; " +
+            "style-src 'self'; " +             
+            "script-src 'self'; " +             
+            "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; " +
+            "connect-src 'self' http://localhost:* https://localhost:* ws://localhost:* wss://localhost:*;";
+    }
+    else
+    {
+        ctx.Response.Headers["Content-Security-Policy"] =
+            "default-src 'self'; " +
+            "img-src 'self' data: https://i.ytimg.com; " +
+            "style-src 'self'; " +
+            "script-src 'self'; " +
+            "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; " +
+            "connect-src 'self';";
+    }
 
     await next();
 });
@@ -84,11 +97,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// ✅ Authentication MUST come before Authorization
-app.UseAuthentication();
+app.UseAuthentication(); 
 app.UseAuthorization();
 
-// Default route -> Login
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");
